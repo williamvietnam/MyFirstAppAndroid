@@ -6,4 +6,4 @@ Gồm 4 tab chính: (theo thứ tự)
 - tabListen: nghe nhạc và nhận xét nhạc (nx nhạc phải đăng nhập)
 - tabAccount: quản lý tài khoản cá nhân khi user muốn viết review hay nx bài hát
 
-Công nghệ sử dụng: Java
+Công nghệ sử dụng: JavaCore, Retrofit, RoomDatabase, Service
