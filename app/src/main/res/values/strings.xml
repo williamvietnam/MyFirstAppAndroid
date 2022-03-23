@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ReadListenApp</string>
+    <string name="suggest">Gợi ý</string>
+    <string name="book">Sách</string>
+    <string name="book_store"><u>Cửa hàng sách</u></string>
+    <string name="my_book">Sách của tôi</string>
+    <string name="see_detail"><u>Xem chi tiết</u></string>
+    <string name="book_name">Tennnnnnnnaaa sachhhhhhhhhhhbbb</string>
+    <string name="book_price">Giá sách</string>
+    <string name="sold">Đã bán:</string>
 </resources>

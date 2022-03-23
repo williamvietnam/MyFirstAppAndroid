@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="88dp"
+    android:layout_height="wrap_content"
+    android:paddingTop="3dp">
+
+    <ImageView
+        android:id="@+id/layout_book"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:src="@drawable/ic_book_dev_up" />
+
+    <TextView
+        android:id="@+id/tvBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_book"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="@string/book_name"
+        android:textSize="12sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBookName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:numStars="5"
+        android:rating="3" />
+
+
+    <TextView
+        android:id="@+id/tvBookPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:maxLines="1"
+        android:text="@string/book_price"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>
