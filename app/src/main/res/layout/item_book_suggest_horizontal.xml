@@ -2,10 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="88dp"
     android:layout_height="wrap_content"
-    android:paddingTop="3dp">
+    android:padding="8dp"
+    android:layout_marginEnd="6dp">
 
     <ImageView
-        android:id="@+id/layout_book"
+        android:id="@+id/imvBook"
         android:layout_width="88dp"
         android:layout_height="88dp"
         android:src="@drawable/ic_book_dev_up" />
@@ -14,7 +15,7 @@
         android:id="@+id/tvBookName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/layout_book"
+        android:layout_below="@id/imvBook"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="3dp"
         android:ellipsize="end"

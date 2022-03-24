@@ -3,16 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android-studio/SDK-Android/platforms/android-31/data/res/drawable/progress_horizontal.xml" value="0.176" />
+        <entry key="..\:/Android-studio/SDK-Android/platforms/android-31/data/res/drawable/progress_indeterminate_horizontal.xml" value="0.226" />
         <entry key="..\:/Android-studio/SDK-Android/platforms/android-31/data/res/drawable/ratingbar_small_material.xml" value="0.248" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/bg_item_my_book.xml" value="0.1915" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/bg_list_item_my_book.xml" value="0.1915" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/bg_read_more_book.xml" value="0.1915" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/bg_rectangle.xml" value="0.1915" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/bg_remove_book.xml" value="0.1915" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_book_remove.xml" value="0.248" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_read_book.xml" value="0.248" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_account.xml" value="0.2421875" />
-        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_book_main.xml" value="0.2421875" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_book_main.xml" value="0.4" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_home.xml" value="0.2421875" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_media.xml" value="0.2421875" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_media_main.xml" value="0.2421875" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_read.xml" value="0.2421875" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/item_book_suggest_horizontal.xml" value="0.4" />
-        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/item_my_book_vertical.xml" value="0.2421875" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/item_my_book_vertical.xml" value="0.536" />
       </map>
     </option>
   </component>
