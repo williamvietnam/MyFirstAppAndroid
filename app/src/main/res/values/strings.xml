@@ -13,4 +13,7 @@
     <string name="book_it_title">Sách công nghệ thông tin</string>
     <string name="economy_book_title">Sách kinh tế</string>
     <string name="literature_book_title">Sách văn học</string>
+    <string name="educational_book_title">Sách giáo dục</string>
+    <string name="book_category">{Book Category}</string>
+    <string name="book_detail">Chi tiết sách</string>
 </resources>

@@ -7,3 +7,8 @@ Gồm 4 tab chính: (theo thứ tự)
 - tabAccount: quản lý tài khoản cá nhân khi user muốn viết review hay nx bài hát
 
 Công nghệ sử dụng: Java
+
+Flow BookMain: 
+-
+- BookMain screen --> (click Cửa hàng sách) --> BookStore screen --> (click Xem chi tiết) --> BookCategory screen
+  --> (click vào 1 quyển sách) --> BookDetail screen
