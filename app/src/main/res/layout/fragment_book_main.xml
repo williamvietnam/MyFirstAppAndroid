@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="8dp">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#DDDDDD"
         android:orientation="horizontal">
 
         <ImageView
@@ -26,6 +26,7 @@
             android:layout_gravity="center"
             android:layout_weight="8"
             android:gravity="center"
+            android:padding="3dp"
             android:text="@string/book"
             android:textSize="32sp" />
 
@@ -42,12 +43,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:padding="6dp">
+        android:padding="8dp">
 
         <TextView
             android:id="@+id/txtSuggest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:text="@string/suggest"
             android:textSize="18sp" />
 
@@ -67,13 +69,15 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="3dp"
+            android:layout_marginEnd="8dp"
             android:text="@string/book_store" />
 
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/txtSuggest"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_list_item_my_book">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcvSuggestBook"
@@ -91,12 +95,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="16dp"
+        android:padding="8dp">
 
         <TextView
             android:id="@+id/txtMyBook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
             android:text="@string/my_book"
             android:textSize="18sp" />
 
@@ -115,20 +121,39 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="4dp"
+            android:layout_marginEnd="6dp"
             android:text="@string/see_detail" />
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/txtMyBook">
+            android:layout_below="@id/txtMyBook"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_list_item_my_book">
 
-            <androidx.recyclerview.widget.RecyclerView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:orientation="vertical"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/item_my_book_vertical" />
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_my_book_vertical" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_my_book_vertical" />
+            </LinearLayout>
         </ScrollView>
     </RelativeLayout>
 </LinearLayout>

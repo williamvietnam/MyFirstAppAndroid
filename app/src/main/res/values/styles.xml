@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="RatingBar"
-        parent="android:style/Widget.Material.RatingBar.Small">
+    <style name="RatingBar" parent="android:style/Widget.Material.RatingBar.Small">
         <item name="colorControlNormal">#808087</item>
         <item name="colorControlActivated">#FFEA00</item>
-        <item name="ratingBarStyleSmall">1</item>
     </style>
 </resources>
