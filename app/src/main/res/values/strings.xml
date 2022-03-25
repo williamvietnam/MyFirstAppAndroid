@@ -9,4 +9,8 @@
     <string name="book_price">Giá sách</string>
     <string name="sold">Đã bán:</string>
     <string name="book_muc_tieu">Sáchhhhhhh mụcccccccc tiêuuuuu</string>
+    <string name="book_store_title">Cửa hàng sách</string>
+    <string name="book_it_title">Sách công nghệ thông tin</string>
+    <string name="economy_book_title">Sách kinh tế</string>
+    <string name="literature_book_title">Sách văn học</string>
 </resources>
