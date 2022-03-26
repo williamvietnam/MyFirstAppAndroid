@@ -1,4 +1,7 @@
 package com.williamnb.readlistenapp.base;
 
-public class BaseActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public abstract class BaseActivity extends AppCompatActivity {
+
 }
