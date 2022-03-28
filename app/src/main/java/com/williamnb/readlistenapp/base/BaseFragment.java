@@ -17,6 +17,13 @@ public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewMo
     protected VB viewBinding;
     protected VM viewModel;
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        onPostOnCreate();
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
