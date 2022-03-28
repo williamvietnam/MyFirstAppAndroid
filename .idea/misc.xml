@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_account.xml" value="0.2421875" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_main.xml" value="0.2421875" />
       </map>
     </option>
