@@ -11,6 +11,7 @@ public abstract class BaseActivity<VB extends ViewBinding, VM extends BaseViewMo
         extends AppCompatActivity implements BaseActivityView {
 
     protected VB viewBinding;
+    protected VM viewModel;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -34,9 +35,11 @@ public abstract class BaseActivity<VB extends ViewBinding, VM extends BaseViewMo
         super.onDestroy();
     }
 
+    protected abstract VB getActivityBinding();
+
     protected void onPostOnCreate() {
-        // DO_NO_THING
+        viewModel = createViewModel();
     }
 
-    protected abstract VB getActivityBinding();
+    public abstract VM createViewModel();
 }
