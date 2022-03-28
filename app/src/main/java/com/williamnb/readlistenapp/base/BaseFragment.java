@@ -15,6 +15,7 @@ import androidx.viewbinding.ViewBinding;
 public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewModel>
         extends Fragment implements BaseView{
     protected VB viewBinding;
+    protected VM viewModel;
 
     @Nullable
     @Override
@@ -41,10 +42,10 @@ public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewMo
     public abstract VB createViewBinding(LayoutInflater inflater, ViewGroup container);
 
     protected void onPostOnCreate() {
-        // DO_NO_THING
+        viewModel = createViewModel();
     }
 
-    protected abstract VB getActivityBinding();
+    public abstract VM createViewModel();
 
     public NavController findNavController() {
         return Navigation.findNavController(viewBinding.getRoot());
