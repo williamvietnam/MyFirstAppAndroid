@@ -13,7 +13,7 @@ import androidx.navigation.Navigation;
 import androidx.viewbinding.ViewBinding;
 
 public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewModel>
-        extends Fragment implements BaseView{
+        extends Fragment implements BaseView {
     protected VB viewBinding;
     protected VM viewModel;
 
