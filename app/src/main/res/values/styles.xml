@@ -4,4 +4,57 @@
         <item name="colorControlNormal">#808087</item>
         <item name="colorControlActivated">#FFEA00</item>
     </style>
+
+    <style name="ServiceContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/_4sdp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="ServiceContainer.Action">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">88dp</item>
+    </style>
+
+    <style name="ServiceContainer.Action.Container">
+        <item name="android:layout_margin">@dimen/_4sdp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="ServiceLinearContainer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="SupportImage">
+        <item name="android:layout_width">@dimen/_28sdp</item>
+        <item name="android:layout_height">@dimen/_28sdp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="ServiceTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:textColor">#B2131A22</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/_3sdp</item>
+    </style>
 </resources>

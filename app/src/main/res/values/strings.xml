@@ -16,4 +16,10 @@
     <string name="educational_book_title">Sách giáo dục</string>
     <string name="book_category">{Book Category}</string>
     <string name="book_detail">Chi tiết sách</string>
+    <string name="home_page">Trang chủ</string>
+    <string name="games">Trò chơi</string>
+    <string name="cv">Hồ sơ</string>
+    <string name="qr_code_scanner">Quét mã QR</string>
+    <string name="news">Tin tức</string>
+    <string name="location">Vị trí</string>
 </resources>

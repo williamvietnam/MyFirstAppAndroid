@@ -3,9 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_delete_book.xml" value="0.1915" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_games.xml" value="0.1915" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_location.xml" value="0.1915" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_my_cv.xml" value="0.1915" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_qr_code_scanner.xml" value="0.1915" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_account.xml" value="0.2421875" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_book_main.xml" value="0.2421875" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_home.xml" value="0.4" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_main.xml" value="0.2421875" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/widget_home_action.xml" value="0.2421875" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/widget_home_menu_action.xml" value="0.264" />
       </map>
     </option>
   </component>
