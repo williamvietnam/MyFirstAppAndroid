@@ -22,4 +22,10 @@
     <string name="qr_code_scanner">Quét mã QR</string>
     <string name="news">Tin tức</string>
     <string name="location">Vị trí</string>
+    <string name="contact">Trò chuyện</string>
+    <string name="foreign_language">Ngoại ngữ</string>
+    <string name="featured_games">Trò chơi nổi bật</string>
+    <string name="featured_news">Tin tức nổi bật</string>
+    <string name="list_friends">Danh sách bạn bè</string>
+    <string name="chess_game">Cờ vua</string>
 </resources>

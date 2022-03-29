@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_imv_container"
+    android:layout_width="@dimen/_160sdp"
+    android:layout_height="@dimen/_160sdp"
+    android:layout_margin="@dimen/_4sdp"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp">
+
+    <LinearLayout
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imvThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_88sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_news_test_1" />
+
+        <TextView
+            android:text="Ứng dụng của William lần đầu đạt hơn 8 triệu lượt tải trên App Store. Và Công ty sở hữu trở thành kỳ lần công nghệ"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11ssp"
+            android:padding="6dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="@dimen/_10ssp"
+                android:gravity="start"
+                android:text="{29/03/2022}"
+                android:layout_weight="1"
+                android:id="@+id/tvDate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textStyle="italic"
+                android:textSize="@dimen/_9ssp"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:id="@+id/tvNumberViews"
+                android:text="{5.2k view}"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
