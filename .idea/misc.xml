@@ -3,9 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_account.xml" value="0.248" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_account_active.xml" value="0.248" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_account_selector.xml" value="0.1935" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_book_active.xml" value="0.248" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_book_selector.xml" value="0.1935" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_delete_book.xml" value="0.1915" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_games.xml" value="0.1915" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_home.xml" value="0.248" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_home_active.xml" value="0.248" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_home_selector.xml" value="0.1935" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_location.xml" value="0.1915" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_media_selector.xml" value="0.1935" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_my_cv.xml" value="0.1915" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_qr_code_scanner.xml" value="0.1915" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
@@ -18,6 +27,8 @@
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/item_featured_news.xml" value="0.4" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/widget_home_action.xml" value="0.2421875" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/widget_home_menu_action.xml" value="0.2421875" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2421875" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/menu/menu_bottom_nav.xml" value="0.2421875" />
       </map>
     </option>
   </component>

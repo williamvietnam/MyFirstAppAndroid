@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navHome"
+        android:contentDescription="@string/home_page"
+        android:icon="@drawable/ic_home_selector"
+        android:orderInCategory="1"
+        android:title="@string/home_page" />
+
+    <item
+        android:id="@+id/navBook"
+        android:contentDescription="@string/book"
+        android:icon="@drawable/ic_book_selector"
+        android:orderInCategory="2"
+        android:title="@string/book" />
+
+    <item
+        android:id="@+id/navMedia"
+        android:contentDescription="@string/music"
+        android:icon="@drawable/ic_media_selector"
+        android:orderInCategory="3"
+        android:title="@string/music" />
+
+    <item
+        android:id="@+id/navAccount"
+        android:contentDescription="@string/personal"
+        android:icon="@drawable/ic_account_selector"
+        android:orderInCategory="4"
+        android:title="@string/personal" />
+</menu>

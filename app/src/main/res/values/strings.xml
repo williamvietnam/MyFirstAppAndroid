@@ -28,4 +28,6 @@
     <string name="featured_news">Tin tức nổi bật</string>
     <string name="list_friends">Danh sách bạn bè</string>
     <string name="chess_game">Cờ vua</string>
+    <string name="music">Nhạc</string>
+    <string name="personal">Cá nhân</string>
 </resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navHome">
+
+    <fragment
+        android:id="@+id/navHome"
+        android:name="com.williamnb.readlistenapp.features.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"></fragment>
+
+    <fragment
+        android:id="@+id/navBook"
+        android:name="com.williamnb.readlistenapp.features.book.BookMainFragment"
+        android:label="BookMainFragment"
+        tools:layout="@layout/fragment_book_main"></fragment>
+
+    <fragment
+        android:id="@+id/navMedia"
+        android:name="com.williamnb.readlistenapp.features.media.MediaMainFragment"
+        android:label="MediaMainFragment"
+        tools:layout="@layout/fragment_media_main"></fragment>
+
+    <fragment
+        android:id="@+id/navAccount"
+        android:name="com.williamnb.readlistenapp.features.account.AccountFragment"
+        android:label="AccountFragment"
+        tools:layout="@layout/fragment_account"></fragment>
+</navigation>
