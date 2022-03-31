@@ -3,8 +3,12 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/d88cacb3ad7019752e911e94c62f5798/transformed/versionedparcelable-1.1.1/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/47b8f488b2ddbb3907578da1290c6f45/transformed/versionedparcelable-1.1.1/res" />
-      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/47b8f488b2ddbb3907578da1290c6f45/transformed/versionedparcelable-1.1.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/47b8f488b2ddbb3907578da1290c6f45/transformed/versionedparcelable-1.1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/7fd30f6b25f4fa64152b7c1696d21368/transformed/versionedparcelable-1.1.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/26402bdc9881546094f9f77a68f15685/transformed/versionedparcelable-1.1.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/d40d3971f339dcdb218ed7be400623d9/transformed/versionedparcelable-1.1.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/42f7ce3081538e067fcde7cb76291be9/transformed/versionedparcelable-1.1.1/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/d40d3971f339dcdb218ed7be400623d9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/d40d3971f339dcdb218ed7be400623d9/transformed/versionedparcelable-1.1.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -3,8 +3,12 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/f6d942267fb4086a894ef73087f7003f/transformed/jetified-storage-1.4.0/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/de2decfa756eb1b51a64a1791cf2ba44/transformed/jetified-storage-1.4.0/res" />
-      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/de2decfa756eb1b51a64a1791cf2ba44/transformed/jetified-storage-1.4.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/de2decfa756eb1b51a64a1791cf2ba44/transformed/jetified-storage-1.4.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/51731b68e20c4b61609cc54dd584ec65/transformed/jetified-storage-1.4.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/7d95f31c1941e76ebcf005563039003c/transformed/jetified-storage-1.4.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/babf5ec38ef74cfbe161691ccbd1930d/transformed/jetified-storage-1.4.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/1dc3a3b5149bd635eeba23a4de9b8758/transformed/jetified-storage-1.4.0/res" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/babf5ec38ef74cfbe161691ccbd1930d/transformed/jetified-storage-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/babf5ec38ef74cfbe161691ccbd1930d/transformed/jetified-storage-1.4.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

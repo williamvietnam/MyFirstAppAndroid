@@ -2,9 +2,13 @@
   <library name="Gradle: androidx.test:core:1.4.0@aar">
     <CLASSES>
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/6100811890b659c30389a5cd68badfee/transformed/jetified-core-1.4.0/res" />
-      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/7a1d1321b624e78dcb1d3e46877f678a/transformed/jetified-core-1.4.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/7a1d1321b624e78dcb1d3e46877f678a/transformed/jetified-core-1.4.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/7a1d1321b624e78dcb1d3e46877f678a/transformed/jetified-core-1.4.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/975260b1fd143f140275b22dd5dcc25c/transformed/jetified-core-1.4.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/0f1d07f5eb69d8ff3aa64dc532ff6c4a/transformed/jetified-core-1.4.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/dd56de725a794feaadbdf8fd6454b016/transformed/jetified-core-1.4.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/2ec1aded765ca2004e153dd4e1ee79db/transformed/jetified-core-1.4.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/dd56de725a794feaadbdf8fd6454b016/transformed/jetified-core-1.4.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/dd56de725a794feaadbdf8fd6454b016/transformed/jetified-core-1.4.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/androidx.test/core/1.4.0/96b4d161def059d92989a352500d05d215c33d5e/core-1.4.0-javadoc.jar!/" />
