@@ -1,13 +1,28 @@
 package com.williamnb.readlistenapp.features.home;
 
+import android.transition.Slide;
+
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseViewModel;
 import com.williamnb.readlistenapp.data.model.Game;
 import com.williamnb.readlistenapp.data.model.News;
+import com.williamnb.readlistenapp.data.model.SliderItem;
 
 import java.util.ArrayList;
 
 public class HomeViewModel extends BaseViewModel {
+    /**
+     *
+     **/
+    public ArrayList<SliderItem> getDataSlide(){
+        ArrayList<SliderItem> sliderItems = new ArrayList<>();
+        sliderItems.add(new SliderItem(R.drawable.slide_1));
+        sliderItems.add(new SliderItem(R.drawable.slide_2));
+        sliderItems.add(new SliderItem(R.drawable.slide_3));
+        sliderItems.add(new SliderItem(R.drawable.slide_4));
+
+        return sliderItems;
+    }
 
     /**
      *
