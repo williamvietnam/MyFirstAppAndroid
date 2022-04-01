@@ -3,28 +3,32 @@
     <item
         android:id="@+id/fragmentHome"
         android:contentDescription="@string/home_page"
-        android:icon="@drawable/ic_home_selector"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
         android:orderInCategory="1"
         android:title="@string/home_page" />
 
     <item
         android:id="@+id/fragmentBook"
         android:contentDescription="@string/book"
-        android:icon="@drawable/ic_book_selector"
+        android:enabled="true"
+        android:icon="@drawable/ic_book"
         android:orderInCategory="2"
         android:title="@string/book" />
 
     <item
         android:id="@+id/fragmentMedia"
         android:contentDescription="@string/music"
-        android:icon="@drawable/ic_media_selector"
+        android:enabled="true"
+        android:icon="@drawable/ic_media"
         android:orderInCategory="3"
         android:title="@string/music" />
 
     <item
         android:id="@+id/fragmentAccount"
         android:contentDescription="@string/personal"
-        android:icon="@drawable/ic_account_selector"
+        android:enabled="true"
+        android:icon="@drawable/ic_account"
         android:orderInCategory="4"
         android:title="@string/personal" />
 </menu>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="content_sap_ra_mat">Ứng dụng của William lần đầu đạt hơn 8 triệu lượt tải trên App Store. Và Công ty sở hữu trở thành kỳ lần công nghệ</string>
+    <string name="date_01042022">11–4–2022</string>
+    <string name="numberView_56k">56k view</string>
+    
+    <string name="content_bong_da">Ronaldo chấn thương sau pha va chạm với messi tại sân bóng của Việt Nam</string>
+    <string name="date_05062023">5–6–2023</string>
+    <string name="numberView_88k">88k view</string>
+
+    <string name="content_tuyen_dung">Kỹ sư Việt Nam được Nasa và Google mời đến làm việc ở các vị trí chủ chốt</string>
+    <string name="date_08062026">12–12–2026</string>
+    <string name="numberView_10.2k">10,2k view</string>
+
+    <string name="content_giao_duc">Việt Nam trở thành cường quốc về công nghệ thông tin, đứng đầu thế giới về đội ngũ kỹ sư giỏi</string>
+    <string name="date_18062028">18–12–2028</string>
+    <string name="numberView_11.2k">11,2k view</string>
+
+    <string name="content_the_thao">Việt Nam lần đầu tiên vô địch WolrdCup trên Sao Hỏa, trở thành quốc gia mạnh nhất về bóng đá</string>
+</resources>

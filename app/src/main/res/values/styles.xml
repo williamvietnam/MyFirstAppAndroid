@@ -6,10 +6,12 @@
         <item name="colorPrimary">@color/background_promotional</item>
         <item name="colorPrimaryDark">@color/background</item>
         <item name="android:editTextColor">#767676</item>
-        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/white</item>
         <item name="android:statusBarColor" tools:targetApi="l">@color/action_bar</item>
     </style>
-
+    <!--
+    - navigationBarColor: chỉnh màu của thanh điều hướng của các máy điện thoại android bên dưới và statusbar bên trên
+    -->
     <style name="RatingBar" parent="android:style/Widget.Material.RatingBar.Small">
         <item name="colorControlNormal">#808087</item>
         <item name="colorControlActivated">#FFEA00</item>
@@ -96,13 +98,5 @@
         <item name="android:layout_marginEnd">4dp</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:layout_gravity">center_horizontal</item>
-    </style>
-
-    <!-- Theme bottom navigation -->
-    <style name="bottomNavMenu" parent="Theme.MaterialComponents.Light">
-        <item name="colorPrimary">#FFBA00</item>
-        <item name="colorOnSurface">#FFFFFF</item>
-        <item name="android:state_checked">true</item>
-        <item name="android:navigationBarColor">#2A323D</item>
     </style>
 </resources>

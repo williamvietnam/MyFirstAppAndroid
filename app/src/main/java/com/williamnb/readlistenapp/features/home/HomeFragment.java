@@ -4,9 +4,13 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentHomeBinding;
+import com.williamnb.readlistenapp.features.home.adapter.ItemFeaturedGamesAdapter;
+import com.williamnb.readlistenapp.features.home.adapter.ItemFeaturedNewsAdapter;
 
 public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewModel> {
     @Override
@@ -26,7 +30,8 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
 
     @Override
     public void initializeComponent() {
-
+        showListGames();
+        showListNews();
     }
 
     @Override
@@ -36,6 +41,17 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
 
     @Override
     public void initializeData() {
+    }
 
+    private void showListGames(){
+        ItemFeaturedGamesAdapter itemFeaturedGamesAdapter = new ItemFeaturedGamesAdapter(viewModel.mockDataGames());
+        viewBinding.rcvGames.setLayoutManager(new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false));
+        viewBinding.rcvGames.setAdapter(itemFeaturedGamesAdapter);
+    }
+
+    private void showListNews(){
+        ItemFeaturedNewsAdapter itemFeaturedNewsAdapter = new ItemFeaturedNewsAdapter(viewModel.mockDataNews());
+        viewBinding.rcvNews.setLayoutManager(new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false));
+        viewBinding.rcvNews.setAdapter(itemFeaturedNewsAdapter);
     }
 }

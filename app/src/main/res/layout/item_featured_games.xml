@@ -9,14 +9,14 @@
     app:cardElevation="4dp">
 
     <LinearLayout
-        android:padding="@dimen/_3sdp"
         style="@style/CategoryLinearContainer"
         android:layout_width="@dimen/_68sdp"
         android:layout_height="@dimen/_68sdp"
+        android:padding="@dimen/_3sdp"
         tools:ignore="UseCompoundDrawables">
 
         <ImageView
-            android:id="@+id/logo"
+            android:id="@+id/logoGame"
             style="@style/CategoryImage"
             android:layout_width="@dimen/_46sdp"
             android:layout_height="@dimen/_46sdp"
@@ -24,11 +24,11 @@
             android:src="@drawable/img_chess" />
 
         <TextView
-            android:layout_marginTop="@dimen/_2sdp"
-            android:textSize="@dimen/_9ssp"
-            android:id="@+id/title"
+            android:id="@+id/titleGame"
             style="@style/CategoryTitle"
+            android:layout_marginTop="@dimen/_2sdp"
             android:text="@string/chess_game"
+            android:textSize="@dimen/_9ssp"
             tools:text="@string/chess_game" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
