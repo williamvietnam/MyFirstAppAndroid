@@ -21,7 +21,7 @@ import com.williamnb.readlistenapp.features.home.adapter.SliderAdapter;
 
 public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewModel> {
 
-    private Handler sliderHandler = new Handler();
+    private final Handler sliderHandler = new Handler();
 
     @Override
     public FragmentHomeBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
@@ -52,10 +52,10 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
     public void initializeData() {
     }
 
-    private Runnable sliderRunnable = new Runnable() {
+    private final Runnable sliderRunnable = new Runnable() {
         @Override
         public void run() {
-            viewBinding.viewPager2.setCurrentItem(viewBinding.viewPager2.getCurrentItem() + 1);
+//            viewBinding.viewPager2.setCurrentItem(viewBinding.viewPager2.getCurrentItem() + 1);
         }
     };
 

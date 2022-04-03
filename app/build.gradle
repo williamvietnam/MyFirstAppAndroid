@@ -88,8 +88,10 @@ dependencies {
     //viewPager2
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
 
-    //Rounded Image view
+    //RoundedImageView
     implementation 'com.makeramen:roundedimageview:2.3.0'
+    //CircleImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 
     //
     implementation 'androidx.appcompat:appcompat:1.4.1'

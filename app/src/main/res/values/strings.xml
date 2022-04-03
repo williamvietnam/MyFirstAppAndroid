@@ -30,4 +30,13 @@
     <string name="chess_game">Cờ vua</string>
     <string name="music">Nhạc</string>
     <string name="personal">Cá nhân</string>
+    <string name="privacy">Quyền riêng tư</string>
+    <string name="account_security">Tài khoản và bảo mật</string>
+    <string name="backup_restore">Sao lưu và khôi phục</string>
+    <string name="theme">Giao diện</string>
+    <string name="notification">Thông báo</string>
+    <string name="change_language">Thay đổi ngôn ngữ</string>
+    <string name="about_us">Thông tin về chúng tôi</string>
+    <string name="switch_account">Chuyển tài khoản</string>
+    <string name="logout">Đăng xuất</string>
 </resources>

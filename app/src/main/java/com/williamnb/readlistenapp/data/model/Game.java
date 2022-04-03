@@ -3,12 +3,27 @@ package com.williamnb.readlistenapp.data.model;
 import android.widget.ImageView;
 
 public class Game {
+    private String id;
     private int logo;
     private int title;
+
+    public Game(String id, int logo, int title) {
+        this.id = id;
+        this.logo = logo;
+        this.title = title;
+    }
 
     public Game(int logo, int title) {
         this.logo = logo;
         this.title = title;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public int getLogo() {

@@ -151,5 +151,6 @@
     <orderEntry type="library" name="Gradle: kr.co.prnd:readmore-textview:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.makeramen:roundedimageview:2.3.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: de.hdodenhof:circleimageview:3.1.0@aar" level="project" />
   </component>
 </module>

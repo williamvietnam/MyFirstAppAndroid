@@ -39,7 +39,7 @@
             android:src="@drawable/ic_search" />
     </LinearLayout>
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="8dp">
@@ -72,12 +72,18 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/titleITBook">
 
-                    <androidx.recyclerview.widget.RecyclerView
+                    <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                        tools:listitem="@layout/item_book_suggest_horizontal" />
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:listitem="@layout/item_book_suggest_horizontal" />
+                    </RelativeLayout>
+
                 </HorizontalScrollView>
             </RelativeLayout>
 
@@ -104,12 +110,17 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/titleEconomyBook">
 
-                    <androidx.recyclerview.widget.RecyclerView
+                    <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                        tools:listitem="@layout/item_book_suggest_horizontal" />
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:listitem="@layout/item_book_suggest_horizontal" />
+                    </RelativeLayout>
                 </HorizontalScrollView>
             </RelativeLayout>
 
@@ -136,12 +147,17 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/titleLiteratureBook">
 
-                    <androidx.recyclerview.widget.RecyclerView
+                    <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                        tools:listitem="@layout/item_book_suggest_horizontal" />
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:listitem="@layout/item_book_suggest_horizontal" />
+                    </RelativeLayout>
                 </HorizontalScrollView>
             </RelativeLayout>
 
@@ -168,14 +184,19 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/titleEducationalBooks">
 
-                    <androidx.recyclerview.widget.RecyclerView
+                    <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                        tools:listitem="@layout/item_book_suggest_horizontal" />
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:listitem="@layout/item_book_suggest_horizontal" />
+                    </RelativeLayout>
                 </HorizontalScrollView>
             </RelativeLayout>
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>

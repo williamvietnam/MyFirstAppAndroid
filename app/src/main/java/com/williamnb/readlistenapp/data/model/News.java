@@ -3,16 +3,33 @@ package com.williamnb.readlistenapp.data.model;
 import android.widget.ImageView;
 
 public class News {
+    private String id;
     private int imvThumbnail;
     private int content;
     private int date;
     private int numberView;
+
+    public News(String id, int imvThumbnail, int content, int date, int numberView) {
+        this.id = id;
+        this.imvThumbnail = imvThumbnail;
+        this.content = content;
+        this.date = date;
+        this.numberView = numberView;
+    }
 
     public News(int imvThumbnail, int content, int date, int numberView) {
         this.imvThumbnail = imvThumbnail;
         this.content = content;
         this.date = date;
         this.numberView = numberView;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public int getImvThumbnail() {
