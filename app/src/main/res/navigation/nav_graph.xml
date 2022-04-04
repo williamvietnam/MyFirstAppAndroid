@@ -20,6 +20,9 @@
             android:id="@+id/actionBookStore"
             app:destination="@id/fragmentBookStore" />
 
+        <action
+            android:id="@+id/actionSignIn"
+            app:destination="@id/fragmentSignIn" />
     </fragment>
 
     <fragment
@@ -39,4 +42,10 @@
         android:name="com.williamnb.readlistenapp.features.bookstore.BookStoreFragment"
         android:label="BookStoreFragment"
         tools:layout="@layout/fragment_book_store" />
+
+    <fragment
+        android:id="@+id/fragmentSignIn"
+        android:name="com.williamnb.readlistenapp.features.login.SignInFragment"
+        android:label="SignInFragment"
+        tools:layout="@layout/fragment_sign_in" />
 </navigation>

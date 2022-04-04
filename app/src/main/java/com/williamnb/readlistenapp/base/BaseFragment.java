@@ -13,6 +13,8 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.viewbinding.ViewBinding;
 
+import com.williamnb.readlistenapp.features.MainActivity;
+
 public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewModel>
         extends Fragment implements BaseView {
     protected VB viewBinding;
@@ -45,7 +47,26 @@ public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewMo
     public void onDestroyView() {
         super.onDestroyView();
         viewBinding = null;
+        initializeDestroyView();
+        hideBottomNavigationView(false);
         Log.d("Destroy", "Destroyed");
+    }
+
+    @Override
+    public void initializeDestroyView(){
+        //TODO
+    }
+
+    @Override
+    public void hideBottomNavigationView(boolean isHidden){
+        MainActivity activity = (MainActivity) getActivity();
+        if (activity != null)
+            activity.hideBottomNavigationView(isHidden);
+    }
+
+    @Override
+    public NavController findNavController() {
+        return Navigation.findNavController(viewBinding.getRoot());
     }
 
     public abstract VB createViewBinding(LayoutInflater inflater, ViewGroup container);
@@ -55,8 +76,4 @@ public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewMo
     }
 
     public abstract VM createViewModel();
-
-    public NavController findNavController() {
-        return Navigation.findNavController(viewBinding.getRoot());
-    }
 }

@@ -1,5 +1,7 @@
 package com.williamnb.readlistenapp.features;
 
+import android.view.View;
+
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
@@ -31,7 +33,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewMode
 
     @Override
     public void initializeComponent() {
-
+        hideBottomNavigationView(false);
     }
 
     @Override
@@ -42,6 +44,10 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewMode
     @Override
     public void initializeData() {
 
+    }
+
+    public void hideBottomNavigationView(boolean isHidden){
+        viewBinding.bottomNav.setVisibility(isHidden ? View.GONE : View.VISIBLE);
     }
 }
 
