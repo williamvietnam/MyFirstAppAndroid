@@ -14,11 +14,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c6b22d5-d19d-424a-83c3-e7605457ee27" name="Default Changelist" comment="RLA-23: Push code in develop">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/data/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/base/BaseFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/base/BaseFragment.java" afterDir="false" />
-    </list>
+    <list default="true" id="0c6b22d5-d19d-424a-83c3-e7605457ee27" name="Default Changelist" comment="RLA-24: add log for onDestroyView and create model User" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648830939441</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="RLA-24: add log for onDestroyView and create model User">
+      <created>1649044461673</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649044461673</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,6 +241,7 @@
     <MESSAGE value="RLA-18: Continue with homepage 29032022" />
     <MESSAGE value="RLA-20: BottomNavigationView + NavigationCompose" />
     <MESSAGE value="RLA-22: Create sliderItem for Homefragment" />
-    <option name="LAST_COMMIT_MESSAGE" value="RLA-22: Create sliderItem for Homefragment" />
+    <MESSAGE value="RLA-24: add log for onDestroyView and create model User" />
+    <option name="LAST_COMMIT_MESSAGE" value="RLA-24: add log for onDestroyView and create model User" />
   </component>
 </project>
