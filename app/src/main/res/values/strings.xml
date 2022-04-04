@@ -39,4 +39,9 @@
     <string name="about_us">Thông tin về chúng tôi</string>
     <string name="switch_account">Chuyển tài khoản</string>
     <string name="logout">Đăng xuất</string>
+    <string name="create_new_account">Tạo tài khoản mới</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="account">Tài khoản</string>
+    <string name="login_to_continue">Đăng nhập để tiếp tục</string>
 </resources>
