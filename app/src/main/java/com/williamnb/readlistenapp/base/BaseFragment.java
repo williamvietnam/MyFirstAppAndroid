@@ -1,6 +1,7 @@
 package com.williamnb.readlistenapp.base;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,6 +45,7 @@ public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewMo
     public void onDestroyView() {
         super.onDestroyView();
         viewBinding = null;
+        Log.d("Destroy", "Destroyed");
     }
 
     public abstract VB createViewBinding(LayoutInflater inflater, ViewGroup container);
