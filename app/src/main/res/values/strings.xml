@@ -44,4 +44,8 @@
     <string name="password">Mật khẩu</string>
     <string name="account">Tài khoản</string>
     <string name="login_to_continue">Đăng nhập để tiếp tục</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="add_image">Thêm ảnh</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="name">Họ và Tên</string>
 </resources>
