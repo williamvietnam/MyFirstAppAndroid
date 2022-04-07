@@ -4,7 +4,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Base64;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
@@ -14,6 +13,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.messaging.FirebaseMessaging;
+import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentChatMainBinding;
 import com.williamnb.readlistenapp.prefs.PreferenceManager;
@@ -48,6 +48,7 @@ public class ChatMainFragment extends BaseFragment<FragmentChatMainBinding, Chat
 
     @Override
     public void initializeEvents() {
+        viewBinding.fabNewChat.setOnClickListener(view -> findNavController().navigate(R.id.actionChatMainToUsersScreen));
         viewBinding.imageSignOut.setOnClickListener(view -> signOut());
     }
 
@@ -79,7 +80,7 @@ public class ChatMainFragment extends BaseFragment<FragmentChatMainBinding, Chat
                         preferenceManager.getString(Constants.KEY_USER_ID)
                 );
         documentReference.update(Constants.KEY_FCM_TOKEN, token)
-                .addOnSuccessListener(unused -> showToast("Token đã cập nhật thành công"))
+//                .addOnSuccessListener(unused -> showToast("Token đã cập nhật thành công"))
                 .addOnFailureListener(e -> showToast("Không thể cập nhật token"));
     }
 
@@ -95,7 +96,7 @@ public class ChatMainFragment extends BaseFragment<FragmentChatMainBinding, Chat
         documentReference.update(updates)
                 .addOnSuccessListener(unused -> {
                     preferenceManager.clear();
-
+                    findNavController().navigate(R.id.actionChatMainToHome);
                 })
                 .addOnFailureListener(e -> showToast("Không thể đăng xuất"));
     }

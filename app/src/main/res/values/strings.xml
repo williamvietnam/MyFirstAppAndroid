@@ -50,4 +50,5 @@
     <string name="name">Họ và Tên</string>
     <string name="tv_film"><![CDATA[TV & Phim]]></string>
     <string name="message">Tin nhắn</string>
+    <string name="select_user">Chọn người dùng</string>
 </resources>
