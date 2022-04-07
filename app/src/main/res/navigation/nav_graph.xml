@@ -54,8 +54,8 @@
             app:destination="@id/fragmentSignUp" />
 
         <action
-            android:id="@+id/actionToChat"
-            app:destination="@id/fragmentChat" />
+            android:id="@+id/actionToChatMain"
+            app:destination="@id/fragmentChatMain" />
     </fragment>
 
     <fragment
@@ -69,8 +69,14 @@
     </fragment>
 
     <fragment
+        android:id="@+id/fragmentChatMain"
+        android:name="com.williamnb.readlistenapp.features.chat.ChatMainFragment"
+        android:label="ChatMainFragment"
+        tools:layout="@layout/fragment_chat_main" />
+
+    <fragment
         android:id="@+id/fragmentChat"
-        android:name="com.williamnb.readlistenapp.features.chat.ChatFragment"
+        android:name="com.williamnb.readlistenapp.features.chat.chat.ChatFragment"
         android:label="ChatFragment"
         tools:layout="@layout/fragment_chat" />
 </navigation>

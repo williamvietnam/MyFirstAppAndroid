@@ -24,12 +24,6 @@ public class BookMainFragment extends BaseFragment<FragmentBookMainBinding, Book
 
     @Override
     public void initializeView() {
-//        viewBinding.btnMenuSelect.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                findNavController().navigate(R.id.actionSignIn);
-//            }
-//        });
     }
 
     @Override

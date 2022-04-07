@@ -35,7 +35,7 @@ public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInVi
         hideBottomNavigationView(true);
         preferenceManager = new PreferenceManager(getContext());
         if (preferenceManager.getBoolean(Constants.KEY_IS_SIGNED_IN)){
-            findNavController().navigate(R.id.actionToChat);
+            findNavController().navigate(R.id.actionToChatMain);
         }
     }
 
@@ -77,7 +77,7 @@ public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInVi
                         preferenceManager.putString(Constants.KEY_USER_ID, documentSnapshot.getId());
                         preferenceManager.putString(Constants.KEY_NAME, documentSnapshot.getString(Constants.KEY_NAME));
                         preferenceManager.putString(Constants.KEY_IMAGE, documentSnapshot.getString(Constants.KEY_IMAGE));
-                        findNavController().navigate(R.id.actionToChat);
+                        findNavController().navigate(R.id.actionToChatMain);
                     }else{
                         loading(false);
                         showToast("Không thể đăng nhập");
