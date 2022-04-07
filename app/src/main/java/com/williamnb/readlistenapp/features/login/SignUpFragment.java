@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
-import android.provider.ContactsContract;
 import android.provider.MediaStore;
 import android.util.Base64;
 import android.util.Patterns;
@@ -18,10 +17,8 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentSignUpBinding;
-import com.williamnb.readlistenapp.features.chat.ChatFragment;
 import com.williamnb.readlistenapp.prefs.PreferenceManager;
 import com.williamnb.readlistenapp.utilities.Constants;
 
@@ -107,7 +104,7 @@ public class SignUpFragment extends BaseFragment<FragmentSignUpBinding, SignUpVi
 //                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 //                    startActivity(intent);
                 })
-                .addOnFailureListener(exception ->{
+                .addOnFailureListener(exception -> {
                     loading(false);
                     showToast(exception.getMessage());
                 });
@@ -152,6 +149,7 @@ public class SignUpFragment extends BaseFragment<FragmentSignUpBinding, SignUpVi
             return false;
         } else if (viewBinding.inputAccount.getText().toString().trim().isEmpty()) {
             showToast("Mời nhập Tài khoản");
+            return false;
         } else if (!Patterns.EMAIL_ADDRESS.matcher(viewBinding.inputAccount.getText().toString()).matches()) {
             showToast("Nhập đúng định dạng Email");
             return false;
@@ -164,8 +162,9 @@ public class SignUpFragment extends BaseFragment<FragmentSignUpBinding, SignUpVi
         } else if (!viewBinding.inputPassword.getText().toString().equals(viewBinding.inputConfirmPassword.getText().toString())) {
             showToast("Mật khẩu và nhập lại mật khẩu phải trùng nhau");
             return false;
+        } else {
+            return true;
         }
-        return true;
     }
 
     private void loading(Boolean isLoading) {
