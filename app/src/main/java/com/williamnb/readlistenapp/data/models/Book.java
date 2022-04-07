@@ -1,4 +1,4 @@
-package com.williamnb.readlistenapp.data.model;
+package com.williamnb.readlistenapp.data.models;
 
 public class Book {
     private String id;

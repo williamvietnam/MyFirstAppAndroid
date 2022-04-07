@@ -15,5 +15,5 @@ public interface BaseView {
 
     void hideBottomNavigationView(boolean isHidden);
 
-    NavController findNavController();
+//    NavController findNavController();
 }

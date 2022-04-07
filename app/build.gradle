@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'androidx.navigation.safeargs'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -10,6 +11,7 @@ android {
         applicationId "com.williamnb.readlistenapp"
         minSdk 26
         targetSdk 31
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
 
@@ -45,6 +47,9 @@ ext {
 }
 
 dependencies {
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:29.2.1')
+
     // Lifecycle
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
 
@@ -93,9 +98,13 @@ dependencies {
     //CircleImageView
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
+    //Firebase
+    implementation 'com.google.firebase:firebase-messaging:23.0.2'
+    implementation 'com.google.firebase:firebase-firestore:24.1.0'
 
+    //MultiDex
+    implementation "androidx.multidex:multidex:2.0.1"
 
-    //
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     testImplementation 'junit:junit:4.+'

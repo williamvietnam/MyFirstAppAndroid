@@ -1,12 +1,10 @@
 package com.williamnb.readlistenapp.features.home;
 
-import android.transition.Slide;
-
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseViewModel;
-import com.williamnb.readlistenapp.data.model.Game;
-import com.williamnb.readlistenapp.data.model.News;
-import com.williamnb.readlistenapp.data.model.SliderItem;
+import com.williamnb.readlistenapp.data.models.Game;
+import com.williamnb.readlistenapp.data.models.News;
+import com.williamnb.readlistenapp.data.models.SliderItem;
 
 import java.util.ArrayList;
 

@@ -4,22 +4,27 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.MarginPageTransformer;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentHomeBinding;
 import com.williamnb.readlistenapp.features.home.adapter.ItemFeaturedGamesAdapter;
 import com.williamnb.readlistenapp.features.home.adapter.ItemFeaturedNewsAdapter;
 import com.williamnb.readlistenapp.features.home.adapter.SliderAdapter;
 
-public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewModel> {
+public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewModel>
+        implements View.OnClickListener {
 
     private final Handler sliderHandler = new Handler();
 
@@ -35,6 +40,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
 
     @Override
     public void initializeView() {
+        hideBottomNavigationView(false);
     }
 
     @Override
@@ -46,10 +52,44 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
 
     @Override
     public void initializeEvents() {
+        viewBinding.btnMessage.setOnClickListener(this);
+        viewBinding.btnGames.setOnClickListener(this);
+        viewBinding.btnTvShows.setOnClickListener(this);
+        viewBinding.btnNews.setOnClickListener(this);
     }
 
     @Override
     public void initializeData() {
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.btnGames: {
+                Toast.makeText(getContext(), "Tính năng này đang phát triển", Toast.LENGTH_SHORT).show();
+                break;
+            }
+            case R.id.btnTvShows: {
+                showTvShows();
+                break;
+            }
+            case R.id.btnMessage: {
+               findNavController().navigate(R.id.actionSignIn);
+                break;
+            }
+            case R.id.btnNews: {
+                showNews();
+                break;
+            }
+        }
+    }
+
+    private void showNews() {
+        Toast.makeText(getContext(), "Tính năng này đang phát triển", Toast.LENGTH_SHORT).show();
+    }
+
+    private void showTvShows() {
+        Toast.makeText(getContext(), "Tính năng này đang phát triển", Toast.LENGTH_SHORT).show();
     }
 
     private final Runnable sliderRunnable = new Runnable() {

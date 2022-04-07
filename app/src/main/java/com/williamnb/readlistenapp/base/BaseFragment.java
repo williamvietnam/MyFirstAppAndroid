@@ -29,7 +29,9 @@ public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewMo
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
         viewBinding = createViewBinding(inflater, container);
         return viewBinding.getRoot();
     }
@@ -48,13 +50,12 @@ public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewMo
         super.onDestroyView();
         viewBinding = null;
         initializeDestroyView();
-        hideBottomNavigationView(false);
         Log.d("Destroy", "Destroyed");
     }
 
     @Override
     public void initializeDestroyView(){
-        //TODO
+
     }
 
     @Override
@@ -64,7 +65,6 @@ public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewMo
             activity.hideBottomNavigationView(isHidden);
     }
 
-    @Override
     public NavController findNavController() {
         return Navigation.findNavController(viewBinding.getRoot());
     }

@@ -1,6 +1,4 @@
-package com.williamnb.readlistenapp.data.model;
-
-import android.widget.ImageView;
+package com.williamnb.readlistenapp.data.models;
 
 public class Game {
     private String id;

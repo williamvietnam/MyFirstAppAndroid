@@ -9,7 +9,11 @@
         android:id="@+id/fragmentHome"
         android:name="com.williamnb.readlistenapp.features.home.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/actionSignIn"
+            app:destination="@id/fragmentSignIn" />
+    </fragment>
 
     <fragment
         android:id="@+id/fragmentBook"
@@ -20,9 +24,6 @@
             android:id="@+id/actionBookStore"
             app:destination="@id/fragmentBookStore" />
 
-        <action
-            android:id="@+id/actionSignIn"
-            app:destination="@id/fragmentSignIn" />
     </fragment>
 
     <fragment
@@ -47,5 +48,29 @@
         android:id="@+id/fragmentSignIn"
         android:name="com.williamnb.readlistenapp.features.login.SignInFragment"
         android:label="SignInFragment"
-        tools:layout="@layout/fragment_sign_in" />
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/actionSignUp"
+            app:destination="@id/fragmentSignUp" />
+
+        <action
+            android:id="@+id/actionToChat"
+            app:destination="@id/fragmentChat" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSignUp"
+        android:name="com.williamnb.readlistenapp.features.login.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/actionSignIn"
+            app:destination="@id/fragmentSignIn" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentChat"
+        android:name="com.williamnb.readlistenapp.features.chat.ChatFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/fragment_chat" />
 </navigation>

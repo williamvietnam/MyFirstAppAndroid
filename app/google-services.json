@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "850305681022",
+    "project_id": "vinapp-7c22c",
+    "storage_bucket": "vinapp-7c22c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850305681022:android:0f2f6d17ca719d88b13a2f",
+        "android_client_info": {
+          "package_name": "com.williamnb.readlistenapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850305681022-jo7ku2q94qm1pi8fn9pjbulegq2r415q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJlZLWp9V1jZdG893NvUNYIz7HezjH-eo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850305681022-jo7ku2q94qm1pi8fn9pjbulegq2r415q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -63,16 +63,241 @@
                     android:paddingEnd="@dimen/_28sdp" />
             </RelativeLayout>
 
-            <include
-                layout="@layout/widget_home_menu_action"
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_12sdp"
-                android:layout_marginTop="@dimen/_16sdp"
-                android:layout_marginEnd="@dimen/_12sdp"
-                android:layout_marginBottom="@dimen/_8sdp"
-                android:paddingStart="@dimen/_8sdp"
-                android:paddingEnd="@dimen/_8sdp" />
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <androidx.cardview.widget.CardView
+                    style="@style/ServiceContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    app:cardCornerRadius="@dimen/_16sdp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/_16sdp"
+                        android:paddingBottom="@dimen/_16sdp"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/supportActionContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_64sdp"
+                            android:baselineAligned="false"
+                            android:fillViewport="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RelativeLayout
+                                android:id="@+id/btnGames"
+                                style="@style/ServiceContainer.Action.Container"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    style="@style/ServiceLinearContainer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top"
+                                    tools:ignore="UseCompoundDrawables">
+
+                                    <ImageView
+                                        style="@style/SupportImage"
+                                        android:layout_marginTop="@dimen/_8sdp"
+                                        android:contentDescription="@string/games"
+                                        android:src="@drawable/ic_games" />
+
+                                    <TextView
+                                        style="@style/ServiceTitle"
+                                        android:layout_width="match_parent"
+                                        android:gravity="center"
+                                        android:text="@string/games"
+                                        android:textColor="#484848"
+                                        tools:text="@string/games" />
+
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/btnTvShows"
+                                style="@style/ServiceContainer.Action.Container"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    style="@style/ServiceLinearContainer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top"
+                                    tools:ignore="UseCompoundDrawables">
+
+                                    <ImageView
+                                        style="@style/SupportImage"
+                                        android:layout_marginTop="@dimen/_8sdp"
+                                        android:contentDescription="@string/cv"
+                                        android:src="@drawable/ic_tv" />
+
+                                    <TextView
+                                        style="@style/ServiceTitle"
+                                        android:layout_width="match_parent"
+                                        android:gravity="center"
+                                        android:text="@string/tv_film"
+                                        android:textColor="#484848"
+                                        tools:text="TV &amp; Phim" />
+
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/btnMessage"
+                                style="@style/ServiceContainer.Action.Container"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    style="@style/ServiceLinearContainer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top"
+                                    tools:ignore="UseCompoundDrawables">
+
+                                    <ImageView
+                                        style="@style/SupportImage"
+                                        android:layout_marginTop="@dimen/_8sdp"
+                                        android:contentDescription="@string/message"
+                                        android:src="@drawable/ic_chat" />
+
+                                    <TextView
+                                        style="@style/ServiceTitle"
+                                        android:layout_width="match_parent"
+                                        android:gravity="center"
+                                        android:text="@string/message"
+                                        android:textColor="#484848"
+                                        tools:text="@string/message" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_64sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:baselineAligned="false"
+                            android:fillViewport="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RelativeLayout
+                                android:id="@+id/btnNews"
+                                style="@style/ServiceContainer.Action.Container"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    style="@style/ServiceLinearContainer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top"
+                                    tools:ignore="UseCompoundDrawables">
+
+                                    <ImageView
+                                        style="@style/SupportImage"
+                                        android:layout_marginTop="@dimen/_4sdp"
+                                        android:contentDescription="@string/news"
+                                        android:src="@drawable/ic_news" />
+
+                                    <TextView
+                                        style="@style/ServiceTitle"
+                                        android:layout_width="match_parent"
+                                        android:gravity="center"
+                                        android:maxLines="2"
+                                        android:singleLine="false"
+                                        android:text="@string/news"
+                                        android:textColor="#484848"
+                                        tools:text="@string/news" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/btnForeignLanguages"
+                                style="@style/ServiceContainer.Action.Container"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    style="@style/ServiceLinearContainer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top"
+                                    tools:ignore="UseCompoundDrawables">
+
+                                    <ImageView
+                                        style="@style/SupportImage"
+                                        android:layout_marginTop="@dimen/_4sdp"
+                                        android:contentDescription="@string/foreign_language"
+                                        android:src="@drawable/ic_foreign_language" />
+
+                                    <TextView
+                                        style="@style/ServiceTitle"
+                                        android:layout_width="match_parent"
+                                        android:gravity="center"
+                                        android:maxLines="2"
+                                        android:singleLine="false"
+                                        android:text="@string/foreign_language"
+                                        android:textColor="#484848"
+                                        tools:text="@string/foreign_language" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/btnLocations"
+                                style="@style/ServiceContainer.Action.Container"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    style="@style/ServiceLinearContainer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top"
+                                    tools:ignore="UseCompoundDrawables">
+
+                                    <ImageView
+                                        style="@style/SupportImage"
+                                        android:layout_marginTop="@dimen/_4sdp"
+                                        android:contentDescription="@string/location"
+                                        android:src="@drawable/ic_location" />
+
+                                    <TextView
+                                        style="@style/ServiceTitle"
+                                        android:layout_width="match_parent"
+                                        android:gravity="center"
+                                        android:maxLines="2"
+                                        android:singleLine="false"
+                                        android:text="@string/location"
+                                        android:textColor="#484848"
+                                        tools:text="@string/location" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
 
             <TextView
                 android:layout_width="wrap_content"

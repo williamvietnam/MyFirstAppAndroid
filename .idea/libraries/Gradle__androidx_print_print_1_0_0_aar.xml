@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.print:print:1.0.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/ad3bdaccc061327658ff186c99eee274/transformed/print-1.0.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/a4fdc595172c82f24c832ca0ccf5e892/transformed/print-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/998ecad2e598076d0444e5b886cc28b2/transformed/print-1.0.0/res" />
@@ -10,8 +10,9 @@
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/03c972ab45e4b70370bf43daee2abd15/transformed/print-1.0.0/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/ad3bdaccc061327658ff186c99eee274/transformed/print-1.0.0/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/c49fc48d0232963eeb337b6a476e9adf/transformed/print-1.0.0/res" />
-      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/ad3bdaccc061327658ff186c99eee274/transformed/print-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/ad3bdaccc061327658ff186c99eee274/transformed/print-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/a4fdc595172c82f24c832ca0ccf5e892/transformed/print-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/a4fdc595172c82f24c832ca0ccf5e892/transformed/print-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/a4fdc595172c82f24c832ca0ccf5e892/transformed/print-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

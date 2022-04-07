@@ -31,8 +31,9 @@ public abstract class BaseActivity<VB extends ViewBinding, VM extends BaseViewMo
 
     @Override
     protected void onDestroy() {
-        Log.d(getClass().getName(), "onDestroy()...");
         super.onDestroy();
+        viewBinding = null;
+        Log.d(getClass().getName(), "onDestroy()...");
     }
 
     protected abstract VB getActivityBinding();

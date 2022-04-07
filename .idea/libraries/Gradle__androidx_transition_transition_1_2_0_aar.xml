@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.transition:transition:1.2.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/f723bdbef15ab3b2c7e207c41ea1900b/transformed/transition-1.2.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/c4dd758959fc22d536df9aa46926c67e/transformed/transition-1.2.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/f723bdbef15ab3b2c7e207c41ea1900b/transformed/transition-1.2.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/f723bdbef15ab3b2c7e207c41ea1900b/transformed/transition-1.2.0/res" />
-      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/f723bdbef15ab3b2c7e207c41ea1900b/transformed/transition-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/c4dd758959fc22d536df9aa46926c67e/transformed/transition-1.2.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/c4dd758959fc22d536df9aa46926c67e/transformed/transition-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/c4dd758959fc22d536df9aa46926c67e/transformed/transition-1.2.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

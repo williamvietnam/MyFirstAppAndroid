@@ -1,4 +1,6 @@
 package com.williamnb.readlistenapp.features.login;
 
-public class SignUpViewModel {
+import com.williamnb.readlistenapp.base.BaseViewModel;
+
+public class SignUpViewModel extends BaseViewModel {
 }

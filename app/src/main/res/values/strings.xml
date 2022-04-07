@@ -48,4 +48,6 @@
     <string name="add_image">Thêm ảnh</string>
     <string name="confirm_password">Xác nhận mật khẩu</string>
     <string name="name">Họ và Tên</string>
+    <string name="tv_film"><![CDATA[TV & Phim]]></string>
+    <string name="message">Tin nhắn</string>
 </resources>

@@ -30,10 +30,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_24sdp"
                 android:text="@string/sign_in"
                 android:textColor="@color/primary_text"
-                android:textSize="@dimen/_32ssp"
+                android:textSize="@dimen/_40sdp"
                 android:textStyle="bold" />
 
             <TextView
@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_45sdp"
                 android:layout_marginTop="@dimen/_48sdp"
-                android:background="@color/input_background"
+                android:background="@drawable/background_input"
                 android:hint="@string/account"
                 android:imeOptions="actionNext"
                 android:importantForAutofill="no"
@@ -65,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_45sdp"
                 android:layout_marginTop="@dimen/_16sdp"
-                android:background="@color/input_background"
+                android:background="@drawable/background_input"
                 android:hint="@string/password"
                 android:imeOptions="actionDone"
                 android:importantForAutofill="no"
@@ -76,17 +76,16 @@
                 android:textSize="@dimen/_13ssp" />
 
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/btnSignIn"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_marginTop="@dimen/_24sdp"
-                android:background="@color/primary"
+                android:background="@drawable/background_button_login"
                 android:text="@string/sign_in"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_14ssp"
-                android:textStyle="bold"
-                app:cornerRadius="@dimen/_8sdp" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvCreateNewAccount"

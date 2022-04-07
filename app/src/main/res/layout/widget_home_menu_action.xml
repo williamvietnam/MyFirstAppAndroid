@@ -62,7 +62,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/btnProfiles"
+                    android:id="@+id/btnTvShows"
                     style="@style/ServiceContainer.Action.Container"
                     android:layout_height="match_parent"
                     android:layout_weight="1">
@@ -78,15 +78,15 @@
                             style="@style/SupportImage"
                             android:layout_marginTop="@dimen/_8sdp"
                             android:contentDescription="@string/cv"
-                            android:src="@drawable/ic_cv" />
+                            android:src="@drawable/ic_tv" />
 
                         <TextView
                             style="@style/ServiceTitle"
                             android:layout_width="match_parent"
                             android:gravity="center"
-                            android:text="@string/cv"
+                            android:text="@string/tv_film"
                             android:textColor="#484848"
-                            tools:text="@string/cv" />
+                            tools:text="TV &amp; Phim" />
 
                     </LinearLayout>
                 </RelativeLayout>

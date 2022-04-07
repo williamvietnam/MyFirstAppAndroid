@@ -1,26 +1,25 @@
 package com.williamnb.readlistenapp.features.login;
 
-import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.Nullable;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentSignInBinding;
-import com.williamnb.readlistenapp.features.MainActivity;
 
 public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInViewModel> {
 
     @Override
-    public FragmentSignInBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
-        return FragmentSignInBinding.inflate(inflater, container, false);
+    public SignInViewModel createViewModel() {
+        return new ViewModelProvider(this).get(SignInViewModel.class);
     }
 
     @Override
-    public SignInViewModel createViewModel() {
-        return new ViewModelProvider(this).get(SignInViewModel.class);
+    public FragmentSignInBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
+        return FragmentSignInBinding.inflate(inflater, container, false);
     }
 
     @Override
@@ -35,7 +34,8 @@ public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInVi
 
     @Override
     public void initializeEvents() {
-
+        viewBinding.tvCreateNewAccount.setOnClickListener(view -> findNavController().navigate(R.id.actionSignUp));
+        viewBinding.btnBack.setOnClickListener(view -> findNavController().popBackStack());
     }
 
     @Override
