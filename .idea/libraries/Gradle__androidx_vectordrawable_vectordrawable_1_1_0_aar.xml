@@ -7,9 +7,10 @@
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/8b7ce8afb3706afa3c56f2f4a3b3d9e3/transformed/vectordrawable-1.1.0/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/b072c055287a8d3d278cf473b4bb23f0/transformed/vectordrawable-1.1.0/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/02c85d078696abbf6863a893630cc8a9/transformed/vectordrawable-1.1.0/res" />
-      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/3712e3b702278c57499a28237314983c/transformed/vectordrawable-1.1.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/3712e3b702278c57499a28237314983c/transformed/vectordrawable-1.1.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/3712e3b702278c57499a28237314983c/transformed/vectordrawable-1.1.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/f9292af43ece4f2afaf5155d34ff9488/transformed/vectordrawable-1.1.0/res" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/f9292af43ece4f2afaf5155d34ff9488/transformed/vectordrawable-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/f9292af43ece4f2afaf5155d34ff9488/transformed/vectordrawable-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -7,9 +7,10 @@
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/330dc37f3a6fafdd1ccdde6111560242/transformed/viewpager-1.0.0/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/e51e12b9019072e89f60e054bf3164c4/transformed/viewpager-1.0.0/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/a2dc17bc1197fc499111df95209c33f2/transformed/viewpager-1.0.0/res" />
-      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/74303b96beaad34794580a8036a5cb4b/transformed/viewpager-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/74303b96beaad34794580a8036a5cb4b/transformed/viewpager-1.0.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/74303b96beaad34794580a8036a5cb4b/transformed/viewpager-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/4150b6c1582360a7958ab6eef1186283/transformed/viewpager-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/4150b6c1582360a7958ab6eef1186283/transformed/viewpager-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/4150b6c1582360a7958ab6eef1186283/transformed/viewpager-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

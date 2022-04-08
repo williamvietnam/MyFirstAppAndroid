@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/a5f76f93056aeee4ea01feed93c75667/transformed/jetified-viewpager2-1.0.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/e6025e5bab5de415d8db78787a0ffc68/transformed/jetified-viewpager2-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/a5f76f93056aeee4ea01feed93c75667/transformed/jetified-viewpager2-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/a5f76f93056aeee4ea01feed93c75667/transformed/jetified-viewpager2-1.0.0/res" />
-      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/a5f76f93056aeee4ea01feed93c75667/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/e6025e5bab5de415d8db78787a0ffc68/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/e6025e5bab5de415d8db78787a0ffc68/transformed/jetified-viewpager2-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/e6025e5bab5de415d8db78787a0ffc68/transformed/jetified-viewpager2-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

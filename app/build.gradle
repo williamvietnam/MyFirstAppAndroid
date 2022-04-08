@@ -36,8 +36,8 @@ android {
 }
 
 ext {
-    lifecycle_version = '2.5.0-alpha05'
-    nav_version = '2.5.0-alpha03'
+    lifecycle_version = '2.5.0-alpha06'
+    nav_version = '2.5.0-alpha04'
     rx_java2_version = '2.2.19'
     rx_android2_version = '2.1.1'
     rx_permissions_version = '0.9.4@aar'
@@ -52,15 +52,16 @@ dependencies {
 
     // Lifecycle
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
 
     // Navigation
     implementation "androidx.navigation:navigation-fragment:$nav_version"
     implementation "androidx.navigation:navigation-ui:$nav_version"
 
-//    // Testing Navigation
-//    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
-//    // Jetpack Compose Integration
-//    implementation "androidx.navigation:navigation-compose:$nav_version"
+    // Testing Navigation
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+    // Jetpack Compose Integration
+    implementation "androidx.navigation:navigation-compose:$nav_version"
 
     // dimens
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
@@ -79,6 +80,11 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxjava:$rx_java2_version"
     implementation "io.reactivex.rxjava2:rxandroid:$rx_android2_version"
     implementation "com.tbruyelle.rxpermissions2:rxpermissions:$rx_permissions_version"
+
+    //Room & RxJava Support
+    implementation 'androidx.room:room-runtime:2.4.2'
+    annotationProcessor 'androidx.room:room-compiler:2.4.2'
+    implementation 'androidx.room:room-rxjava2:2.4.2'
 
     //Picasso
     implementation "com.squareup.picasso:picasso:$picasso_version"

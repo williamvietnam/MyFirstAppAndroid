@@ -8,8 +8,9 @@
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/888f9ed33640a9bc8273ad78132763b3/transformed/interpolator-1.0.0/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/4d1a5c2041848bb3400dc0a33a7ca7b6/transformed/interpolator-1.0.0/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/ee08f29ee399a18b6a73b662ef38659f/transformed/interpolator-1.0.0/res" />
-      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/ee08f29ee399a18b6a73b662ef38659f/transformed/interpolator-1.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/ee08f29ee399a18b6a73b662ef38659f/transformed/interpolator-1.0.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/4b1777e218a46b204f5bade022ebbb41/transformed/interpolator-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/4b1777e218a46b204f5bade022ebbb41/transformed/interpolator-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/4b1777e218a46b204f5bade022ebbb41/transformed/interpolator-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
