@@ -1,5 +1,6 @@
 package com.williamnb.readlistenapp.features.chat.users_list;
 
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,7 +9,9 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
+import com.williamnb.readlistenapp.common.UserListener;
 import com.williamnb.readlistenapp.data.models.User;
 import com.williamnb.readlistenapp.databinding.FragmentUsersBinding;
 import com.williamnb.readlistenapp.features.chat.adapter.UsersAdapter;
@@ -18,7 +21,8 @@ import com.williamnb.readlistenapp.utilities.Constants;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UsersFragment extends BaseFragment<FragmentUsersBinding, UsersViewModel> {
+public class UsersFragment extends BaseFragment<FragmentUsersBinding, UsersViewModel>
+        implements UserListener {
 
     private PreferenceManager preferenceManager;
 
@@ -53,6 +57,13 @@ public class UsersFragment extends BaseFragment<FragmentUsersBinding, UsersViewM
         getUsers();
     }
 
+    @Override
+    public void onUserClicked(User user) {
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(Constants.KEY_USER, user);
+        findNavController().navigate(R.id.actionUsersToChatScreen, bundle);
+    }
+
     private void getUsers() {
         loading(true);
         FirebaseFirestore database = FirebaseFirestore.getInstance();
@@ -72,10 +83,11 @@ public class UsersFragment extends BaseFragment<FragmentUsersBinding, UsersViewM
                             user.setEmail(queryDocumentSnapshot.getString(Constants.KEY_EMAIL));
                             user.setImage(queryDocumentSnapshot.getString(Constants.KEY_IMAGE));
                             user.setToken(queryDocumentSnapshot.getString(Constants.KEY_FCM_TOKEN));
+                            user.setId(queryDocumentSnapshot.getId());
                             users.add(user);
                         }
                         if (users.size() > 0) {
-                            UsersAdapter usersAdapter = new UsersAdapter(users);
+                            UsersAdapter usersAdapter = new UsersAdapter(users, this);
                             viewBinding.usersRcv.setAdapter(usersAdapter);
                             viewBinding.usersRcv.setVisibility(View.VISIBLE);
                         } else {

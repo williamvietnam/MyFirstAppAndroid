@@ -15,11 +15,33 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c6b22d5-d19d-424a-83c3-e7605457ee27" name="Default Changelist" comment="VinApp-05: List user">
+    <list default="true" id="0c6b22d5-d19d-424a-83c3-e7605457ee27" name="Default Changelist" comment="VinApp-06: Change">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/common/UserListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/data/models/ChatMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/adapter/ChatAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_chat_input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_content_top.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_received_message.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_sent_message.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_send.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_container_received_message.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_container_sent_message.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/adapter/UsersAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/adapter/UsersAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/chat/ChatFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/chat_screen/ChatScreenFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/chat/ChatViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/chat_screen/ChatScreenViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/users_list/UsersFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/users_list/UsersFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/utilities/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/utilities/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_chat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_chat_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_container_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_container_user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +57,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="navigationResourceFile" />
         <option value="valueResourceFile" />
         <option value="layoutResourceFile_vertical" />
         <option value="layoutResourceFile" />
-        <option value="Class" />
         <option value="resourceFile" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,6 +108,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android-custom-viewC:/Users/giang/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.4.1/f9e48179ea0c6ac0080a277b9383f74523f56aa2/appcompat-1.4.1-sources.jar!/androidx/appcompat/widget/AppCompatImageView.java_AppCompatImageView_DIMENSIONS" value="1080&#10;1920" />
     <property name="android-custom-viewC:/Users/giang/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.4.1/f9e48179ea0c6ac0080a277b9383f74523f56aa2/appcompat-1.4.1-sources.jar!/androidx/appcompat/widget/AppCompatImageView.java_SELECTED" value="AppCompatImageView" />
     <property name="android-custom-viewC:/Users/giang/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/androidx.viewpager2/viewpager2/1.0.0/3c3569044e6969f1ee5c3aa03b08e6717a2d782f/viewpager2-1.0.0-sources.jar!/androidx/viewpager2/widget/ViewPager2.java_SELECTED" value="ViewPager2" />
@@ -273,7 +296,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649346664417</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="VinApp-06: Change">
+      <created>1649346811403</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1649346811403</updated>
+    </task>
+    <task id="LOCAL-00015" summary="VinApp-06: Change">
+      <created>1649346917161</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1649346917161</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -332,6 +369,7 @@
     <MESSAGE value="VinApp-03: Update gradle" />
     <MESSAGE value="VinApp-04: Sign out" />
     <MESSAGE value="VinApp-05: List user" />
-    <option name="LAST_COMMIT_MESSAGE" value="VinApp-05: List user" />
+    <MESSAGE value="VinApp-06: Change" />
+    <option name="LAST_COMMIT_MESSAGE" value="VinApp-06: Change" />
   </component>
 </project>

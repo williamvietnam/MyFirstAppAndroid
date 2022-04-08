@@ -78,23 +78,24 @@
             app:destination="@id/fragmentHome" />
 
         <action
-            android:id="@+id/actionChatMainToChat"
-            app:destination="@id/fragmentChat" />
-
-        <action
             android:id="@+id/actionChatMainToUsersScreen"
             app:destination="@id/fragmentUsers" />
     </fragment>
 
     <fragment
-        android:id="@+id/fragmentChat"
-        android:name="com.williamnb.readlistenapp.features.chat.chat.ChatFragment"
-        android:label="ChatFragment"
-        tools:layout="@layout/fragment_chat" />
-
-    <fragment
         android:id="@+id/fragmentUsers"
         android:name="com.williamnb.readlistenapp.features.chat.users_list.UsersFragment"
         android:label="UsersFragment"
-        tools:layout="@layout/fragment_users" />
+        tools:layout="@layout/fragment_users">
+        <action
+            android:id="@+id/actionUsersToChatScreen"
+            app:destination="@id/fragmentChatScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentChatScreen"
+        android:name="com.williamnb.readlistenapp.features.chat.chat_screen.ChatScreenFragment"
+        android:label="ChatScreenFragment"
+        tools:layout="@layout/fragment_chat_screen">
+    </fragment>
 </navigation>

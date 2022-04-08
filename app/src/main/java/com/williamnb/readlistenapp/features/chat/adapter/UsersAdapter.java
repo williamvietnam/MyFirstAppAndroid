@@ -9,10 +9,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.makeramen.roundedimageview.RoundedImageView;
 import com.williamnb.readlistenapp.R;
+import com.williamnb.readlistenapp.common.UserListener;
 import com.williamnb.readlistenapp.data.models.User;
 
 import java.util.List;
@@ -20,9 +22,11 @@ import java.util.List;
 public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> {
 
     private final List<User> userList;
+    private final UserListener userListener;
 
-    public UsersAdapter(List<User> userList) {
+    public UsersAdapter(List<User> userList, UserListener userListener) {
         this.userList = userList;
+        this.userListener = userListener;
     }
 
     @NonNull
@@ -39,6 +43,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
         holder.textName.setText(user.getName());
         holder.textEmail.setText(user.getEmail());
         holder.imageProfile.setImageBitmap(getUserImage(user.getImage()));
+        holder.layoutUser.setOnClickListener(view -> userListener.onUserClicked(user));
     }
 
     @Override
@@ -53,12 +58,14 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
         private final RoundedImageView imageProfile;
         private final TextView textName;
         private final TextView textEmail;
+        private final ConstraintLayout layoutUser;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageProfile = itemView.findViewById(R.id.imageProfile);
             textName = itemView.findViewById(R.id.textName);
             textEmail = itemView.findViewById(R.id.textEmail);
+            layoutUser = itemView.findViewById(R.id.layoutUser);
         }
     }
 
