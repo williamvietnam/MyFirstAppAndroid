@@ -104,7 +104,18 @@
 
     <fragment
         android:id="@+id/fragmentMostPopularTVShows"
-        android:name="com.williamnb.readlistenapp.features.tvshows.MostPopularTVShowsFragment"
+        android:name="com.williamnb.readlistenapp.features.tvshows.most_popular_tvshows.MostPopularTVShowsFragment"
         android:label="MostPopularTVShowsFragment"
-        tools:layout="@layout/fragment_most_popular_tv_shows" />
+        tools:layout="@layout/fragment_most_popular_tv_shows">
+        <action
+            android:id="@+id/actionMostPopularToTVShowDetails"
+            app:destination="@id/fragmentTVShowDetails" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentTVShowDetails"
+        android:name="com.williamnb.readlistenapp.features.tvshows.tvshow_details.TVShowDetailsFragment"
+        android:label="TVShowDetailsFragment"
+        tools:layout="@layout/fragment_t_v_show_details" />
 </navigation>

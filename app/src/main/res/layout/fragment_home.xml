@@ -152,9 +152,9 @@
                                         style="@style/ServiceTitle"
                                         android:layout_width="match_parent"
                                         android:gravity="center"
-                                        android:text="@string/tv_film"
+                                        android:text="@string/watch_film"
                                         android:textColor="#484848"
-                                        tools:text="TV &amp; Phim" />
+                                        tools:text="@string/watch_film" />
 
                                 </LinearLayout>
                             </RelativeLayout>

@@ -1,4 +1,4 @@
-package com.williamnb.readlistenapp.features.tvshows;
+package com.williamnb.readlistenapp.features.tvshows.most_popular_tvshows;
 
 import androidx.lifecycle.LiveData;
 
