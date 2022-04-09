@@ -7,11 +7,14 @@
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/background_chat_input.xml" value="0.1" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/background_content_bottom.xml" value="0.1" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/background_content_top.xml" value="0.1" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/background_fading_edge.xml" value="0.1" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/background_icon.xml" value="0.1" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/background_image.xml" value="0.158" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/background_input.xml" value="0.1625" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/background_received_message.xml" value="0.1" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/background_sent_message.xml" value="0.1" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/background_slider_indicator_fragment.xml" value="0.1145" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/background_slider_indicator_inactive.xml" value="0.1" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/background_tv_show.xml" value="0.1" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_account.xml" value="0.248" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_account_active.xml" value="0.248" />
@@ -46,12 +49,14 @@
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_most_popular_tv_shows.xml" value="0.1" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_sign_in.xml" value="0.1" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_sign_up.xml" value="0.181640625" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_t_v_show_details.xml" value="0.1" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_tv_show_details.xml" value="0.2421875" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_tv_shows_main.xml" value="0.1" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_users.xml" value="0.264" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/item_book_suggest_horizontal.xml" value="0.2421875" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/item_container_received_message.xml" value="0.12777777777777777" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/item_container_sent_message.xml" value="0.12777777777777777" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/item_container_slider_image.xml" value="0.14074074074074075" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/item_container_tv_show.xml" value="0.264" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/item_container_user.xml" value="0.22916666666666666" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/item_featured_games.xml" value="0.4" />

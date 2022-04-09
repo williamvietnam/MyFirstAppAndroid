@@ -1,6 +1,7 @@
 package com.williamnb.readlistenapp.features.tvshows.most_popular_tvshows;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -80,6 +81,8 @@ public class MostPopularTVShowsFragment extends BaseFragment<FragmentMostPopular
         bundle.putString("country_tvShows", tvShow.getCountry());
         bundle.putString("network_tvShows", tvShow.getNetwork());
         bundle.putString("status_tvShows", tvShow.getStatus());
+
+        Log.d("test", String.valueOf(tvShow.getId()));
 
         findNavController().navigate(R.id.actionMostPopularToTVShowDetails, bundle);
     }

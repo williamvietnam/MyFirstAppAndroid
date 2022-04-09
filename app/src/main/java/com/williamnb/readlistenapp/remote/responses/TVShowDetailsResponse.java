@@ -9,11 +9,11 @@ public class TVShowDetailsResponse {
     @Expose
     private TVShowDetails tvShowDetails;
 
-    public TVShowDetails getTvShow() {
+    public TVShowDetails getTvShowDetails() {
         return tvShowDetails;
     }
 
-    public void setTvShow(TVShowDetails tvShowDetails) {
+    public void setTvShowDetails(TVShowDetails tvShowDetails) {
         this.tvShowDetails = tvShowDetails;
     }
 }
