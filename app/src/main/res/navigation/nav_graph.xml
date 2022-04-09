@@ -13,6 +13,10 @@
         <action
             android:id="@+id/actionSignIn"
             app:destination="@id/fragmentSignIn" />
+
+        <action
+            android:id="@+id/actionHomeToMostPopularTVShows"
+            app:destination="@id/fragmentMostPopularTVShows" />
     </fragment>
 
     <fragment
@@ -96,6 +100,11 @@
         android:id="@+id/fragmentChatScreen"
         android:name="com.williamnb.readlistenapp.features.chat.chat_screen.ChatScreenFragment"
         android:label="ChatScreenFragment"
-        tools:layout="@layout/fragment_chat_screen">
-    </fragment>
+        tools:layout="@layout/fragment_chat_screen" />
+
+    <fragment
+        android:id="@+id/fragmentMostPopularTVShows"
+        android:name="com.williamnb.readlistenapp.features.tvshows.MostPopularTVShowsFragment"
+        android:label="MostPopularTVShowsFragment"
+        tools:layout="@layout/fragment_most_popular_tv_shows" />
 </navigation>

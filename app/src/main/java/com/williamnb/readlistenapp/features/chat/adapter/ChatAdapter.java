@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.williamnb.readlistenapp.data.models.ChatMessage;
+import com.williamnb.readlistenapp.domain.model.ChatMessage;
 import com.williamnb.readlistenapp.databinding.ItemContainerReceivedMessageBinding;
 import com.williamnb.readlistenapp.databinding.ItemContainerSentMessageBinding;
 

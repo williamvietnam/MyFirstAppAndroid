@@ -2,9 +2,9 @@ package com.williamnb.readlistenapp.features.home;
 
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseViewModel;
-import com.williamnb.readlistenapp.data.models.Game;
-import com.williamnb.readlistenapp.data.models.News;
-import com.williamnb.readlistenapp.data.models.SliderItem;
+import com.williamnb.readlistenapp.domain.model.Game;
+import com.williamnb.readlistenapp.domain.model.News;
+import com.williamnb.readlistenapp.domain.model.SliderItem;
 
 import java.util.ArrayList;
 

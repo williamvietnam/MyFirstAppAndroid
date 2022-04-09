@@ -1,4 +1,4 @@
-package com.williamnb.readlistenapp.data.models;
+package com.williamnb.readlistenapp.domain.model;
 
 public class Game {
     private String id;

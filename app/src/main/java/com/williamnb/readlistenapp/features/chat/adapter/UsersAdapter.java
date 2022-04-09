@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.makeramen.roundedimageview.RoundedImageView;
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.common.UserListener;
-import com.williamnb.readlistenapp.data.models.User;
+import com.williamnb.readlistenapp.domain.model.User;
 
 import java.util.List;
 

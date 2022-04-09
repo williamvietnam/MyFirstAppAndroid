@@ -8,8 +8,6 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.navigation.NavDirections;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.CompositePageTransformer;
@@ -70,11 +68,11 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
                 break;
             }
             case R.id.btnTvShows: {
-                showTvShows();
+                findNavController().navigate(R.id.actionHomeToMostPopularTVShows);
                 break;
             }
             case R.id.btnMessage: {
-               findNavController().navigate(R.id.actionSignIn);
+                findNavController().navigate(R.id.actionSignIn);
                 break;
             }
             case R.id.btnNews: {
