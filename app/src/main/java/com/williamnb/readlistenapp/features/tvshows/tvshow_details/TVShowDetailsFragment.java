@@ -1,5 +1,8 @@
 package com.williamnb.readlistenapp.features.tvshows.tvshow_details;
 
+import android.content.Intent;
+import android.net.Uri;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import androidx.core.content.ContextCompat;
+import androidx.core.text.HtmlCompat;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.viewpager2.widget.ViewPager2;
 
@@ -15,6 +19,8 @@ import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentTVShowDetailsBinding;
 import com.williamnb.readlistenapp.features.tvshows.adapter.ImageSliderAdapter;
+
+import java.util.Locale;
 
 public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBinding, TVShowDetailsViewModel> {
     @Override
@@ -39,7 +45,7 @@ public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBin
 
     @Override
     public void initializeEvents() {
-
+        viewBinding.imageBack.setOnClickListener(view -> findNavController().popBackStack());
     }
 
     @Override
@@ -58,6 +64,50 @@ public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBin
                         if (tvShowDetailsResponse.getTvShowDetails().getPictures() != null) {
                             loadImageSlider(tvShowDetailsResponse.getTvShowDetails().getPictures());
                         }
+                        viewBinding.setTvShowImageURL(
+                                tvShowDetailsResponse.getTvShowDetails().getImagePath()
+                        );
+                        viewBinding.imageTvShow.setVisibility(View.VISIBLE);
+                        viewBinding.setDescription(String.valueOf(HtmlCompat.fromHtml(
+                                tvShowDetailsResponse.getTvShowDetails().getDescription(),
+                                HtmlCompat.FROM_HTML_MODE_LEGACY)));
+                        viewBinding.textDescription.setVisibility(View.VISIBLE);
+                        viewBinding.textReadMore.setVisibility(View.VISIBLE);
+                        viewBinding.textReadMore.setOnClickListener(view -> {
+                            if (viewBinding.textReadMore.getText().toString().equals("Đọc tiếp")) {
+                                viewBinding.textDescription.setMaxLines(Integer.MAX_VALUE);
+                                viewBinding.textDescription.setEllipsize(null);
+                                viewBinding.textReadMore.setText(R.string.read_less);
+                            } else {
+                                viewBinding.textDescription.setMaxLines(4);
+                                viewBinding.textDescription.setEllipsize(TextUtils.TruncateAt.END);
+                                viewBinding.textReadMore.setText(R.string.read_more);
+                            }
+                        });
+                        viewBinding.setRating(
+                                String.format(Locale.getDefault(), "%.2f",
+                                        Double.parseDouble(tvShowDetailsResponse.getTvShowDetails().getRating()))
+                        );
+                        if (tvShowDetailsResponse.getTvShowDetails().getGenres() != null) {
+                            viewBinding.setGenre(tvShowDetailsResponse.getTvShowDetails().getGenres()[0]);
+                        } else {
+                            viewBinding.setGenre("N/A");
+                        }
+                        viewBinding.setRuntime(tvShowDetailsResponse.getTvShowDetails().getRuntime() + " Min");
+                        viewBinding.viewDivider1.setVisibility(View.VISIBLE);
+                        viewBinding.layoutMisc.setVisibility(View.VISIBLE);
+                        viewBinding.viewDivider2.setVisibility(View.VISIBLE);
+                        viewBinding.buttonWebsite.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Intent intent = new Intent(Intent.ACTION_VIEW);
+                                intent.setData(Uri.parse(tvShowDetailsResponse.getTvShowDetails().getUrl()));
+                                startActivity(intent);
+                            }
+                        });
+                        viewBinding.buttonWebsite.setVisibility(View.VISIBLE);
+                        viewBinding.buttonEpisodes.setVisibility(View.VISIBLE);
+                        loadBasicTVShowDetails();
                     }
                 });
     }
@@ -105,5 +155,17 @@ public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBin
                         getContext(), R.drawable.background_slider_indicator_inactive));
             }
         }
+    }
+
+    private void loadBasicTVShowDetails() {
+        assert getArguments() != null;
+        viewBinding.setTvShowName(getArguments().getString("name_tvShows"));
+        viewBinding.setNetworkCountry(getArguments().getString("network_tvShows") + " (" + getArguments().getString("country_tvShows") + ")");
+        viewBinding.setStatus(getArguments().getString("status_tvShows"));
+        viewBinding.setStartedDate(getArguments().getString("startDate_tvShows"));
+        viewBinding.textName.setVisibility(View.VISIBLE);
+        viewBinding.textNetworkCountry.setVisibility(View.VISIBLE);
+        viewBinding.textStatus.setVisibility(View.VISIBLE);
+        viewBinding.textStarted.setVisibility(View.VISIBLE);
     }
 }

@@ -53,4 +53,9 @@
     <string name="select_user">Chọn người dùng</string>
     <string name="type_message">Soạn tin nhắn</string>
     <string name="tv_shows_most_popular">Danh sách phim nổi bật</string>
+    <string name="read_more">Đọc tiếp</string>
+    <string name="read_less">Thu gọn</string>
+    <string name="u2022">u2022</string>
+    <string name="website">Website</string>
+    <string name="episodes">Episodes</string>
 </resources>
