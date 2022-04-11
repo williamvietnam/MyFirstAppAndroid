@@ -1,33 +1,49 @@
 package com.williamnb.readlistenapp.remote.models;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class TVShow {
+import java.io.Serializable;
+
+@Entity(tableName = "tvShows")
+public class TVShow implements Serializable {
+
+    @PrimaryKey
     @SerializedName("id")
     @Expose
     private int id;
+
     @SerializedName("name")
     @Expose
     private String name;
+
     @SerializedName("permalink")
     @Expose
     private String permalink;
+
     @SerializedName("start_date")
     @Expose
     private String startDate;
+
     @SerializedName("end_date")
     @Expose
     private Object endDate;
+
     @SerializedName("country")
     @Expose
     private String country;
+
     @SerializedName("network")
     @Expose
     private String network;
+
     @SerializedName("status")
     @Expose
     private String status;
+
     @SerializedName("image_thumbnail_path")
     @Expose
     private String imageThumbnailPath;
