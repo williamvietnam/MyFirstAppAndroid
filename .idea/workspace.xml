@@ -17,8 +17,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c6b22d5-d19d-424a-83c3-e7605457ee27" name="Default Changelist" comment="VinApp-14: Use Neumorphism library to create layout music player">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0c6b22d5-d19d-424a-83c3-e7605457ee27" name="Default Changelist" comment="VinApp-15: test readme.md">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -370,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649744719219</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="VinApp-15: test readme.md">
+      <created>1649746853140</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1649746853140</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,6 +444,7 @@
     <MESSAGE value="VinApp-12: Create tv show details (continue)" />
     <MESSAGE value="VinApp-13: create button episodes &amp; button website" />
     <MESSAGE value="VinApp-14: Use Neumorphism library to create layout music player" />
-    <option name="LAST_COMMIT_MESSAGE" value="VinApp-14: Use Neumorphism library to create layout music player" />
+    <MESSAGE value="VinApp-15: test readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="VinApp-15: test readme.md" />
   </component>
 </project>
