@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/primary</item>
-        <item name="android:statusBarColor" tools:targetApi="l">@color/primary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
     </style>
     <!--
     - navigationBarColor: chỉnh màu của thanh điều hướng của các máy điện thoại android bên dưới
@@ -129,5 +129,39 @@
         <item name="android:background">?android:attr/selectableItemBackground</item>
         <item name="android:foreground">?attr/selectableItemBackground</item>
         <item name="android:paddingEnd">12dp</item>
+    </style>
+
+    <!--Custom styles Media Player-->
+    <style name="FullScreen" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/background_player</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="NeumorphismImageSmall">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">@dimen/_21sdp</item>
+    </style>
+
+    <style name="NeumorphismImageNormal">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">@dimen/_27sdp</item>
+    </style>
+
+    <style name="NeumorphismImageLarge">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">@dimen/_32sdp</item>
+    </style>
+
+    <style name="NeumorphismCardImage">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">@dimen/_115sdp</item>
+    </style>
+
+    <style name="NeumorphismImageOther">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">@dimen/_8sdp</item>
     </style>
 </resources>

@@ -12,8 +12,8 @@ import io.reactivex.Flowable;
 @Dao
 public interface TVShowDAO {
 
-    @Query("SELECT * FROM tvshows")
-    Flowable<List<TVShow>> getWatchList;
+//    @Query("SELECT * FROM tvshows")
+//    Flowable<List<TVShow>> getWatchList;
 
 
 }

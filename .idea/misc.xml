@@ -32,6 +32,8 @@
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_media_selector.xml" value="0.1935" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_my_cv.xml" value="0.1915" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_qr_code_scanner.xml" value="0.1915" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/ic_search.xml" value="0.1355" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/drawable/progress_background.xml" value="0.1" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/activity_users.xml" value="0.1" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_account.xml" value="0.2421875" />
@@ -45,7 +47,7 @@
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_film_main.xml" value="0.2421875" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_home.xml" value="0.2421875" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_main.xml" value="0.2421875" />
-        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_media_main.xml" value="0.2421875" />
+        <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_media_main.xml" value="0.1635379061371841" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_most_popular_tv_shows.xml" value="0.1" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_sign_in.xml" value="0.1" />
         <entry key="..\:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/res/layout/fragment_sign_up.xml" value="0.181640625" />

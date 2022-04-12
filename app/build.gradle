@@ -108,6 +108,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging:23.0.2'
     implementation 'com.google.firebase:firebase-firestore:24.1.0'
 
+    //Neumorphism
+    implementation 'com.github.fornewid:neumorphism:0.3.0'
+
     //MultiDex
     implementation "androidx.multidex:multidex:2.0.1"
 
