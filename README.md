@@ -1,14 +1,26 @@
-"# ReadListenApp-" 
-Ứng dụng đọc sách kết hợp nghe nhạc online/offline
-Gồm 4 tab chính: (theo thứ tự)
-- tabHome: trc mắt tích hợp chức năng thông tin nhanh, tìm kiếm tại đây, chat qua lại giữa các account
-- tabRead: gồm chức năng đọc sách, đọc review sách, viết review, viết bình luận (sử dụng chức năng viết thì phải đăng nhập)
-- tabListen: nghe nhạc và nhận xét nhạc (nx nhạc phải đăng nhập)
-- tabAccount: quản lý tài khoản cá nhân khi user muốn viết review hay nx bài hát
-
-Công nghệ sử dụng: Java
-
-Flow BookMain: 
+VINAPP
 -
-- BookMain screen --> (click Cửa hàng sách) --> BookStore screen --> (click Xem chi tiết) --> BookCategory screen
-  --> (click vào 1 quyển sách) --> BookDetail screen
+
+- Mô tả ứng dụng: là một ứng dụng học tập, giải trí và liên hệ gồm các UseCase:
+> Use case 1 - Read: Đọc sách ebook online
+> Use case 2 - Listen: Nghe nhạc online/offline
+> Use case 3 - Game: Chơi trò chơi trên ứng dụng: Cờ vua, cờ tướng,...
+> Use case 4 - News: Xem tin tức xã hội
+> Use case 5 - Call Video: Gọi điện video (có thể gọi nhóm)
+> Use case 6 - Message/Chat: Nhắn tin trực tuyến (có Push Notification)
+> Use case 7 - TvShows: Chương trình phim ảnh (có chức năng search theo tên phim)
+> Use case 8 - Share Location: Chia sẻ vị trí của mình với các tài khoản khác trong hệ thống của VINAPP
+> Use case 9 - SignIn/SignOut/SignUp: Đăng nhập, đăng xuất, đăng ký
+
+- Kiến trúc ứng dụng: MVVM + DataBinding + NavigationCompose + SingleActivity
+
+- Công nghệ sử dụng: JavaCore + XML + Android SDK
+
+1. Jetpack Compose library: Navigation Jetpack Compose
+2. Design libraries:
+
+>
+> Size: spd/ssp
+> API: Retrofit2
+
+- Đặc tả UseCase:
