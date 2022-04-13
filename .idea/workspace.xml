@@ -18,8 +18,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c6b22d5-d19d-424a-83c3-e7605457ee27" name="Default Changelist" comment="VinApp-15: test readme.md">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/domain/database/TVShowDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_fab.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_added.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/base/BaseViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/base/BaseViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/domain/dao/TVShowDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/domain/dao/TVShowDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/MainViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/MainViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/account/AccountViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/account/AccountViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/book/BookMainFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/book/BookMainFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/book/BookMainViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/book/BookMainViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/bookstore/BookStoreViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/bookstore/BookStoreViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/ChatMainFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/ChatMainFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/ChatMainViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/ChatMainViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/chat_screen/ChatScreenFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/chat_screen/ChatScreenFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/chat_screen/ChatScreenViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/chat_screen/ChatScreenViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/users_list/UsersViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/users_list/UsersViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/home/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/home/HomeViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/home/HomeViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignInFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignInFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignInViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignInViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignUpFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignUpFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignUpViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignUpViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/media/MediaMainViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/media/MediaMainViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/adapter/ImageSliderAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/adapter/ImageSliderAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/adapter/TVShowAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/adapter/TVShowAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/most_popular_tvshows/MostPopularTVShowsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/most_popular_tvshows/MostPopularTVShowsFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/most_popular_tvshows/MostPopularTVShowsViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/most_popular_tvshows/MostPopularTVShowsViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/tvshow_details/TVShowDetailsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/tvshow_details/TVShowDetailsFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/tvshow_details/TVShowDetailsViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/tvshow_details/TVShowDetailsViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/remote/models/TVShow.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/remote/models/TVShow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_most_popular_tv_shows.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_most_popular_tv_shows.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_t_v_show_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_t_v_show_details.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -384,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649747569908</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="VinApp-15: test readme.md">
+      <created>1649749027151</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1649749027151</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

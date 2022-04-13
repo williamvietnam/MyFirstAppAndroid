@@ -1,12 +1,12 @@
 package com.williamnb.readlistenapp.features.home;
 
+import android.annotation.SuppressLint;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -60,6 +60,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
     public void initializeData() {
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -86,15 +87,8 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
         Toast.makeText(getContext(), "Tính năng này đang phát triển", Toast.LENGTH_SHORT).show();
     }
 
-    private void showTvShows() {
-        Toast.makeText(getContext(), "Tính năng này đang phát triển", Toast.LENGTH_SHORT).show();
-    }
-
-    private final Runnable sliderRunnable = new Runnable() {
-        @Override
-        public void run() {
+    private final Runnable sliderRunnable = () -> {
 //            viewBinding.viewPager2.setCurrentItem(viewBinding.viewPager2.getCurrentItem() + 1);
-        }
     };
 
     private void showSlide() {
@@ -106,12 +100,9 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
 
         CompositePageTransformer compositePageTransformer = new CompositePageTransformer();
         compositePageTransformer.addTransformer(new MarginPageTransformer(24));
-        compositePageTransformer.addTransformer(new ViewPager2.PageTransformer() {
-            @Override
-            public void transformPage(@NonNull View page, float position) {
-                float r = 1 - Math.abs(position);
-                page.setScaleY(0.85f + r * 0.15f);
-            }
+        compositePageTransformer.addTransformer((page, position) -> {
+            float r = 1 - Math.abs(position);
+            page.setScaleY(0.85f + r * 0.15f);
         });
         viewBinding.viewPager2.setPageTransformer(compositePageTransformer);
 

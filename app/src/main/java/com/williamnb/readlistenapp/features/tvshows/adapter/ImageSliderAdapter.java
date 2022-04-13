@@ -41,7 +41,7 @@ public class ImageSliderAdapter extends RecyclerView.Adapter<ImageSliderAdapter.
     }
 
     static class ImageSliderViewHolder extends RecyclerView.ViewHolder {
-        private ItemContainerSliderImageBinding binding;
+        private final ItemContainerSliderImageBinding binding;
 
         public ImageSliderViewHolder(ItemContainerSliderImageBinding binding) {
             super(binding.getRoot());

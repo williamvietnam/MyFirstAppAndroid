@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.core.content.ContextCompat;
 import androidx.core.text.HtmlCompat;
@@ -26,13 +27,17 @@ import com.williamnb.readlistenapp.databinding.FragmentTVShowDetailsBinding;
 import com.williamnb.readlistenapp.databinding.LayoutEpisodesBottomSheetBinding;
 import com.williamnb.readlistenapp.features.tvshows.adapter.EpisodesAdapter;
 import com.williamnb.readlistenapp.features.tvshows.adapter.ImageSliderAdapter;
+import com.williamnb.readlistenapp.remote.models.TVShow;
 
 import java.util.Locale;
 
-import io.grpc.internal.SharedResourceHolder;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.schedulers.Schedulers;
 
 public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBinding, TVShowDetailsViewModel> {
 
+    private TVShow tvShow;
     private BottomSheetDialog episodesBottomSheetDialog;
     private LayoutEpisodesBottomSheetBinding layoutEpisodesBottomSheetBinding;
 
@@ -53,6 +58,8 @@ public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBin
 
     @Override
     public void initializeComponent() {
+        assert getArguments() != null;
+        tvShow = (TVShow) getArguments().getSerializable("tvShow");
         getTVShowDetails();
     }
 
@@ -68,7 +75,7 @@ public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBin
 
     private void getTVShowDetails() {
         viewBinding.setIsLoading(true);
-        String tvShowId = String.valueOf(getArguments().getInt("id_tvShows"));
+        String tvShowId = String.valueOf(tvShow.getId());
         Log.d("test", tvShowId);
         viewModel.getTVShowDetails(tvShowId).observe(
                 this, tvShowDetailsResponse -> {
@@ -110,36 +117,32 @@ public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBin
                         viewBinding.viewDivider1.setVisibility(View.VISIBLE);
                         viewBinding.layoutMisc.setVisibility(View.VISIBLE);
                         viewBinding.viewDivider2.setVisibility(View.VISIBLE);
-                        viewBinding.buttonWebsite.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                Intent intent = new Intent(Intent.ACTION_VIEW);
-                                intent.setData(Uri.parse(tvShowDetailsResponse.getTvShowDetails().getUrl()));
-                                startActivity(intent);
-                            }
+                        viewBinding.buttonWebsite.setOnClickListener(view -> {
+                            Intent intent = new Intent(Intent.ACTION_VIEW);
+                            intent.setData(Uri.parse(tvShowDetailsResponse.getTvShowDetails().getUrl()));
+                            startActivity(intent);
                         });
                         viewBinding.buttonWebsite.setVisibility(View.VISIBLE);
                         viewBinding.buttonEpisodes.setVisibility(View.VISIBLE);
                         viewBinding.buttonEpisodes.setOnClickListener(view -> {
                             if (episodesBottomSheetDialog == null) {
-                                episodesBottomSheetDialog = new BottomSheetDialog(getContext());
+                                episodesBottomSheetDialog = new BottomSheetDialog(requireContext());
                                 layoutEpisodesBottomSheetBinding = DataBindingUtil.inflate(
                                         LayoutInflater.from(getContext()),
                                         R.layout.layout_episodes_bottom_sheet,
-                                        getView().findViewById(R.id.episodesContainer),
+                                        requireView().findViewById(R.id.episodesContainer),
                                         false);
                                 episodesBottomSheetDialog.setContentView(layoutEpisodesBottomSheetBinding.getRoot());
                                 layoutEpisodesBottomSheetBinding.episodesRcv.setAdapter(
                                         new EpisodesAdapter(tvShowDetailsResponse.getTvShowDetails().getEpisodes()));
                                 layoutEpisodesBottomSheetBinding.textTitle.setText(
-                                        String.format("Episodes | %s", getArguments().getString("name_tvShows"))
-                                );
+                                        String.format("Episodes | %s", tvShow.getName()));
                                 layoutEpisodesBottomSheetBinding.imageClose.setOnClickListener(view1 -> episodesBottomSheetDialog.dismiss());
                                 // --- Optional section start --- //
                                 FrameLayout frameLayout = episodesBottomSheetDialog.findViewById(
                                         com.google.android.material.R.id.design_bottom_sheet
                                 );
-                                if (frameLayout != null){
+                                if (frameLayout != null) {
                                     BottomSheetBehavior<View> bottomSheetBehavior = BottomSheetBehavior.from(frameLayout);
                                     bottomSheetBehavior.setPeekHeight(Resources.getSystem().getDisplayMetrics().heightPixels);
                                     bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
@@ -148,6 +151,17 @@ public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBin
                                 episodesBottomSheetDialog.show();
                             }
                         });
+
+                        viewBinding.imageWatchList.setOnClickListener(view ->
+                                new CompositeDisposable().add(viewModel.addToWatchList(tvShow)
+                                        .subscribeOn(Schedulers.io())
+                                        .observeOn(AndroidSchedulers.mainThread())
+                                        .subscribe(() -> {
+                                            viewBinding.imageWatchList.setImageResource(R.drawable.ic_added);
+                                            Toast.makeText(getContext(), "Đã thêm vào danh sách", Toast.LENGTH_SHORT).show();
+                                        })
+                                ));
+                        viewBinding.imageWatchList.setVisibility(View.VISIBLE);
                         loadBasicTVShowDetails();
                     }
                 });
@@ -176,7 +190,7 @@ public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBin
         for (int i = 0; i < indicators.length; i++) {
             indicators[i] = new ImageView(getContext());
             indicators[i].setImageDrawable(ContextCompat.getDrawable(
-                    getContext(), R.drawable.background_slider_indicator_inactive));
+                    requireContext(), R.drawable.background_slider_indicator_inactive));
             indicators[i].setLayoutParams(layoutParams);
             viewBinding.layoutSliderIndicator.addView(indicators[i]);
         }
@@ -190,20 +204,20 @@ public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBin
             ImageView imageView = (ImageView) viewBinding.layoutSliderIndicator.getChildAt(i);
             if (i == position) {
                 imageView.setImageDrawable(ContextCompat.getDrawable(
-                        getContext(), R.drawable.background_slider_indicator_active));
+                        requireContext(), R.drawable.background_slider_indicator_active));
             } else {
                 imageView.setImageDrawable(ContextCompat.getDrawable(
-                        getContext(), R.drawable.background_slider_indicator_inactive));
+                        requireContext(), R.drawable.background_slider_indicator_inactive));
             }
         }
     }
 
     private void loadBasicTVShowDetails() {
         assert getArguments() != null;
-        viewBinding.setTvShowName(getArguments().getString("name_tvShows"));
-        viewBinding.setNetworkCountry(getArguments().getString("network_tvShows") + " (" + getArguments().getString("country_tvShows") + ")");
-        viewBinding.setStatus(getArguments().getString("status_tvShows"));
-        viewBinding.setStartedDate(getArguments().getString("startDate_tvShows"));
+        viewBinding.setTvShowName(tvShow.getName());
+        viewBinding.setNetworkCountry(tvShow.getNetwork() + " (" + tvShow.getCountry() + ")");
+        viewBinding.setStatus(tvShow.getStatus());
+        viewBinding.setStartedDate(tvShow.getStartDate());
         viewBinding.textName.setVisibility(View.VISIBLE);
         viewBinding.textNetworkCountry.setVisibility(View.VISIBLE);
         viewBinding.textStatus.setVisibility(View.VISIBLE);

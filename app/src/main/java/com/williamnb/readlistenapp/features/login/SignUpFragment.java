@@ -56,27 +56,21 @@ public class SignUpFragment extends BaseFragment<FragmentSignUpBinding, SignUpVi
     public void initializeEvents() {
         viewBinding.btnSignIn.setOnClickListener(view -> findNavController().popBackStack());
         viewBinding.btnBack.setOnClickListener(view -> findNavController().popBackStack());
-        viewBinding.btnSignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isValidSignUpDetails()) {
-                    signUp();
-                }
+        viewBinding.btnSignUp.setOnClickListener(view -> {
+            if (isValidSignUpDetails()) {
+                signUp();
             }
         });
-        viewBinding.layoutImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-                pickImage.launch(intent);
-            }
+        viewBinding.layoutImage.setOnClickListener(view -> {
+            Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            pickImage.launch(intent);
         });
     }
 
     @Override
     public void initializeData() {
-        preferenceManager = new PreferenceManager(getContext());
+        preferenceManager = new PreferenceManager(requireContext());
     }
 
     private void showToast(String message) {
@@ -127,7 +121,7 @@ public class SignUpFragment extends BaseFragment<FragmentSignUpBinding, SignUpVi
                     if (result.getData() != null) {
                         Uri imageUri = result.getData().getData();
                         try {
-                            InputStream inputStream = getContext().getContentResolver().openInputStream(imageUri);
+                            InputStream inputStream = requireContext().getContentResolver().openInputStream(imageUri);
                             Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
                             viewBinding.imvAvatar.setImageBitmap(bitmap);
                             viewBinding.tvAddImage.setVisibility(View.GONE);

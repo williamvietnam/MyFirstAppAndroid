@@ -1,7 +1,6 @@
 package com.williamnb.readlistenapp.features.tvshows.adapter;
 
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -17,9 +16,9 @@ import java.util.List;
 
 public class TVShowAdapter extends RecyclerView.Adapter<TVShowAdapter.TVShowViewHolder> {
 
-    private List<TVShow> tvShows;
+    private final List<TVShow> tvShows;
     private LayoutInflater layoutInflater;
-    private TVShowsListener tvShowsListener;
+    private final TVShowsListener tvShowsListener;
 
     public TVShowAdapter(List<TVShow> tvShows, TVShowsListener tvShowsListener) {
         this.tvShows = tvShows;
@@ -58,12 +57,7 @@ public class TVShowAdapter extends RecyclerView.Adapter<TVShowAdapter.TVShowView
         public void bindTVShow(TVShow tvShow) {
             itemContainerTvShowBinding.setTvShow(tvShow);
             itemContainerTvShowBinding.executePendingBindings();
-            itemContainerTvShowBinding.getRoot().setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    tvShowsListener.onTVShowClicked(tvShow);
-                }
-            });
+            itemContainerTvShowBinding.getRoot().setOnClickListener(view -> tvShowsListener.onTVShowClicked(tvShow));
         }
     }
 }

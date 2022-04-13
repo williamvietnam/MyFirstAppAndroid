@@ -38,7 +38,7 @@ public class ChatMainFragment extends BaseFragment<FragmentChatMainBinding, Chat
     @Override
     public void initializeView() {
         hideBottomNavigationView(true);
-        preferenceManager = new PreferenceManager(getContext());
+        preferenceManager = new PreferenceManager(requireContext());
     }
 
     @Override

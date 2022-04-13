@@ -1,12 +1,10 @@
 package com.williamnb.readlistenapp.features.book;
 
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.lifecycle.ViewModelProvider;
 
-import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentBookMainBinding;
 

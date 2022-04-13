@@ -33,8 +33,8 @@ public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInVi
     @Override
     public void initializeView() {
         hideBottomNavigationView(true);
-        preferenceManager = new PreferenceManager(getContext());
-        if (preferenceManager.getBoolean(Constants.KEY_IS_SIGNED_IN)){
+        preferenceManager = new PreferenceManager(requireContext());
+        if (preferenceManager.getBoolean(Constants.KEY_IS_SIGNED_IN)) {
             findNavController().navigate(R.id.actionToChatMain);
         }
     }
@@ -45,12 +45,9 @@ public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInVi
 
     @Override
     public void initializeEvents() {
-        viewBinding.btnSignIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isValidSignInDetails()) {
-                    signIn();
-                }
+        viewBinding.btnSignIn.setOnClickListener(view -> {
+            if (isValidSignInDetails()) {
+                signIn();
             }
         });
         viewBinding.tvCreateNewAccount.setOnClickListener(view -> findNavController().navigate(R.id.actionSignUp));
@@ -78,7 +75,7 @@ public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInVi
                         preferenceManager.putString(Constants.KEY_NAME, documentSnapshot.getString(Constants.KEY_NAME));
                         preferenceManager.putString(Constants.KEY_IMAGE, documentSnapshot.getString(Constants.KEY_IMAGE));
                         findNavController().navigate(R.id.actionToChatMain);
-                    }else{
+                    } else {
                         loading(false);
                         showToast("Không thể đăng nhập");
                     }

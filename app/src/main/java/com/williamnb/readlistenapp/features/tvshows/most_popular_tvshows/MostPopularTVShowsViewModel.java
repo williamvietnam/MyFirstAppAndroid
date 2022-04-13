@@ -1,5 +1,8 @@
 package com.williamnb.readlistenapp.features.tvshows.most_popular_tvshows;
 
+import android.app.Application;
+
+import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 
 import com.williamnb.readlistenapp.base.BaseViewModel;
@@ -10,7 +13,8 @@ public class MostPopularTVShowsViewModel extends BaseViewModel {
 
     private final MostPopularTvShowsRepository mostPopularTvShowsRepository;
 
-    public MostPopularTVShowsViewModel(){
+    public MostPopularTVShowsViewModel(@NonNull Application application){
+        super(application);
         mostPopularTvShowsRepository = new MostPopularTvShowsRepository();
     }
 

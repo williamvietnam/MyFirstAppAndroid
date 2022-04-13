@@ -51,7 +51,7 @@ VINAPP
     + Java code:
       TODO 1 TODO 2 TODO 3 ...
 
-  4.3 Use case GAME:
+4.3 Use case GAME:
 
 - Ý nghĩa, ứng dụng:
 - Flow of UseCase:

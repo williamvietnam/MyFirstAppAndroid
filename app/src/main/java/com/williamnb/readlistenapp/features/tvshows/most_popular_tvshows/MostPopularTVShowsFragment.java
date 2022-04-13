@@ -1,7 +1,6 @@
 package com.williamnb.readlistenapp.features.tvshows.most_popular_tvshows;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -22,7 +21,7 @@ import java.util.List;
 public class MostPopularTVShowsFragment extends BaseFragment<FragmentMostPopularTvShowsBinding, MostPopularTVShowsViewModel>
         implements TVShowsListener {
 
-    private List<TVShow> tvShows = new ArrayList<>();
+    private final List<TVShow> tvShows = new ArrayList<>();
     private TVShowAdapter tvShowAdapter;
     private int currentPage = 1;
     private int totalAvailablePages = 1;
@@ -64,7 +63,7 @@ public class MostPopularTVShowsFragment extends BaseFragment<FragmentMostPopular
 
     @Override
     public void initializeEvents() {
-
+        viewBinding.btnBack.setOnClickListener(view -> findNavController().popBackStack());
     }
 
     @Override
@@ -75,15 +74,7 @@ public class MostPopularTVShowsFragment extends BaseFragment<FragmentMostPopular
     @Override
     public void onTVShowClicked(TVShow tvShow) {
         Bundle bundle = new Bundle();
-        bundle.putInt("id_tvShows", tvShow.getId());
-        bundle.putString("name_tvShows", tvShow.getName());
-        bundle.putString("startDate_tvShows", tvShow.getStartDate());
-        bundle.putString("country_tvShows", tvShow.getCountry());
-        bundle.putString("network_tvShows", tvShow.getNetwork());
-        bundle.putString("status_tvShows", tvShow.getStatus());
-
-        Log.d("test", String.valueOf(tvShow.getId()));
-
+        bundle.putSerializable("tvShow", tvShow);
         findNavController().navigate(R.id.actionMostPopularToTVShowDetails, bundle);
     }
 
@@ -117,4 +108,21 @@ public class MostPopularTVShowsFragment extends BaseFragment<FragmentMostPopular
             }
         }
     }
+
+/*
+    @Override
+    public void onTVShowClicked(TVShow tvShow) {
+        Bundle bundle = new Bundle();
+        bundle.putInt("id_tvShows", tvShow.getId());
+        bundle.putString("name_tvShows", tvShow.getName());
+        bundle.putString("startDate_tvShows", tvShow.getStartDate());
+        bundle.putString("country_tvShows", tvShow.getCountry());
+        bundle.putString("network_tvShows", tvShow.getNetwork());
+        bundle.putString("status_tvShows", tvShow.getStatus());
+
+        Log.d("test", String.valueOf(tvShow.getId()));
+
+        findNavController().navigate(R.id.actionMostPopularToTVShowDetails, bundle);
+    }
+*/
 }

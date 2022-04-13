@@ -28,9 +28,9 @@ public class TVShow implements Serializable {
     @Expose
     private String startDate;
 
-    @SerializedName("end_date")
-    @Expose
-    private Object endDate;
+//    @SerializedName("end_date")
+//    @Expose
+//    private Object endDate;
 
     @SerializedName("country")
     @Expose
@@ -80,13 +80,13 @@ public class TVShow implements Serializable {
         this.startDate = startDate;
     }
 
-    public Object getEndDate() {
-        return endDate;
-    }
-
-    public void setEndDate(Object endDate) {
-        this.endDate = endDate;
-    }
+//    public Object getEndDate() {
+//        return endDate;
+//    }
+//
+//    public void setEndDate(Object endDate) {
+//        this.endDate = endDate;
+//    }
 
     public String getCountry() {
         return country;

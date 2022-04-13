@@ -68,7 +68,7 @@ public class ChatScreenFragment extends BaseFragment<FragmentChatScreenBinding, 
     public void initializeData() {
         loadReceiverDetails();
 
-        preferenceManager = new PreferenceManager(getContext());
+        preferenceManager = new PreferenceManager(requireContext());
         chatMessages = new ArrayList<>();
         chatAdapter = new ChatAdapter(chatMessages,
                 getBitmapFromEncodedString(receiverUser.getImage()),
@@ -137,6 +137,7 @@ public class ChatScreenFragment extends BaseFragment<FragmentChatScreenBinding, 
     }
 
     private void loadReceiverDetails() {
+        assert getArguments() != null;
         receiverUser = (User) getArguments().getSerializable(Constants.KEY_USER);
         viewBinding.textName.setText(receiverUser.getName());
     }
