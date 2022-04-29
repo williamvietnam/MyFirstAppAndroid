@@ -1,5 +1,6 @@
 package com.williamnb.readlistenapp.features.home.adapter;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,8 +16,8 @@ import com.williamnb.readlistenapp.domain.model.SliderItem;
 import java.util.List;
 
 public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderViewHolder> {
-    private List<SliderItem> sliderItems;
-    private ViewPager2 viewPager2;
+    private final List<SliderItem> sliderItems;
+    private final ViewPager2 viewPager2;
 
     public SliderAdapter(List<SliderItem> sliderItems, ViewPager2 viewPager2) {
         this.sliderItems = sliderItems;
@@ -44,7 +45,7 @@ public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderView
         return sliderItems.size();
     }
 
-    class SliderViewHolder extends RecyclerView.ViewHolder {
+    static class SliderViewHolder extends RecyclerView.ViewHolder {
         private final RoundedImageView resImv;
 
         public SliderViewHolder(@NonNull View itemView) {
@@ -61,7 +62,8 @@ public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderView
         }
     }
 
-    private Runnable runnable = new Runnable() {
+    private final Runnable runnable = new Runnable() {
+        @SuppressLint("NotifyDataSetChanged")
         @Override
         public void run() {
             sliderItems.addAll(sliderItems);
