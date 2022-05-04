@@ -26,6 +26,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
 
     private final Handler sliderHandler = new Handler();
 
+
     @Override
     public FragmentHomeBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
         return FragmentHomeBinding.inflate(inflater, container, false);
@@ -58,6 +59,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
 
     @Override
     public void initializeData() {
+
     }
 
     @SuppressLint("NonConstantResourceId")
@@ -77,14 +79,10 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
                 break;
             }
             case R.id.btnNews: {
-                showNews();
+                findNavController().navigate(R.id.actionHomeToNews);
                 break;
             }
         }
-    }
-
-    private void showNews() {
-        Toast.makeText(getContext(), "Tính năng này đang phát triển", Toast.LENGTH_SHORT).show();
     }
 
     private final Runnable sliderRunnable = () -> {
