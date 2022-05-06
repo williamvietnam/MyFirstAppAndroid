@@ -51,10 +51,10 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
 
     @Override
     public void initializeEvents() {
-        viewBinding.btnMessage.setOnClickListener(this);
-        viewBinding.btnGames.setOnClickListener(this);
-        viewBinding.btnTvShows.setOnClickListener(this);
-        viewBinding.btnNews.setOnClickListener(this);
+        viewBinding.menuAction.btnMessage.setOnClickListener(this);
+        viewBinding.menuAction.btnGames.setOnClickListener(this);
+        viewBinding.menuAction.btnTvShows.setOnClickListener(this);
+        viewBinding.menuAction.btnNews.setOnClickListener(this);
     }
 
     @Override

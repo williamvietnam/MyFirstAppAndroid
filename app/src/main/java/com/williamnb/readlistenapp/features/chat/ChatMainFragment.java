@@ -16,7 +16,7 @@ import com.google.firebase.messaging.FirebaseMessaging;
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentChatMainBinding;
-import com.williamnb.readlistenapp.prefs.PreferenceManager;
+import com.williamnb.readlistenapp.preferences.PreferenceManager;
 import com.williamnb.readlistenapp.utilities.Constants;
 
 import java.util.HashMap;

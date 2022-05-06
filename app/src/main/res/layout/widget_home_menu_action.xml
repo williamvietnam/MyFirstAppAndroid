@@ -12,13 +12,13 @@
         app:cardElevation="4dp">
 
         <LinearLayout
-            android:paddingTop="@dimen/_16sdp"
-            android:paddingBottom="@dimen/_16sdp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/_2sdp"
             android:layout_marginEnd="@dimen/_2sdp"
             android:orientation="vertical"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_16sdp"
             android:visibility="visible">
 
             <LinearLayout
@@ -86,13 +86,13 @@
                             android:gravity="center"
                             android:text="@string/watch_film"
                             android:textColor="#484848"
-                            tools:text="TV &amp; Phim" />
+                            tools:text="@string/watch_film" />
 
                     </LinearLayout>
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/btnContacts"
+                    android:id="@+id/btnMessage"
                     style="@style/ServiceContainer.Action.Container"
                     android:layout_height="match_parent"
                     android:layout_weight="1">
@@ -107,24 +107,24 @@
                         <ImageView
                             style="@style/SupportImage"
                             android:layout_marginTop="@dimen/_8sdp"
-                            android:contentDescription="@string/contact"
+                            android:contentDescription="@string/message"
                             android:src="@drawable/ic_chat" />
 
                         <TextView
                             style="@style/ServiceTitle"
                             android:layout_width="match_parent"
                             android:gravity="center"
-                            android:text="@string/contact"
+                            android:text="@string/message"
                             android:textColor="#484848"
-                            tools:text="@string/contact" />
+                            tools:text="@string/message" />
                     </LinearLayout>
                 </RelativeLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="@dimen/_8sdp"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_64sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:baselineAligned="false"
                 android:fillViewport="true"
                 android:gravity="center_horizontal"
@@ -194,7 +194,6 @@
                             tools:text="@string/foreign_language" />
                     </LinearLayout>
                 </RelativeLayout>
-
 
                 <RelativeLayout
                     android:id="@+id/btnLocations"

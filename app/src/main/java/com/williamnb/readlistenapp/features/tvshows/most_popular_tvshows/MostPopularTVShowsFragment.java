@@ -13,7 +13,7 @@ import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.common.TVShowsListener;
 import com.williamnb.readlistenapp.databinding.FragmentMostPopularTvShowsBinding;
 import com.williamnb.readlistenapp.features.tvshows.adapter.TVShowAdapter;
-import com.williamnb.readlistenapp.remote.models.TVShow;
+import com.williamnb.readlistenapp.domain.models.TVShow;
 
 import java.util.ArrayList;
 import java.util.List;

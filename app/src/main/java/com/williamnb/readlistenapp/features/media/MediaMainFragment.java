@@ -1,6 +1,7 @@
 package com.williamnb.readlistenapp.features.media;
 
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.lifecycle.ViewModelProvider;
@@ -31,11 +32,24 @@ public class MediaMainFragment extends BaseFragment<FragmentMediaMainBinding, Me
 
     @Override
     public void initializeEvents() {
-
+        viewBinding.imageMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSongList();
+            }
+        });
     }
 
     @Override
     public void initializeData() {
+        //TODO
+    }
+
+    /**
+     * SongList: is one Dialog 2/3 screen from right to left show song list
+     * */
+    private void openSongList() {
 
     }
+
 }

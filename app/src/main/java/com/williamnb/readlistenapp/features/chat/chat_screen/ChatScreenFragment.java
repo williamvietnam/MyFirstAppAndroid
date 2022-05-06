@@ -15,11 +15,11 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.williamnb.readlistenapp.base.BaseFragment;
-import com.williamnb.readlistenapp.domain.model.ChatMessage;
-import com.williamnb.readlistenapp.domain.model.User;
+import com.williamnb.readlistenapp.domain.models.ChatMessage;
+import com.williamnb.readlistenapp.domain.models.User;
 import com.williamnb.readlistenapp.databinding.FragmentChatScreenBinding;
 import com.williamnb.readlistenapp.features.chat.adapter.ChatAdapter;
-import com.williamnb.readlistenapp.prefs.PreferenceManager;
+import com.williamnb.readlistenapp.preferences.PreferenceManager;
 import com.williamnb.readlistenapp.utilities.Constants;
 
 import java.text.SimpleDateFormat;

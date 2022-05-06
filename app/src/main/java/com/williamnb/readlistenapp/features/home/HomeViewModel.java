@@ -6,9 +6,9 @@ import androidx.annotation.NonNull;
 
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseViewModel;
-import com.williamnb.readlistenapp.domain.model.Game;
-import com.williamnb.readlistenapp.domain.model.News;
-import com.williamnb.readlistenapp.domain.model.SliderItem;
+import com.williamnb.readlistenapp.domain.models.Game;
+import com.williamnb.readlistenapp.domain.models.News;
+import com.williamnb.readlistenapp.domain.models.SliderItem;
 
 import java.util.ArrayList;
 

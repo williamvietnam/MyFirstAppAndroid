@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.williamnb.readlistenapp.R;
-import com.williamnb.readlistenapp.domain.model.News;
+import com.williamnb.readlistenapp.domain.models.News;
 
 import java.util.List;
 

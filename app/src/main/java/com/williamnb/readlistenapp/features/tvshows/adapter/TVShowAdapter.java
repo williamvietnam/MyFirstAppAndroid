@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.common.TVShowsListener;
 import com.williamnb.readlistenapp.databinding.ItemContainerTvShowBinding;
-import com.williamnb.readlistenapp.remote.models.TVShow;
+import com.williamnb.readlistenapp.domain.models.TVShow;
 
 import java.util.List;
 

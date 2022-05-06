@@ -11,7 +11,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.makeramen.roundedimageview.RoundedImageView;
 import com.williamnb.readlistenapp.R;
-import com.williamnb.readlistenapp.domain.model.SliderItem;
+import com.williamnb.readlistenapp.domain.models.SliderItem;
 
 import java.util.List;
 

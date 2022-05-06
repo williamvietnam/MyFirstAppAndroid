@@ -19,7 +19,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentSignUpBinding;
-import com.williamnb.readlistenapp.prefs.PreferenceManager;
+import com.williamnb.readlistenapp.preferences.PreferenceManager;
 import com.williamnb.readlistenapp.utilities.Constants;
 
 import java.io.ByteArrayOutputStream;

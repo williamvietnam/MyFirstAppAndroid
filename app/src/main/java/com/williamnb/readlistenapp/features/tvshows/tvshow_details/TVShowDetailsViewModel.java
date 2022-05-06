@@ -6,10 +6,10 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 
 import com.williamnb.readlistenapp.base.BaseViewModel;
-import com.williamnb.readlistenapp.domain.database.TVShowDatabase;
-import com.williamnb.readlistenapp.domain.repository.TVShowDetailsRepository;
-import com.williamnb.readlistenapp.remote.models.TVShow;
-import com.williamnb.readlistenapp.remote.responses.TVShowDetailsResponse;
+import com.williamnb.readlistenapp.domain.local.database.TVShowDatabase;
+import com.williamnb.readlistenapp.repositories.TVShowDetailsRepository;
+import com.williamnb.readlistenapp.domain.models.TVShow;
+import com.williamnb.readlistenapp.domain.remote.responses.TVShowDetailsResponse;
 
 import io.reactivex.Completable;
 

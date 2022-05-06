@@ -27,7 +27,7 @@ import com.williamnb.readlistenapp.databinding.FragmentTVShowDetailsBinding;
 import com.williamnb.readlistenapp.databinding.LayoutEpisodesBottomSheetBinding;
 import com.williamnb.readlistenapp.features.tvshows.adapter.EpisodesAdapter;
 import com.williamnb.readlistenapp.features.tvshows.adapter.ImageSliderAdapter;
-import com.williamnb.readlistenapp.remote.models.TVShow;
+import com.williamnb.readlistenapp.domain.models.TVShow;
 
 import java.util.Locale;
 

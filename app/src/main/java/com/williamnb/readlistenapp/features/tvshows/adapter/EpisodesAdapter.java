@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.databinding.ItemContainerEpisodeBinding;
-import com.williamnb.readlistenapp.remote.models.Episode;
+import com.williamnb.readlistenapp.domain.models.Episode;
 
 import java.util.List;
 
