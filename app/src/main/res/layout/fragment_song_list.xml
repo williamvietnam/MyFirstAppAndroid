@@ -2,23 +2,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="@dimen/_8sdp">
+    android:background="@color/white"
+    android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/btnBack"
+        android:id="@+id/btnClose"
         android:layout_width="@dimen/_24sdp"
         android:layout_height="@dimen/_24sdp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_back" />
+        android:src="@drawable/ic_close" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_8sdp"
         android:text="@string/song_list"
         android:textSize="@dimen/_16ssp"
         android:textStyle="bold" />
@@ -26,13 +28,13 @@
     <com.google.android.material.divider.MaterialDivider
         android:layout_width="match_parent"
         android:layout_height="@dimen/_1sdp"
-        android:layout_below="@id/btnBack"
+        android:layout_below="@id/btnClose"
         android:layout_marginTop="@dimen/_3sdp" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/btnBack"
+        android:layout_below="@id/btnClose"
         android:layout_marginTop="@dimen/_8sdp"
         android:scrollbars="none">
 

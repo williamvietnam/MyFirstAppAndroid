@@ -38,7 +38,12 @@
         android:id="@+id/fragmentMedia"
         android:name="com.williamnb.readlistenapp.features.media.MediaMainFragment"
         android:label="MediaMainFragment"
-        tools:layout="@layout/fragment_media_main" />
+        tools:layout="@layout/fragment_media_main">
+        <action
+            android:id="@+id/actionMediaToSongList"
+            app:destination="@id/fragmentSongList" />
+
+    </fragment>
 
     <fragment
         android:id="@+id/fragmentAccount"
@@ -127,4 +132,10 @@
         android:name="com.williamnb.readlistenapp.features.news.NewsFragment"
         android:label="NewsFragment"
         tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/fragmentSongList"
+        android:name="com.williamnb.readlistenapp.features.media.songlist.SongListFragment"
+        android:label="SongListFragment"
+        tools:layout="@layout/fragment_song_list" />
 </navigation>

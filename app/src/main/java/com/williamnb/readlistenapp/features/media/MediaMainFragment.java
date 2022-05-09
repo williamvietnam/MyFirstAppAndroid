@@ -10,6 +10,7 @@ import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentMediaMainBinding;
 
 public class MediaMainFragment extends BaseFragment<FragmentMediaMainBinding, MediaMainViewModel> {
+
     @Override
     public FragmentMediaMainBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
         return FragmentMediaMainBinding.inflate(inflater, container, false);
@@ -32,24 +33,12 @@ public class MediaMainFragment extends BaseFragment<FragmentMediaMainBinding, Me
 
     @Override
     public void initializeEvents() {
-        viewBinding.imageMenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openSongList();
-            }
-        });
+        viewBinding.imageMenu.setOnClickListener(view -> viewBinding.navView.setVisibility(View.VISIBLE));
+        viewBinding.btnClose.setOnClickListener(view -> viewBinding.navView.setVisibility(View.GONE));
     }
 
     @Override
     public void initializeData() {
         //TODO
     }
-
-    /**
-     * SongList: is one Dialog 2/3 screen from right to left show song list
-     * */
-    private void openSongList() {
-
-    }
-
 }

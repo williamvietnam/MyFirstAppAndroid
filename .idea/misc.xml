@@ -4,9 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/MyGithub/VinApp/app/src/main/res/layout/activity_main.xml" value="0.3009833262077811" />
+        <entry key="..\:/MyGithub/VinApp/app/src/main/res/layout/dialog_fragment_song_list.xml" value="0.3009833262077811" />
         <entry key="..\:/MyGithub/VinApp/app/src/main/res/layout/fragment_book_main.xml" value="0.3009833262077811" />
         <entry key="..\:/MyGithub/VinApp/app/src/main/res/layout/fragment_home.xml" value="0.3009833262077811" />
-        <entry key="..\:/MyGithub/VinApp/app/src/main/res/layout/fragment_media_main.xml" value="0.3009833262077811" />
+        <entry key="..\:/MyGithub/VinApp/app/src/main/res/layout/fragment_media_main.xml" value="0.25" />
         <entry key="..\:/MyGithub/VinApp/app/src/main/res/layout/fragment_news.xml" value="0.3009833262077811" />
         <entry key="..\:/MyGithub/VinApp/app/src/main/res/layout/fragment_song_list.xml" value="0.3009833262077811" />
         <entry key="..\:/MyGithub/VinApp/app/src/main/res/layout/fragment_t_v_show_details.xml" value="0.3009833262077811" />
