@@ -13,7 +13,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentSignInBinding;
-import com.williamnb.readlistenapp.preferences.PreferenceManager;
+import com.williamnb.readlistenapp.domain.preferences.PreferenceManager;
 import com.williamnb.readlistenapp.utilities.Constants;
 
 public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInViewModel> {
