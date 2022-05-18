@@ -15,7 +15,7 @@ import com.williamnb.readlistenapp.common.UserListener;
 import com.williamnb.readlistenapp.domain.models.User;
 import com.williamnb.readlistenapp.databinding.FragmentUsersBinding;
 import com.williamnb.readlistenapp.features.chat.adapter.UsersAdapter;
-import com.williamnb.readlistenapp.domain.preferences.PreferenceManager;
+import com.williamnb.readlistenapp.utilities.preferences.PreferenceManager;
 import com.williamnb.readlistenapp.utilities.Constants;
 
 import java.util.ArrayList;

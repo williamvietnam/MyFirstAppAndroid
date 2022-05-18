@@ -1,4 +1,4 @@
-package com.williamnb.readlistenapp.repositories;
+package com.williamnb.readlistenapp.domain.repositories;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;

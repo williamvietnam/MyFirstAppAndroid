@@ -7,7 +7,7 @@ import androidx.lifecycle.LiveData;
 
 import com.williamnb.readlistenapp.base.BaseViewModel;
 import com.williamnb.readlistenapp.domain.local.database.TVShowDatabase;
-import com.williamnb.readlistenapp.repositories.TVShowDetailsRepository;
+import com.williamnb.readlistenapp.domain.repositories.TVShowDetailsRepository;
 import com.williamnb.readlistenapp.domain.models.TVShow;
 import com.williamnb.readlistenapp.domain.remote.responses.TVShowDetailsResponse;
 

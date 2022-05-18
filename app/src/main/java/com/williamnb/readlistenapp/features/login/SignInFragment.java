@@ -4,7 +4,6 @@ import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -13,8 +12,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentSignInBinding;
-import com.williamnb.readlistenapp.domain.preferences.PreferenceManager;
 import com.williamnb.readlistenapp.utilities.Constants;
+import com.williamnb.readlistenapp.utilities.preferences.PreferenceManager;
 
 public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInViewModel> {
 
@@ -55,9 +54,7 @@ public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInVi
     }
 
     @Override
-    public void initializeData() {
-
-    }
+    public void initializeData() {}
 
     private void signIn() {
         loading(true);
@@ -77,7 +74,7 @@ public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInVi
                         findNavController().navigate(R.id.actionToChatMain);
                     } else {
                         loading(false);
-                        showToast("Không thể đăng nhập");
+                        viewModel.showToast("Không thể đăng nhập", getContext());
                     }
                 });
     }
@@ -92,19 +89,15 @@ public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInVi
         }
     }
 
-    private void showToast(String message) {
-        Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
-    }
-
     private Boolean isValidSignInDetails() {
         if (viewBinding.inputAccount.getText().toString().trim().isEmpty()) {
-            showToast("Nhập Email");
+            viewModel.showToast("Nhập Email", getContext());
             return false;
         } else if (!Patterns.EMAIL_ADDRESS.matcher(viewBinding.inputAccount.getText().toString()).matches()) {
-            showToast("Nhập đúng định dạng email");
+            viewModel.showToast("Nhập đúng định dạng email", getContext());
             return false;
         } else if (viewBinding.inputPassword.getText().toString().trim().isEmpty()) {
-            showToast("Nhập mật khẩu");
+            viewModel.showToast("Nhập mật khẩu", getContext());
             return false;
         } else {
             return true;

@@ -1,9 +1,6 @@
 package com.williamnb.readlistenapp.features.chat.chat_screen;
 
 import android.annotation.SuppressLint;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,20 +12,18 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.williamnb.readlistenapp.base.BaseFragment;
+import com.williamnb.readlistenapp.databinding.FragmentChatScreenBinding;
 import com.williamnb.readlistenapp.domain.models.ChatMessage;
 import com.williamnb.readlistenapp.domain.models.User;
-import com.williamnb.readlistenapp.databinding.FragmentChatScreenBinding;
 import com.williamnb.readlistenapp.features.chat.adapter.ChatAdapter;
-import com.williamnb.readlistenapp.domain.preferences.PreferenceManager;
 import com.williamnb.readlistenapp.utilities.Constants;
+import com.williamnb.readlistenapp.utilities.preferences.PreferenceManager;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
 
 public class ChatScreenFragment extends BaseFragment<FragmentChatScreenBinding, ChatScreenViewModel> {
 
@@ -71,7 +66,7 @@ public class ChatScreenFragment extends BaseFragment<FragmentChatScreenBinding, 
         preferenceManager = new PreferenceManager(requireContext());
         chatMessages = new ArrayList<>();
         chatAdapter = new ChatAdapter(chatMessages,
-                getBitmapFromEncodedString(receiverUser.getImage()),
+                viewModel.getBitmapFromEncodedString(receiverUser.getImage()),
                 preferenceManager.getString(Constants.KEY_USER_ID)
         );
         viewBinding.chatRcv.setAdapter(chatAdapter);
@@ -114,7 +109,7 @@ public class ChatScreenFragment extends BaseFragment<FragmentChatScreenBinding, 
                     chatMessage.setSenderId(documentChange.getDocument().getString(Constants.KEY_SENDER_ID));
                     chatMessage.setReceiverId(documentChange.getDocument().getString(Constants.KEY_RECEIVER_ID));
                     chatMessage.setMessage(documentChange.getDocument().getString(Constants.KEY_MESSAGE));
-                    chatMessage.setDateTime(getReadableDateTime(documentChange.getDocument().getDate(Constants.KEY_TIMESTAMP)));
+                    chatMessage.setDateTime(viewModel.getReadableDateTime(documentChange.getDocument().getDate(Constants.KEY_TIMESTAMP)));
                     chatMessage.setDateObject(documentChange.getDocument().getDate(Constants.KEY_TIMESTAMP));
                     chatMessages.add(chatMessage);
                 }
@@ -131,18 +126,9 @@ public class ChatScreenFragment extends BaseFragment<FragmentChatScreenBinding, 
         viewBinding.progressBar.setVisibility(View.GONE);
     };
 
-    private Bitmap getBitmapFromEncodedString(String encodedImage) {
-        byte[] bytes = Base64.decode(encodedImage, Base64.DEFAULT);
-        return BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
-    }
-
     private void loadReceiverDetails() {
         assert getArguments() != null;
         receiverUser = (User) getArguments().getSerializable(Constants.KEY_USER);
         viewBinding.textName.setText(receiverUser.getName());
-    }
-
-    private String getReadableDateTime(Date date) {
-        return new SimpleDateFormat("MMMM dd, yyyy - hh:mm a", Locale.getDefault()).format(date);
     }
 }

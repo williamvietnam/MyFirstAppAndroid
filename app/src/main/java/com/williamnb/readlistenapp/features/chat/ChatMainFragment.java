@@ -16,7 +16,7 @@ import com.google.firebase.messaging.FirebaseMessaging;
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentChatMainBinding;
-import com.williamnb.readlistenapp.domain.preferences.PreferenceManager;
+import com.williamnb.readlistenapp.utilities.preferences.PreferenceManager;
 import com.williamnb.readlistenapp.utilities.Constants;
 
 import java.util.HashMap;
@@ -65,10 +65,6 @@ public class ChatMainFragment extends BaseFragment<FragmentChatMainBinding, Chat
         viewBinding.imageProfile.setImageBitmap(bitmap);
     }
 
-    private void showToast(String message) {
-        Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
-    }
-
     private void getToken() {
         FirebaseMessaging.getInstance().getToken().addOnSuccessListener(this::updateToken);
     }
@@ -81,11 +77,11 @@ public class ChatMainFragment extends BaseFragment<FragmentChatMainBinding, Chat
                 );
         documentReference.update(Constants.KEY_FCM_TOKEN, token)
 //                .addOnSuccessListener(unused -> showToast("Token đã cập nhật thành công"))
-                .addOnFailureListener(e -> showToast("Không thể cập nhật token"));
+                .addOnFailureListener(e -> viewModel.showToast("Không thể cập nhật token", getContext()));
     }
 
     private void signOut() {
-        showToast("Đang đăng xuất...");
+        viewModel.showToast("Đang đăng xuất...", getContext());
         FirebaseFirestore database = FirebaseFirestore.getInstance();
         DocumentReference documentReference =
                 database.collection(Constants.KEY_COLLECTION_USERS).document(
@@ -98,6 +94,6 @@ public class ChatMainFragment extends BaseFragment<FragmentChatMainBinding, Chat
                     preferenceManager.clear();
                     findNavController().navigate(R.id.actionChatMainToHome);
                 })
-                .addOnFailureListener(e -> showToast("Không thể đăng xuất"));
+                .addOnFailureListener(e -> viewModel.showToast("Không thể đăng xuất", getContext()));
     }
 }

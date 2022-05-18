@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 
 import com.williamnb.readlistenapp.base.BaseViewModel;
-import com.williamnb.readlistenapp.repositories.MostPopularTvShowsRepository;
+import com.williamnb.readlistenapp.domain.repositories.MostPopularTvShowsRepository;
 import com.williamnb.readlistenapp.domain.remote.responses.TVShowsResponse;
 
 public class MostPopularTVShowsViewModel extends BaseViewModel {

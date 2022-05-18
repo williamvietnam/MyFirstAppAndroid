@@ -1,4 +1,4 @@
-package com.williamnb.readlistenapp.domain.preferences;
+package com.williamnb.readlistenapp.utilities.preferences;
 
 import android.content.Context;
 import android.content.SharedPreferences;

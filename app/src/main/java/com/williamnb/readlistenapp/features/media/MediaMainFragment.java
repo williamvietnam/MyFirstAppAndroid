@@ -41,4 +41,6 @@ public class MediaMainFragment extends BaseFragment<FragmentMediaMainBinding, Me
     public void initializeData() {
         //TODO
     }
+    //----------------------------------------------------------------------------------------------
+
 }

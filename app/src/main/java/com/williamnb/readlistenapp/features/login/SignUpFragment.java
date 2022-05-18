@@ -5,12 +5,10 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.provider.MediaStore;
-import android.util.Base64;
 import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -19,10 +17,9 @@ import androidx.lifecycle.ViewModelProvider;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentSignUpBinding;
-import com.williamnb.readlistenapp.domain.preferences.PreferenceManager;
+import com.williamnb.readlistenapp.utilities.preferences.PreferenceManager;
 import com.williamnb.readlistenapp.utilities.Constants;
 
-import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.HashMap;
@@ -48,9 +45,7 @@ public class SignUpFragment extends BaseFragment<FragmentSignUpBinding, SignUpVi
     }
 
     @Override
-    public void initializeComponent() {
-
-    }
+    public void initializeComponent() {}
 
     @Override
     public void initializeEvents() {
@@ -73,10 +68,6 @@ public class SignUpFragment extends BaseFragment<FragmentSignUpBinding, SignUpVi
         preferenceManager = new PreferenceManager(requireContext());
     }
 
-    private void showToast(String message) {
-        Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
-    }
-
     private void signUp() {
         loading(true);
         FirebaseFirestore database = FirebaseFirestore.getInstance();
@@ -94,24 +85,11 @@ public class SignUpFragment extends BaseFragment<FragmentSignUpBinding, SignUpVi
                     preferenceManager.putString(Constants.KEY_NAME, viewBinding.inputName.getText().toString());
                     preferenceManager.putString(Constants.KEY_IMAGE, encodeImage);
                     findNavController().popBackStack();
-//                    Intent intent = new Intent(getActivity(), ChatFragment.class);
-//                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//                    startActivity(intent);
                 })
                 .addOnFailureListener(exception -> {
                     loading(false);
-                    showToast(exception.getMessage());
+                    viewModel.showToast(exception.getMessage(), getContext());
                 });
-    }
-
-    private String encodeImage(Bitmap bitmap) {
-        int previewWidth = 150;
-        int previewHeight = bitmap.getHeight() * previewWidth / bitmap.getWidth();
-        Bitmap previewBitmap = Bitmap.createScaledBitmap(bitmap, previewWidth, previewHeight, false);
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        previewBitmap.compress(Bitmap.CompressFormat.JPEG, 50, byteArrayOutputStream);
-        byte[] bytes = byteArrayOutputStream.toByteArray();
-        return Base64.encodeToString(bytes, Base64.DEFAULT);
     }
 
     private final ActivityResultLauncher<Intent> pickImage = registerForActivityResult(
@@ -125,7 +103,7 @@ public class SignUpFragment extends BaseFragment<FragmentSignUpBinding, SignUpVi
                             Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
                             viewBinding.imvAvatar.setImageBitmap(bitmap);
                             viewBinding.tvAddImage.setVisibility(View.GONE);
-                            encodeImage = encodeImage(bitmap);
+                            encodeImage = viewModel.encodeImage(bitmap);
                         } catch (FileNotFoundException e) {
                             e.printStackTrace();
                         }
@@ -136,25 +114,25 @@ public class SignUpFragment extends BaseFragment<FragmentSignUpBinding, SignUpVi
 
     private Boolean isValidSignUpDetails() {
         if (encodeImage == null) {
-            showToast("Thêm ảnh hồ sơ");
+            viewModel.showToast("Thêm ảnh hồ sơ", getContext());
             return false;
         } else if (viewBinding.inputName.getText().toString().trim().isEmpty()) {
-            showToast("Mời nhập Họ Tên");
+            viewModel.showToast("Mời nhập Họ Tên", getContext());
             return false;
         } else if (viewBinding.inputAccount.getText().toString().trim().isEmpty()) {
-            showToast("Mời nhập Tài khoản");
+            viewModel.showToast("Mời nhập Tài khoản", getContext());
             return false;
         } else if (!Patterns.EMAIL_ADDRESS.matcher(viewBinding.inputAccount.getText().toString()).matches()) {
-            showToast("Nhập đúng định dạng Email");
+            viewModel.showToast("Nhập đúng định dạng Email", getContext());
             return false;
         } else if (viewBinding.inputPassword.getText().toString().trim().isEmpty()) {
-            showToast("Nhập mật khẩu");
+            viewModel.showToast("Nhập mật khẩu", getContext());
             return false;
         } else if (viewBinding.inputConfirmPassword.getText().toString().trim().isEmpty()) {
-            showToast("Nhập lại mật khẩu");
+            viewModel.showToast("Nhập lại mật khẩu", getContext());
             return false;
         } else if (!viewBinding.inputPassword.getText().toString().equals(viewBinding.inputConfirmPassword.getText().toString())) {
-            showToast("Mật khẩu và nhập lại mật khẩu phải trùng nhau");
+            viewModel.showToast("Mật khẩu và nhập lại mật khẩu phải trùng nhau", getContext());
             return false;
         } else {
             return true;
