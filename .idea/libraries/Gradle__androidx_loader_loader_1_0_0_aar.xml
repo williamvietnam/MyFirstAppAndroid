@@ -7,13 +7,20 @@
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/3cd599e8a6d28dc0c41c944c5bae7f7b/transformed/loader-1.0.0/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/8099062c5a9a64c7751add10462f8c42/transformed/loader-1.0.0/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/b60cfa7b95bf2ec6a6a70e3c4c082ab8/transformed/loader-1.0.0/res" />
-      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/7343f2d1fe40462187b5ce34d7b72f28/transformed/loader-1.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/7343f2d1fe40462187b5ce34d7b72f28/transformed/loader-1.0.0/res" />
-      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/7343f2d1fe40462187b5ce34d7b72f28/transformed/loader-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/9211ffc9d5157db7d5f82d568a811619/transformed/loader-1.0.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/9121ce502ddcc8c6beac0647c3a09055/transformed/loader-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/9121ce502ddcc8c6beac0647c3a09055/transformed/loader-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/9121ce502ddcc8c6beac0647c3a09055/transformed/loader-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9121ce502ddcc8c6beac0647c3a09055/transformed/loader-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3c8507e1c6b725c5880098da43ed2976/transformed/loader-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3c8507e1c6b725c5880098da43ed2976/transformed/loader-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3c8507e1c6b725c5880098da43ed2976/transformed/loader-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/androidx.loader/loader/1.0.0/b9ef587f3e46c7fe5b00264989764e43ff45cada/loader-1.0.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.loader/loader/1.0.0/b9ef587f3e46c7fe5b00264989764e43ff45cada/loader-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

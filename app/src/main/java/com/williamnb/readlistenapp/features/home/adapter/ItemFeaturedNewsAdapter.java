@@ -10,12 +10,12 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.williamnb.readlistenapp.R;
-import com.williamnb.readlistenapp.data.models.News;
+import com.williamnb.readlistenapp.domain.models.News;
 
 import java.util.List;
 
 public class ItemFeaturedNewsAdapter extends RecyclerView.Adapter<ItemFeaturedNewsAdapter.ViewHolder> {
-    private List<News> newsList;
+    private final List<News> newsList;
 
     public ItemFeaturedNewsAdapter(List<News> newsList) {
         this.newsList = newsList;

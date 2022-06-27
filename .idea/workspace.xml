@@ -2,12 +2,13 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <device id="_device_class_phone" />
+      </config>
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="FCM" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
@@ -15,32 +16,79 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c6b22d5-d19d-424a-83c3-e7605457ee27" name="Default Changelist" comment="VinApp-01: Sign up">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    <list default="true" id="0c6b22d5-d19d-424a-83c3-e7605457ee27" name="Default Changelist" comment="VinApp-17: Coding media function">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/base/BaseFragmentNotRequiredViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/demo/DemoActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/domain/preferences/PreferenceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/utilities/preferences/PreferenceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/ChatMainFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/ChatMainFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/ChatMainViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/ChatMainViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/adapter/ChatAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/adapter/ChatAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/chat_screen/ChatScreenFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/chat_screen/ChatScreenFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/chat_screen/ChatScreenViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/chat_screen/ChatScreenViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/users_list/UsersFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/chat/users_list/UsersFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignInFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignInFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignInViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignInViewModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignUpFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignUpFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_sign_in.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_sign_in.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignUpViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/login/SignUpViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/media/MediaMainFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/media/MediaMainFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/adapter/EpisodesAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/adapter/EpisodesAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/most_popular_tvshows/MostPopularTVShowsViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/most_popular_tvshows/MostPopularTVShowsViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/tvshow_details/TVShowDetailsViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/features/tvshows/tvshow_details/TVShowDetailsViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/repositories/MostPopularTvShowsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/domain/repositories/MostPopularTvShowsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/repositories/SongListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/domain/repositories/SongListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/repositories/TVShowDetailsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/domain/repositories/TVShowDetailsRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[340895254200267]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\GiangNB2\.android\avd\Pixel_5_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ReadListenApp" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ReadListenApp" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ReadListenApp" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="navigationResourceFile" />
         <option value="valueResourceFile" />
         <option value="layoutResourceFile_vertical" />
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="layoutResourceFile" />
         <option value="resourceFile" />
         <option value="Class" />
@@ -63,7 +111,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,8 +136,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android-custom-viewC:/Users/GiangNB2/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED" value="RecyclerView" />
+    <property name="android-custom-viewC:/Users/GiangNB2/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.5.0/8d3b87c7463f55053836b805e014cb238f64757a/material-1.5.0-sources.jar!/com/google/android/material/tabs/TabItem.java_SELECTED" value="TabItem" />
+    <property name="android-custom-viewC:/Users/giang/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.4.1/f9e48179ea0c6ac0080a277b9383f74523f56aa2/appcompat-1.4.1-sources.jar!/androidx/appcompat/widget/AppCompatImageView.java_AppCompatImageView_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/giang/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.4.1/f9e48179ea0c6ac0080a277b9383f74523f56aa2/appcompat-1.4.1-sources.jar!/androidx/appcompat/widget/AppCompatImageView.java_SELECTED" value="AppCompatImageView" />
+    <property name="android-custom-viewC:/Users/giang/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_RecyclerView_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/giang/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED" value="RecyclerView" />
     <property name="android-custom-viewC:/Users/giang/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/androidx.viewpager2/viewpager2/1.0.0/3c3569044e6969f1ee5c3aa03b08e6717a2d782f/viewpager2-1.0.0-sources.jar!/androidx/viewpager2/widget/ViewPager2.java_SELECTED" value="ViewPager2" />
     <property name="android-custom-viewC:/Users/giang/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/androidx.viewpager2/viewpager2/1.0.0/3c3569044e6969f1ee5c3aa03b08e6717a2d782f/viewpager2-1.0.0-sources.jar!/androidx/viewpager2/widget/ViewPager2.java_ViewPager2_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/giang/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/com.github.fornewid/neumorphism/0.3.0/6f977e65df15e6925791ca14e3370920e1459a6d/neumorphism-0.3.0-sources.jar!/soup/neumorphism/NeumorphImageView.kt_NeumorphImageView_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/giang/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/com.github.fornewid/neumorphism/0.3.0/6f977e65df15e6925791ca14e3370920e1459a6d/neumorphism-0.3.0-sources.jar!/soup/neumorphism/NeumorphImageView.kt_SELECTED" value="NeumorphImageView" />
     <property name="android-custom-viewC:/Users/giang/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/com.google.android.material/material/1.5.0/8d3b87c7463f55053836b805e014cb238f64757a/material-1.5.0-sources.jar!/com/google/android/material/button/MaterialButton.java_MaterialButton_DIMENSIONS" value="1080&#10;1920" />
     <property name="android-custom-viewC:/Users/giang/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/com.google.android.material/material/1.5.0/8d3b87c7463f55053836b805e014cb238f64757a/material-1.5.0-sources.jar!/com/google/android/material/button/MaterialButton.java_SELECTED" value="MaterialButton" />
     <property name="android-custom-viewC:/Users/giang/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/com.google.android.material/material/1.6.0-beta01/faf27c277a3480e0a597ab7afffc8f403613badb/material-1.6.0-beta01-sources.jar!/com/google/android/material/button/MaterialButton.java_MaterialButton_DIMENSIONS" value="1080&#10;1920" />
@@ -97,19 +154,27 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projects\AndroidJavaProjects\ReadListenApp\app" />
+      <recent name="F:\MyGithub\VinApp\app\src\main\res\layout" />
+      <recent name="F:\MyGithub\VinApp\app\src\main\res\drawable" />
       <recent name="D:\Projects\AndroidJavaProjects\ReadListenApp\app\src\main\res\drawable-v24" />
-      <recent name="D:\Projects\AndroidJavaProjects\ReadListenApp\app\src\main\res\draw-mock-data\games" />
-      <recent name="D:\Projects\AndroidJavaProjects\ReadListenApp\app\src\main\res\draw-mock-data\news" />
-      <recent name="D:\Projects\AndroidJavaProjects\ReadListenApp\app\src\main\res\drawable" />
+      <recent name="D:\Projects\AndroidJavaProjects\ReadListenApp\app\src\main\res\font" />
+      <recent name="D:\Projects\AndroidJavaProjects\ReadListenApp\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\MyGithub\VinApp\app\src\main\java\com\williamnb\readlistenapp\features\document" />
       <recent name="D:\Projects\AndroidJavaProjects\ReadListenApp\app\src\main\res\drawable-v24" />
       <recent name="D:\Projects\AndroidJavaProjects\ReadListenApp\app\src\main\res\draw-mock-data" />
       <recent name="D:\Projects\AndroidJavaProjects\ReadListenApp\app\src\main\res\draw-mock-data\games" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.williamnb.readlistenapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.williamnb.readlistenapp.common" />
     </key>
   </component>
   <component name="RunManager">
@@ -127,8 +192,6 @@
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
@@ -252,17 +315,223 @@
       <option name="project" value="LOCAL" />
       <updated>1649305172452</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="VinApp-03: Update gradle">
+      <created>1649323247627</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1649323247627</updated>
+    </task>
+    <task id="LOCAL-00012" summary="VinApp-04: Sign out">
+      <created>1649335060475</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1649335060475</updated>
+    </task>
+    <task id="LOCAL-00013" summary="VinApp-05: List user">
+      <created>1649346664417</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1649346664417</updated>
+    </task>
+    <task id="LOCAL-00014" summary="VinApp-06: Change">
+      <created>1649346811403</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1649346811403</updated>
+    </task>
+    <task id="LOCAL-00015" summary="VinApp-06: Change">
+      <created>1649346917161</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1649346917161</updated>
+    </task>
+    <task id="LOCAL-00016" summary="VinApp-07: Realtime message">
+      <created>1649422290338</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1649422290338</updated>
+    </task>
+    <task id="LOCAL-00017" summary="VinApp-07: Realtime message">
+      <created>1649422337935</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1649422337935</updated>
+    </task>
+    <task id="LOCAL-00018" summary="VinApp-08: Setup tvShows">
+      <created>1649423897693</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1649423897693</updated>
+    </task>
+    <task id="LOCAL-00019" summary="VinApp-09: Setup tvShows (continue)">
+      <created>1649440673970</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1649440673970</updated>
+    </task>
+    <task id="LOCAL-00020" summary="VinApp-10: Create list film popular tv shows">
+      <created>1649480156629</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1649480156630</updated>
+    </task>
+    <task id="LOCAL-00021" summary="VinApp-11: Create tv show details">
+      <created>1649487119299</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1649487119299</updated>
+    </task>
+    <task id="LOCAL-00022" summary="VinApp-12: Create tv show details (continue)">
+      <created>1649520423126</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1649520423126</updated>
+    </task>
+    <task id="LOCAL-00023" summary="VinApp-12: Create tv show details (continue)">
+      <created>1649605657646</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1649605657646</updated>
+    </task>
+    <task id="LOCAL-00024" summary="VinApp-13: create button episodes &amp; button website">
+      <created>1649671877051</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1649671877051</updated>
+    </task>
+    <task id="LOCAL-00025" summary="VinApp-13: create button episodes &amp; button website">
+      <created>1649693531331</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1649693531331</updated>
+    </task>
+    <task id="LOCAL-00026" summary="VinApp-14: Use Neumorphism library to create layout music player">
+      <created>1649744719219</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1649744719219</updated>
+    </task>
+    <task id="LOCAL-00027" summary="VinApp-15: test readme.md">
+      <created>1649746853140</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1649746853140</updated>
+    </task>
+    <task id="LOCAL-00028" summary="VinApp-15: test readme.md">
+      <created>1649747569908</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1649747569908</updated>
+    </task>
+    <task id="LOCAL-00029" summary="VinApp-15: test readme.md">
+      <created>1649749027151</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1649749027151</updated>
+    </task>
+    <task id="LOCAL-00030" summary="VinApp-16: Modify position files &amp; folder and custom code">
+      <created>1651811806446</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1651811806446</updated>
+    </task>
+    <task id="LOCAL-00031" summary="VinApp-17: Coding media function">
+      <created>1652058323472</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1652058323472</updated>
+    </task>
+    <task id="LOCAL-00032" summary="VinApp-17: Coding media function">
+      <created>1652345168947</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1652345168947</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
-        <entry key="MAIN">
+        <entry key="48ac7356-a9cf-4ec5-8a1a-bea4722b5fb4">
           <value>
-            <State />
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/Projects/AndroidJavaProjects/ReadListenApp/app/src/main/java/com/williamnb/readlistenapp/common" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="48ac7356-a9cf-4ec5-8a1a-bea4722b5fb4" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -278,6 +547,21 @@
     <MESSAGE value="RLA-23: Write code hideBottomNavigationView" />
     <MESSAGE value="RLA-24: Create layout Sign In" />
     <MESSAGE value="VinApp-01: Sign up" />
-    <option name="LAST_COMMIT_MESSAGE" value="VinApp-01: Sign up" />
+    <MESSAGE value="VinApp-03: Update gradle" />
+    <MESSAGE value="VinApp-04: Sign out" />
+    <MESSAGE value="VinApp-05: List user" />
+    <MESSAGE value="VinApp-06: Change" />
+    <MESSAGE value="VinApp-07: Realtime message" />
+    <MESSAGE value="VinApp-08: Setup tvShows" />
+    <MESSAGE value="VinApp-09: Setup tvShows (continue)" />
+    <MESSAGE value="VinApp-10: Create list film popular tv shows" />
+    <MESSAGE value="VinApp-11: Create tv show details" />
+    <MESSAGE value="VinApp-12: Create tv show details (continue)" />
+    <MESSAGE value="VinApp-13: create button episodes &amp; button website" />
+    <MESSAGE value="VinApp-14: Use Neumorphism library to create layout music player" />
+    <MESSAGE value="VinApp-15: test readme.md" />
+    <MESSAGE value="VinApp-16: Modify position files &amp; folder and custom code" />
+    <MESSAGE value="VinApp-17: Coding media function" />
+    <option name="LAST_COMMIT_MESSAGE" value="VinApp-17: Coding media function" />
   </component>
 </project>

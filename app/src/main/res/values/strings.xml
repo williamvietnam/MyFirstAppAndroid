@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ReadListenApp</string>
+    <string name="app_name">VinApp</string>
     <string name="suggest">Gợi ý</string>
     <string name="book">Sách</string>
     <string name="book_store"><u>Cửa hàng sách</u></string>
@@ -48,6 +48,15 @@
     <string name="add_image">Thêm ảnh</string>
     <string name="confirm_password">Xác nhận mật khẩu</string>
     <string name="name">Họ và Tên</string>
-    <string name="tv_film"><![CDATA[TV & Phim]]></string>
+    <string name="watch_film">Xem phim</string>
     <string name="message">Tin nhắn</string>
+    <string name="select_user">Chọn người dùng</string>
+    <string name="type_message">Soạn tin nhắn</string>
+    <string name="tv_shows_most_popular">Danh sách phim nổi bật</string>
+    <string name="read_more">Đọc tiếp</string>
+    <string name="read_less">Thu gọn</string>
+    <string name="u2022">u2022</string>
+    <string name="website">Website</string>
+    <string name="episodes">Episodes</string>
+    <string name="song_list">Danh sách nhạc</string>
 </resources>

@@ -1,14 +1,23 @@
 package com.williamnb.readlistenapp.features.home;
 
+import android.app.Application;
+
+import androidx.annotation.NonNull;
+
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseViewModel;
-import com.williamnb.readlistenapp.data.models.Game;
-import com.williamnb.readlistenapp.data.models.News;
-import com.williamnb.readlistenapp.data.models.SliderItem;
+import com.williamnb.readlistenapp.domain.models.Game;
+import com.williamnb.readlistenapp.domain.models.News;
+import com.williamnb.readlistenapp.domain.models.SliderItem;
 
 import java.util.ArrayList;
 
 public class HomeViewModel extends BaseViewModel {
+
+    public HomeViewModel(@NonNull Application application) {
+        super(application);
+    }
+
     /**
      *
      **/

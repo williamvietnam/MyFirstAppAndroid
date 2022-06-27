@@ -4,7 +4,6 @@ import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -13,8 +12,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentSignInBinding;
-import com.williamnb.readlistenapp.prefs.PreferenceManager;
 import com.williamnb.readlistenapp.utilities.Constants;
+import com.williamnb.readlistenapp.utilities.preferences.PreferenceManager;
 
 public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInViewModel> {
 
@@ -33,9 +32,9 @@ public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInVi
     @Override
     public void initializeView() {
         hideBottomNavigationView(true);
-        preferenceManager = new PreferenceManager(getContext());
-        if (preferenceManager.getBoolean(Constants.KEY_IS_SIGNED_IN)){
-            findNavController().navigate(R.id.actionToChat);
+        preferenceManager = new PreferenceManager(requireContext());
+        if (preferenceManager.getBoolean(Constants.KEY_IS_SIGNED_IN)) {
+            findNavController().navigate(R.id.actionToChatMain);
         }
     }
 
@@ -45,12 +44,9 @@ public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInVi
 
     @Override
     public void initializeEvents() {
-        viewBinding.btnSignIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isValidSignInDetails()) {
-                    signIn();
-                }
+        viewBinding.btnSignIn.setOnClickListener(view -> {
+            if (isValidSignInDetails()) {
+                signIn();
             }
         });
         viewBinding.tvCreateNewAccount.setOnClickListener(view -> findNavController().navigate(R.id.actionSignUp));
@@ -58,9 +54,7 @@ public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInVi
     }
 
     @Override
-    public void initializeData() {
-
-    }
+    public void initializeData() {}
 
     private void signIn() {
         loading(true);
@@ -77,10 +71,10 @@ public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInVi
                         preferenceManager.putString(Constants.KEY_USER_ID, documentSnapshot.getId());
                         preferenceManager.putString(Constants.KEY_NAME, documentSnapshot.getString(Constants.KEY_NAME));
                         preferenceManager.putString(Constants.KEY_IMAGE, documentSnapshot.getString(Constants.KEY_IMAGE));
-                        findNavController().navigate(R.id.actionToChat);
-                    }else{
+                        findNavController().navigate(R.id.actionToChatMain);
+                    } else {
                         loading(false);
-                        showToast("Không thể đăng nhập");
+                        viewModel.showToast("Không thể đăng nhập", getContext());
                     }
                 });
     }
@@ -95,19 +89,15 @@ public class SignInFragment extends BaseFragment<FragmentSignInBinding, SignInVi
         }
     }
 
-    private void showToast(String message) {
-        Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
-    }
-
     private Boolean isValidSignInDetails() {
         if (viewBinding.inputAccount.getText().toString().trim().isEmpty()) {
-            showToast("Nhập Email");
+            viewModel.showToast("Nhập Email", getContext());
             return false;
         } else if (!Patterns.EMAIL_ADDRESS.matcher(viewBinding.inputAccount.getText().toString()).matches()) {
-            showToast("Nhập đúng định dạng email");
+            viewModel.showToast("Nhập đúng định dạng email", getContext());
             return false;
         } else if (viewBinding.inputPassword.getText().toString().trim().isEmpty()) {
-            showToast("Nhập mật khẩu");
+            viewModel.showToast("Nhập mật khẩu", getContext());
             return false;
         } else {
             return true;

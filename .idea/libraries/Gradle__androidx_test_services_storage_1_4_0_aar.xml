@@ -8,12 +8,19 @@
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/babf5ec38ef74cfbe161691ccbd1930d/transformed/jetified-storage-1.4.0/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/1dc3a3b5149bd635eeba23a4de9b8758/transformed/jetified-storage-1.4.0/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/7356c203061446b62b0569fa8c3d69fe/transformed/jetified-storage-1.4.0/res" />
-      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/7356c203061446b62b0569fa8c3d69fe/transformed/jetified-storage-1.4.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/7356c203061446b62b0569fa8c3d69fe/transformed/jetified-storage-1.4.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/a65cff19128154f4efbde5d133574b82/transformed/jetified-storage-1.4.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/b73a1c78a5ffd5c770098f0733f84557/transformed/jetified-storage-1.4.0/res" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/b73a1c78a5ffd5c770098f0733f84557/transformed/jetified-storage-1.4.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/b73a1c78a5ffd5c770098f0733f84557/transformed/jetified-storage-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b73a1c78a5ffd5c770098f0733f84557/transformed/jetified-storage-1.4.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f0d9c1ef44a81204f3dd67ed99988b99/transformed/jetified-storage-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f0d9c1ef44a81204f3dd67ed99988b99/transformed/jetified-storage-1.4.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f0d9c1ef44a81204f3dd67ed99988b99/transformed/jetified-storage-1.4.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/androidx.test.services/storage/1.4.0/27088f46bc0ab94523a20ccc56aa27e142662396/storage-1.4.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test.services/storage/1.4.0/27088f46bc0ab94523a20ccc56aa27e142662396/storage-1.4.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

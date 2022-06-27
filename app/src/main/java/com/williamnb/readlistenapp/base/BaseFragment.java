@@ -13,7 +13,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.viewbinding.ViewBinding;
 
-import com.williamnb.readlistenapp.features.MainActivity;
+import com.williamnb.readlistenapp.features.main.MainActivity;
 
 public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewModel>
         extends Fragment implements BaseView {
@@ -65,6 +65,7 @@ public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewMo
             activity.hideBottomNavigationView(isHidden);
     }
 
+    @Override
     public NavController findNavController() {
         return Navigation.findNavController(viewBinding.getRoot());
     }

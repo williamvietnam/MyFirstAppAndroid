@@ -1,7 +1,12 @@
 package com.williamnb.readlistenapp.base;
 
-import androidx.lifecycle.ViewModel;
+import android.app.Application;
 
-public abstract class BaseViewModel extends ViewModel {
+import androidx.annotation.NonNull;
+import androidx.lifecycle.AndroidViewModel;
 
+public abstract class BaseViewModel extends AndroidViewModel {
+    public BaseViewModel(@NonNull Application application) {
+        super(application);
+    }
 }

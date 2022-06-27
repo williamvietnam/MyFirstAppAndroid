@@ -13,6 +13,14 @@
         <action
             android:id="@+id/actionSignIn"
             app:destination="@id/fragmentSignIn" />
+
+        <action
+            android:id="@+id/actionHomeToMostPopularTVShows"
+            app:destination="@id/fragmentMostPopularTVShows" />
+
+        <action
+            android:id="@+id/actionHomeToNews"
+            app:destination="@id/fragmentNews" />
     </fragment>
 
     <fragment
@@ -30,7 +38,12 @@
         android:id="@+id/fragmentMedia"
         android:name="com.williamnb.readlistenapp.features.media.MediaMainFragment"
         android:label="MediaMainFragment"
-        tools:layout="@layout/fragment_media_main" />
+        tools:layout="@layout/fragment_media_main">
+        <action
+            android:id="@+id/actionMediaToSongList"
+            app:destination="@id/fragmentSongList" />
+
+    </fragment>
 
     <fragment
         android:id="@+id/fragmentAccount"
@@ -54,8 +67,8 @@
             app:destination="@id/fragmentSignUp" />
 
         <action
-            android:id="@+id/actionToChat"
-            app:destination="@id/fragmentChat" />
+            android:id="@+id/actionToChatMain"
+            app:destination="@id/fragmentChatMain" />
     </fragment>
 
     <fragment
@@ -69,8 +82,60 @@
     </fragment>
 
     <fragment
-        android:id="@+id/fragmentChat"
-        android:name="com.williamnb.readlistenapp.features.chat.ChatFragment"
-        android:label="ChatFragment"
-        tools:layout="@layout/fragment_chat" />
+        android:id="@+id/fragmentChatMain"
+        android:name="com.williamnb.readlistenapp.features.chat.ChatMainFragment"
+        android:label="ChatMainFragment"
+        tools:layout="@layout/fragment_chat_main">
+        <action
+            android:id="@+id/actionChatMainToHome"
+            app:destination="@id/fragmentHome" />
+
+        <action
+            android:id="@+id/actionChatMainToUsersScreen"
+            app:destination="@id/fragmentUsers" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentUsers"
+        android:name="com.williamnb.readlistenapp.features.chat.users_list.UsersFragment"
+        android:label="UsersFragment"
+        tools:layout="@layout/fragment_users">
+        <action
+            android:id="@+id/actionUsersToChatScreen"
+            app:destination="@id/fragmentChatScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentChatScreen"
+        android:name="com.williamnb.readlistenapp.features.chat.chat_screen.ChatScreenFragment"
+        android:label="ChatScreenFragment"
+        tools:layout="@layout/fragment_chat_screen" />
+
+    <fragment
+        android:id="@+id/fragmentMostPopularTVShows"
+        android:name="com.williamnb.readlistenapp.features.tvshows.most_popular_tvshows.MostPopularTVShowsFragment"
+        android:label="MostPopularTVShowsFragment"
+        tools:layout="@layout/fragment_most_popular_tv_shows">
+        <action
+            android:id="@+id/actionMostPopularToTVShowDetails"
+            app:destination="@id/fragmentTVShowDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentTVShowDetails"
+        android:name="com.williamnb.readlistenapp.features.tvshows.tvshow_details.TVShowDetailsFragment"
+        android:label="TVShowDetailsFragment"
+        tools:layout="@layout/fragment_t_v_show_details" />
+
+    <fragment
+        android:id="@+id/fragmentNews"
+        android:name="com.williamnb.readlistenapp.features.news.NewsFragment"
+        android:label="NewsFragment"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/fragmentSongList"
+        android:name="com.williamnb.readlistenapp.features.media.songlist.SongListFragment"
+        android:label="SongListFragment"
+        tools:layout="@layout/fragment_song_list" />
 </navigation>

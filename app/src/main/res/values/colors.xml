@@ -10,12 +10,8 @@
     <color name="background_promotional">#2A323D</color>
     <color name="background">#1F2630</color>
     <color name="action_bar">#00BFA5</color>
-    <color name="colorPrimary">#7b4bff</color>
-    <color name="colorPrimaryDark">#6539ba</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="bgBottomNavigation">#fe485a</color>
 
-<!--Defining color for the chat function-->
+    <!--Defining color for the chat function-->
     <color name="primary">#1C2E46</color>
     <color name="primary_dark">#142232</color>
     <color name="primary_text">#212121</color>
@@ -24,4 +20,24 @@
     <color name="icon_background">#20FFFFFF</color>
     <color name="error">#B00020</color>
     <color name="received_message_background">#090D16</color>
+
+    <!--Defining color for the tvShows-->
+    <color name="colorPrimary">#141A31</color>
+    <color name="colorPrimaryDark">#081029</color>
+    <color name="colorAccent">#0097FB</color>
+    <color name="colorTextIcons">#FFFFFF</color>
+    <color name="colorPrimaryLight">#1E2746</color>
+    <color name="colorTextPrimary">#CBD5ED</color>
+    <color name="colorTextSecondary">#4A5B82</color>
+    <color name="colorTextOther">#FAD303</color>
+    <color name="colorThemeExtra">#FF5252</color>
+
+    <!--Defining color for the media player-->
+    <color name="primary_player">#A3B5BF</color>
+    <color name="background_player">#EBEBEB</color>
+    <color name="primary_text_player">#676767</color>
+    <color name="secondary_text_player">#212121</color>
+    <color name="dark_shadow_player">#C5C5C5</color>
+    <color name="light_shadow_player">#FFFFFF</color>
+
 </resources>

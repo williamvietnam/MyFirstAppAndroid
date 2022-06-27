@@ -8,12 +8,19 @@
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/7decd9ddb14bf19cd17942fc785c7785/transformed/customview-1.1.0/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/9e6148f19242b8af87f67cc89d8ab7a0/transformed/customview-1.1.0/res" />
       <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/a046b7b4f45e927b1381a4f5bdf87314/transformed/customview-1.1.0/res" />
-      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/a046b7b4f45e927b1381a4f5bdf87314/transformed/customview-1.1.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/a046b7b4f45e927b1381a4f5bdf87314/transformed/customview-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/1e7be37034f0d17b4ac92804332396ef/transformed/customview-1.1.0/res" />
+      <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/1f5482fc0ed0f84c882c128bdb4c7256/transformed/customview-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/1f5482fc0ed0f84c882c128bdb4c7256/transformed/customview-1.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.jdks/corretto-11.0.10/caches/transforms-3/1f5482fc0ed0f84c882c128bdb4c7256/transformed/customview-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1f5482fc0ed0f84c882c128bdb4c7256/transformed/customview-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/83b26bdb7a27d0d3f56e7fb8f18aaafb/transformed/customview-1.1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/83b26bdb7a27d0d3f56e7fb8f18aaafb/transformed/customview-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/83b26bdb7a27d0d3f56e7fb8f18aaafb/transformed/customview-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/androidx.customview/customview/1.1.0/be631aafb1eb3f64c9cc57083a21a3321cf2e2e1/customview-1.1.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.customview/customview/1.1.0/be631aafb1eb3f64c9cc57083a21a3321cf2e2e1/customview-1.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

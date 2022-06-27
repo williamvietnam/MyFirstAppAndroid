@@ -1,15 +1,13 @@
 package com.williamnb.readlistenapp.features.home;
 
+import android.annotation.SuppressLint;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.navigation.NavDirections;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.CompositePageTransformer;
@@ -27,6 +25,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
         implements View.OnClickListener {
 
     private final Handler sliderHandler = new Handler();
+
 
     @Override
     public FragmentHomeBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
@@ -52,16 +51,18 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
 
     @Override
     public void initializeEvents() {
-        viewBinding.btnMessage.setOnClickListener(this);
-        viewBinding.btnGames.setOnClickListener(this);
-        viewBinding.btnTvShows.setOnClickListener(this);
-        viewBinding.btnNews.setOnClickListener(this);
+        viewBinding.menuAction.btnMessage.setOnClickListener(this);
+        viewBinding.menuAction.btnGames.setOnClickListener(this);
+        viewBinding.menuAction.btnTvShows.setOnClickListener(this);
+        viewBinding.menuAction.btnNews.setOnClickListener(this);
     }
 
     @Override
     public void initializeData() {
+
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -70,33 +71,22 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
                 break;
             }
             case R.id.btnTvShows: {
-                showTvShows();
+                findNavController().navigate(R.id.actionHomeToMostPopularTVShows);
                 break;
             }
             case R.id.btnMessage: {
-               findNavController().navigate(R.id.actionSignIn);
+                findNavController().navigate(R.id.actionSignIn);
                 break;
             }
             case R.id.btnNews: {
-                showNews();
+                findNavController().navigate(R.id.actionHomeToNews);
                 break;
             }
         }
     }
 
-    private void showNews() {
-        Toast.makeText(getContext(), "Tính năng này đang phát triển", Toast.LENGTH_SHORT).show();
-    }
-
-    private void showTvShows() {
-        Toast.makeText(getContext(), "Tính năng này đang phát triển", Toast.LENGTH_SHORT).show();
-    }
-
-    private final Runnable sliderRunnable = new Runnable() {
-        @Override
-        public void run() {
+    private final Runnable sliderRunnable = () -> {
 //            viewBinding.viewPager2.setCurrentItem(viewBinding.viewPager2.getCurrentItem() + 1);
-        }
     };
 
     private void showSlide() {
@@ -108,12 +98,9 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
 
         CompositePageTransformer compositePageTransformer = new CompositePageTransformer();
         compositePageTransformer.addTransformer(new MarginPageTransformer(24));
-        compositePageTransformer.addTransformer(new ViewPager2.PageTransformer() {
-            @Override
-            public void transformPage(@NonNull View page, float position) {
-                float r = 1 - Math.abs(position);
-                page.setScaleY(0.85f + r * 0.15f);
-            }
+        compositePageTransformer.addTransformer((page, position) -> {
+            float r = 1 - Math.abs(position);
+            page.setScaleY(0.85f + r * 0.15f);
         });
         viewBinding.viewPager2.setPageTransformer(compositePageTransformer);
 
