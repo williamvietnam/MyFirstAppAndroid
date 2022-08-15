@@ -13,7 +13,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.viewbinding.ViewBinding;
 
-import com.williamnb.readlistenapp.features.main.MainActivity;
+import com.williamnb.readlistenapp.ui.features.main.MainActivity;
 
 public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewModel>
         extends Fragment implements BaseView {
