@@ -7,7 +7,7 @@
 
         <variable
             name="tvShow"
-            type="com.williamnb.readlistenapp.domain.models.TVShow" />
+            type="com.williamnb.readlistenapp.data.remote.models.TVShow" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

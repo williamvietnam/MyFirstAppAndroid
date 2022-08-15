@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragmentHome"
-        android:name="com.williamnb.readlistenapp.features.home.HomeFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.home.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home">
         <action
@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/fragmentBook"
-        android:name="com.williamnb.readlistenapp.features.book.BookMainFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.book.BookMainFragment"
         android:label="BookMainFragment"
         tools:layout="@layout/fragment_book_main">
         <action
@@ -36,7 +36,7 @@
 
     <fragment
         android:id="@+id/fragmentMedia"
-        android:name="com.williamnb.readlistenapp.features.media.MediaMainFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.media.MediaMainFragment"
         android:label="MediaMainFragment"
         tools:layout="@layout/fragment_media_main">
         <action
@@ -47,19 +47,19 @@
 
     <fragment
         android:id="@+id/fragmentAccount"
-        android:name="com.williamnb.readlistenapp.features.account.AccountFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.account.AccountFragment"
         android:label="AccountFragment"
         tools:layout="@layout/fragment_account" />
 
     <fragment
         android:id="@+id/fragmentBookStore"
-        android:name="com.williamnb.readlistenapp.features.bookstore.BookStoreFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.bookstore.BookStoreFragment"
         android:label="BookStoreFragment"
         tools:layout="@layout/fragment_book_store" />
 
     <fragment
         android:id="@+id/fragmentSignIn"
-        android:name="com.williamnb.readlistenapp.features.login.SignInFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.login.SignInFragment"
         android:label="SignInFragment"
         tools:layout="@layout/fragment_sign_in">
         <action
@@ -73,7 +73,7 @@
 
     <fragment
         android:id="@+id/fragmentSignUp"
-        android:name="com.williamnb.readlistenapp.features.login.SignUpFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.login.SignUpFragment"
         android:label="SignUpFragment"
         tools:layout="@layout/fragment_sign_up">
         <action
@@ -83,7 +83,7 @@
 
     <fragment
         android:id="@+id/fragmentChatMain"
-        android:name="com.williamnb.readlistenapp.features.chat.ChatMainFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.chat.ChatMainFragment"
         android:label="ChatMainFragment"
         tools:layout="@layout/fragment_chat_main">
         <action
@@ -97,7 +97,7 @@
 
     <fragment
         android:id="@+id/fragmentUsers"
-        android:name="com.williamnb.readlistenapp.features.chat.users_list.UsersFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.chat.users_list.UsersFragment"
         android:label="UsersFragment"
         tools:layout="@layout/fragment_users">
         <action
@@ -107,13 +107,13 @@
 
     <fragment
         android:id="@+id/fragmentChatScreen"
-        android:name="com.williamnb.readlistenapp.features.chat.chat_screen.ChatScreenFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.chat.chat_screen.ChatScreenFragment"
         android:label="ChatScreenFragment"
         tools:layout="@layout/fragment_chat_screen" />
 
     <fragment
         android:id="@+id/fragmentMostPopularTVShows"
-        android:name="com.williamnb.readlistenapp.features.tvshows.most_popular_tvshows.MostPopularTVShowsFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.tvshows.most_popular_tvshows.MostPopularTVShowsFragment"
         android:label="MostPopularTVShowsFragment"
         tools:layout="@layout/fragment_most_popular_tv_shows">
         <action
@@ -123,19 +123,19 @@
 
     <fragment
         android:id="@+id/fragmentTVShowDetails"
-        android:name="com.williamnb.readlistenapp.features.tvshows.tvshow_details.TVShowDetailsFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.tvshows.tvshow_details.TVShowDetailsFragment"
         android:label="TVShowDetailsFragment"
         tools:layout="@layout/fragment_t_v_show_details" />
 
     <fragment
         android:id="@+id/fragmentNews"
-        android:name="com.williamnb.readlistenapp.features.news.NewsFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.news.NewsFragment"
         android:label="NewsFragment"
         tools:layout="@layout/fragment_news" />
 
     <fragment
         android:id="@+id/fragmentSongList"
-        android:name="com.williamnb.readlistenapp.features.media.songlist.SongListFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.media.songlist.SongListFragment"
         android:label="SongListFragment"
         tools:layout="@layout/fragment_song_list" />
 </navigation>

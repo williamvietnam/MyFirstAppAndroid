@@ -1,5 +1,8 @@
 package com.williamnb.readlistenapp.utilities;
 
+/**
+ * Author: William Giang Nguyen | 15/08/2022
+ * */
 public class Constants {
     /**
      * KEY_Preference
@@ -19,11 +22,4 @@ public class Constants {
     public static final String KEY_RECEIVER_ID = "receiverId";
     public static final String KEY_MESSAGE = "message";
     public static final String KEY_TIMESTAMP = "timestamp";
-
-    /**
-     * ApiComponents
-     * */
-    public static class ApiComponents{
-        public static final String BASE_URL = "https://www.episodate.com/api/";
-    }
 }
