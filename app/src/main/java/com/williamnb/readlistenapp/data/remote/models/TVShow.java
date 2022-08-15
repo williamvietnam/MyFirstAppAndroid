@@ -1,4 +1,4 @@
-package com.williamnb.readlistenapp.domain.models;
+package com.williamnb.readlistenapp.data.remote.models;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -8,6 +8,9 @@ import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
+/**
+ * Author: William Giang Nguyen | 15/08/2022
+ * */
 @Entity(tableName = "tvShows")
 public class TVShow implements Serializable {
 
@@ -27,10 +30,6 @@ public class TVShow implements Serializable {
     @SerializedName("start_date")
     @Expose
     private String startDate;
-
-//    @SerializedName("end_date")
-//    @Expose
-//    private Object endDate;
 
     @SerializedName("country")
     @Expose
@@ -79,14 +78,6 @@ public class TVShow implements Serializable {
     public void setStartDate(String startDate) {
         this.startDate = startDate;
     }
-
-//    public Object getEndDate() {
-//        return endDate;
-//    }
-//
-//    public void setEndDate(Object endDate) {
-//        this.endDate = endDate;
-//    }
 
     public String getCountry() {
         return country;

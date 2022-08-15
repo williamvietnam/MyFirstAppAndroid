@@ -1,8 +1,11 @@
-package com.williamnb.readlistenapp.domain.models;
+package com.williamnb.readlistenapp.data.remote.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+/**
+ * Author: William Giang Nguyen | 15/08/2022
+ * */
 public class Episode {
     @SerializedName("season")
     @Expose

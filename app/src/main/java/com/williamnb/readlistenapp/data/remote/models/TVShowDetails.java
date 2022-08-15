@@ -1,10 +1,13 @@
-package com.williamnb.readlistenapp.domain.models;
+package com.williamnb.readlistenapp.data.remote.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/08/2022
+ * */
 public class TVShowDetails {
 
     @SerializedName("id")
@@ -28,12 +31,15 @@ public class TVShowDetails {
     @SerializedName("description_source")
     @Expose
     private String descriptionSource;
+
     @SerializedName("start_date")
     @Expose
     private String startDate;
+
     @SerializedName("end_date")
     @Expose
     private Object endDate;
+
     @SerializedName("country")
     @Expose
     private String country;
