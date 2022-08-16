@@ -18,6 +18,8 @@ public class SignInViewModel extends BaseViewModel {
 
     public SignInViewModel(@NonNull Application application) {
         super(application);
+        isLoading = new MutableLiveData<>();
+        openMainScreen = new MutableLiveData<>();
         this.openMainScreen.setValue(false);
     }
 

@@ -34,6 +34,12 @@ public class SignInActivity extends BaseActivity<ActivitySignInBinding, SignInVi
 
     @Override
     public void initializeEvents() {
+        viewBinding.tvCreateNewAccount.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
         viewBinding.btnSignIn.setOnClickListener(view -> {
             if (isValidSignInDetails()) {
                 viewModel.signIn(

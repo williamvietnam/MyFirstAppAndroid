@@ -4,10 +4,13 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseActivity;
 import com.williamnb.readlistenapp.databinding.ActivitySplashBinding;
 import com.williamnb.readlistenapp.ui.features.login.SignInActivity;
@@ -18,11 +21,9 @@ import com.williamnb.readlistenapp.utilities.Constants;
 public class SplashActivity extends BaseActivity<ActivitySplashBinding, SplashViewModel> {
 
     private final Handler handler = new Handler(Looper.getMainLooper());
-    private final Runnable runnable = new Runnable() {
-        @Override
-        public void run() {
-            decideNextScreen(viewModel.decideNextScreen());
-        }
+    private final Runnable runnable = () -> {
+        decideNextScreen(viewModel.decideNextScreen());
+        Log.d("SplashActivity", "run()...");
     };
 
     @Override
@@ -37,22 +38,23 @@ public class SplashActivity extends BaseActivity<ActivitySplashBinding, SplashVi
 
     @Override
     public void initializeView() {
+        viewBinding.imageSplash.setVisibility(View.VISIBLE);
+        viewBinding.imageSplash.setImageResource(R.drawable.ic_splash);
+        viewBinding.tvAuthor.setVisibility(View.VISIBLE);
+        viewBinding.tvAuthor.setText(R.string.author);
         this.handler.postDelayed(this.runnable, 1500);
     }
 
     @Override
     public void initializeComponent() {
-
     }
 
     @Override
     public void initializeEvents() {
-
     }
 
     @Override
     public void initializeData() {
-
     }
 
     private void decideNextScreen(@NonNull String screen) {

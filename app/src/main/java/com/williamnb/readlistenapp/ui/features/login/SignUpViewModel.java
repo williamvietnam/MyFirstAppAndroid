@@ -22,6 +22,8 @@ public class SignUpViewModel extends BaseViewModel {
 
     public SignUpViewModel(@NonNull Application application) {
         super(application);
+        isLoading = new MutableLiveData<>();
+        openSignInScreen = new MutableLiveData<>();
         this.openSignInScreen.setValue(false);
     }
 

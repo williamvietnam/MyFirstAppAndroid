@@ -9,15 +9,12 @@ import com.williamnb.readlistenapp.utilities.Constants;
 
 public class SplashViewModel extends BaseViewModel {
 
-    private boolean isLogin = false;
-
     public SplashViewModel(@NonNull Application application) {
         super(application);
     }
 
     public String decideNextScreen() {
-        if (!isLogin) {
-            isLogin = true;
+        if (!getPreferenceManager().getBoolean(Constants.KEY_IS_SIGNED_IN)) {
             return Constants.LOGIN_SCREEN;
         } else {
             return Constants.MAIN_SCREEN;
