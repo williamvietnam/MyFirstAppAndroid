@@ -59,9 +59,9 @@
 
     <fragment
         android:id="@+id/fragmentSignIn"
-        android:name="com.williamnb.readlistenapp.ui.features.login.SignInFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.login.SignInActivity"
         android:label="SignInFragment"
-        tools:layout="@layout/fragment_sign_in">
+        tools:layout="@layout/activity_sign_in">
         <action
             android:id="@+id/actionSignUp"
             app:destination="@id/fragmentSignUp" />
@@ -73,9 +73,9 @@
 
     <fragment
         android:id="@+id/fragmentSignUp"
-        android:name="com.williamnb.readlistenapp.ui.features.login.SignUpFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.login.SignUpActivity"
         android:label="SignUpFragment"
-        tools:layout="@layout/fragment_sign_up">
+        tools:layout="@layout/activity_sign_up">
         <action
             android:id="@+id/actionSignIn"
             app:destination="@id/fragmentSignIn" />

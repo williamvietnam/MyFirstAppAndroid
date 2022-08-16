@@ -2,11 +2,11 @@ package com.williamnb.readlistenapp.utilities;
 
 /**
  * Author: William Giang Nguyen | 15/08/2022
- * */
+ */
 public class Constants {
     /**
      * KEY_Preference
-     * */
+     */
     public static final String KEY_COLLECTION_USERS = "user";
     public static final String KEY_NAME = "name";
     public static final String KEY_EMAIL = "email";
@@ -22,4 +22,9 @@ public class Constants {
     public static final String KEY_RECEIVER_ID = "receiverId";
     public static final String KEY_MESSAGE = "message";
     public static final String KEY_TIMESTAMP = "timestamp";
+
+    //Splash screen
+    public static final String MAIN_SCREEN = "MAIN_SCREEN";
+    public static final String LOGIN_SCREEN = "LOGIN_SCREEN";
+    public static final String WELCOME_SCREEN = "WELCOME_SCREEN";
 }
