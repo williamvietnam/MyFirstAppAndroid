@@ -10,8 +10,8 @@ import androidx.viewbinding.ViewBinding;
 public abstract class BaseActivity<VB extends ViewBinding, VM extends BaseViewModel>
         extends AppCompatActivity implements BaseActivityView {
 
-    protected VB viewBinding;
-    protected VM viewModel;
+    public VB viewBinding;
+    public VM viewModel;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,9 +31,9 @@ public abstract class BaseActivity<VB extends ViewBinding, VM extends BaseViewMo
 
     @Override
     protected void onDestroy() {
-        super.onDestroy();
         viewBinding = null;
         Log.d(getClass().getName(), "onDestroy()...");
+        super.onDestroy();
     }
 
     protected abstract VB getActivityBinding();

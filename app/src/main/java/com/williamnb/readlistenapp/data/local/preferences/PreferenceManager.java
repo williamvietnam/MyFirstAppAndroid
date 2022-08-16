@@ -3,12 +3,14 @@ package com.williamnb.readlistenapp.data.local.preferences;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import androidx.annotation.NonNull;
+
 import com.williamnb.readlistenapp.utilities.Constants;
 
 public class PreferenceManager {
     private final SharedPreferences sharedPreferences;
 
-    public PreferenceManager(Context context){
+    public PreferenceManager(@NonNull Context context){
         sharedPreferences = context.getSharedPreferences(Constants.KEY_PREFERENCE_NAME, Context.MODE_PRIVATE);
     }
 

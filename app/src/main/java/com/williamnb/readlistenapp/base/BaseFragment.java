@@ -17,8 +17,9 @@ import com.williamnb.readlistenapp.ui.features.main.MainActivity;
 
 public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewModel>
         extends Fragment implements BaseView {
-    protected VB viewBinding;
-    protected VM viewModel;
+
+    public VB viewBinding;
+    public VM viewModel;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -54,12 +55,12 @@ public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewMo
     }
 
     @Override
-    public void initializeDestroyView(){
+    public void initializeDestroyView() {
 
     }
 
     @Override
-    public void hideBottomNavigationView(boolean isHidden){
+    public void hideBottomNavigationView(boolean isHidden) {
         MainActivity activity = (MainActivity) getActivity();
         if (activity != null)
             activity.hideBottomNavigationView(isHidden);

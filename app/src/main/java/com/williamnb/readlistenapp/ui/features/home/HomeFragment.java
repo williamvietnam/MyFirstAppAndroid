@@ -2,6 +2,7 @@ package com.williamnb.readlistenapp.ui.features.home;
 
 import android.annotation.SuppressLint;
 import android.os.Handler;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,8 +25,7 @@ import com.williamnb.readlistenapp.ui.features.home.adapter.SliderAdapter;
 public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewModel>
         implements View.OnClickListener {
 
-    private final Handler sliderHandler = new Handler();
-
+    private final Handler sliderHandler = new Handler(Looper.getMainLooper());
 
     @Override
     public FragmentHomeBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
