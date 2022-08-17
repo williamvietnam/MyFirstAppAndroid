@@ -11,7 +11,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
-import com.williamnb.readlistenapp.utilities.listeners.UserListener;
+import com.williamnb.readlistenapp.utilities.callback.ChatCallBack;
 import com.williamnb.readlistenapp.data.local.models.*;
 import com.williamnb.readlistenapp.databinding.FragmentUsersBinding;
 import com.williamnb.readlistenapp.ui.features.chat.adapter.UsersAdapter;
@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UsersFragment extends BaseFragment<FragmentUsersBinding, UsersViewModel>
-        implements UserListener {
+        implements ChatCallBack {
 
     private PreferenceManager preferenceManager;
 

@@ -3,47 +3,42 @@ package com.williamnb.readlistenapp.ui.features.chat.adapter;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Base64;
+import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.makeramen.roundedimageview.RoundedImageView;
-import com.williamnb.readlistenapp.R;
-import com.williamnb.readlistenapp.utilities.listeners.UserListener;
+import com.williamnb.readlistenapp.base.BaseViewHolder;
 import com.williamnb.readlistenapp.data.local.models.User;
+import com.williamnb.readlistenapp.databinding.ItemContainerUserBinding;
+import com.williamnb.readlistenapp.ui.features.chat.users_list.UsersFragment;
+import com.williamnb.readlistenapp.utilities.callback.ChatCallBack;
 
 import java.util.List;
 
-public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> {
+public class UsersAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     private final List<User> userList;
-    private final UserListener userListener;
+    private final ChatCallBack callBack;
 
-    public UsersAdapter(List<User> userList, UserListener userListener) {
+    public UsersAdapter(List<User> userList, ChatCallBack callBack) {
         this.userList = userList;
-        this.userListener = userListener;
+        this.callBack = callBack;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public BaseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View view = layoutInflater.inflate(R.layout.item_container_user, parent, false);
-        return new ViewHolder(view);
+        ItemContainerUserBinding binding = ItemContainerUserBinding.inflate(layoutInflater, parent, false);
+        return new UsersAdapter.UserViewHolder(binding);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        User user = userList.get(position);
-        holder.textName.setText(user.getName());
-        holder.textEmail.setText(user.getEmail());
-        holder.imageProfile.setImageBitmap(getUserImage(user.getImage()));
-        holder.layoutUser.setOnClickListener(view -> userListener.onUserClicked(user));
+    public void onBindViewHolder(@NonNull BaseViewHolder holder, int position) {
+        holder.onBind(position);
     }
 
     @Override
@@ -54,18 +49,32 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
         return 0;
     }
 
-    static class ViewHolder extends RecyclerView.ViewHolder {
-        private final RoundedImageView imageProfile;
-        private final TextView textName;
-        private final TextView textEmail;
-        private final ConstraintLayout layoutUser;
+    class UserViewHolder extends BaseViewHolder {
+        private final ItemContainerUserBinding binding;
 
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            imageProfile = itemView.findViewById(R.id.imageProfile);
-            textName = itemView.findViewById(R.id.textName);
-            textEmail = itemView.findViewById(R.id.textEmail);
-            layoutUser = itemView.findViewById(R.id.layoutUser);
+        public UserViewHolder(@NonNull ItemContainerUserBinding binding) {
+            super(binding.getRoot());
+            this.binding = binding;
+        }
+
+        @Override
+        public void onBind(int position) {
+            super.onBind(position);
+            User item = userList.get(position);
+            binding.textName.setText(item.getName());
+            binding.textEmail.setText(item.getEmail());
+            binding.imageProfile.setImageBitmap(getUserImage(item.getImage()));
+            binding.getRoot().setOnClickListener(view -> {
+                callBack.onUserClicked(item);
+                Log.d(UsersFragment.class.getSimpleName(), "onUserClicked() + " + item.getEmail());
+            });
+        }
+
+        @Override
+        protected void clear() {
+            binding.textName.setText("");
+            binding.textEmail.setText("");
+            binding.imageProfile.setImageBitmap(null);
         }
     }
 
@@ -74,53 +83,3 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
         return BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
     }
 }
-//public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UsersViewHolder> {
-//
-//    private final List<User> userList;
-//
-//    public UsersAdapter(List<User> userList) {
-//        this.userList = userList;
-//    }
-//
-//    @NonNull
-//    @Override
-//    public UsersViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-//        ItemContainerUserBinding itemContainerUserBinding = ItemContainerUserBinding.inflate(
-//                LayoutInflater.from(parent.getContext()),
-//                parent,
-//                false
-//        );
-//
-//        return new UsersViewHolder(itemContainerUserBinding);
-//    }
-//
-//    @Override
-//    public void onBindViewHolder(@NonNull UsersViewHolder holder, int position) {
-//        holder.setUserData(userList.get(position));
-//    }
-//
-//    @Override
-//    public int getItemCount() {
-//        return userList.size();
-//    }
-//
-//    class UsersViewHolder extends RecyclerView.ViewHolder {
-//
-//        ItemContainerUserBinding viewBinding;
-//
-//        public UsersViewHolder(ItemContainerUserBinding itemContainerUserBinding) {
-//            super(itemContainerUserBinding.getRoot());
-//        }
-//
-//        void setUserData(User user) {
-//            viewBinding.textName.setText("abc");
-//            viewBinding.textEmail.setText("abc");
-//            viewBinding.imageProfile.setImageBitmap(getUserImage(user.image));
-//        }
-//    }
-//
-//    private Bitmap getUserImage(String encodedImage) {
-//        byte[] bytes = Base64.decode(encodedImage, Base64.DEFAULT);
-//        return BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
-//    }
-//}

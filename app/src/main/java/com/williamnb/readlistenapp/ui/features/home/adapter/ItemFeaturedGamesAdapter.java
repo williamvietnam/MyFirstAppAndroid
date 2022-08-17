@@ -1,39 +1,41 @@
 package com.williamnb.readlistenapp.ui.features.home.adapter;
 
+import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.williamnb.readlistenapp.R;
+import com.williamnb.readlistenapp.base.BaseViewHolder;
 import com.williamnb.readlistenapp.data.local.models.Game;
+import com.williamnb.readlistenapp.databinding.ItemFeaturedGamesBinding;
+import com.williamnb.readlistenapp.ui.features.home.HomeFragment;
+import com.williamnb.readlistenapp.utilities.callback.HomeCallBack;
 
 import java.util.List;
 
-public class ItemFeaturedGamesAdapter extends RecyclerView.Adapter<ItemFeaturedGamesAdapter.ViewHolder> {
-    private List<Game> gameList;
+public class ItemFeaturedGamesAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
-    public ItemFeaturedGamesAdapter(List<Game> gameList) {
+    private final List<Game> gameList;
+    private final HomeCallBack callBack;
+
+    public ItemFeaturedGamesAdapter(List<Game> gameList, HomeCallBack callBack) {
         this.gameList = gameList;
+        this.callBack = callBack;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View view = layoutInflater.inflate(R.layout.item_featured_games, parent, false);
-        return new ViewHolder(view);
+    public BaseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        ItemFeaturedGamesBinding binding = ItemFeaturedGamesBinding.inflate(inflater, parent, false);
+        return new ItemFeaturedGamesAdapter.FeaturedGamesHolder(binding);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Game game = gameList.get(position);
-        holder.logoGame.setImageResource(game.getLogo());
-        holder.titleGame.setText(game.getTitle());
+    public void onBindViewHolder(@NonNull BaseViewHolder holder, int position) {
+        holder.onBind(position);
     }
 
     @Override
@@ -44,14 +46,29 @@ public class ItemFeaturedGamesAdapter extends RecyclerView.Adapter<ItemFeaturedG
         return 0;
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder {
-        private final ImageView logoGame;
-        private final TextView titleGame;
+    class FeaturedGamesHolder extends BaseViewHolder {
+        private final ItemFeaturedGamesBinding binding;
 
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            logoGame = itemView.findViewById(R.id.logoGame);
-            titleGame = itemView.findViewById(R.id.titleGame);
+        public FeaturedGamesHolder(@NonNull ItemFeaturedGamesBinding binding) {
+            super(binding.getRoot());
+            this.binding = binding;
+        }
+
+        @Override
+        public void onBind(int position) {
+            super.onBind(position);
+            Game item = gameList.get(position);
+            this.binding.logoGame.setImageResource(item.getLogo());
+            this.binding.titleGame.setText(item.getTitle());
+            this.binding.getRoot().setOnClickListener(v -> {
+                callBack.onFeaturedGamesClicked(item);
+                Log.d(HomeFragment.class.getSimpleName(), "FeaturedGamesId: " + item.getId());
+            });
+        }
+
+        @Override
+        protected void clear() {
+            Log.d(HomeFragment.class.getSimpleName(), "Cleared");
         }
     }
 }

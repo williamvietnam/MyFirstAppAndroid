@@ -7,13 +7,14 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.williamnb.readlistenapp.base.BaseViewHolder;
 import com.williamnb.readlistenapp.data.local.models.ChatMessage;
 import com.williamnb.readlistenapp.databinding.ItemContainerReceivedMessageBinding;
 import com.williamnb.readlistenapp.databinding.ItemContainerSentMessageBinding;
 
 import java.util.List;
 
-public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
+public class ChatAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     private final List<ChatMessage> chatMessages;
     private final Bitmap receiverProfileImage;
@@ -30,71 +31,88 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
 
     @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        if (viewType == VIEW_TYPE_SENT){
-            return new SentMessageViewHolder(
-                    ItemContainerSentMessageBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false)
-            );
-        }else{
-            return new ReceivedMessageViewHolder(
-              ItemContainerReceivedMessageBinding.inflate(
-                      LayoutInflater.from(parent.getContext()),
-                      parent,
-                      false
-              )
-            );
+    public BaseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
+        if (viewType == VIEW_TYPE_SENT) {
+            ItemContainerSentMessageBinding binding = ItemContainerSentMessageBinding.inflate(layoutInflater, parent, false);
+            return new ChatAdapter.SentMessageViewHolder(binding);
+        } else {
+            ItemContainerReceivedMessageBinding binding = ItemContainerReceivedMessageBinding.inflate(layoutInflater, parent, false);
+            return new ChatAdapter.ReceivedMessageViewHolder(binding);
         }
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        if(getItemViewType(position) == VIEW_TYPE_SENT){
-            ((SentMessageViewHolder) holder).setData(chatMessages.get(position));
-        }else{
-            ((ReceivedMessageViewHolder) holder).setData(chatMessages.get(position), receiverProfileImage);
+    public void onBindViewHolder(@NonNull BaseViewHolder holder, int position) {
+        if (getItemViewType(position) == VIEW_TYPE_SENT) {
+            ((SentMessageViewHolder) holder).onBind(position);
+        } else {
+            ((ReceivedMessageViewHolder) holder).onBind(position);
         }
     }
 
     @Override
     public int getItemCount() {
-        return chatMessages.size();
+        if (chatMessages != null) {
+            return chatMessages.size();
+        }
+        return 0;
     }
 
     @Override
     public int getItemViewType(int position) {
-        if (chatMessages.get(position).getSenderId().equals(senderId)){
+        if (chatMessages.get(position).getSenderId().equals(senderId)) {
             return VIEW_TYPE_SENT;
-        }else {
+        } else {
             return VIEW_TYPE_RECEIVED;
         }
     }
 
-    static class SentMessageViewHolder extends RecyclerView.ViewHolder {
+    class SentMessageViewHolder extends BaseViewHolder {
         private final ItemContainerSentMessageBinding binding;
 
-        SentMessageViewHolder(ItemContainerSentMessageBinding itemContainerSentMessageBinding) {
+        SentMessageViewHolder(@NonNull ItemContainerSentMessageBinding itemContainerSentMessageBinding) {
             super(itemContainerSentMessageBinding.getRoot());
-            binding = itemContainerSentMessageBinding;
+            this.binding = itemContainerSentMessageBinding;
         }
 
-        void setData(ChatMessage chatMessage) {
-            binding.textMessage.setText(chatMessage.getMessage());
-            binding.textDateTime.setText(chatMessage.getDateTime());
+        @Override
+        public void onBind(int position) {
+            super.onBind(position);
+            ChatMessage item = chatMessages.get(position);
+            this.binding.textMessage.setText(item.getMessage());
+            this.binding.textDateTime.setText(item.getDateTime());
+        }
+
+        @Override
+        protected void clear() {
+            this.binding.textMessage.setText("");
+            this.binding.textDateTime.setText("");
         }
     }
 
-    static class ReceivedMessageViewHolder extends RecyclerView.ViewHolder {
+    class ReceivedMessageViewHolder extends BaseViewHolder {
         private final ItemContainerReceivedMessageBinding binding;
 
-        ReceivedMessageViewHolder(ItemContainerReceivedMessageBinding itemContainerReceivedMessageBinding) {
+        ReceivedMessageViewHolder(@NonNull ItemContainerReceivedMessageBinding itemContainerReceivedMessageBinding) {
             super(itemContainerReceivedMessageBinding.getRoot());
-            binding = itemContainerReceivedMessageBinding;
+            this.binding = itemContainerReceivedMessageBinding;
         }
 
-        void setData(ChatMessage chatMessage, Bitmap receiverProfileImage){
-            binding.textMessage.setText(chatMessage.getMessage());
-            binding.textDateTime.setText(chatMessage.getDateTime());
-            binding.imageProfile.setImageBitmap(receiverProfileImage);
+        @Override
+        public void onBind(int position) {
+            super.onBind(position);
+            ChatMessage item = chatMessages.get(position);
+            this.binding.textMessage.setText(item.getMessage());
+            this.binding.textDateTime.setText(item.getDateTime());
+            this.binding.imageProfile.setImageBitmap(receiverProfileImage);
+        }
+
+        @Override
+        protected void clear() {
+            this.binding.textMessage.setText("");
+            this.binding.textDateTime.setText("");
+            this.binding.imageProfile.setImageBitmap(null);
         }
     }
 }

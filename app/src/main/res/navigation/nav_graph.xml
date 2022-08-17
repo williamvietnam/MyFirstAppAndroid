@@ -10,9 +10,10 @@
         android:name="com.williamnb.readlistenapp.ui.features.home.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home">
+
         <action
-            android:id="@+id/actionSignIn"
-            app:destination="@id/fragmentSignIn" />
+            android:id="@+id/actionHomeToChatMain"
+            app:destination="@id/fragmentChatMain" />
 
         <action
             android:id="@+id/actionHomeToMostPopularTVShows"
@@ -58,34 +59,11 @@
         tools:layout="@layout/fragment_book_store" />
 
     <fragment
-        android:id="@+id/fragmentSignIn"
-        android:name="com.williamnb.readlistenapp.ui.features.login.SignInActivity"
-        android:label="SignInFragment"
-        tools:layout="@layout/activity_sign_in">
-        <action
-            android:id="@+id/actionSignUp"
-            app:destination="@id/fragmentSignUp" />
-
-        <action
-            android:id="@+id/actionToChatMain"
-            app:destination="@id/fragmentChatMain" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/fragmentSignUp"
-        android:name="com.williamnb.readlistenapp.ui.features.login.SignUpActivity"
-        android:label="SignUpFragment"
-        tools:layout="@layout/activity_sign_up">
-        <action
-            android:id="@+id/actionSignIn"
-            app:destination="@id/fragmentSignIn" />
-    </fragment>
-
-    <fragment
         android:id="@+id/fragmentChatMain"
         android:name="com.williamnb.readlistenapp.ui.features.chat.ChatMainFragment"
         android:label="ChatMainFragment"
         tools:layout="@layout/fragment_chat_main">
+
         <action
             android:id="@+id/actionChatMainToHome"
             app:destination="@id/fragmentHome" />

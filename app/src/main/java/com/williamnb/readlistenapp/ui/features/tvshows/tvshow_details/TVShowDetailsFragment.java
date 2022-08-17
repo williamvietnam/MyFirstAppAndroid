@@ -23,6 +23,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
+import com.williamnb.readlistenapp.data.local.database.entities.TVShowEntity;
 import com.williamnb.readlistenapp.databinding.FragmentTVShowDetailsBinding;
 import com.williamnb.readlistenapp.databinding.LayoutEpisodesBottomSheetBinding;
 import com.williamnb.readlistenapp.ui.features.tvshows.adapter.EpisodesAdapter;
@@ -38,6 +39,7 @@ import io.reactivex.schedulers.Schedulers;
 public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBinding, TVShowDetailsViewModel> {
 
     private TVShow tvShow;
+    private TVShowEntity tvShowEntity;
     private BottomSheetDialog episodesBottomSheetDialog;
     private LayoutEpisodesBottomSheetBinding layoutEpisodesBottomSheetBinding;
 
@@ -60,6 +62,7 @@ public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBin
     public void initializeComponent() {
         assert getArguments() != null;
         tvShow = (TVShow) getArguments().getSerializable("tvShow");
+        this.tvShowEntity.setDataTVShowEntity(tvShow);
         getTVShowDetails();
     }
 
@@ -153,7 +156,7 @@ public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBin
                         });
 
                         viewBinding.imageWatchList.setOnClickListener(view ->
-                                new CompositeDisposable().add(viewModel.addToWatchList(tvShow)
+                                new CompositeDisposable().add(viewModel.addToWatchList(tvShowEntity)
                                         .subscribeOn(Schedulers.io())
                                         .observeOn(AndroidSchedulers.mainThread())
                                         .subscribe(() -> {
