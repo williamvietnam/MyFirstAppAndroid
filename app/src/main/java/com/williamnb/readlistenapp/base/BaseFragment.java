@@ -18,13 +18,14 @@ import com.williamnb.readlistenapp.ui.features.main.MainActivity;
 public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewModel>
         extends Fragment implements BaseView {
 
+    private MainActivity mainActivity;
     public VB viewBinding;
     public VM viewModel;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        this.mainActivity = new MainActivity();
         onPostOnCreate();
     }
 
@@ -78,4 +79,8 @@ public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewMo
     }
 
     public abstract VM createViewModel();
+
+    public MainActivity getMainActivity() {
+        return this.mainActivity;
+    }
 }

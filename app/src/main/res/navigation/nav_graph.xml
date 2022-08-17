@@ -65,10 +65,6 @@
         tools:layout="@layout/fragment_chat_main">
 
         <action
-            android:id="@+id/actionChatMainToHome"
-            app:destination="@id/fragmentHome" />
-
-        <action
             android:id="@+id/actionChatMainToUsersScreen"
             app:destination="@id/fragmentUsers" />
     </fragment>
