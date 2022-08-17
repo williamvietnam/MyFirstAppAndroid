@@ -13,8 +13,10 @@ public class SplashViewModel extends BaseViewModel {
         super(application);
     }
 
-    public String decideNextScreen() {
-        if (!getPreferenceManager().getBoolean(Constants.KEY_IS_SIGNED_IN)) {
+    public String handleNextScreen() {
+        if (!getPreferenceManager().getBoolean(Constants.KEY_IS_WELCOME_SHOWED)) {
+            return Constants.WELCOME_SCREEN;
+        } else if (!getPreferenceManager().getBoolean(Constants.KEY_IS_SIGNED_IN)) {
             return Constants.LOGIN_SCREEN;
         } else {
             return Constants.MAIN_SCREEN;

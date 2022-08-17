@@ -15,6 +15,7 @@ import com.williamnb.readlistenapp.base.BaseActivity;
 import com.williamnb.readlistenapp.databinding.ActivitySplashBinding;
 import com.williamnb.readlistenapp.ui.features.login.SignInActivity;
 import com.williamnb.readlistenapp.ui.features.main.MainActivity;
+import com.williamnb.readlistenapp.ui.features.welcome.WelcomeActivity;
 import com.williamnb.readlistenapp.utilities.Constants;
 
 @SuppressLint("CustomSplashScreen")
@@ -22,7 +23,7 @@ public class SplashActivity extends BaseActivity<ActivitySplashBinding, SplashVi
 
     private final Handler handler = new Handler(Looper.getMainLooper());
     private final Runnable runnable = () -> {
-        decideNextScreen(viewModel.decideNextScreen());
+        decideNextScreen(viewModel.handleNextScreen());
         Log.d("SplashActivity", "run()...");
     };
 
@@ -60,7 +61,7 @@ public class SplashActivity extends BaseActivity<ActivitySplashBinding, SplashVi
     private void decideNextScreen(@NonNull String screen) {
         switch (screen) {
             case Constants.WELCOME_SCREEN:
-                //todo
+                startActivity(new Intent(this, WelcomeActivity.class));
                 break;
             case Constants.LOGIN_SCREEN:
                 startActivity(new Intent(this, SignInActivity.class));
