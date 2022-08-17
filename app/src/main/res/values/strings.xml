@@ -61,4 +61,7 @@
     <string name="song_list">Danh sách nhạc</string>
     <string name="splash">splash</string>
     <string name="author">Author: William Giang Nguyen</string>
+    <string name="welcome_start">Bắt đầu</string>
+    <string name="skip">Bỏ qua</string>
+    <string name="image_welcome">image_welcome</string>
 </resources>

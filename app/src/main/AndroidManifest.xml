@@ -28,9 +28,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.features.login.SignInActivity" />
+        <activity
+            android:name=".ui.features.welcome.WelcomeActivity"
+            android:screenOrientation="fullSensor" />
 
-        <activity android:name=".ui.features.login.SignUpActivity" />
+        <activity
+            android:name=".ui.features.login.SignInActivity"
+            android:screenOrientation="fullSensor" />
+
+        <activity
+            android:name=".ui.features.login.SignUpActivity"
+            android:screenOrientation="fullSensor" />
 
         <activity
             android:name=".ui.features.main.MainActivity"

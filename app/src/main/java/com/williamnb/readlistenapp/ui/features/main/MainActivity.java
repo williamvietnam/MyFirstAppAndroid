@@ -1,5 +1,6 @@
 package com.williamnb.readlistenapp.ui.features.main;
 
+import android.content.Intent;
 import android.view.View;
 
 import androidx.lifecycle.ViewModelProvider;
@@ -48,6 +49,12 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewMode
 
     public void hideBottomNavigationView(boolean isHidden) {
         viewBinding.bottomNav.setVisibility(isHidden ? View.GONE : View.VISIBLE);
+    }
+
+    public void getIntentActivity(Class<?> cls) {
+        Intent intent = new Intent(MainActivity.this, cls);
+        startActivity(intent);
+        finish();
     }
 }
 

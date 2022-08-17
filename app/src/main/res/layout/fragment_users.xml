@@ -49,7 +49,7 @@
             android:orientation="vertical"
             android:overScrollMode="never"
             android:padding="@dimen/_20sdp"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/item_container_user" />
 

@@ -7,9 +7,9 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 import com.williamnb.readlistenapp.data.local.database.dao.TVShowDAO;
-import com.williamnb.readlistenapp.data.remote.models.TVShow;
+import com.williamnb.readlistenapp.data.local.database.entities.TVShowEntity;
 
-@Database(entities = TVShow.class, version = 1, exportSchema = false)
+@Database(entities = {TVShowEntity.class}, version = 1, exportSchema = false)
 public abstract class TVShowDatabase extends RoomDatabase {
 
     private static TVShowDatabase tvShowDatabase;
@@ -26,4 +26,5 @@ public abstract class TVShowDatabase extends RoomDatabase {
     }
 
     public abstract TVShowDAO tvShowDAO();
+
 }

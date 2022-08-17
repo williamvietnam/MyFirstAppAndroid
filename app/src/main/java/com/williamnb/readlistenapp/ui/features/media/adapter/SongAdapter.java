@@ -1,88 +1,86 @@
 package com.williamnb.readlistenapp.ui.features.media.adapter;
 
-import android.annotation.SuppressLint;
+import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.williamnb.readlistenapp.utilities.listeners.OnItemClickListener;
-import com.williamnb.readlistenapp.databinding.ItemSongBinding;
+import com.williamnb.readlistenapp.base.BaseViewHolder;
 import com.williamnb.readlistenapp.data.local.models.Song;
+import com.williamnb.readlistenapp.databinding.ItemSongBinding;
+import com.williamnb.readlistenapp.ui.features.media.MediaMainFragment;
+import com.williamnb.readlistenapp.utilities.callback.MediaCallBack;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-public class SongAdapter extends RecyclerView.Adapter<SongAdapter.ViewHolder> {
-    private final ArrayList<Song> data = new ArrayList<>();
+public class SongAdapter extends RecyclerView.Adapter<BaseViewHolder> {
+
+    private final List<Song> songList;
     private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("mm:ss", Locale.US);
-    private OnItemClickListener onItemClickListener;
+    private final MediaCallBack callBack;
 
-    public SongAdapter() {
-
+    public SongAdapter(MediaCallBack callBack, List<Song> songList) {
+        this.callBack = callBack;
+        this.songList = songList;
     }
 
-    @SuppressLint("NotifyDataSetChanged")
     public void submitList(List<Song> data) {
-        this.data.clear();
-        this.data.addAll(data);
+        this.songList.clear();
+        this.songList.addAll(data);
         notifyDataSetChanged();
-    }
-
-    @Override
-    public int getItemCount() {
-        return data.size();
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public BaseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         ItemSongBinding binding = ItemSongBinding.inflate(inflater, parent, false);
-        return new ViewHolder(binding);
+        return new SongAdapter.SongHolder(binding);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.bindViews(position);
+    public void onBindViewHolder(@NonNull BaseViewHolder holder, int position) {
+        holder.onBind(position);
     }
 
-    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
-        this.onItemClickListener = onItemClickListener;
+    @Override
+    public int getItemCount() {
+        if (songList != null) {
+            return songList.size();
+        }
+        return 0;
     }
 
-    // ---------------------------------------------------------------------------------------------
-    class ViewHolder extends RecyclerView.ViewHolder {
+    class SongHolder extends BaseViewHolder {
         private final ItemSongBinding binding;
 
-        public ViewHolder(ItemSongBinding binding) {
+        public SongHolder(@NonNull ItemSongBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
+        }
 
-            binding.getRoot().setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    onItemClickListener.onItemClicked(getAdapterPosition());
-                }
+        @Override
+        public void onBind(int position) {
+            super.onBind(position);
+            Song item = songList.get(position);
+            String durationText = simpleDateFormat.format(new Date(item.getDuration()));
+            binding.txtSongDuration.setText(durationText);
+            binding.txtSongName.setText(item.getTitle());
+            binding.txtSongArtist.setText(item.getArtist());
+            binding.getRoot().setOnClickListener(view -> {
+                callBack.onItemClicked(getAdapterPosition());
+                Log.d(MediaMainFragment.class.getSimpleName(), "SongId: " + item.getId());
             });
         }
 
-        public void bindViews(int position) {
-            Song song = data.get(position);
-
-            binding.txtSongName.setText(song.getTitle());
-            binding.txtSongArtist.setText(song.getArtist());
-
-            long duration = song.getDuration();
-            Date date = new Date(duration);
-            String durationText = simpleDateFormat.format(date);
-            binding.txtSongDuration.setText(durationText);
+        @Override
+        protected void clear() {
+            Log.d(MediaMainFragment.class.getSimpleName(), "Cleared");
         }
     }
-
 }

@@ -24,7 +24,6 @@ public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewMo
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         onPostOnCreate();
     }
 

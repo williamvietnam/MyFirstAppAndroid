@@ -1,41 +1,41 @@
 package com.williamnb.readlistenapp.ui.features.home.adapter;
 
+import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.williamnb.readlistenapp.R;
+import com.williamnb.readlistenapp.base.BaseViewHolder;
 import com.williamnb.readlistenapp.data.local.models.News;
+import com.williamnb.readlistenapp.databinding.ItemFeaturedNewsBinding;
+import com.williamnb.readlistenapp.ui.features.home.HomeFragment;
+import com.williamnb.readlistenapp.utilities.callback.HomeCallBack;
 
 import java.util.List;
 
-public class ItemFeaturedNewsAdapter extends RecyclerView.Adapter<ItemFeaturedNewsAdapter.ViewHolder> {
-    private final List<News> newsList;
+public class ItemFeaturedNewsAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
-    public ItemFeaturedNewsAdapter(List<News> newsList) {
+    private final List<News> newsList;
+    private final HomeCallBack callBack;
+
+    public ItemFeaturedNewsAdapter(List<News> newsList, HomeCallBack callBack) {
         this.newsList = newsList;
+        this.callBack = callBack;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View view = layoutInflater.inflate(R.layout.item_featured_news, parent, false);
-        return new ViewHolder(view);
+    public BaseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        ItemFeaturedNewsBinding binding = ItemFeaturedNewsBinding.inflate(inflater, parent, false);
+        return new ItemFeaturedNewsAdapter.FeaturedNewsHolder(binding);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        News news = newsList.get(position);
-        holder.imvThumbnail.setImageResource(news.getImvThumbnail());
-        holder.tvContent.setText(news.getContent());
-        holder.tvDate.setText(news.getDate());
-        holder.tvNumberView.setText(news.getNumberView());
+    public void onBindViewHolder(@NonNull BaseViewHolder holder, int position) {
+        holder.onBind(position);
     }
 
     @Override
@@ -46,18 +46,31 @@ public class ItemFeaturedNewsAdapter extends RecyclerView.Adapter<ItemFeaturedNe
         return 0;
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder {
-        private final ImageView imvThumbnail;
-        private final TextView tvContent;
-        private final TextView tvDate;
-        private final TextView tvNumberView;
+    class FeaturedNewsHolder extends BaseViewHolder {
+        private final ItemFeaturedNewsBinding binding;
 
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            imvThumbnail = itemView.findViewById(R.id.imvThumbnail);
-            tvContent = itemView.findViewById(R.id.tvContent);
-            tvDate = itemView.findViewById(R.id.tvDate);
-            tvNumberView = itemView.findViewById(R.id.tvNumberViews);
+        public FeaturedNewsHolder(@NonNull ItemFeaturedNewsBinding binding) {
+            super(binding.getRoot());
+            this.binding = binding;
+        }
+
+        @Override
+        public void onBind(int position) {
+            super.onBind(position);
+            News item = newsList.get(position);
+            this.binding.imvThumbnail.setImageResource(item.getImvThumbnail());
+            this.binding.tvContent.setText(item.getContent());
+            this.binding.tvDate.setText(item.getDate());
+            this.binding.tvNumberViews.setText(item.getNumberView());
+            this.binding.getRoot().setOnClickListener(v -> {
+                callBack.onFeaturedNewsClicked(item);
+                Log.d(HomeFragment.class.getSimpleName(), "FeaturedNewsId: " + item.getId());
+            });
+        }
+
+        @Override
+        protected void clear() {
+            Log.d(HomeFragment.class.getSimpleName(), "Cleared");
         }
     }
 }

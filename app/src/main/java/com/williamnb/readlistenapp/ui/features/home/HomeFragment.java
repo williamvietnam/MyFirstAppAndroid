@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,13 +18,17 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
+import com.williamnb.readlistenapp.data.local.models.Game;
+import com.williamnb.readlistenapp.data.local.models.News;
+import com.williamnb.readlistenapp.data.local.models.SliderItem;
 import com.williamnb.readlistenapp.databinding.FragmentHomeBinding;
 import com.williamnb.readlistenapp.ui.features.home.adapter.ItemFeaturedGamesAdapter;
 import com.williamnb.readlistenapp.ui.features.home.adapter.ItemFeaturedNewsAdapter;
 import com.williamnb.readlistenapp.ui.features.home.adapter.SliderAdapter;
+import com.williamnb.readlistenapp.utilities.callback.HomeCallBack;
 
 public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewModel>
-        implements View.OnClickListener {
+        implements View.OnClickListener, HomeCallBack {
 
     private final Handler sliderHandler = new Handler(Looper.getMainLooper());
 
@@ -75,7 +80,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
                 break;
             }
             case R.id.btnMessage: {
-                findNavController().navigate(R.id.actionSignIn);
+                findNavController().navigate(R.id.actionHomeToChatMain);
                 break;
             }
             case R.id.btnNews: {
@@ -90,7 +95,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
     };
 
     private void showSlide() {
-        viewBinding.viewPager2.setAdapter(new SliderAdapter(viewModel.getDataSlide(), viewBinding.viewPager2));
+        viewBinding.viewPager2.setAdapter(new SliderAdapter(viewModel.getDataSlide(), viewBinding.viewPager2, this));
         viewBinding.viewPager2.setClipToPadding(false);
         viewBinding.viewPager2.setClipChildren(false);
         viewBinding.viewPager2.setOffscreenPageLimit(3);
@@ -115,14 +120,29 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
     }
 
     private void showListGames() {
-        ItemFeaturedGamesAdapter itemFeaturedGamesAdapter = new ItemFeaturedGamesAdapter(viewModel.mockDataGames());
+        ItemFeaturedGamesAdapter itemFeaturedGamesAdapter = new ItemFeaturedGamesAdapter(viewModel.mockDataGames(), this);
         viewBinding.rcvGames.setLayoutManager(new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false));
         viewBinding.rcvGames.setAdapter(itemFeaturedGamesAdapter);
     }
 
     private void showListNews() {
-        ItemFeaturedNewsAdapter itemFeaturedNewsAdapter = new ItemFeaturedNewsAdapter(viewModel.mockDataNews());
+        ItemFeaturedNewsAdapter itemFeaturedNewsAdapter = new ItemFeaturedNewsAdapter(viewModel.mockDataNews(), this);
         viewBinding.rcvNews.setLayoutManager(new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false));
         viewBinding.rcvNews.setAdapter(itemFeaturedNewsAdapter);
+    }
+
+    @Override
+    public void onBannerClicked(@NonNull SliderItem item) {
+        Toast.makeText(getContext(),"BannerId: " + item.getId(), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onFeaturedGamesClicked(@NonNull Game item) {
+        Toast.makeText(getContext(), "FeaturedGamesId: " + item.getId(), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onFeaturedNewsClicked(@NonNull News item) {
+        Toast.makeText(getContext(), "FeaturedNewsId: " + item.getId(), Toast.LENGTH_SHORT).show();
     }
 }
