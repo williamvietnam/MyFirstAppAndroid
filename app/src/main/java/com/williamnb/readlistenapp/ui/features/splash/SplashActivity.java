@@ -24,7 +24,7 @@ public class SplashActivity extends BaseActivity<ActivitySplashBinding, SplashVi
     private final Handler handler = new Handler(Looper.getMainLooper());
     private final Runnable runnable = () -> {
         decideNextScreen(viewModel.handleNextScreen());
-        Log.d("SplashActivity", "run()...");
+        Log.d("SplashActivity", "openScreen: " + viewModel.handleNextScreen());
     };
 
     @Override

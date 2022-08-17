@@ -50,6 +50,7 @@ public class UsersViewModel extends BaseViewModel {
                     isShowLoading.setValue(false);
                     String currentUserId = getPreferenceManager().getString(Constants.KEY_USER_ID);
                     if (task.isSuccessful() && task.getResult() != null) {
+                        this.userList.clear();
                         for (QueryDocumentSnapshot queryDocumentSnapshot : task.getResult()) {
                             if (currentUserId.equals(queryDocumentSnapshot.getId())) {
                                 continue;

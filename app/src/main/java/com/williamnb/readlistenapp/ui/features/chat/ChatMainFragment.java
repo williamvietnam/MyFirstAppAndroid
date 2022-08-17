@@ -1,5 +1,6 @@
 package com.williamnb.readlistenapp.ui.features.chat;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Base64;
@@ -12,15 +13,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
-import com.williamnb.readlistenapp.data.local.preferences.PreferenceManager;
 import com.williamnb.readlistenapp.databinding.FragmentChatMainBinding;
 import com.williamnb.readlistenapp.ui.features.login.SignInActivity;
-import com.williamnb.readlistenapp.utilities.Constants;
+import com.williamnb.readlistenapp.ui.features.main.MainActivity;
 
 public class ChatMainFragment extends BaseFragment<FragmentChatMainBinding, ChatMainViewModel> {
 
+    private MainActivity mainActivity;
+
     @Override
     public FragmentChatMainBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
+        mainActivity = new MainActivity();
         return FragmentChatMainBinding.inflate(inflater, container, false);
     }
 
@@ -78,7 +81,9 @@ public class ChatMainFragment extends BaseFragment<FragmentChatMainBinding, Chat
             @Override
             public void onChanged(Boolean isSignedOut) {
                 if (isSignedOut) {
-                    getMainActivity().getIntentActivity(SignInActivity.class);
+                    Intent intent = new Intent(requireActivity(), SignInActivity.class);
+                    startActivity(intent);
+                    requireActivity().finish();
                 }
             }
         };

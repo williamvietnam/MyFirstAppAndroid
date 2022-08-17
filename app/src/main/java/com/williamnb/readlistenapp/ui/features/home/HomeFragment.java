@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -131,17 +132,17 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
     }
 
     @Override
-    public void onBannerClicked(SliderItem item) {
-
+    public void onBannerClicked(@NonNull SliderItem item) {
+        Toast.makeText(getContext(),"BannerId: " + item.getId(), Toast.LENGTH_SHORT).show();
     }
 
     @Override
-    public void onFeaturedGamesClicked(Game item) {
-
+    public void onFeaturedGamesClicked(@NonNull Game item) {
+        Toast.makeText(getContext(), "FeaturedGamesId: " + item.getId(), Toast.LENGTH_SHORT).show();
     }
 
     @Override
-    public void onFeaturedNewsClicked(News item) {
-
+    public void onFeaturedNewsClicked(@NonNull News item) {
+        Toast.makeText(getContext(), "FeaturedNewsId: " + item.getId(), Toast.LENGTH_SHORT).show();
     }
 }

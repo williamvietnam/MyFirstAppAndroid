@@ -70,7 +70,8 @@ public class ChatMainViewModel extends BaseViewModel {
         updates.put(Constants.KEY_FCM_TOKEN, FieldValue.delete());
         documentReference.update(updates)
                 .addOnSuccessListener(unused -> {
-                    getPreferenceManager().clear();
+                    getPreferenceManager().putBoolean(Constants.KEY_IS_SIGNED_IN, false);
+//                    getPreferenceManager().clear();
                     this.isSignedOut.setValue(true);
                 })
                 .addOnFailureListener(e -> showToast("Không thể đăng xuất"));

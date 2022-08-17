@@ -24,7 +24,6 @@ public class SliderAdapter extends RecyclerView.Adapter<BaseViewHolder> {
     private final Runnable runnable = new Runnable() {
         @Override
         public void run() {
-            sliderItems.clear();
             sliderItems.addAll(sliderItems);
             notifyDataSetChanged();
         }
