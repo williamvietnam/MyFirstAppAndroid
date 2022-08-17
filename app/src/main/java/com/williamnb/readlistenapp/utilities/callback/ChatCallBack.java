@@ -1,7 +1,9 @@
-package com.williamnb.readlistenapp.utilities.listeners;
+package com.williamnb.readlistenapp.utilities.callback;
 
 import com.williamnb.readlistenapp.data.local.models.*;
 
-public interface UserListener {
+public interface ChatCallBack {
+
     void onUserClicked(User user);
+
 }

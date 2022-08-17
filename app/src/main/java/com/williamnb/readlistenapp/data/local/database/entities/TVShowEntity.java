@@ -1,46 +1,49 @@
-package com.williamnb.readlistenapp.data.remote.models;
+package com.williamnb.readlistenapp.data.local.database.entities;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
-import java.io.Serializable;
+import com.williamnb.readlistenapp.data.remote.models.TVShow;
 
-/**
- * Author: William Giang Nguyen | 15/08/2022
- */
-public class TVShow implements Serializable {
+@Entity(tableName = "tvshows")
+public class TVShowEntity {
 
-    @SerializedName("id")
-    @Expose
+    @PrimaryKey
     private int id;
 
-    @SerializedName("name")
-    @Expose
+    @ColumnInfo(name = "name")
     private String name;
 
-    @SerializedName("permalink")
-    @Expose
+    @ColumnInfo(name = "permalink")
     private String permalink;
 
-    @SerializedName("start_date")
-    @Expose
+    @ColumnInfo(name = "startDate")
     private String startDate;
 
-    @SerializedName("country")
-    @Expose
+    @ColumnInfo(name = "country")
     private String country;
 
-    @SerializedName("network")
-    @Expose
+    @ColumnInfo(name = "network")
     private String network;
 
-    @SerializedName("status")
-    @Expose
+    @ColumnInfo(name = "status")
     private String status;
 
-    @SerializedName("image_thumbnail_path")
-    @Expose
+    @ColumnInfo(name = "imageThumbnailPath")
     private String imageThumbnailPath;
+
+    public void setDataTVShowEntity(@NonNull TVShow tvShow) {
+        setId(tvShow.getId());
+        setName(tvShow.getName());
+        setPermalink(tvShow.getPermalink());
+        setStartDate(tvShow.getStartDate());
+        setCountry(tvShow.getCountry());
+        setNetwork(tvShow.getNetwork());
+        setStatus(tvShow.getStatus());
+        setImageThumbnailPath(tvShow.getImageThumbnailPath());
+    }
 
     public int getId() {
         return id;

@@ -1,7 +1,7 @@
-package com.williamnb.readlistenapp.utilities.listeners;
+package com.williamnb.readlistenapp.utilities.callback;
 
 import com.williamnb.readlistenapp.data.remote.models.TVShow;
 
-public interface TVShowsListener {
+public interface TVShowsCallBack {
     void onTVShowClicked(TVShow tvShow);
 }

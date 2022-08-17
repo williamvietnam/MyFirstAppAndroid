@@ -6,7 +6,7 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
-import com.williamnb.readlistenapp.data.remote.models.TVShow;
+import com.williamnb.readlistenapp.data.local.database.entities.TVShowEntity;
 
 import java.util.List;
 
@@ -17,11 +17,11 @@ import io.reactivex.Flowable;
 public interface TVShowDAO {
 
     @Query("SELECT * FROM tvshows")
-    Flowable<List<TVShow>> getWatchList();
+    Flowable<List<TVShowEntity>> getWatchList();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    Completable addToWatchlist(TVShow tvShow);
+    Completable addToWatchlist(TVShowEntity tvShow);
 
     @Delete
-    void removeFromWatchlist(TVShow tvShow);
+    void removeFromWatchlist(TVShowEntity tvShow);
 }

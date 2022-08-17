@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
-import com.williamnb.readlistenapp.utilities.listeners.TVShowsListener;
+import com.williamnb.readlistenapp.utilities.callback.TVShowsCallBack;
 import com.williamnb.readlistenapp.databinding.FragmentMostPopularTvShowsBinding;
 import com.williamnb.readlistenapp.ui.features.tvshows.adapter.TVShowAdapter;
 import com.williamnb.readlistenapp.data.remote.models.TVShow;
@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MostPopularTVShowsFragment extends BaseFragment<FragmentMostPopularTvShowsBinding, MostPopularTVShowsViewModel>
-        implements TVShowsListener {
+        implements TVShowsCallBack {
 
     private final List<TVShow> tvShows = new ArrayList<>();
     private TVShowAdapter tvShowAdapter;

@@ -1,5 +1,6 @@
 package com.williamnb.readlistenapp.ui.features.tvshows.adapter;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -8,56 +9,68 @@ import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.williamnb.readlistenapp.R;
-import com.williamnb.readlistenapp.utilities.listeners.TVShowsListener;
-import com.williamnb.readlistenapp.databinding.ItemContainerTvShowBinding;
+import com.williamnb.readlistenapp.base.BaseViewHolder;
 import com.williamnb.readlistenapp.data.remote.models.TVShow;
+import com.williamnb.readlistenapp.databinding.ItemContainerTvShowBinding;
+import com.williamnb.readlistenapp.ui.features.tvshows.most_popular_tvshows.MostPopularTVShowsFragment;
+import com.williamnb.readlistenapp.utilities.callback.TVShowsCallBack;
 
 import java.util.List;
 
-public class TVShowAdapter extends RecyclerView.Adapter<TVShowAdapter.TVShowViewHolder> {
+public class TVShowAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
-    private final List<TVShow> tvShows;
-    private LayoutInflater layoutInflater;
-    private final TVShowsListener tvShowsListener;
+    private final List<TVShow> tvShowList;
+    private final TVShowsCallBack callBack;
 
-    public TVShowAdapter(List<TVShow> tvShows, TVShowsListener tvShowsListener) {
-        this.tvShows = tvShows;
-        this.tvShowsListener = tvShowsListener;
+    public TVShowAdapter(List<TVShow> tvShowList, TVShowsCallBack callBack) {
+        this.tvShowList = tvShowList;
+        this.callBack = callBack;
     }
 
     @NonNull
     @Override
-    public TVShowViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        if (layoutInflater == null) {
-            layoutInflater = LayoutInflater.from(parent.getContext());
-        }
-        ItemContainerTvShowBinding binding = DataBindingUtil.inflate(
-                layoutInflater, R.layout.item_container_tv_show, parent, false);
+    public BaseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        ItemContainerTvShowBinding binding = DataBindingUtil.inflate(inflater, R.layout.item_container_tv_show, parent, false);
         return new TVShowViewHolder(binding);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull TVShowViewHolder holder, int position) {
-        holder.bindTVShow(tvShows.get(position));
+    public void onBindViewHolder(@NonNull BaseViewHolder holder, int position) {
+        holder.onBind(position);
     }
 
     @Override
     public int getItemCount() {
-        return tvShows.size();
+        if (tvShowList != null) {
+            return tvShowList.size();
+        }
+        return 0;
     }
 
-    class TVShowViewHolder extends RecyclerView.ViewHolder {
-        private final ItemContainerTvShowBinding itemContainerTvShowBinding;
+    class TVShowViewHolder extends BaseViewHolder {
+        private final ItemContainerTvShowBinding binding;
 
-        public TVShowViewHolder(ItemContainerTvShowBinding itemContainerTvShowBinding) {
+        public TVShowViewHolder(@NonNull ItemContainerTvShowBinding itemContainerTvShowBinding) {
             super(itemContainerTvShowBinding.getRoot());
-            this.itemContainerTvShowBinding = itemContainerTvShowBinding;
+            this.binding = itemContainerTvShowBinding;
         }
 
-        public void bindTVShow(TVShow tvShow) {
-            itemContainerTvShowBinding.setTvShow(tvShow);
-            itemContainerTvShowBinding.executePendingBindings();
-            itemContainerTvShowBinding.getRoot().setOnClickListener(view -> tvShowsListener.onTVShowClicked(tvShow));
+        @Override
+        public void onBind(int position) {
+            super.onBind(position);
+            TVShow item = tvShowList.get(position);
+            binding.setTvShow(item);
+            binding.executePendingBindings();
+            binding.getRoot().setOnClickListener(view -> {
+                callBack.onTVShowClicked(item);
+                Log.d(MostPopularTVShowsFragment.class.getSimpleName(), "tvShowsId: " + item.getId());
+            });
+        }
+
+        @Override
+        protected void clear() {
+            Log.d(MostPopularTVShowsFragment.class.getSimpleName(), "cleared");
         }
     }
 }

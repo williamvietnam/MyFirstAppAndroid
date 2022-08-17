@@ -8,7 +8,8 @@
     android:orientation="vertical"
     android:overScrollMode="never"
     android:padding="@dimen/_8sdp"
-    android:scrollbars="none">
+    android:scrollbars="none"
+    tools:context=".ui.features.login.SignUpActivity">
 
     <RelativeLayout
         android:layout_width="wrap_content"
