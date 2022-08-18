@@ -23,10 +23,10 @@ public class HomeViewModel extends BaseViewModel {
      **/
     public ArrayList<SliderItem> getDataSlide(){
         ArrayList<SliderItem> sliderItems = new ArrayList<>();
-        sliderItems.add(new SliderItem(R.drawable.slide_1));
-        sliderItems.add(new SliderItem(R.drawable.slide_2));
-        sliderItems.add(new SliderItem(R.drawable.slide_3));
-        sliderItems.add(new SliderItem(R.drawable.slide_4));
+        sliderItems.add(new SliderItem(R.drawable.ic_slide_1));
+        sliderItems.add(new SliderItem(R.drawable.ic_slide_2));
+        sliderItems.add(new SliderItem(R.drawable.ic_slide_3));
+        sliderItems.add(new SliderItem(R.drawable.ic_slide_4));
 
         return sliderItems;
     }

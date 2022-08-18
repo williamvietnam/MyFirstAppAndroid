@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="108dp"
     android:layout_height="wrap_content"
     android:layout_marginEnd="6dp"
@@ -9,7 +10,8 @@
         android:id="@+id/imvBook"
         android:layout_width="88dp"
         android:layout_height="88dp"
-        android:src="@drawable/ic_book_dev_up" />
+        android:src="@drawable/ic_book_dev_up"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/tvBookName"
@@ -33,8 +35,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="2dp"
         android:numStars="5"
-        android:rating="3" />
-
+        tools:rating="3" />
 
     <TextView
         android:id="@+id/tvBookPrice"

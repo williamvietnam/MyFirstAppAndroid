@@ -29,8 +29,13 @@
         android:name="com.williamnb.readlistenapp.ui.features.book.BookMainFragment"
         android:label="BookMainFragment"
         tools:layout="@layout/fragment_book_main">
+
         <action
-            android:id="@+id/actionBookStore"
+            android:id="@+id/actionBookToBookDetail"
+            app:destination="@id/fragmentBookDetail" />
+
+        <action
+            android:id="@+id/actionBookToBookStore"
             app:destination="@id/fragmentBookStore" />
 
     </fragment>
@@ -51,6 +56,12 @@
         android:name="com.williamnb.readlistenapp.ui.features.account.AccountFragment"
         android:label="AccountFragment"
         tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/fragmentBookDetail"
+        android:name="com.williamnb.readlistenapp.ui.features.book.detail.BookDetailFragment"
+        android:label="BookDetailFragment"
+        tools:layout="@layout/fragment_book_detail" />
 
     <fragment
         android:id="@+id/fragmentBookStore"
