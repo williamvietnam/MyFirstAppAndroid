@@ -62,7 +62,11 @@
     <string name="splash">splash</string>
     <string name="author">Author: William Giang Nguyen</string>
     <string name="welcome_start">Bắt đầu</string>
-    <string name="skip">Bỏ qua</string>
+    <string name="skip"><u>Bỏ qua</u></string>
     <string name="image_welcome">image_welcome</string>
     <string name="see_more">Xem thêm</string>
+
+    <string name="welcome_text_1">Tìm hiểu kiến thức cùng những trang sách điện tử</string>
+    <string name="welcome_text_2">Thư giãn đầu óc với tính năng nghe nhạc hấp dẫn</string>
+    <string name="welcome_text_3">Quan sát thế giới qua lăng kính tính năng tin tức</string>
 </resources>

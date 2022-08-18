@@ -21,7 +21,7 @@ public class WelcomeViewModel extends BaseViewModel {
         this.welcomeList = new ArrayList<>();
     }
 
-    public String handleNextScreen(){
+    public String handleNextScreen() {
         getPreferenceManager().putBoolean(Constants.KEY_IS_WELCOME_SHOWED, true);
         if (!getPreferenceManager().getBoolean(Constants.KEY_IS_SIGNED_IN)) {
             return Constants.LOGIN_SCREEN;
@@ -31,9 +31,9 @@ public class WelcomeViewModel extends BaseViewModel {
     }
 
     public List<Welcome> getWelcomeList() {
-        this.welcomeList.add(new Welcome(R.string.author, R.drawable.ic_splash));
-        this.welcomeList.add(new Welcome(R.string.author, R.drawable.ic_splash));
-        this.welcomeList.add(new Welcome(R.string.author, R.drawable.ic_splash));
+        this.welcomeList.add(new Welcome(R.string.welcome_text_1, R.drawable.ic_image_book));
+        this.welcomeList.add(new Welcome(R.string.welcome_text_2, R.drawable.ic_image_music));
+        this.welcomeList.add(new Welcome(R.string.welcome_text_3, R.drawable.ic_image_news));
         return welcomeList;
     }
 }

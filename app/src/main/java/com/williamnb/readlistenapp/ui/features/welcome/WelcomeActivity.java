@@ -16,7 +16,6 @@ import com.williamnb.readlistenapp.ui.features.login.SignInActivity;
 import com.williamnb.readlistenapp.ui.features.main.MainActivity;
 import com.williamnb.readlistenapp.utilities.Constants;
 
-
 public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, WelcomeViewModel> {
 
     private final Handler handler = new Handler(Looper.getMainLooper());
@@ -90,7 +89,7 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
                     viewBinding.btnStart.setVisibility(View.VISIBLE);
                     viewBinding.tvSkip.setVisibility(View.INVISIBLE);
                 } else {
-                    viewBinding.btnStart.setVisibility(View.INVISIBLE);
+                    viewBinding.btnStart.setVisibility(View.VISIBLE);
                 }
             }
         });
