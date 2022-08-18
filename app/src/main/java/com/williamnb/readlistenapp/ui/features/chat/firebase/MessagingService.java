@@ -7,6 +7,9 @@ import androidx.annotation.NonNull;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
+/**
+ * Author: William Giang Nguyen | 15/08/2022
+ */
 public class MessagingService extends FirebaseMessagingService {
     @Override
     public void onNewToken(@NonNull String token) {
@@ -17,6 +20,8 @@ public class MessagingService extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(@NonNull RemoteMessage message) {
         super.onMessageReceived(message);
-        Log.d("FCM", "Message: " + message.getNotification().getBody());
+        if (message.getNotification() != null) {
+            Log.d("FCM", "Message: " + message.getNotification().getBody());
+        }
     }
 }

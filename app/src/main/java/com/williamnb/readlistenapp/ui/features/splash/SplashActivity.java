@@ -71,5 +71,6 @@ public class SplashActivity extends BaseActivity<ActivitySplashBinding, SplashVi
                 startActivity(new Intent(this, MainActivity.class));
                 break;
         }
+        finish();
     }
 }

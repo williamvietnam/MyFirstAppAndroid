@@ -15,6 +15,9 @@ import com.williamnb.readlistenapp.utilities.Constants;
 
 import java.util.HashMap;
 
+/**
+ * Author: William Giang Nguyen | 15/08/2022
+ */
 public class ChatMainViewModel extends BaseViewModel {
 
     private final MutableLiveData<Boolean> isSignedOut;

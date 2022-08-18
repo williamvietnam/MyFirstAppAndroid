@@ -28,4 +28,7 @@ public class Constants {
     public static final String MAIN_SCREEN = "MAIN_SCREEN";
     public static final String LOGIN_SCREEN = "LOGIN_SCREEN";
     public static final String WELCOME_SCREEN = "WELCOME_SCREEN";
+
+    //Book screen
+    public static final String BOOK_DETAIL = "BOOK_DETAIL";
 }

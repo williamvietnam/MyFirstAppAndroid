@@ -18,6 +18,7 @@ public class WelcomeAdapter extends RecyclerView.Adapter<BaseViewHolder> {
     private final List<Welcome> welcomeList;
 
     public WelcomeAdapter(List<Welcome> welcomeList) {
+        Log.d(WelcomeActivity.class.getSimpleName(), "Create WelcomeAdapter");
         this.welcomeList = welcomeList;
     }
 
