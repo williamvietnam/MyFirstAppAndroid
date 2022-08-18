@@ -48,7 +48,6 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
     @Override
     public void initializeComponent() {
         setupViewpager2();
-        viewBinding.btnStart.setVisibility(View.INVISIBLE);
     }
 
     @Override
@@ -103,5 +102,6 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
         } else if (screen.equals(Constants.LOGIN_SCREEN)) {
             startActivity(new Intent(this, SignInActivity.class));
         }
+        finish();
     }
 }

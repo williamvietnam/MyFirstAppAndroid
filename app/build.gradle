@@ -57,6 +57,7 @@ dependencies {
     // Navigation component
     implementation "androidx.navigation:navigation-fragment:$nav_version"
     implementation "androidx.navigation:navigation-ui:$nav_version"
+    testImplementation 'junit:junit:4.13.2'
 
     // Testing Navigation
     androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"

@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -15,15 +16,14 @@ import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentChatMainBinding;
 import com.williamnb.readlistenapp.ui.features.login.SignInActivity;
-import com.williamnb.readlistenapp.ui.features.main.MainActivity;
 
+/**
+ * Author: William Giang Nguyen | 15/08/2022
+ */
 public class ChatMainFragment extends BaseFragment<FragmentChatMainBinding, ChatMainViewModel> {
-
-    private MainActivity mainActivity;
 
     @Override
     public FragmentChatMainBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
-        mainActivity = new MainActivity();
         return FragmentChatMainBinding.inflate(inflater, container, false);
     }
 
@@ -79,7 +79,7 @@ public class ChatMainFragment extends BaseFragment<FragmentChatMainBinding, Chat
 
         final Observer<Boolean> checkSignedOutObserver = new Observer<Boolean>() {
             @Override
-            public void onChanged(Boolean isSignedOut) {
+            public void onChanged(@NonNull Boolean isSignedOut) {
                 if (isSignedOut) {
                     Intent intent = new Intent(requireActivity(), SignInActivity.class);
                     startActivity(intent);

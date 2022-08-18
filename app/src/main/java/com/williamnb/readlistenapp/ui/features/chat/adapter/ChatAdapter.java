@@ -1,6 +1,7 @@
 package com.williamnb.readlistenapp.ui.features.chat.adapter;
 
 import android.graphics.Bitmap;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -11,9 +12,13 @@ import com.williamnb.readlistenapp.base.BaseViewHolder;
 import com.williamnb.readlistenapp.data.local.models.ChatMessage;
 import com.williamnb.readlistenapp.databinding.ItemContainerReceivedMessageBinding;
 import com.williamnb.readlistenapp.databinding.ItemContainerSentMessageBinding;
+import com.williamnb.readlistenapp.ui.features.chat.chat_screen.ChatScreenFragment;
 
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/08/2022
+ */
 public class ChatAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     private final List<ChatMessage> chatMessages;
@@ -24,6 +29,7 @@ public class ChatAdapter extends RecyclerView.Adapter<BaseViewHolder> {
     public static final int VIEW_TYPE_RECEIVED = 2;
 
     public ChatAdapter(List<ChatMessage> chatMessages, Bitmap receiverProfileImage, String senderId) {
+        Log.d(ChatScreenFragment.class.getSimpleName(), "Create ChatAdapter");
         this.chatMessages = chatMessages;
         this.receiverProfileImage = receiverProfileImage;
         this.senderId = senderId;
