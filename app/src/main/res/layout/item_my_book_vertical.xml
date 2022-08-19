@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     android:background="@drawable/bg_item_my_book"
-    android:paddingBottom="6dp">
+    android:paddingBottom="6dp"
+    tools:context=".ui.features.book.adapter.ItemMyBookVerticalAdapter">
 
     <LinearLayout
         android:id="@+id/layout"
