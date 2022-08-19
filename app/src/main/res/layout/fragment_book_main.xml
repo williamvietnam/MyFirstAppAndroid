@@ -73,7 +73,8 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="3dp"
             android:layout_marginEnd="8dp"
-            android:text="@string/book_store" />
+            android:text="@string/book_store"
+            tools:ignore="RelativeOverlap" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcvBookSuggestion"
@@ -83,10 +84,10 @@
             android:layout_marginTop="8dp"
             android:background="@drawable/bg_list_item_my_book"
             android:orientation="horizontal"
+            android:padding="@dimen/_2sdp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:itemCount="6"
+            tools:itemCount="10"
             tools:listitem="@layout/item_book_suggest_horizontal" />
-
     </RelativeLayout>
 
     <RelativeLayout
@@ -120,7 +121,8 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="6dp"
-            android:text="@string/see_more" />
+            android:text="@string/see_more"
+            tools:ignore="RelativeOverlap" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcvMyBook"

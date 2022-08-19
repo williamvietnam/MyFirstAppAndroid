@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="108dp"
+    android:layout_width="@dimen/_116sdp"
     android:layout_height="wrap_content"
-    android:layout_marginEnd="6dp"
-    android:padding="8dp">
+    android:layout_marginEnd="@dimen/_4sdp"
+    android:paddingHorizontal="@dimen/_2sdp"
+    android:paddingVertical="@dimen/_6sdp"
+    tools:context=".ui.features.book.adapter.ItemBookSuggestHorizontalAdapter">
 
-    <ImageView
+    <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/imvBook"
-        android:layout_width="88dp"
-        android:layout_height="88dp"
-        android:src="@drawable/ic_book_dev_up"
-        tools:ignore="ContentDescription" />
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_96sdp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="@dimen/_5sdp"
+        tools:src="@drawable/ic_book_dev_up" />
 
     <TextView
         android:id="@+id/tvBookName"
@@ -24,7 +29,7 @@
         android:gravity="center"
         android:maxLines="2"
         android:text="@string/book_name"
-        android:textSize="12sp" />
+        android:textSize="@dimen/_11ssp" />
 
     <RatingBar
         android:id="@+id/ratingBar"
@@ -44,8 +49,9 @@
         android:layout_below="@id/ratingBar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="2dp"
+        android:gravity="center_horizontal"
         android:maxLines="1"
-        android:text="@string/book_price"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold"
+        tools:text="Giá: 500.000 VND" />
 </RelativeLayout>
