@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_48sdp"
-        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_32sdp"
         android:contentDescription="@string/image_welcome"
         tools:src="@drawable/ic_image_news" />
 </LinearLayout>

@@ -26,17 +26,16 @@
         <entry key="..\:/MyGithub/VinApp/app/src/main/res/layout/widget_home_menu_action.xml" value="0.3009833262077811" />
         <entry key="..\:/MyGithub/VinApp/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.21205643437366395" />
         <entry key="..\:/MyGithub/VinApp/app/src/main/res/menu/navigation_drawer.xml" value="0.3009833262077811" />
-        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/background_dot_welcome.xml" value="0.2035" />
-        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/background_dot_welcome_inactive.xml" value="0.2035" />
-        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_image_book.xml" value="0.2035" />
-        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_image_news.xml" value="0.2035" />
-        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_slide_1.xml" value="0.2445" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/background_button_login.xml" value="0.356" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/background_dot_welcome.xml" value="0.355" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/background_input.xml" value="0.356" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_slide_1.xml" value="0.3305" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_slide_2.xml" value="0.237" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_slide_3.xml" value="0.237" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_splash.xml" value="0.2485" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/activity_sign_in.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/activity_splash.xml" value="0.2911500641299701" />
-        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/activity_welcome.xml" value="0.181640625" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/activity_welcome.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_book_category.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_book_detail.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_book_main.xml" value="0.2911500641299701" />
@@ -58,7 +57,7 @@
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/item_featured_games.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/item_featured_news.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/item_my_book_vertical.xml" value="0.2911500641299701" />
-        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/item_welcome.xml" value="0.181640625" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/item_welcome.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/layout_episodes_bottom_sheet.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/slide_item_container.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.2911500641299701" />

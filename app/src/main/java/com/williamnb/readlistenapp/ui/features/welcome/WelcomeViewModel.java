@@ -22,7 +22,7 @@ public class WelcomeViewModel extends BaseViewModel {
     }
 
     public String handleNextScreen() {
-        getPreferenceManager().putBoolean(Constants.KEY_IS_WELCOME_SHOWED, true);
+        getPreferenceManager().putBoolean(Constants.KEY_IS_WELCOME_SHOWED, false);
         if (!getPreferenceManager().getBoolean(Constants.KEY_IS_SIGNED_IN)) {
             return Constants.LOGIN_SCREEN;
         } else {
@@ -31,9 +31,10 @@ public class WelcomeViewModel extends BaseViewModel {
     }
 
     public List<Welcome> getWelcomeList() {
+        this.welcomeList.clear();
         this.welcomeList.add(new Welcome(R.string.welcome_text_1, R.drawable.ic_image_book));
         this.welcomeList.add(new Welcome(R.string.welcome_text_2, R.drawable.ic_image_music));
         this.welcomeList.add(new Welcome(R.string.welcome_text_3, R.drawable.ic_image_news));
-        return welcomeList;
+        return this.welcomeList;
     }
 }
