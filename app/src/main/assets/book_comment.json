@@ -1,0 +1,68 @@
+{
+  "comment_list": [
+    {
+      "bookId": 1,
+      "bookThumbnail": "link",
+      "bookName": "name",
+      "rating": 3,
+      "bookPrice": "500.000",
+      "summary_content": ""
+    },
+    {
+      "bookId": 2,
+      "bookThumbnail": "link",
+      "bookName": "name",
+      "rating": 3,
+      "bookPrice": "500.000"
+    },
+    {
+      "bookId": 3,
+      "bookThumbnail": "link",
+      "bookName": "name",
+      "rating": 3,
+      "bookPrice": "500.000"
+    },
+    {
+      "bookId": 4,
+      "bookThumbnail": "link",
+      "bookName": "name",
+      "rating": 3,
+      "bookPrice": "500.000"
+    },
+    {
+      "bookId": 5,
+      "bookThumbnail": "link",
+      "bookName": "name",
+      "rating": 3,
+      "bookPrice": "500.000"
+    },
+    {
+      "bookId": 7,
+      "bookThumbnail": "link",
+      "bookName": "name",
+      "rating": 3,
+      "bookPrice": "500.000"
+    },
+    {
+      "bookId": 8,
+      "bookThumbnail": "link",
+      "bookName": "name",
+      "rating": 3,
+      "bookPrice": "500.000"
+    },
+    {
+      "bookId": 9,
+      "bookThumbnail": "link",
+      "bookName": "name",
+      "rating": 3,
+      "bookPrice": "500.000"
+    },
+    {
+      "bookId": 10,
+      "bookThumbnail": "link",
+      "bookName": "name",
+      "rating": 3,
+      "bookPrice": "500.000"
+    }
+  ]
+}

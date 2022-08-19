@@ -69,7 +69,7 @@ public class ItemBookSuggestHorizontalAdapter extends RecyclerView.Adapter<BaseV
             this.binding.tvBookName.setText(item.getBookName());
             this.binding.ratingBar.setNumStars(5);
             this.binding.ratingBar.setRating(item.getRating());
-            this.binding.tvBookPrice.setText(item.getBookPrice());
+            this.binding.tvBookPrice.setText(String.format("Giá: %s VND", item.getBookPrice()));
             binding.getRoot().setOnClickListener(v -> {
                 callBack.openBookDetail(item);
                 Log.d(BookMainFragment.class.getName(), "Click book suggestion: " + item.getBookName());

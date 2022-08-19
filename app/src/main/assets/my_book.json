@@ -5,63 +5,108 @@
       "bookThumbnail": "link",
       "bookName": "name",
       "optionRead": "Đang đọc",
-      "progress": 67
+      "progress": 67,
+      "bookSummaryContent": "",
+      "bookFrontCover": "",
+      "bookBackCover": "",
+      "bookAuthor": "",
+      "bookCategory": ""
     },
     {
       "bookId": 2,
       "bookThumbnail": "link",
       "bookName": "name",
       "optionRead": "Đang đọc",
-      "progress": 67
+      "progress": 67,
+      "bookSummaryContent": "",
+      "bookFrontCover": "",
+      "bookBackCover": "",
+      "bookAuthor": "",
+      "bookCategory": ""
     },
     {
       "bookId": 3,
       "bookThumbnail": "link",
       "bookName": "name",
       "optionRead": "Đang đọc",
-      "progress": 67
+      "progress": 67,
+      "bookSummaryContent": "",
+      "bookFrontCover": "",
+      "bookBackCover": "",
+      "bookAuthor": "",
+      "bookCategory": ""
     },
     {
       "bookId": 4,
       "bookThumbnail": "link",
       "bookName": "name",
       "optionRead": "Đang đọc",
-      "progress": 67
+      "progress": 67,
+      "bookSummaryContent": "",
+      "bookFrontCover": "",
+      "bookBackCover": "",
+      "bookAuthor": "",
+      "bookCategory": ""
     },
     {
       "bookId": 5,
       "bookThumbnail": "link",
       "bookName": "name",
       "optionRead": "Đang đọc",
-      "progress": 67
+      "progress": 67,
+      "bookSummaryContent": "",
+      "bookFrontCover": "",
+      "bookBackCover": "",
+      "bookAuthor": "",
+      "bookCategory": ""
     },
     {
       "bookId": 7,
       "bookThumbnail": "link",
       "bookName": "name",
       "optionRead": "Đang đọc",
-      "progress": 67
+      "progress": 67,
+      "bookSummaryContent": "",
+      "bookFrontCover": "",
+      "bookBackCover": "",
+      "bookAuthor": "",
+      "bookCategory": ""
     },
     {
       "bookId": 8,
       "bookThumbnail": "link",
       "bookName": "name",
       "optionRead": "Đang đọc",
-      "progress": 67
+      "progress": 67,
+      "bookSummaryContent": "",
+      "bookFrontCover": "",
+      "bookBackCover": "",
+      "bookAuthor": "",
+      "bookCategory": ""
     },
     {
       "bookId": 9,
       "bookThumbnail": "link",
       "bookName": "name",
       "optionRead": "Đang đọc",
-      "progress": 67
+      "progress": 67,
+      "bookSummaryContent": "",
+      "bookFrontCover": "",
+      "bookBackCover": "",
+      "bookAuthor": "",
+      "bookCategory": ""
     },
     {
       "bookId": 10,
       "bookThumbnail": "link",
       "bookName": "name",
       "optionRead": "Đang đọc",
-      "progress": 67
+      "progress": 67,
+      "bookSummaryContent": "",
+      "bookFrontCover": "",
+      "bookBackCover": "",
+      "bookAuthor": "",
+      "bookCategory": ""
     }
   ]
 }

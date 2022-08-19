@@ -46,6 +46,22 @@ public class Book implements Serializable {
     @Expose
     private Integer progress;
 
+    @SerializedName("bookAuthor")
+    @Expose
+    private String bookAuthor;
+
+    @SerializedName("bookFrontCover")
+    @Expose
+    private String bookFrontCover;
+
+    @SerializedName("bookBackCover")
+    @Expose
+    private String bookBackCover;
+
+    @SerializedName("bookSummaryContent")
+    @Expose
+    private String bookSummaryContent;
+
     public Book(){
     }
     public Book(String id, String bookThumbnail, String bookName, Integer rating, String bookPrice) {
@@ -136,5 +152,37 @@ public class Book implements Serializable {
 
     public void setProgress(Integer progress) {
         this.progress = progress;
+    }
+
+    public String getBookAuthor() {
+        return bookAuthor;
+    }
+
+    public void setBookAuthor(String bookAuthor) {
+        this.bookAuthor = bookAuthor;
+    }
+
+    public String getBookFrontCover() {
+        return bookFrontCover;
+    }
+
+    public void setBookFrontCover(String bookFrontCover) {
+        this.bookFrontCover = bookFrontCover;
+    }
+
+    public String getBookBackCover() {
+        return bookBackCover;
+    }
+
+    public void setBookBackCover(String bookBackCover) {
+        this.bookBackCover = bookBackCover;
+    }
+
+    public String getBookSummaryContent() {
+        return bookSummaryContent;
+    }
+
+    public void setBookSummaryContent(String bookSummaryContent) {
+        this.bookSummaryContent = bookSummaryContent;
     }
 }

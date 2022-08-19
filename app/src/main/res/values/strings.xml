@@ -3,10 +3,11 @@
     <string name="suggest">Gợi ý</string>
     <string name="book">Sách</string>
     <string name="book_store"><u>Cửa hàng sách</u></string>
+    <string name="see_more"><u>Xem thêm</u></string>
     <string name="my_book">Sách của tôi</string>
     <string name="see_detail"><u>Xem chi tiết</u></string>
     <string name="book_name">Tennnnnnnnaaa sachhhhhhhhhhhbbb</string>
-    <string name="book_price">Giá sách</string>
+    <string name="book_price">Giá sách: 500.000vnd</string>
     <string name="sold">Đã bán:</string>
     <string name="book_muc_tieu">Sáchhhhhhh mụcccccccc tiêuuuuu</string>
     <string name="book_store_title">Cửa hàng sách</string>
@@ -62,7 +63,15 @@
     <string name="splash">splash</string>
     <string name="author">Author: William Giang Nguyen</string>
     <string name="welcome_start">Bắt đầu</string>
-    <string name="skip">Bỏ qua</string>
+    <string name="skip"><u>Bỏ qua</u></string>
     <string name="image_welcome">image_welcome</string>
-    <string name="see_more">Xem thêm</string>
+
+    <string name="welcome_text_1">Tìm hiểu kiến thức cùng những trang sách điện tử</string>
+    <string name="welcome_text_2">Thư giãn đầu óc với tính năng nghe nhạc hấp dẫn</string>
+    <string name="welcome_text_3">Quan sát thế giới qua lăng kính tính năng tin tức</string>
+    <string name="back">back</string>
+    <string name="summary_content">Tóm tắt nội dung</string>
+    <string name="book_information">Thông tin sách</string>
+    <string name="comment">Bình luận</string>
+    <string name="search">search</string>
 </resources>

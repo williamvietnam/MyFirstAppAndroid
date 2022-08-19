@@ -16,12 +16,13 @@ import com.williamnb.readlistenapp.ui.features.login.SignInActivity;
 import com.williamnb.readlistenapp.ui.features.main.MainActivity;
 import com.williamnb.readlistenapp.utilities.Constants;
 
-
 public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, WelcomeViewModel> {
+
+    private int count;
 
     private final Handler handler = new Handler(Looper.getMainLooper());
     private final Runnable runnable = () -> {
-        if (viewBinding.viewPager2.getCurrentItem() == (viewModel.getWelcomeList().size() - 1)) {
+        if (viewBinding.viewPager2.getCurrentItem() == (count - 1)) {
             viewBinding.viewPager2.setCurrentItem(0);
         } else {
             viewBinding.viewPager2.setCurrentItem(viewBinding.viewPager2.getCurrentItem() + 1);
@@ -29,13 +30,14 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
     };
 
     @Override
-    protected ActivityWelcomeBinding getActivityBinding() {
-        return ActivityWelcomeBinding.inflate(getLayoutInflater());
+    public WelcomeViewModel createViewModel() {
+        return new ViewModelProvider(this).get(WelcomeViewModel.class);
     }
 
     @Override
-    public WelcomeViewModel createViewModel() {
-        return new ViewModelProvider(this).get(WelcomeViewModel.class);
+    protected ActivityWelcomeBinding getActivityBinding() {
+        this.count = viewModel.getWelcomeList().size();
+        return ActivityWelcomeBinding.inflate(getLayoutInflater());
     }
 
     @Override
@@ -48,6 +50,7 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
     @Override
     public void initializeComponent() {
         setupViewpager2();
+        viewBinding.btnStart.setVisibility(View.INVISIBLE);
     }
 
     @Override
@@ -86,7 +89,7 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
                 super.onPageSelected(position);
                 handler.removeCallbacks(runnable);
                 handler.postDelayed(runnable, 1500);
-                if (position == viewModel.getWelcomeList().size() - 1) {
+                if (position == count - 1) {
                     viewBinding.btnStart.setVisibility(View.VISIBLE);
                     viewBinding.tvSkip.setVisibility(View.INVISIBLE);
                 } else {
