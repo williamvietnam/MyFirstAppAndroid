@@ -1,4 +1,4 @@
-package com.williamnb.readlistenapp.ui.features.book.adapter;
+package com.williamnb.readlistenapp.ui.features.bookstore;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -10,20 +10,20 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseViewHolder;
-import com.williamnb.readlistenapp.data.local.models.book.Book;
+import com.williamnb.readlistenapp.data.local.models.BookStore;
 import com.williamnb.readlistenapp.databinding.ItemBookSuggestHorizontalBinding;
 import com.williamnb.readlistenapp.ui.features.book.BookMainFragment;
-import com.williamnb.readlistenapp.utilities.callback.BookCallBack;
+import com.williamnb.readlistenapp.utilities.callback.BookStoreCallBack;
 
 import java.util.List;
 
-public class ItemBookSuggestHorizontalAdapter extends RecyclerView.Adapter<BaseViewHolder> {
+public class BookStoreAdapterChild extends RecyclerView.Adapter<BaseViewHolder> {
 
-    private final List<Book> bookList;
-    private final BookCallBack callBack;
+    private final List<BookStore.Data> dataList;
+    private final BookStoreCallBack callBack;
 
-    public ItemBookSuggestHorizontalAdapter(List<Book> bookList, BookCallBack callBack) {
-        this.bookList = bookList;
+    public BookStoreAdapterChild(List<BookStore.Data> dataList, BookStoreCallBack callBack) {
+        this.dataList = dataList;
         this.callBack = callBack;
     }
 
@@ -32,7 +32,7 @@ public class ItemBookSuggestHorizontalAdapter extends RecyclerView.Adapter<BaseV
     public BaseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         ItemBookSuggestHorizontalBinding binding = ItemBookSuggestHorizontalBinding.inflate(inflater, parent, false);
-        return new ItemBookSuggestHorizontalAdapter.BookSuggestionHolder(binding);
+        return new BookStoreAdapterChild.BookStoreChildHolder(binding);
     }
 
     @Override
@@ -42,16 +42,16 @@ public class ItemBookSuggestHorizontalAdapter extends RecyclerView.Adapter<BaseV
 
     @Override
     public int getItemCount() {
-        if (bookList != null) {
-            return bookList.size();
+        if (dataList != null) {
+            return dataList.size();
         }
         return 0;
     }
 
-    class BookSuggestionHolder extends BaseViewHolder {
+    class BookStoreChildHolder extends BaseViewHolder {
         private final ItemBookSuggestHorizontalBinding binding;
 
-        public BookSuggestionHolder(@NonNull ItemBookSuggestHorizontalBinding binding) {
+        public BookStoreChildHolder(@NonNull ItemBookSuggestHorizontalBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
         }
@@ -59,7 +59,7 @@ public class ItemBookSuggestHorizontalAdapter extends RecyclerView.Adapter<BaseV
         @Override
         public void onBind(int position) {
             super.onBind(position);
-            Book item = bookList.get(position);
+            BookStore.Data item = dataList.get(position);
 
             Picasso.get()
                     .load(item.getBookThumbnail())
@@ -78,6 +78,10 @@ public class ItemBookSuggestHorizontalAdapter extends RecyclerView.Adapter<BaseV
 
         @Override
         protected void clear() {
+            this.binding.tvBookName.setText("");
+            this.binding.ratingBar.setRating(0);
+            this.binding.tvBookName.setText("");
+            this.binding.tvBookPrice.setText("");
             Log.d(BookMainFragment.class.getName(), "cleared");
         }
     }

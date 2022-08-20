@@ -52,8 +52,8 @@ public class BookDetailFragment extends BaseFragment<FragmentBookDetailBinding, 
         viewBinding.tvBookName.setText(String.format("Tên sách: %s", viewModel.getBookDetail().getBookName()));
         viewBinding.tvBookPrice.setText(String.format("Giá sách: %s", viewModel.getBookDetail().getBookPrice()));
         viewBinding.tvBookAuthor.setText(String.format("Tác giả: %s", viewModel.getBookDetail().getBookAuthor()));
-        viewBinding.tvBookAuthor.setText(String.format("Thể loại sách: %s", viewModel.getBookDetail().getBookCategory()));
-        viewBinding.tvBookCategory.setText(viewModel.getBookDetail().getBookSummaryContent());
+        viewBinding.tvBookCategory.setText(String.format("Thể loại sách: %s", viewModel.getBookDetail().getBookCategory()));
+        viewBinding.tvSummaryContent.setText(viewModel.getBookDetail().getBookSummaryContent());
 
         this.commentAdapter = new BookCommentAdapter(viewModel.getCommentList());
         viewBinding.rcvCommentList.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
