@@ -3,8 +3,8 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <device id="pixel_3_xl" />
         <device id="_device_class_phone" />
+        <device id="pixel_3_xl" />
         <device id="_device_class_tablet" />
         <device id="pixel" />
         <device id="pixel_c" />
@@ -14,6 +14,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="fata" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
@@ -23,44 +24,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c6b22d5-d19d-424a-83c3-e7605457ee27" name="Default Changelist" comment="welcome screen: fix bug">
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/book_comment.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/book_store.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/data/local/models/CommentResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/detail/BookCommentAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/BookStoreAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/book_category/BookCategoryFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/book_category/BookCategoryViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_add_comment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_book_comment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/data/local/models/BookStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/BookStoreAdapterChild.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/utilities/callback/BookStoreCallBack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_image.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_book_store.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/book_comment.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/book_comment.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/book_store.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/book_store.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/book_suggestion.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/book_suggestion.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/my_book.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/my_book.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/data/local/models/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/data/local/models/book/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/account/AccountFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/account/AccountFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/account/AccountViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/account/AccountViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/data/local/models/CommentResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/data/local/models/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/BookMainViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/BookMainViewModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/adapter/ItemBookSuggestHorizontalAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/adapter/ItemBookSuggestHorizontalAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/adapter/ItemMyBookVerticalAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/adapter/ItemMyBookVerticalAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/detail/BookCommentAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/detail/BookCommentAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/detail/BookDetailFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/detail/BookDetailFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/detail/BookDetailViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/detail/BookDetailViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_account.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_account.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_book_category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_book_category.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_book_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_book_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/BookStoreAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/BookStoreAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/BookStoreFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/BookStoreFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/BookStoreViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/BookStoreViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/welcome/WelcomeViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/welcome/WelcomeViewModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_book_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_book_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_book_store.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_book_store.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_chat_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_chat_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_book_suggest_horizontal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_book_suggest_horizontal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_my_book_vertical.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_my_book_vertical.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\GiangNB2\.android\avd\Pixel_3a_XL_API_31.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\giang\.android\avd\Pixel_XL_API_28.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -102,8 +97,8 @@
         <option value="layoutResourceFile_vertical" />
         <option value="Enum" />
         <option value="resourceFile" />
-        <option value="Interface" />
         <option value="layoutResourceFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -124,7 +119,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -604,5 +599,26 @@
     <MESSAGE value="create welcome screen" />
     <MESSAGE value="welcome screen: fix bug" />
     <option name="LAST_COMMIT_MESSAGE" value="welcome screen: fix bug" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/BookStoreViewModel.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/BookStoreViewModel.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/BookStoreViewModel.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

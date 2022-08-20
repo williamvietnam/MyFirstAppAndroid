@@ -48,7 +48,7 @@ public class BookMainViewModel extends BaseViewModel {
         Gson gson = new Gson();
         BookResponse myBookResponse = gson.fromJson(json, BookResponse.class);
         this.myBookList = myBookResponse.getBooks();
-        return this.myBookList = myBookResponse.getBooks();
+        return this.myBookList;
     }
 
     public void deleteDataForAssetsMyBook() {

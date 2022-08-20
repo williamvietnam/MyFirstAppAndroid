@@ -1,67 +1,639 @@
 {
-  "books": [
+  "bookStore": [
     {
-      "bookId": 1,
-      "bookThumbnail": "link",
-      "bookName": "name",
-      "rating": 3,
-      "bookPrice": "500.000"
+      "bookStoreId": "1",
+      "bookCategoryId": "CONG_NGHE_THONG_TIN",
+      "bookCategory": "Công nghệ thông tin",
+      "data": [
+        {
+          "bookId": 101,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Công nghệ thông tin"
+        },
+        {
+          "bookId": 102,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Công nghệ thông tin"
+        },
+        {
+          "bookId": 103,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Công nghệ thông tin"
+        },
+        {
+          "bookId": 104,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Công nghệ thông tin"
+        },
+        {
+          "bookId": 105,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Công nghệ thông tin"
+        },
+        {
+          "bookId": 106,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Công nghệ thông tin"
+        },
+        {
+          "bookId": 107,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Công nghệ thông tin"
+        },
+        {
+          "bookId": 108,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Công nghệ thông tin"
+        },
+        {
+          "bookId": 109,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Công nghệ thông tin"
+        },
+        {
+          "bookId": 110,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Công nghệ thông tin"
+        }
+      ]
     },
     {
-      "bookId": 2,
-      "bookThumbnail": "link",
-      "bookName": "name",
-      "rating": 3,
-      "bookPrice": "500.000"
+      "bookStoreId": "2",
+      "bookCategoryId": "KINH_TE",
+      "bookCategory": "Kinh tế",
+      "data": [
+        {
+          "bookId": 201,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Kinh tế"
+        },
+        {
+          "bookId": 202,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Kinh tế"
+        },
+        {
+          "bookId": 203,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Kinh tế"
+        },
+        {
+          "bookId": 204,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Kinh tế"
+        },
+        {
+          "bookId": 205,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Kinh tế"
+        },
+        {
+          "bookId": 206,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Kinh tế"
+        },
+        {
+          "bookId": 207,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Kinh tế"
+        },
+        {
+          "bookId": 208,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Kinh tế"
+        },
+        {
+          "bookId": 209,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Kinh tế"
+        },
+        {
+          "bookId": 210,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Kinh tế"
+        }
+      ]
     },
     {
-      "bookId": 3,
-      "bookThumbnail": "link",
-      "bookName": "name",
-      "rating": 3,
-      "bookPrice": "500.000"
+      "bookStoreId": "3",
+      "bookCategoryId": "VAN_HOC",
+      "bookCategory": "Văn học",
+      "data": [
+        {
+          "bookId": 301,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 302,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 303,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 304,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 305,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 306,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 307,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 308,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 309,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 310,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        }
+      ]
     },
     {
-      "bookId": 4,
-      "bookThumbnail": "link",
-      "bookName": "name",
-      "rating": 3,
-      "bookPrice": "500.000"
+      "bookStoreId": "4",
+      "bookCategoryId": "GIAO_DUC",
+      "bookCategory": "Giáo dục",
+      "data": [
+        {
+          "bookId": 401,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 402,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 403,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 404,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 405,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 406,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 407,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 408,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 409,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        },
+        {
+          "bookId": 410,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Lập trình, phát triển cá nhân"
+        }
+      ]
     },
     {
-      "bookId": 5,
-      "bookThumbnail": "link",
-      "bookName": "name",
-      "rating": 3,
-      "bookPrice": "500.000"
-    },
-    {
-      "bookId": 7,
-      "bookThumbnail": "link",
-      "bookName": "name",
-      "rating": 3,
-      "bookPrice": "500.000"
-    },
-    {
-      "bookId": 8,
-      "bookThumbnail": "link",
-      "bookName": "name",
-      "rating": 3,
-      "bookPrice": "500.000"
-    },
-    {
-      "bookId": 9,
-      "bookThumbnail": "link",
-      "bookName": "name",
-      "rating": 3,
-      "bookPrice": "500.000"
-    },
-    {
-      "bookId": 10,
-      "bookThumbnail": "link",
-      "bookName": "name",
-      "rating": 3,
-      "bookPrice": "500.000"
+      "bookStoreId": "5",
+      "bookCategoryId": "PHAT_TRIEN_BAN_THAN",
+      "bookCategory": "Phát triển bản thân",
+      "data": [
+        {
+          "bookId": 501,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Phát triển bản thân"
+        },
+        {
+          "bookId": 502,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Phát triển bản thân"
+        },
+        {
+          "bookId": 503,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Phát triển bản thân"
+        },
+        {
+          "bookId": 504,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Phát triển bản thân"
+        },
+        {
+          "bookId": 505,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Phát triển bản thân"
+        },
+        {
+          "bookId": 506,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Phát triển bản thân"
+        },
+        {
+          "bookId": 507,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Phát triển bản thân"
+        },
+        {
+          "bookId": 508,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Phát triển bản thân"
+        },
+        {
+          "bookId": 509,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Phát triển bản thân"
+        },
+        {
+          "bookId": 510,
+          "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookName": "DevUp",
+          "rating": 5,
+          "bookPrice": "500.000",
+          "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+          "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+          "bookAuthor": "Nguyễn Hiển",
+          "bookCategory": "Phát triển bản thân"
+        }
+      ]
     }
   ]
 }

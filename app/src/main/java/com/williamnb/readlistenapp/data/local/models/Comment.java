@@ -1,28 +1,45 @@
 package com.williamnb.readlistenapp.data.local.models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
 import java.util.List;
 
-public class CommentResponse {
+public class Comment implements Serializable {
 
-    private List<Comment> commentList;
+    @SerializedName("comment_list")
+    @Expose
+    private List<Data> dataList;
 
-    public List<Comment> getCommentList() {
-        return this.commentList;
+    public List<Data> getCommentList() {
+        return this.dataList;
     }
 
-    public void setCommentList(List<Comment> commentList) {
-        this.commentList = commentList;
+    public void setCommentList(List<Data> dataList) {
+        this.dataList = dataList;
     }
 
-    public static class Comment{
+    public static class Data {
+
+        @SerializedName("commentId")
+        @Expose
         private String commentId;
 
+        @SerializedName("imageAvatar")
+        @Expose
         private String imageAvatar;
 
+        @SerializedName("userName")
+        @Expose
         private String userName;
 
+        @SerializedName("date")
+        @Expose
         private String date;
 
+        @SerializedName("commentContent")
+        @Expose
         private String commentContent;
 
         public String getCommentId() {

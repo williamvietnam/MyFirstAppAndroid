@@ -68,8 +68,8 @@ public class ItemMyBookVerticalAdapter extends RecyclerView.Adapter<BaseViewHold
 
             Picasso.get()
                     .load(item.getBookThumbnail())
-                    .placeholder(R.drawable.img_book_muc_tieu)
-                    .error(R.drawable.img_book_muc_tieu)
+                    .placeholder(R.drawable.ic_image)
+                    .error(R.drawable.ic_image)
                     .into(this.binding.imvBook);
 
             this.binding.bookName.setText(item.getBookName());
