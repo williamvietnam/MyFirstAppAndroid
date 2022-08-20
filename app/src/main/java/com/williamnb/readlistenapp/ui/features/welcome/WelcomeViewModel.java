@@ -22,7 +22,7 @@ public class WelcomeViewModel extends BaseViewModel {
     }
 
     public String handleNextScreen() {
-        getPreferenceManager().putBoolean(Constants.KEY_IS_WELCOME_SHOWED, false);
+        getPreferenceManager().putBoolean(Constants.KEY_IS_WELCOME_SHOWED, true);
         if (!getPreferenceManager().getBoolean(Constants.KEY_IS_SIGNED_IN)) {
             return Constants.LOGIN_SCREEN;
         } else {

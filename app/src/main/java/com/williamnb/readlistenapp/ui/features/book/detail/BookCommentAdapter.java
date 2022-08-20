@@ -10,17 +10,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseViewHolder;
-import com.williamnb.readlistenapp.data.local.models.CommentResponse;
+import com.williamnb.readlistenapp.data.local.models.Comment;
 import com.williamnb.readlistenapp.databinding.ItemBookCommentBinding;
 
 import java.util.List;
 
 public class BookCommentAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
-    private final List<CommentResponse.Comment> commentList;
+    private final List<Comment.Data> dataList;
 
-    public BookCommentAdapter(List<CommentResponse.Comment> commentList) {
-        this.commentList = commentList;
+    public BookCommentAdapter(List<Comment.Data> dataList) {
+        this.dataList = dataList;
     }
 
     @NonNull
@@ -38,8 +38,8 @@ public class BookCommentAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     @Override
     public int getItemCount() {
-        if (commentList != null) {
-            return commentList.size();
+        if (dataList != null) {
+            return dataList.size();
         }
         return 0;
     }
@@ -55,7 +55,7 @@ public class BookCommentAdapter extends RecyclerView.Adapter<BaseViewHolder> {
         @Override
         public void onBind(int position) {
             super.onBind(position);
-            CommentResponse.Comment item = commentList.get(position);
+            Comment.Data item = dataList.get(position);
             Picasso.get()
                     .load(item.getImageAvatar())
                     .placeholder(R.drawable.ava_none)

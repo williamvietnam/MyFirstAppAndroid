@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 
 import com.google.gson.Gson;
 import com.williamnb.readlistenapp.base.BaseViewModel;
-import com.williamnb.readlistenapp.data.local.models.CommentResponse;
+import com.williamnb.readlistenapp.data.local.models.Comment;
 import com.williamnb.readlistenapp.data.local.models.book.Book;
 import com.williamnb.readlistenapp.utilities.Utilities;
 
@@ -19,12 +19,12 @@ import java.util.List;
 public class BookDetailViewModel extends BaseViewModel {
 
     private Book bookDetail;
-    private List<CommentResponse.Comment> commentList;
+    private List<Comment.Data> dataList;
 
     public BookDetailViewModel(@NonNull Application application) {
         super(application);
         this.bookDetail = new Book();
-        this.commentList = new ArrayList<>();
+        this.dataList = new ArrayList<>();
     }
 
     public Book getBookDetail() {
@@ -35,11 +35,11 @@ public class BookDetailViewModel extends BaseViewModel {
         this.bookDetail = bookDetail;
     }
 
-    public List<CommentResponse.Comment> getCommentList() {
+    public List<Comment.Data> getCommentList() {
         String json = Utilities.getJsonFromAssets("book_comment.json", getViewModelContext());
         Gson gson = new Gson();
-        CommentResponse commentResponse = gson.fromJson(json, CommentResponse.class);
-        this.commentList = commentResponse.getCommentList();
-        return this.commentList;
+        Comment comment = gson.fromJson(json, Comment.class);
+        this.dataList = comment.getCommentList();
+        return this.dataList;
     }
 }
