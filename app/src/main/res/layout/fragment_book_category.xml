@@ -51,7 +51,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:scrollbars="none"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
         app:spanCount="3"
         tools:itemCount="50"
         tools:listitem="@layout/item_book_suggest_horizontal" />

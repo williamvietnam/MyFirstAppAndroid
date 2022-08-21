@@ -1,16 +1,18 @@
 package com.williamnb.readlistenapp.ui.features.bookstore;
 
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.data.local.models.BookStore;
 import com.williamnb.readlistenapp.databinding.FragmentBookStoreBinding;
+import com.williamnb.readlistenapp.utilities.Constants;
 import com.williamnb.readlistenapp.utilities.callback.BookStoreCallBack;
 
 /**
@@ -59,12 +61,16 @@ public class BookStoreFragment extends BaseFragment<FragmentBookStoreBinding, Bo
     }
 
     @Override
-    public void onSeeMoreClicked(String bookCategoryId) {
-        Toast.makeText(getContext(), bookCategoryId, Toast.LENGTH_SHORT).show();
+    public void onSeeMoreClicked(BookStore.BookCategory item) {
+        Bundle args = new Bundle();
+        args.putSerializable(Constants.BOOK_STORE_CATEGORY, item);
+        findNavController().navigate(R.id.actionBookStoreToBookCategory, args);
     }
 
     @Override
     public void openBookDetail(@NonNull BookStore.Data item) {
-        Toast.makeText(getContext(), item.getBookId(), Toast.LENGTH_SHORT).show();
+        Bundle args = new Bundle();
+        args.putSerializable(Constants.BOOK_STORE_DETAIL, item);
+        findNavController().navigate(R.id.actionBookStoreToBookDetail, args);
     }
 }

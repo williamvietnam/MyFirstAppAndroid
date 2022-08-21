@@ -1,4 +1,4 @@
-package com.williamnb.readlistenapp.ui.features.book.detail;
+package com.williamnb.readlistenapp.ui.features.bookdetail;
 
 import android.util.Log;
 import android.view.LayoutInflater;

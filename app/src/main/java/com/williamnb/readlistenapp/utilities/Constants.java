@@ -31,4 +31,6 @@ public class Constants {
 
     //Book screen
     public static final String BOOK_DETAIL = "BOOK_DETAIL";
+    public static final String BOOK_STORE_DETAIL = "BOOK_STORE_DETAIL";
+    public static final String BOOK_STORE_CATEGORY = "BOOK_STORE_CATEGORY";
 }

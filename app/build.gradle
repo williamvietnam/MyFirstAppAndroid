@@ -97,7 +97,6 @@ dependencies {
 
     //viewPager2
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
-
     //indicator3
     implementation 'me.relex:circleindicator:2.1.6'
 
@@ -110,7 +109,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging:23.0.7'
     implementation 'com.google.firebase:firebase-firestore:24.2.2'
 
-    //Neumorphism
+    //neumorphism
     implementation 'com.github.fornewid:neumorphism:0.3.0'
 
     //MultiDex

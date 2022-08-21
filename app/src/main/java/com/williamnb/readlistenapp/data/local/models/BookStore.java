@@ -20,7 +20,7 @@ public class BookStore implements Serializable {
         this.bookCategoryList = bookCategoryList;
     }
 
-    public class BookCategory {
+    public static class BookCategory implements Serializable {
 
         @SerializedName("bookStoreId")
         @Expose
@@ -55,7 +55,7 @@ public class BookStore implements Serializable {
         }
     }
 
-    public class Data {
+    public static class Data implements Serializable {
 
         @SerializedName("bookId")
         @Expose

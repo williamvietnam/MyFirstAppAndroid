@@ -4,7 +4,7 @@ import com.williamnb.readlistenapp.data.local.models.BookStore;
 
 public interface BookStoreCallBack {
 
-    void onSeeMoreClicked(String bookCategoryId);
+    void onSeeMoreClicked(BookStore.BookCategory item);
 
     void openBookDetail(BookStore.Data item);
 }
