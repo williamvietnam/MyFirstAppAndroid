@@ -59,7 +59,7 @@
 
     <fragment
         android:id="@+id/fragmentBookDetail"
-        android:name="com.williamnb.readlistenapp.ui.features.book.detail.BookDetailFragment"
+        android:name="com.williamnb.readlistenapp.ui.features.bookdetail.BookDetailFragment"
         android:label="BookDetailFragment"
         tools:layout="@layout/fragment_book_detail" />
 
@@ -67,7 +67,27 @@
         android:id="@+id/fragmentBookStore"
         android:name="com.williamnb.readlistenapp.ui.features.bookstore.BookStoreFragment"
         android:label="BookStoreFragment"
-        tools:layout="@layout/fragment_book_store" />
+        tools:layout="@layout/fragment_book_store">
+
+        <action
+            android:id="@+id/actionBookStoreToBookDetail"
+            app:destination="@id/fragmentBookDetail" />
+
+        <action
+            android:id="@+id/actionBookStoreToBookCategory"
+            app:destination="@id/fragmentBookCategory" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentBookCategory"
+        android:name="com.williamnb.readlistenapp.ui.features.bookstore.book_category.BookCategoryFragment"
+        android:label="BookCategoryFragment"
+        tools:layout="@layout/fragment_book_category">
+
+        <action
+            android:id="@+id/actionBookCategoryToBookDetail"
+            app:destination="@id/fragmentBookDetail" />
+    </fragment>
 
     <fragment
         android:id="@+id/fragmentChatMain"
@@ -85,6 +105,7 @@
         android:name="com.williamnb.readlistenapp.ui.features.chat.users_list.UsersFragment"
         android:label="UsersFragment"
         tools:layout="@layout/fragment_users">
+
         <action
             android:id="@+id/actionUsersToChatScreen"
             app:destination="@id/fragmentChatScreen" />

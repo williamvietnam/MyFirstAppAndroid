@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".ui.features.account.AccountFragment">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#DDDDDD"
@@ -16,11 +16,10 @@
         android:paddingBottom="2dp">
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="start|center_vertical"
             android:layout_marginStart="@dimen/_24sdp"
-            android:layout_weight="8"
             android:gravity="start"
             android:padding="3dp"
             android:text="@string/personal"
@@ -30,10 +29,11 @@
             android:id="@+id/btnSearchBook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:contentDescription="@string/settings"
             android:src="@drawable/ic_settings" />
-    </LinearLayout>
+    </FrameLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

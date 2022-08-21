@@ -74,4 +74,8 @@
     <string name="book_information">Thông tin sách</string>
     <string name="comment">Bình luận</string>
     <string name="search">search</string>
+    <string name="menu">menu</string>
+    <string name="active">{Đang hoạt động}</string>
+    <string name="expand">expand</string>
+    <string name="settings">settings</string>
 </resources>

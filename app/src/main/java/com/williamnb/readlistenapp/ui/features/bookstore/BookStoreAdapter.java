@@ -61,11 +61,11 @@ public class BookStoreAdapter extends RecyclerView.Adapter<BaseViewHolder> {
         public void onBind(int position) {
             super.onBind(position);
             BookStore.BookCategory item = bookCategoryList.get(position);
-            this.binding.tvBookCategory.setText(item.getBookCategoryName());
+            this.binding.tvBookCategory.setText(String.format("Sách %s", item.getBookCategoryName()));
             BookStoreAdapterChild bookAdapter = adapterList.get(position);
             this.binding.rcvBookList.setAdapter(bookAdapter);
             this.binding.tvSeeMore.setOnClickListener(view -> {
-                callBack.onSeeMoreClicked(item.getBookCategoryId());
+                callBack.onSeeMoreClicked(item);
                 Log.d(BookStoreFragment.class.getName(), "debug: click see more " + item.getBookCategoryId());
             });
         }

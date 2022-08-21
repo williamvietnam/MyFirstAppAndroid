@@ -1,185 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:scrollbars="none"
-    tools:context=".ui.features.book.detail.BookDetailFragment">
+    tools:context=".ui.features.bookdetail.BookDetailFragment">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="#DDDDDD"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/book_detail"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#DDDDDD"
-            android:orientation="horizontal"
-            android:paddingTop="6dp"
-            android:paddingBottom="6dp">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/btnBack"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:contentDescription="@string/back"
-                android:src="@drawable/ic_back" />
+                android:layout_marginVertical="@dimen/_16sdp"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/bookCoverFront"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_marginHorizontal="@dimen/_6sdp"
+                    android:layout_marginVertical="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    app:riv_corner_radius="@dimen/_8sdp" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/bookCoverBack"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_marginHorizontal="@dimen/_6sdp"
+                    android:layout_marginVertical="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    app:riv_corner_radius="@dimen/_8sdp" />
+            </LinearLayout>
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="8"
-                android:gravity="center"
-                android:padding="3dp"
-                android:text="@string/book_detail"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                tools:ignore="ContentDescription" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/_16sdp"
-            android:orientation="horizontal">
-
-            <com.makeramen.roundedimageview.RoundedImageView
-                android:id="@+id/bookCoverFront"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_180sdp"
-                android:layout_marginHorizontal="@dimen/_6sdp"
-                android:layout_marginVertical="@dimen/_3sdp"
-                android:layout_weight="1"
-                app:riv_corner_radius="@dimen/_8sdp" />
-
-            <com.makeramen.roundedimageview.RoundedImageView
-                android:id="@+id/bookCoverBack"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_180sdp"
-                android:layout_marginHorizontal="@dimen/_6sdp"
-                android:layout_marginVertical="@dimen/_3sdp"
-                android:layout_weight="1"
-                app:riv_corner_radius="@dimen/_8sdp" />
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_8sdp"
-            android:text="@string/book_information"
-            android:textSize="@dimen/_16ssp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tvBookName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_8sdp"
-            android:layout_marginTop="@dimen/_3sdp"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:textSize="@dimen/_12ssp"
-            tools:text="Tên sách: Một nghìn triệu tỷ câu hỏi vì sao" />
-
-        <TextView
-            android:id="@+id/tvBookPrice"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_8sdp"
-            android:layout_marginTop="@dimen/_3sdp"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:textSize="@dimen/_12ssp"
-            tools:text="Giá sách: 500.000vnd" />
-
-        <TextView
-            android:id="@+id/tvBookAuthor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_8sdp"
-            android:layout_marginTop="@dimen/_3sdp"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:textSize="@dimen/_12ssp"
-            tools:text="Tác giả: Nguyễn Văn Việt Nam" />
-
-        <TextView
-            android:id="@+id/tvBookCategory"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_8sdp"
-            android:layout_marginTop="@dimen/_3sdp"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:textSize="@dimen/_12ssp"
-            tools:text="Thể loại sách: Trinh thám, phiêu lưu" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_8sdp"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:text="@string/summary_content"
-            android:textSize="@dimen/_16ssp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tvSummaryContent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_8sdp"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:textSize="@dimen/_12ssp"
-            tools:text="Although the predictive back gesture won’t be visible to users in Android 13, we’re making an early version of the UI available as a developer option for testing starting in Beta 4. We plan to make the UI available to users in a future Android release, and we’d like all apps to be ready. We’re also working with partners to ensure it’s consistent across devices.\nRead on for details on how to try out the new gesture and support it in your apps. Adding support for predictive back gesture is straightforward for most apps, and you can get started today.\nWe also encourage you to submit your feedback." />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_8sdp"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_toStartOf="@id/btnAddComment"
-                android:text="@string/comment"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:text="@string/book_information"
                 android:textSize="@dimen/_16ssp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/btnAddComment"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"
-                android:layout_alignParentEnd="true"
-                android:layout_gravity="end"
-                android:background="#FFFFFFFF"
-                android:contentDescription="@string/comment"
-                android:src="@drawable/ic_add_comment" />
+            <TextView
+                android:id="@+id/tvBookName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/_12ssp"
+                tools:text="Tên sách: Một nghìn triệu tỷ câu hỏi vì sao" />
+
+            <TextView
+                android:id="@+id/tvBookPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/_12ssp"
+                tools:text="Giá sách: 500.000vnd" />
+
+            <TextView
+                android:id="@+id/tvBookAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/_12ssp"
+                tools:text="Tác giả: Nguyễn Văn Việt Nam" />
+
+            <TextView
+                android:id="@+id/tvBookCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/_12ssp"
+                tools:text="Thể loại sách: Trinh thám, phiêu lưu" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/summary_content"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSummaryContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12ssp"
+                tools:text="Although the predictive back gesture won’t be visible to users in Android 13, we’re making an early version of the UI available as a developer option for testing starting in Beta 4. We plan to make the UI available to users in a future Android release, and we’d like all apps to be ready. We’re also working with partners to ensure it’s consistent across devices.\nRead on for details on how to try out the new gesture and support it in your apps. Adding support for predictive back gesture is straightforward for most apps, and you can get started today.\nWe also encourage you to submit your feedback." />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/comment"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btnAddComment"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="#FFFFFFFF"
+                    android:contentDescription="@string/comment"
+                    android:src="@drawable/ic_add_comment" />
+
+            </FrameLayout>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcvCommentList"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/btnAddComment"
                 android:layout_marginTop="@dimen/_3sdp"
                 android:orientation="vertical"
                 android:scrollbars="none"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/item_book_comment" />
-        </RelativeLayout>
-    </LinearLayout>
-</ScrollView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
