@@ -1,0 +1,112 @@
+{
+  "books": [
+    {
+      "bookId": 1,
+      "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+      "bookName": "DevUp",
+      "rating": 5,
+      "bookPrice": "500.000",
+      "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+      "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+      "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+      "bookAuthor": "Nguyễn Hiển",
+      "bookCategory": "Lập trình, phát triển cá nhân"
+    },
+    {
+      "bookId": 2,
+      "bookThumbnail": "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_5331.jpg",
+      "bookName": "Mục tiêu (Goal)",
+      "rating": 4,
+      "bookPrice": "123.000",
+      "bookSummaryContent": "Mục tiêu không chỉ là cái bạn đặt ra mà là quá trình không ngừng hoàn thiện tiến tới đạt được mục đích. Thất bại không nên chỉ biết đổ lỗi và tự trách...mà phải tìm ra nguyên nhân cốt yếu của lỗi sai..chưa đi đến cuối cùng thì bạn chưa phải người thất bại...đôi khi qua những thất bại nhỏ khiến bạn dần đến với thành công hơn....truyện nêu bật lên quan điểm là những người thâm niên trong kinh doanh chưa chắc đã am hiểu sâu sắc về quản lí vận hành hơn một người ngoài nghề...khi tự mình tìm ra và nắm được nguyên lí hoạt động chung thì bạn mới thật sự thành công...lỗi sai phải do tự mình nhận ra khắc phục và sửa chữa thì bạn mới tiến đến một tầm mới... bên cạnh sự nghiệp là sự đồng hành của gia đình....bạn thử nghĩ nếu bạn đánh mất một trong 2 thành hẳn cuộc sống của bạn sẽ chẳng thể nào gọi là trọn vẹn...bạn học cách cân bằng giữa sự nghiệp và gia đình...đây hẳn là một điều không phải dễ dàng gì...chúng ta không thể phủ nhận tầm quan trọng của gia đình trong cuộc sống này...sự nghiệp quan trọng nhưng bạn không nên qua bỏ mặc gia đình...hãy chân thành chia sẻ và tạo được sự đồng cảm, tin tưởng từ chính gia đình của bạn...có thể nói đấy là nền tảng cho một sự nghiệp thành công.",
+      "bookFrontCover": "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_5331.jpg",
+      "bookBackCover": "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_5331.jpg",
+      "bookAuthor": "Eliyahu M. Goldratt",
+      "bookCategory": "Kinh doanh, tiểu thuyết"
+    },
+    {
+      "bookId": 3,
+      "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/I/51lbHL4PURL._SX347_BO1,204,203,200_.jpg",
+      "bookName": "Đắc nhân tâm",
+      "rating": 2,
+      "bookPrice": "234.000",
+      "bookSummaryContent": "Cuốn sách Đắc Nhân Tâm của tác giả Dale Carnegie. Đây là cuốn sách duy nhất về thể loại self-help và liên tục đứng đầu danh mục sách bán chạy nhất do tờ báo The New York Times bình chọn suốt 10 năm liền. Cuốn sách đầu tiên và hay nhất mọi thời đại. Chúng có ảnh hưởng làm thay đổi cuộc đời của hàng triệu người trên thế giới.\n\nNội dung của cuốn sách giúp bạn có cái nhìn khác hơn về khái niệm Đắc Nhân Tâm. Nó không còn là nghệ thuật thu phục lòng người và làm cho tất cả mọi người xung quanh yêu mến mình. Mà Đắc Nhân Tâm ở đây sẽ có ý nghĩa đó cần được thụ đắc bằng sự hiểu rõ bản thân, thành thật với chính mình.\nCần phải hiểu biết và quan tâm đến những mọi người xung quanh. Chỉ như vậy bạn mới có thể nhìn ra và khơi gợi được những tiềm năng ẩn khuất ở nơi họ.\n\nTừ đó, giúp họ phát triển lên một tầm cao mới. Đây một trong những nghệ thuật cao nhất về con người. Đó mang ý nghĩa sâu sắc nhất và được đúc kết từ những nguyên tắc vàng của tác giả Dale Carnegie. Cùng theo dõi nội dung của cuốn sách Đắc Nhân Tâm ngay dưới đây để hiểu hơn về cuốn sách này nhé!",
+      "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/I/51lbHL4PURL._SX347_BO1,204,203,200_.jpg",
+      "bookBackCover": "https://images-na.ssl-images-amazon.com/images/I/51lbHL4PURL._SX347_BO1,204,203,200_.jpg",
+      "bookAuthor": "Dale Carnegie",
+      "bookCategory": "Phát triển bản thân"
+    },
+    {
+      "bookId": 4,
+      "bookThumbnail": "https://downloadsach.com/wp-content/uploads/2016/12/Quang-ganh-lo-di-va-vui-song-top-10-207x300.jpg",
+      "bookName": "7 thói quen bạn trẻ thành đạt",
+      "rating": 4,
+      "bookPrice": "543.000",
+      "bookSummaryContent": "Sách 7 thói quen bạn trẻ thành đạt không nặng về lý thuyết khô khan mà nó mang đậm nét tươi trẻ, ngắn gọn, xúc tích, dễ hiểu với những câu chuyện thực tế qua nó giúp người đọc cảm nhận được những thông điệp ông muốn nhắn gởi cho giới trẻ. Hơn nữa nó còn chứa đựng các bài thơ thú vị, hình ảnh minh họa dễ thương, sinh động khiến cho người đọc dễ dàng tiếp thu được tinh hoa của cuốn sách. Sau đây là 7 thói quen cũng như 7 thông điệp tác giả tâm huyết gởi đến bạn đọc như sau: \nThói quen 1: Có thái độ sống tích cực\nThói quen 2: Biết định hướng tương lai\nThói quen 3: Việc hôm nay không để ngày mai\nThói quen 4: Tư duy cùng thắng\nThói quen 5: Biết lắng nghe để thấu hiểu và để được thấu hiểu\nThói quen 6: Có tinh thần hợp tác\nThói quen 7: Biết rèn luyện và phát triển những kỹ năng",
+      "bookFrontCover": "https://downloadsach.com/wp-content/uploads/2016/12/Quang-ganh-lo-di-va-vui-song-top-10-207x300.jpg",
+      "bookBackCover": "https://downloadsach.com/wp-content/uploads/2016/12/Quang-ganh-lo-di-va-vui-song-top-10-207x300.jpg",
+      "bookAuthor": "Sean Covey",
+      "bookCategory": "Phát triển bản thân"
+    },
+    {
+      "bookId": 5,
+      "bookThumbnail": "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_5331.jpg",
+      "bookName": "Mục tiêu (Goal)",
+      "rating": 4,
+      "bookPrice": "123.000",
+      "bookSummaryContent": "Mục tiêu không chỉ là cái bạn đặt ra mà là quá trình không ngừng hoàn thiện tiến tới đạt được mục đích. Thất bại không nên chỉ biết đổ lỗi và tự trách...mà phải tìm ra nguyên nhân cốt yếu của lỗi sai..chưa đi đến cuối cùng thì bạn chưa phải người thất bại...đôi khi qua những thất bại nhỏ khiến bạn dần đến với thành công hơn....truyện nêu bật lên quan điểm là những người thâm niên trong kinh doanh chưa chắc đã am hiểu sâu sắc về quản lí vận hành hơn một người ngoài nghề...khi tự mình tìm ra và nắm được nguyên lí hoạt động chung thì bạn mới thật sự thành công...lỗi sai phải do tự mình nhận ra khắc phục và sửa chữa thì bạn mới tiến đến một tầm mới... bên cạnh sự nghiệp là sự đồng hành của gia đình....bạn thử nghĩ nếu bạn đánh mất một trong 2 thành hẳn cuộc sống của bạn sẽ chẳng thể nào gọi là trọn vẹn...bạn học cách cân bằng giữa sự nghiệp và gia đình...đây hẳn là một điều không phải dễ dàng gì...chúng ta không thể phủ nhận tầm quan trọng của gia đình trong cuộc sống này...sự nghiệp quan trọng nhưng bạn không nên qua bỏ mặc gia đình...hãy chân thành chia sẻ và tạo được sự đồng cảm, tin tưởng từ chính gia đình của bạn...có thể nói đấy là nền tảng cho một sự nghiệp thành công.",
+      "bookFrontCover": "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_5331.jpg",
+      "bookBackCover": "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_5331.jpg",
+      "bookAuthor": "Eliyahu M. Goldratt",
+      "bookCategory": "Kinh doanh, tiểu thuyết"
+    },
+    {
+      "bookId": 7,
+      "bookThumbnail": "https://downloadsach.com/wp-content/uploads/2016/12/Quang-ganh-lo-di-va-vui-song-top-10-207x300.jpg",
+      "bookName": "7 thói quen bạn trẻ thành đạt",
+      "rating": 4,
+      "bookPrice": "543.000",
+      "bookSummaryContent": "Sách 7 thói quen bạn trẻ thành đạt không nặng về lý thuyết khô khan mà nó mang đậm nét tươi trẻ, ngắn gọn, xúc tích, dễ hiểu với những câu chuyện thực tế qua nó giúp người đọc cảm nhận được những thông điệp ông muốn nhắn gởi cho giới trẻ. Hơn nữa nó còn chứa đựng các bài thơ thú vị, hình ảnh minh họa dễ thương, sinh động khiến cho người đọc dễ dàng tiếp thu được tinh hoa của cuốn sách. Sau đây là 7 thói quen cũng như 7 thông điệp tác giả tâm huyết gởi đến bạn đọc như sau: \nThói quen 1: Có thái độ sống tích cực\nThói quen 2: Biết định hướng tương lai\nThói quen 3: Việc hôm nay không để ngày mai\nThói quen 4: Tư duy cùng thắng\nThói quen 5: Biết lắng nghe để thấu hiểu và để được thấu hiểu\nThói quen 6: Có tinh thần hợp tác\nThói quen 7: Biết rèn luyện và phát triển những kỹ năng",
+      "bookFrontCover": "https://downloadsach.com/wp-content/uploads/2016/12/Quang-ganh-lo-di-va-vui-song-top-10-207x300.jpg",
+      "bookBackCover": "https://downloadsach.com/wp-content/uploads/2016/12/Quang-ganh-lo-di-va-vui-song-top-10-207x300.jpg",
+      "bookAuthor": "Sean Covey",
+      "bookCategory": "Phát triển bản thân"
+    },
+    {
+      "bookId": 8,
+      "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/I/51lbHL4PURL._SX347_BO1,204,203,200_.jpg",
+      "bookName": "Đắc nhân tâm",
+      "rating": 2,
+      "bookPrice": "234.000",
+      "bookSummaryContent": "Cuốn sách Đắc Nhân Tâm của tác giả Dale Carnegie. Đây là cuốn sách duy nhất về thể loại self-help và liên tục đứng đầu danh mục sách bán chạy nhất do tờ báo The New York Times bình chọn suốt 10 năm liền. Cuốn sách đầu tiên và hay nhất mọi thời đại. Chúng có ảnh hưởng làm thay đổi cuộc đời của hàng triệu người trên thế giới.\n\nNội dung của cuốn sách giúp bạn có cái nhìn khác hơn về khái niệm Đắc Nhân Tâm. Nó không còn là nghệ thuật thu phục lòng người và làm cho tất cả mọi người xung quanh yêu mến mình. Mà Đắc Nhân Tâm ở đây sẽ có ý nghĩa đó cần được thụ đắc bằng sự hiểu rõ bản thân, thành thật với chính mình.\nCần phải hiểu biết và quan tâm đến những mọi người xung quanh. Chỉ như vậy bạn mới có thể nhìn ra và khơi gợi được những tiềm năng ẩn khuất ở nơi họ.\n\nTừ đó, giúp họ phát triển lên một tầm cao mới. Đây một trong những nghệ thuật cao nhất về con người. Đó mang ý nghĩa sâu sắc nhất và được đúc kết từ những nguyên tắc vàng của tác giả Dale Carnegie. Cùng theo dõi nội dung của cuốn sách Đắc Nhân Tâm ngay dưới đây để hiểu hơn về cuốn sách này nhé!",
+      "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/I/51lbHL4PURL._SX347_BO1,204,203,200_.jpg",
+      "bookBackCover": "https://images-na.ssl-images-amazon.com/images/I/51lbHL4PURL._SX347_BO1,204,203,200_.jpg",
+      "bookAuthor": "Dale Carnegie",
+      "bookCategory": "Phát triển bản thân"
+    },
+    {
+      "bookId": 9,
+      "bookThumbnail": "https://downloadsach.com/wp-content/uploads/2016/12/Quang-ganh-lo-di-va-vui-song-top-10-207x300.jpg",
+      "bookName": "7 thói quen bạn trẻ thành đạt",
+      "rating": 4,
+      "bookPrice": "543.000",
+      "bookSummaryContent": "Sách 7 thói quen bạn trẻ thành đạt không nặng về lý thuyết khô khan mà nó mang đậm nét tươi trẻ, ngắn gọn, xúc tích, dễ hiểu với những câu chuyện thực tế qua nó giúp người đọc cảm nhận được những thông điệp ông muốn nhắn gởi cho giới trẻ. Hơn nữa nó còn chứa đựng các bài thơ thú vị, hình ảnh minh họa dễ thương, sinh động khiến cho người đọc dễ dàng tiếp thu được tinh hoa của cuốn sách. Sau đây là 7 thói quen cũng như 7 thông điệp tác giả tâm huyết gởi đến bạn đọc như sau: \nThói quen 1: Có thái độ sống tích cực\nThói quen 2: Biết định hướng tương lai\nThói quen 3: Việc hôm nay không để ngày mai\nThói quen 4: Tư duy cùng thắng\nThói quen 5: Biết lắng nghe để thấu hiểu và để được thấu hiểu\nThói quen 6: Có tinh thần hợp tác\nThói quen 7: Biết rèn luyện và phát triển những kỹ năng",
+      "bookFrontCover": "https://downloadsach.com/wp-content/uploads/2016/12/Quang-ganh-lo-di-va-vui-song-top-10-207x300.jpg",
+      "bookBackCover": "https://downloadsach.com/wp-content/uploads/2016/12/Quang-ganh-lo-di-va-vui-song-top-10-207x300.jpg",
+      "bookAuthor": "Sean Covey",
+      "bookCategory": "Phát triển bản thân"
+    },
+    {
+      "bookId": 10,
+      "bookThumbnail": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+      "bookName": "DevUp",
+      "rating": 5,
+      "bookPrice": "500.000",
+      "bookSummaryContent": "Làm startup hay tập đoàn lớn (Big corp)?\nClean or speed? (Code sạch hay nhanh?)\nLàm vì đam mê hay vì tiền?\nĐó là ba trong số nhiều câu hỏi mà rất nhiều lập trình viên phải đối mặt khi bắt đầu bước đi trên con đường xây dựng sự nghiệp.\nThấu hiểu được điều đó, Spiderum đã cùng tác giả Nguyễn Hiển cho ra mắt cuốn sách DevUP, với mong muốn mở ra những hướng đi mới cho các lập trình viên. Cuốn sách này ra đời với mong muốn giải đáp câu hỏi “Cần phải làm gì? và “Làm như thế nào?” cho những lập trình viên “bình thường” - những người muốn tốt và tốt hơn từng ngày.\nVới mô hình DevUP = Dilemmas + Experiment + Valuation + Unlearn + Performance được phát triển riêng bởi tác giả Nguyễn Hiển, chúng tôi hi vọng có thể giúp LTV đi đường xa, liên tục nâng cao kiến thức, kỹ năng một cách bền vững. \n",
+      "bookFrontCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+      "bookBackCover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609686861i/56529741.jpg",
+      "bookAuthor": "Nguyễn Hiển",
+      "bookCategory": "Lập trình, phát triển cá nhân"
+    }
+  ]
+}

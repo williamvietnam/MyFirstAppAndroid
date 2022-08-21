@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
+    </style>
+    <!--
+    - navigationBarColor: chỉnh màu của thanh điều hướng của các máy điện thoại android bên dưới
+    -->
+    <style name="RatingBar" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">#808087</item>
+        <item name="colorControlActivated">#FFEA00</item>
+    </style>
+
+    <style name="ServiceContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/_4sdp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="ServiceContainer.Action">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">88dp</item>
+    </style>
+
+    <style name="ServiceContainer.Action.Container">
+        <item name="android:layout_margin">@dimen/_4sdp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="ServiceLinearContainer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="SupportImage">
+        <item name="android:layout_width">@dimen/_28sdp</item>
+        <item name="android:layout_height">@dimen/_28sdp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="ServiceTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:textColor">#B2131A22</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/_2sdp</item>
+    </style>
+
+    <style name="CategoryContainer" parent="ServiceContainer">
+        <item name="android:layout_height">@dimen/_90sdp</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+
+    <style name="CategoryImage" parent="SupportImage">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+    </style>
+
+    <style name="CategoryTitle" parent="ServiceTitle">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/_9ssp</item>
+        <item name="android:textColor">#7F131A22</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="CategoryLinearContainer" parent="ServiceLinearContainer">
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="Copyright">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_8ssp</item>
+        <item name="android:textColor">#A3A3A3</item>
+    </style>
+
+    <style name="TextBase">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="WidgetHeader.Title" parent="TextBase">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#1F1F1F</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ItemSettingContainer">
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:paddingEnd">12dp</item>
+    </style>
+
+    <!--Custom styles Media Player-->
+    <style name="FullScreen" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/background_player</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="NeumorphismImageSmall">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">@dimen/_21sdp</item>
+    </style>
+
+    <style name="NeumorphismImageNormal">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">@dimen/_27sdp</item>
+    </style>
+
+    <style name="NeumorphismImageLarge">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">@dimen/_32sdp</item>
+    </style>
+
+    <style name="NeumorphismCardImage">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">@dimen/_115sdp</item>
+    </style>
+
+    <style name="NeumorphismImageOther">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">@dimen/_8sdp</item>
+    </style>
+</resources>

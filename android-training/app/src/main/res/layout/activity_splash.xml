@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ui.features.splash.SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageSplash"
+        android:layout_width="@dimen/_256sdp"
+        android:layout_height="@dimen/_256sdp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/splash"
+        android:src="@drawable/ic_splash"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginVertical="@dimen/_16sdp"
+        android:gravity="end"
+        android:text="@string/author"
+        android:textStyle="italic" />
+</FrameLayout>

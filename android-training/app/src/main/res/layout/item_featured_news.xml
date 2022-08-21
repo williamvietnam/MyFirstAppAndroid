@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_imv_container"
+    android:layout_width="@dimen/_160sdp"
+    android:layout_height="@dimen/_160sdp"
+    android:layout_margin="@dimen/_4sdp"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/imvThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_88sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_news_test_1" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:padding="6dp"
+            android:text="@string/content_sap_ra_mat"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/date_01042022"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/tvNumberViews"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/numberView_56k"
+                android:textSize="@dimen/_9ssp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

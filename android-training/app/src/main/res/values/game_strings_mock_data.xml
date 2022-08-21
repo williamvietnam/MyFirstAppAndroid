@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="co_vua">Cờ vua</string>
+    <string name="co_tuong">Cờ tướng</string>
+    <string name="dat_bom">Đặt bom</string>
+    <string name="csgo">Bắn súng</string>
+    <string name="de_che">Đế chế</string>
+    <string name="ran_san_moi">Rắn săn mồi</string>
+</resources>

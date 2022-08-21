@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/code_container"
+    style="@style/CategoryContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        style="@style/CategoryLinearContainer"
+        android:layout_width="@dimen/_68sdp"
+        android:layout_height="@dimen/_68sdp"
+        android:padding="@dimen/_3sdp"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/logoGame"
+            style="@style/CategoryImage"
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:contentDescription="@string/chess_game"
+            android:src="@drawable/img_chess" />
+
+        <TextView
+            android:id="@+id/titleGame"
+            style="@style/CategoryTitle"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="@string/chess_game"
+            android:textSize="@dimen/_9ssp"
+            tools:text="@string/chess_game" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

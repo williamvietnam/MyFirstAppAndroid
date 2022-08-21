@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_116sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_4sdp"
+    android:paddingHorizontal="@dimen/_2sdp"
+    android:paddingVertical="@dimen/_6sdp"
+    tools:context=".ui.features.book.adapter.ItemBookSuggestHorizontalAdapter">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imvBook"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_96sdp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="@dimen/_5sdp"
+        tools:src="@drawable/ic_book_dev_up" />
+
+    <TextView
+        android:id="@+id/tvBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imvBook"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="@string/book_name"
+        android:textSize="@dimen/_11ssp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBookName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:numStars="5"
+        tools:rating="3" />
+
+    <TextView
+        android:id="@+id/tvBookPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold"
+        tools:text="Giá: 500.000 VND" />
+</RelativeLayout>
