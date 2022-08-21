@@ -4,463 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary"
     android:orientation="vertical"
     tools:context=".ui.features.account.AccountFragment">
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imvAvatar"
+        android:layout_width="@dimen/_68sdp"
+        android:layout_height="@dimen/_68sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/thumbnail_player" />
+
+    <TextView
+        android:id="@+id/tvFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        tools:text="William Giang Nguyen" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        tools:text="williamnb.vn@gmail.com" />
+
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#DDDDDD"
-        android:orientation="horizontal"
-        android:paddingTop="2dp"
-        android:paddingBottom="2dp">
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/background_account">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start|center_vertical"
-            android:layout_marginStart="@dimen/_24sdp"
-            android:gravity="start"
-            android:padding="3dp"
-            android:text="@string/personal"
-            android:textSize="28sp" />
-
-        <ImageView
-            android:id="@+id/btnSearchBook"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end|center_vertical"
-            android:layout_marginEnd="@dimen/_16sdp"
-            android:contentDescription="@string/settings"
-            android:src="@drawable/ic_settings" />
-    </FrameLayout>
-
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/_8sdp">
-
-        <LinearLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/imvAva"
-                    android:layout_width="@dimen/_64sdp"
-                    android:layout_height="@dimen/_64sdp"
-                    android:layout_centerHorizontal="true"
-                    android:src="@drawable/ava_none" />
-
-                <TextView
-                    android:id="@+id/tvName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/imvAva"
-                    android:layout_centerHorizontal="true"
-                    android:text="William Nguyen"
-                    android:textSize="@dimen/_20ssp" />
-            </RelativeLayout>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/layoutSettingAccount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_16sdp"
-                app:cardCornerRadius="@dimen/_6sdp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingTop="@dimen/_8sdp"
-                    android:paddingBottom="@dimen/_8sdp">
-
-                    <LinearLayout
-                        android:id="@+id/btnPrivacy"
-                        style="@style/ServiceContainer.Action.Container"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_28sdp"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_24sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_privacy" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="@dimen/_8sdp"
-                            android:layout_weight="7"
-                            android:text="@string/privacy"
-                            android:textSize="@dimen/_18ssp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_18sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_expand_right" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginStart="@dimen/_8sdp"
-                        android:layout_marginEnd="@dimen/_8sdp"
-                        android:background="@color/black" />
-
-                    <LinearLayout
-                        android:id="@+id/btnSecurity"
-                        style="@style/ServiceContainer.Action.Container"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_28sdp"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_24sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_security" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="@dimen/_8sdp"
-                            android:layout_weight="7"
-                            android:text="@string/account_security"
-                            android:textSize="@dimen/_18ssp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_18sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_expand_right" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginStart="@dimen/_8sdp"
-                        android:layout_marginEnd="@dimen/_8sdp"
-                        android:background="@color/black" />
-
-                    <LinearLayout
-                        android:id="@+id/btnBackup"
-                        style="@style/ServiceContainer.Action.Container"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_28sdp"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_24sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_backup_restore" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="@dimen/_8sdp"
-                            android:layout_weight="7"
-                            android:text="@string/backup_restore"
-                            android:textSize="@dimen/_18ssp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_18sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_expand_right" />
-                    </LinearLayout>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/layoutSettingApp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_16sdp"
-                app:cardCornerRadius="@dimen/_6sdp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingTop="@dimen/_8sdp"
-                    android:paddingBottom="@dimen/_8sdp">
-
-                    <LinearLayout
-                        android:id="@+id/btnTheme"
-                        style="@style/ServiceContainer.Action.Container"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_28sdp"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_24sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_theme" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="@dimen/_8sdp"
-                            android:layout_weight="7"
-                            android:text="@string/theme"
-                            android:textSize="@dimen/_18ssp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_18sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_expand_right" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginStart="@dimen/_8sdp"
-                        android:layout_marginEnd="@dimen/_8sdp"
-                        android:background="@color/black" />
-
-                    <LinearLayout
-                        android:id="@+id/btnSettingNotification"
-                        style="@style/ServiceContainer.Action.Container"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_28sdp"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_24sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_notification" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="@dimen/_8sdp"
-                            android:layout_weight="7"
-                            android:text="@string/notification"
-                            android:textSize="@dimen/_18ssp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_18sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_expand_right" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginStart="@dimen/_8sdp"
-                        android:layout_marginEnd="@dimen/_8sdp"
-                        android:background="@color/black" />
-
-                    <LinearLayout
-                        android:id="@+id/btnChangeLanguage"
-                        style="@style/ServiceContainer.Action.Container"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_28sdp"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_24sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_language" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="@dimen/_8sdp"
-                            android:layout_weight="7"
-                            android:text="@string/change_language"
-                            android:textSize="@dimen/_18ssp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_18sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_expand_right" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginStart="@dimen/_8sdp"
-                        android:layout_marginEnd="@dimen/_8sdp"
-                        android:background="@color/black" />
-
-                    <LinearLayout
-                        android:id="@+id/btnAboutUs"
-                        style="@style/ServiceContainer.Action.Container"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_28sdp"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_24sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_about_us" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="@dimen/_8sdp"
-                            android:layout_weight="7"
-                            android:text="@string/about_us"
-                            android:textSize="@dimen/_18ssp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_18sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_expand_right" />
-                    </LinearLayout>
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/layoutSwitchAccount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_16sdp"
-                app:cardCornerRadius="@dimen/_6sdp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingTop="@dimen/_8sdp"
-                    android:paddingBottom="@dimen/_8sdp">
-
-                    <LinearLayout
-                        android:id="@+id/btnSwitchAccount"
-                        style="@style/ServiceContainer.Action.Container"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_28sdp"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:clickable="true"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_24sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_switch_acc" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="@dimen/_8sdp"
-                            android:layout_weight="7"
-                            android:text="@string/switch_account"
-                            android:textSize="@dimen/_18ssp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_18sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_expand_right" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginStart="@dimen/_8sdp"
-                        android:layout_marginEnd="@dimen/_8sdp"
-                        android:background="#595353" />
-
-                    <LinearLayout
-                        android:id="@+id/btnLogout"
-                        style="@style/ServiceContainer.Action.Container"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_28sdp"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_24sdp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_logout" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="@dimen/_8sdp"
-                            android:layout_weight="7"
-                            android:text="@string/logout"
-                            android:textSize="@dimen/_18ssp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="@dimen/_18sdp"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:visibility="gone">
-
-                <LinearLayout
-                    android:id="@+id/btnLogin"
-                    style="@style/ServiceContainer.Action.Container"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_28sdp"
-                    android:layout_marginTop="@dimen/_8sdp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="@dimen/_24sdp"
-                        android:layout_weight="1"
-                        android:src="@drawable/ic_logout" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="@dimen/_8sdp"
-                        android:layout_weight="7"
-                        android:text="Đăng nhập"
-                        android:textSize="@dimen/_18ssp"
-                        android:textStyle="bold" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="@dimen/_18sdp"
-                        android:layout_weight="1" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_6sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_6sdp"
+            android:scrollbars="none"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/layout_account" />
+    </FrameLayout>
 </LinearLayout>
