@@ -1,7 +1,6 @@
 package com.williamnb.readlistenapp.ui.features.account;
 
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -46,10 +45,10 @@ public class AccountFragment extends BaseFragment<FragmentAccountBinding, Accoun
 
     @Override
     public void initializeEvents() {
-        viewBinding.btnLogout.setOnClickListener(view -> {
-            Log.d(AccountFragment.class.getName(), "debug: in progress logout()...");
-            viewModel.logout();
-        });
+//        viewBinding.btnLogout.setOnClickListener(view -> {
+//            Log.d(AccountFragment.class.getName(), "debug: in progress logout()...");
+//            viewModel.logout();
+//        });
     }
 
     @Override
