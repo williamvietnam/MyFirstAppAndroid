@@ -1,4 +1,4 @@
-package com.williamnb.readlistenapp.ui.features.book.detail;
+package com.williamnb.readlistenapp.ui.features.bookdetail;
 
 import android.app.Application;
 
@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 
 import com.google.gson.Gson;
 import com.williamnb.readlistenapp.base.BaseViewModel;
+import com.williamnb.readlistenapp.data.local.models.BookStore;
 import com.williamnb.readlistenapp.data.local.models.Comment;
 import com.williamnb.readlistenapp.data.local.models.book.Book;
 import com.williamnb.readlistenapp.utilities.Utilities;
@@ -19,20 +20,29 @@ import java.util.List;
 public class BookDetailViewModel extends BaseViewModel {
 
     private Book bookDetail;
+    private BookStore.Data bookStoreDetail;
     private List<Comment.Data> dataList;
 
     public BookDetailViewModel(@NonNull Application application) {
         super(application);
         this.bookDetail = new Book();
+        this.bookStoreDetail = new BookStore.Data();
         this.dataList = new ArrayList<>();
-    }
-
-    public Book getBookDetail() {
-        return this.bookDetail;
     }
 
     public void setBookDetail(Book bookDetail) {
         this.bookDetail = bookDetail;
+    }
+
+    public void setBookStoreDetail(BookStore.Data bookStoreDetail) {
+        this.bookStoreDetail = bookStoreDetail;
+    }
+    public Book getBookDetail() {
+        return this.bookDetail;
+    }
+
+    public BookStore.Data getBookStoreDetail() {
+        return bookStoreDetail;
     }
 
     public List<Comment.Data> getCommentList() {
