@@ -15,7 +15,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/_16sdp"
         android:scaleType="centerCrop"
-        tools:src="@drawable/thumbnail_player" />
+        tools:src="@drawable/ic_splash" />
 
     <TextView
         android:id="@+id/tvFullName"

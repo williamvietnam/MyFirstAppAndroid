@@ -32,7 +32,7 @@
     <string name="music">Nhạc</string>
     <string name="personal">Cá nhân</string>
     <string name="privacy">Quyền riêng tư</string>
-    <string name="account_security">Tài khoản và bảo mật</string>
+    <string name="account_security">Tài khoản và Bảo mật</string>
     <string name="backup_restore">Sao lưu và khôi phục</string>
     <string name="theme">Giao diện</string>
     <string name="notification">Thông báo</string>
@@ -78,4 +78,10 @@
     <string name="active">{Đang hoạt động}</string>
     <string name="expand">expand</string>
     <string name="settings">settings</string>
+    <string name="update_info_display">Cập nhật thông tin hiển thị</string>
+    <string name="change_password">Thay đổi mật khẩu</string>
+    <string name="current_password">Mật khẩu hiện tại</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="privacy_setting">Thiết lập bảo mật</string>
+    <string name="save">SAVE</string>
 </resources>
