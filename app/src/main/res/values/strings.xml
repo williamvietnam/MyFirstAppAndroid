@@ -42,6 +42,7 @@
     <string name="logout">Đăng xuất</string>
     <string name="create_new_account">Tạo tài khoản mới</string>
     <string name="sign_in">Đăng nhập</string>
+    <string name="have_account_logout"><i>Đã có tài khoản - Đăng nhập ngay </i></string>
     <string name="password">Mật khẩu</string>
     <string name="account">Tài khoản</string>
     <string name="login_to_continue">Đăng nhập để tiếp tục</string>
