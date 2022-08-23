@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 
@@ -24,15 +25,34 @@ public class SignUpActivity extends BaseActivity<ActivitySignUpBinding, SignUpVi
 
     private static final int RESULT_OK = -1;
     private String encodeImage;
-
-    @Override
-    protected ActivitySignUpBinding getActivityBinding() {
-        return ActivitySignUpBinding.inflate(getLayoutInflater());
-    }
+    private final ActivityResultLauncher<Intent> pickImage = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            result -> {
+                if (result.getResultCode() == RESULT_OK) {
+                    if (result.getData() != null) {
+                        Uri imageUri = result.getData().getData();
+                        try {
+                            InputStream inputStream = getApplicationContext().getContentResolver().openInputStream(imageUri);
+                            Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
+                            viewBinding.imvAvatar.setImageBitmap(bitmap);
+                            viewBinding.tvAddImage.setVisibility(View.GONE);
+                            this.encodeImage = viewModel.encodeImage(bitmap);
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+    );
 
     @Override
     public SignUpViewModel createViewModel() {
         return new ViewModelProvider(this).get(SignUpViewModel.class);
+    }
+
+    @Override
+    public ActivitySignUpBinding getActivityBinding() {
+        return ActivitySignUpBinding.inflate(getLayoutInflater());
     }
 
     @Override
@@ -46,11 +66,13 @@ public class SignUpActivity extends BaseActivity<ActivitySignUpBinding, SignUpVi
     @Override
     public void initializeEvents() {
         viewBinding.btnSignIn.setOnClickListener(view -> {
-            comeBackSignInScreen();
+            Log.d(SignUpActivity.class.getSimpleName(), "debug: comeback sign in");
+            onBackPressed();
         });
 
         viewBinding.btnBack.setOnClickListener(view -> {
-            comeBackSignInScreen();
+            Log.d(SignUpActivity.class.getSimpleName(), "debug: comeback sign in");
+            onBackPressed();
         });
 
         viewBinding.btnSignUp.setOnClickListener(view -> {
@@ -85,32 +107,20 @@ public class SignUpActivity extends BaseActivity<ActivitySignUpBinding, SignUpVi
             @Override
             public void onChanged(@NonNull Boolean isOpenSignInScreen) {
                 if (isOpenSignInScreen) {
-                    comeBackSignInScreen();
+                    onBackPressed();
                 }
             }
         };
         viewModel.getOpenSignInScreen().observe(this, openSignInScreenObserver);
     }
 
-    private final ActivityResultLauncher<Intent> pickImage = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            result -> {
-                if (result.getResultCode() == RESULT_OK) {
-                    if (result.getData() != null) {
-                        Uri imageUri = result.getData().getData();
-                        try {
-                            InputStream inputStream = getApplicationContext().getContentResolver().openInputStream(imageUri);
-                            Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
-                            viewBinding.imvAvatar.setImageBitmap(bitmap);
-                            viewBinding.tvAddImage.setVisibility(View.GONE);
-                            this.encodeImage = viewModel.encodeImage(bitmap);
-                        } catch (FileNotFoundException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-            }
-    );
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent startActivityIntent = new Intent(this, SignInActivity.class);
+        startActivity(startActivityIntent);
+        finish();
+    }
 
     @NonNull
     private Boolean isValidSignUpDetails() {
@@ -148,11 +158,5 @@ public class SignUpActivity extends BaseActivity<ActivitySignUpBinding, SignUpVi
             viewBinding.progressBar.setVisibility(View.INVISIBLE);
             viewBinding.btnSignUp.setVisibility(View.VISIBLE);
         }
-    }
-
-    private void comeBackSignInScreen() {
-        Intent startActivityIntent = new Intent(this, SignInActivity.class);
-        startActivity(startActivityIntent);
-        finish();
     }
 }

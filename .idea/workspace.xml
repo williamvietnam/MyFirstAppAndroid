@@ -14,7 +14,6 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="fatal" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
@@ -23,36 +22,34 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c6b22d5-d19d-424a-83c3-e7605457ee27" name="Default Changelist" comment="create book store screen">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/book_category/BookCategoryAdapter.java" afterDir="false" />
+    <list default="true" id="0c6b22d5-d19d-424a-83c3-e7605457ee27" name="Default Changelist" comment="account screen">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/custom/view/TextFieldCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_email.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_key.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_lock.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/book_store.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/book_store.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/data/local/models/BookStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/data/local/models/BookStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/detail/BookCommentAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookdetail/BookCommentAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/detail/BookDetailFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookdetail/BookDetailFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/book/detail/BookDetailViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookdetail/BookDetailViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/BookStoreAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/BookStoreAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/BookStoreFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/BookStoreFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/book_category/BookCategoryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/book_category/BookCategoryFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/book_category/BookCategoryViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/bookstore/book_category/BookCategoryViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/utilities/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/utilities/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/utilities/callback/BookStoreCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/utilities/callback/BookStoreCallBack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_book_category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_book_category.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_book_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_book_detail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_book_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_book_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_book_comment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_book_comment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/base/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/base/BaseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/login/SignInActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/login/SignInActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/login/SignUpActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/login/SignUpActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/main/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/main/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/splash/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/splash/SplashActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/welcome/WelcomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/williamnb/readlistenapp/ui/features/welcome/WelcomeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_account.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_account.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_in.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_in.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/widget_change_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/widget_change_password.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/widget_update_display_information.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/widget_update_display_information.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\giang\.android\avd\Pixel_XL_API_28.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[340895254200267]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -68,17 +65,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ReadListenApp" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ReadListenApp" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ReadListenApp" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -93,9 +79,9 @@
         <option value="valueResourceFile" />
         <option value="layoutResourceFile_vertical" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="resourceFile" />
         <option value="layoutResourceFile" />
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -116,7 +102,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -152,6 +138,8 @@
     <property name="SHOW_ALL_PROCESSES" value="true" />
     <property name="android-custom-viewC:/Users/GiangNB2/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED" value="RecyclerView" />
     <property name="android-custom-viewC:/Users/GiangNB2/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.5.0/8d3b87c7463f55053836b805e014cb238f64757a/material-1.5.0-sources.jar!/com/google/android/material/tabs/TabItem.java_SELECTED" value="TabItem" />
+    <property name="android-custom-viewC:/Users/GiangNB2/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.6.1/d4d703885d24c61bc0ec39a9a705969e41d773ef/material-1.6.1-sources.jar!/com/google/android/material/switchmaterial/SwitchMaterial.java_SELECTED" value="SwitchMaterial" />
+    <property name="android-custom-viewC:/Users/GiangNB2/.gradle/caches/modules-2/files-2.1/com.makeramen/roundedimageview/2.3.0/a74d35b08232b1e1fe0c50eeb4a27d43d6a53e1b/roundedimageview-2.3.0-sources.jar!/com/makeramen/roundedimageview/RoundedImageView.java_SELECTED" value="RoundedImageView" />
     <property name="android-custom-viewC:/Users/GiangNB2/AppData/Local/Android/Sdk/sources/android-32/android/widget/RatingBar.java_SELECTED" value="RatingBar" />
     <property name="android-custom-viewC:/Users/giang/.gradle/caches/modules-2/files-2.1/com.makeramen/roundedimageview/2.3.0/a74d35b08232b1e1fe0c50eeb4a27d43d6a53e1b/roundedimageview-2.3.0-sources.jar!/com/makeramen/roundedimageview/RoundedImageView.java_SELECTED" value="RoundedImageView" />
     <property name="android-custom-viewC:/Users/giang/.jdks/corretto-11.0.10/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.4.1/f9e48179ea0c6ac0080a277b9383f74523f56aa2/appcompat-1.4.1-sources.jar!/androidx/appcompat/widget/AppCompatImageView.java_AppCompatImageView_DIMENSIONS" value="1080&#10;1920" />
@@ -171,17 +159,17 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\MyGithub\android-app-entertainment\app\src\main\res\drawable-v24" />
+      <recent name="F:\MyGithub\android-app-entertainment\app\src\main\res\drawable" />
       <recent name="F:\MyGithub\android-app-entertainment\app\src\main\assets" />
       <recent name="D:\MyGithub\android-app-entertainment\app\src\main\res\drawable" />
       <recent name="F:\MyGithub\VinApp\app\src\main\res\layout" />
-      <recent name="F:\MyGithub\VinApp\app\src\main\res\drawable" />
-      <recent name="D:\Projects\AndroidJavaProjects\ReadListenApp\app\src\main\res\drawable-v24" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\MyGithub\android-app-entertainment\app\src\main\assets" />

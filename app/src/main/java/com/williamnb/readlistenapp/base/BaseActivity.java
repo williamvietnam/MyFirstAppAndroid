@@ -36,7 +36,7 @@ public abstract class BaseActivity<VB extends ViewBinding, VM extends BaseViewMo
         super.onDestroy();
     }
 
-    protected abstract VB getActivityBinding();
+    public abstract VB getActivityBinding();
 
     protected void onPostOnCreate() {
         viewModel = createViewModel();

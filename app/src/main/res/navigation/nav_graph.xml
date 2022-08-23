@@ -55,7 +55,29 @@
         android:id="@+id/fragmentAccount"
         android:name="com.williamnb.readlistenapp.ui.features.account.AccountFragment"
         android:label="AccountFragment"
-        tools:layout="@layout/fragment_account" />
+        tools:layout="@layout/fragment_account">
+
+        <action
+            android:id="@+id/actionAccountToUpdateAccountInfo"
+            app:destination="@id/fragmentUpdateAccountInfo" />
+
+        <action
+            android:id="@+id/actionAccountToAboutUs"
+            app:destination="@id/fragmentAboutUs" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentUpdateAccountInfo"
+        android:name="com.williamnb.readlistenapp.ui.features.account.update_account_info.UpdateAccountInfoFragment"
+        android:label="UpdateAccountInfoFragment"
+        tools:layout="@layout/fragment_update_account_info" />
+
+    <fragment
+        android:id="@+id/fragmentAboutUs"
+        android:name="com.williamnb.readlistenapp.ui.features.account.about_us.AboutUsFragment"
+        android:label="AboutUsFragment"
+        tools:layout="@layout/fragment_about_us" />
+
 
     <fragment
         android:id="@+id/fragmentBookDetail"

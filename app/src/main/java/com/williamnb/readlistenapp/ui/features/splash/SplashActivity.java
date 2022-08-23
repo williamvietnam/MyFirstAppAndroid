@@ -28,7 +28,7 @@ public class SplashActivity extends BaseActivity<ActivitySplashBinding, SplashVi
     };
 
     @Override
-    protected ActivitySplashBinding getActivityBinding() {
+    public ActivitySplashBinding getActivityBinding() {
         return ActivitySplashBinding.inflate(getLayoutInflater());
     }
 

@@ -35,7 +35,7 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
     }
 
     @Override
-    protected ActivityWelcomeBinding getActivityBinding() {
+    public ActivityWelcomeBinding getActivityBinding() {
         this.count = viewModel.getWelcomeList().size();
         return ActivityWelcomeBinding.inflate(getLayoutInflater());
     }

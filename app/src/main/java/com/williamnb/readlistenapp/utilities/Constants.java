@@ -33,4 +33,12 @@ public class Constants {
     public static final String BOOK_DETAIL = "BOOK_DETAIL";
     public static final String BOOK_STORE_DETAIL = "BOOK_STORE_DETAIL";
     public static final String BOOK_STORE_CATEGORY = "BOOK_STORE_CATEGORY";
+
+    //Account screen
+    public static final String ACCOUNT_ITEM_PRIVACY = "ACCOUNT_ITEM_PRIVACY";
+    public static final String ACCOUNT_ITEM_NOTIFICATION = "ACCOUNT_ITEM_NOTIFICATION";
+    public static final String ACCOUNT_ITEM_LANGUAGE = "ACCOUNT_ITEM_LANGUAGE";
+    public static final String ACCOUNT_BACKUP_RESTORE = "ACCOUNT_BACKUP_RESTORE";
+    public static final String ACCOUNT_ITEM_ABOUT_US = "ACCOUNT_ITEM_ABOUT_US";
+    public static final String ACCOUNT_ITEM_LOG_OUT = "ACCOUNT_ITEM_LOG_OUT";
 }

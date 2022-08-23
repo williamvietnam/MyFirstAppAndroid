@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/_8sdp"
+    tools:context=".ui.features.account.AccountAdapter">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:backgroundTint="@color/primary"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_6sdp"
+            app:tint="@color/white"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_settings" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_toStartOf="@id/ivExpand"
+        android:layout_toEndOf="@id/cardIcon"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/_9sdp"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        tools:text="@string/account_security" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHeadline"
+        android:layout_marginHorizontal="@dimen/_1sdp"
+        android:layout_toStartOf="@id/ivExpand"
+        android:layout_toEndOf="@id/cardIcon"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/_9sdp"
+        android:textSize="@dimen/_12ssp"
+        tools:text="Đổi mật khẩu, thay đổi thông tin cá nhân" />
+
+    <ImageView
+        android:id="@+id/ivExpand"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:contentDescription="@string/expand"
+        android:src="@drawable/ic_expand_right"
+        app:tint="#808080" />
+</RelativeLayout>

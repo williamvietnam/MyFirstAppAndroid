@@ -15,7 +15,7 @@ import com.williamnb.readlistenapp.databinding.ActivityMainBinding;
 public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewModel> {
 
     @Override
-    protected ActivityMainBinding getActivityBinding() {
+    public ActivityMainBinding getActivityBinding() {
         return ActivityMainBinding.inflate(getLayoutInflater());
     }
 
