@@ -4,42 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary"
     android:orientation="vertical">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#DDDDDD"
+        android:background="@color/white"
         android:orientation="horizontal"
         android:paddingTop="2dp"
         android:paddingBottom="2dp">
 
         <ImageView
             android:id="@+id/btnMenuSelect"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
             android:layout_gravity="start|center_vertical"
-            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_10sdp"
             android:contentDescription="@string/menu"
-            android:src="@drawable/ic_menu_select" />
+            android:src="@drawable/ic_menu_select"
+            app:tint="@color/primary" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:padding="3dp"
             android:text="@string/home_page"
-            android:textSize="28sp" />
+            android:textColor="@color/primary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/btnSearchBook"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
             android:layout_gravity="end|center_vertical"
-            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
             android:contentDescription="@string/search"
-            android:src="@drawable/ic_search" />
+            android:src="@drawable/ic_search"
+            app:tint="@color/primary" />
     </FrameLayout>
 
     <androidx.core.widget.NestedScrollView
@@ -64,7 +68,8 @@
                 layout="@layout/widget_home_menu_action"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_8sdp" />
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_8sdp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -72,6 +77,7 @@
                 android:layout_marginStart="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:text="@string/featured_news"
+                android:textColor="@color/white"
                 android:textSize="@dimen/_14ssp"
                 android:textStyle="bold" />
 
@@ -80,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_6sdp"
-                android:background="#00BFA5"
+                android:background="@color/primary"
                 android:orientation="horizontal"
                 android:scrollbars="none"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
@@ -92,6 +98,7 @@
                 android:layout_marginStart="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:text="@string/featured_games"
+                android:textColor="@color/white"
                 android:textSize="@dimen/_14ssp"
                 android:textStyle="bold" />
 
@@ -100,7 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_6sdp"
-                android:background="#00BFA5"
+                android:background="@color/primary"
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/item_featured_games" />
@@ -118,6 +125,7 @@
                     android:layout_gravity="start|center_vertical"
                     android:gravity="center"
                     android:text="@string/list_friends"
+                    android:textColor="@color/white"
                     android:textSize="@dimen/_14ssp"
                     android:textStyle="bold" />
 
@@ -129,7 +137,8 @@
                     android:layout_marginTop="@dimen/_3sdp"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:contentDescription="@string/expand"
-                    android:src="@drawable/ic_select_option" />
+                    android:src="@drawable/ic_select_option"
+                    app:tint="@color/white" />
             </FrameLayout>
 
             <androidx.recyclerview.widget.RecyclerView

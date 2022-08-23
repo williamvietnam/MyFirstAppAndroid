@@ -39,11 +39,11 @@ public class SplashActivity extends BaseActivity<ActivitySplashBinding, SplashVi
 
     @Override
     public void initializeView() {
-        viewBinding.imageSplash.setVisibility(View.VISIBLE);
-        viewBinding.imageSplash.setImageResource(R.drawable.ic_splash);
+        viewBinding.text.setVisibility(View.VISIBLE);
+        viewBinding.text.setText(R.string.app_name);
         viewBinding.tvAuthor.setVisibility(View.VISIBLE);
         viewBinding.tvAuthor.setText(R.string.author);
-        this.handler.postDelayed(this.runnable, 1500);
+        this.handler.postDelayed(this.runnable, 1000);
     }
 
     @Override

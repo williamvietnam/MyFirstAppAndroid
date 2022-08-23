@@ -127,7 +127,19 @@ public class AccountFragment extends BaseFragment<FragmentAccountBinding, Accoun
                 findNavController().navigate(R.id.actionAccountToAboutUs);
                 break;
             case Constants.ACCOUNT_ITEM_LOG_OUT:
-                viewModel.logout();
+                new AlertDialog.Builder(requireContext())
+                        .setTitle("Đăng xuất")
+                        .setMessage("Bạn có chắc chắn muốn đăng xuất không?")
+                        .setIcon(R.drawable.ic_logout)
+                        .setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                viewModel.logout();
+                            }
+                        })
+                        .setNegativeButton("Hủy", null)
+                        .setCancelable(true)
+                        .show();
                 break;
         }
     }
