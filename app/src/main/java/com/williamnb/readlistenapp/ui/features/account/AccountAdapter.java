@@ -59,7 +59,7 @@ public class AccountAdapter extends RecyclerView.Adapter<BaseViewHolder> {
             this.binding.tvHeadline.setText(item.getTextHeadline());
             this.binding.tvDescription.setText(item.getTextDescription());
             this.binding.getRoot().setOnClickListener(view -> {
-                callBack.onClicked(item);
+                callBack.onClicked(item.getItemId());
                 Log.d(AccountFragment.class.getName(), "debug: onClicked()...");
             });
         }
@@ -71,6 +71,6 @@ public class AccountAdapter extends RecyclerView.Adapter<BaseViewHolder> {
     }
 
     public interface AccountCallBack {
-        void onClicked(AccountItem item);
+        void onClicked(String itemId);
     }
 }

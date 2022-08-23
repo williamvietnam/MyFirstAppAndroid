@@ -54,6 +54,7 @@ public class SignInViewModel extends BaseViewModel {
                         DocumentSnapshot documentSnapshot = task.getResult().getDocuments().get(0);
                         getPreferenceManager().putBoolean(Constants.KEY_IS_SIGNED_IN, true);
                         getPreferenceManager().putString(Constants.KEY_USER_ID, documentSnapshot.getId());
+                        getPreferenceManager().putString(Constants.KEY_EMAIL, documentSnapshot.getString(Constants.KEY_EMAIL));
                         getPreferenceManager().putString(Constants.KEY_NAME, documentSnapshot.getString(Constants.KEY_NAME));
                         getPreferenceManager().putString(Constants.KEY_IMAGE, documentSnapshot.getString(Constants.KEY_IMAGE));
                         this.openMainScreen.setValue(true);

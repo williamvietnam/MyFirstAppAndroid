@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    tools:context=".ui.features.account.update_account_info.UpdateAccountInfoFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingVertical="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_back"
+            app:tint="@color/primary_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:gravity="center"
+            android:text="@string/account_security"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:backgroundTint="@color/primary"
+            android:gravity="center"
+            app:cardCornerRadius="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_6sdp"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/widgetUpdateDisplayInfo"
+                layout="@layout/widget_update_display_information" />
+
+            <include
+                android:id="@+id/widgetChangePassword"
+                layout="@layout/widget_change_password" />
+
+            <FrameLayout
+                android:id="@+id/flSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary"
+                android:paddingVertical="@dimen/_3sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:text="@string/privacy_setting"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/expandSetting"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:contentDescription="@string/expand"
+                    app:tint="@color/white"
+                    tools:src="@drawable/ic_select_option" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flRcvSettings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/background_account"
+                android:padding="@dimen/_6sdp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:orientation="vertical"
+                    android:scrollbars="none"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/layout_update_account_info" />
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.features.account.update_account_info.UpdateAccountInfoAdapter">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/_6sdp"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/_13ssp"
+        tools:text="{required...required...}" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:thumb="@drawable/ic_sw_thumb"
+        app:thumbTint="@color/white"
+        app:track="@drawable/sw_track_selector"
+        tools:checked="true" />
+</FrameLayout>
