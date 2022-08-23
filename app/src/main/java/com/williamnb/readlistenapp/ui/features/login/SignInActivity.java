@@ -15,7 +15,7 @@ import com.williamnb.readlistenapp.ui.features.main.MainActivity;
 public class SignInActivity extends BaseActivity<ActivitySignInBinding, SignInViewModel> {
 
     @Override
-    protected ActivitySignInBinding getActivityBinding() {
+    public ActivitySignInBinding getActivityBinding() {
         return ActivitySignInBinding.inflate(getLayoutInflater());
     }
 
@@ -43,8 +43,8 @@ public class SignInActivity extends BaseActivity<ActivitySignInBinding, SignInVi
         viewBinding.btnSignIn.setOnClickListener(view -> {
             if (isValidSignInDetails()) {
                 viewModel.signIn(
-                        viewBinding.inputAccount.getText().toString(),
-                        viewBinding.inputPassword.getText().toString()
+                        viewBinding.inputAccount.getText().toString().trim(),
+                        viewBinding.inputPassword.getText().toString().trim()
                 );
             }
         });
