@@ -11,6 +11,9 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.williamnb.readlistenapp.base.BaseViewModel;
 import com.williamnb.readlistenapp.utilities.Constants;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class SignInViewModel extends BaseViewModel {
 
     private MutableLiveData<Boolean> isLoading;

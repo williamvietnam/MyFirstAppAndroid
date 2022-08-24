@@ -4,52 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary"
     android:orientation="vertical"
     tools:context=".ui.features.bookstore.BookStoreFragment">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#DDDDDD"
-        android:orientation="horizontal">
+        android:background="@color/primary"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_8sdp">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnBack"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_back"
+            android:tint="@color/white" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="1"
-            android:contentDescription="@string/back"
-            android:src="@drawable/ic_back" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="8"
             android:gravity="center"
             android:padding="3dp"
             android:text="@string/book_store_title"
+            android:textColor="@color/white"
             android:textSize="32sp" />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnSearchInBookStore"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/_12sdp"
             android:contentDescription="@string/search"
-            android:src="@drawable/ic_search" />
-    </LinearLayout>
+            android:src="@drawable/ic_search"
+            android:tint="@color/white" />
+    </FrameLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_6sdp"
         android:orientation="vertical"
-        android:padding="@dimen/_3sdp"
         android:scrollbars="none"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:itemCount="9"
         tools:listitem="@layout/layout_book_store" />
 </LinearLayout>

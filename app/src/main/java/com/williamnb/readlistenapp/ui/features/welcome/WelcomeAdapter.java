@@ -13,6 +13,9 @@ import com.williamnb.readlistenapp.databinding.ItemWelcomeBinding;
 
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class WelcomeAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     private final List<Welcome> welcomeList;

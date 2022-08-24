@@ -9,6 +9,9 @@ import androidx.room.RoomDatabase;
 import com.williamnb.readlistenapp.data.local.database.dao.TVShowDAO;
 import com.williamnb.readlistenapp.data.local.database.entities.TVShowEntity;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 @Database(entities = {TVShowEntity.class}, version = 1, exportSchema = false)
 public abstract class TVShowDatabase extends RoomDatabase {
 

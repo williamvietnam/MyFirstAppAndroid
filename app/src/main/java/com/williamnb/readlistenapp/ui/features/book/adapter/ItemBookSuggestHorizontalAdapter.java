@@ -17,6 +17,9 @@ import com.williamnb.readlistenapp.utilities.callback.BookCallBack;
 
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class ItemBookSuggestHorizontalAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     private final List<Book> bookList;

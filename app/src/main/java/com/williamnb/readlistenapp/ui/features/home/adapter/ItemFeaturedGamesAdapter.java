@@ -15,6 +15,9 @@ import com.williamnb.readlistenapp.utilities.callback.HomeCallBack;
 
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class ItemFeaturedGamesAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     private final List<Game> gameList;

@@ -26,8 +26,6 @@ import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.data.remote.models.TVShow;
 import com.williamnb.readlistenapp.databinding.FragmentTVShowDetailsBinding;
 import com.williamnb.readlistenapp.databinding.LayoutEpisodesBottomSheetBinding;
-import com.williamnb.readlistenapp.ui.features.tvshows.adapter.EpisodesAdapter;
-import com.williamnb.readlistenapp.ui.features.tvshows.adapter.ImageSliderAdapter;
 
 import java.util.Locale;
 
@@ -35,6 +33,9 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.schedulers.Schedulers;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBinding, TVShowDetailsViewModel> {
 
     private TVShow tvShow;
@@ -139,9 +140,7 @@ public class TVShowDetailsFragment extends BaseFragment<FragmentTVShowDetailsBin
                                         String.format("Episodes | %s", tvShow.getName()));
                                 layoutEpisodesBottomSheetBinding.imageClose.setOnClickListener(view1 -> episodesBottomSheetDialog.dismiss());
                                 // --- Optional section start --- //
-                                FrameLayout frameLayout = episodesBottomSheetDialog.findViewById(
-                                        com.google.android.material.R.id.design_bottom_sheet
-                                );
+                                FrameLayout frameLayout = episodesBottomSheetDialog.findViewById(R.id.design_bottom_sheet);
                                 if (frameLayout != null) {
                                     BottomSheetBehavior<View> bottomSheetBehavior = BottomSheetBehavior.from(frameLayout);
                                     bottomSheetBehavior.setPeekHeight(Resources.getSystem().getDisplayMetrics().heightPixels);

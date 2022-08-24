@@ -43,7 +43,8 @@
         android:layout_height="match_parent"
         android:layout_marginHorizontal="@dimen/_3sdp"
         android:layout_marginTop="@dimen/_12sdp"
-        android:background="@drawable/background_account">
+        android:background="@drawable/background_account"
+        android:paddingBottom="@dimen/_14sdp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcv"
@@ -51,7 +52,8 @@
             android:layout_height="match_parent"
             android:layout_margin="@dimen/_6sdp"
             android:orientation="vertical"
-            android:padding="@dimen/_6sdp"
+            android:paddingHorizontal="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_24sdp"
             android:scrollbars="none"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/layout_account" />

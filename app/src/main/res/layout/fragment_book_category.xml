@@ -4,51 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary"
     android:orientation="vertical"
     tools:context=".ui.features.bookstore.book_category.BookCategoryFragment">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#DDDDDD"
-        android:orientation="horizontal"
-        android:paddingTop="6dp"
-        android:paddingBottom="6dp">
+        android:background="@color/primary"
+        android:paddingVertical="@dimen/_6sdp">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="@dimen/_12sdp"
             android:contentDescription="@string/back"
-            android:src="@drawable/ic_back" />
+            android:src="@drawable/ic_back"
+            android:tint="@color/white" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvTitleBookCategory"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="8"
             android:gravity="center"
-            android:padding="3dp"
             android:text="@string/book_category"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnSearchInBookCategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/_12sdp"
             android:contentDescription="@string/search"
-            android:src="@drawable/ic_search" />
-    </LinearLayout>
+            android:src="@drawable/ic_search"
+            android:tint="@color/white" />
+    </FrameLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcvBookFollowCategoryList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_6sdp"
         android:orientation="vertical"
         android:scrollbars="none"
         app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"

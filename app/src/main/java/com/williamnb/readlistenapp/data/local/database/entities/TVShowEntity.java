@@ -7,6 +7,9 @@ import androidx.room.PrimaryKey;
 
 import com.williamnb.readlistenapp.data.remote.models.TVShow;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 @Entity(tableName = "tvshows")
 public class TVShowEntity {
 

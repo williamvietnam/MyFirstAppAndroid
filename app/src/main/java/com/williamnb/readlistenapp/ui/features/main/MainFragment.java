@@ -8,6 +8,10 @@ import androidx.lifecycle.ViewModelProvider;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentMainBinding;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
+@Deprecated
 public class MainFragment extends BaseFragment<FragmentMainBinding, MainViewModel> {
     @Override
     public FragmentMainBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {

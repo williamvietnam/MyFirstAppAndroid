@@ -12,6 +12,9 @@ import androidx.fragment.app.Fragment;
 
 import com.williamnb.readlistenapp.databinding.FragmentTab1Binding;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class Tab1Fragment extends Fragment {
     private final static String URL = "https://dantri.com.vn/";
     private FragmentTab1Binding binding;

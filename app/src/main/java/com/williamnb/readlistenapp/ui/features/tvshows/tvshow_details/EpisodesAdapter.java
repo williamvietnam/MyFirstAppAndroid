@@ -1,4 +1,4 @@
-package com.williamnb.readlistenapp.ui.features.tvshows.adapter;
+package com.williamnb.readlistenapp.ui.features.tvshows.tvshow_details;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -14,6 +14,9 @@ import com.williamnb.readlistenapp.databinding.ItemContainerEpisodeBinding;
 
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class EpisodesAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     private final List<Episode> episodes;

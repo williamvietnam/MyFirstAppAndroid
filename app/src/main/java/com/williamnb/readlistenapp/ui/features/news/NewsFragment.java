@@ -13,6 +13,9 @@ import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.databinding.FragmentNewsBinding;
 import com.williamnb.readlistenapp.ui.features.news.adapter.NewsAdapter;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class NewsFragment extends BaseFragment<FragmentNewsBinding, NewsViewModel> {
 
     @Override

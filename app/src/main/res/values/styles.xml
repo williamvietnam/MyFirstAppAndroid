@@ -4,14 +4,14 @@
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/primary</item>
-        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary</item>
     </style>
     <!--
     - navigationBarColor: chỉnh màu của thanh điều hướng của các máy điện thoại android bên dưới
     -->
     <style name="RatingBar" parent="android:style/Widget.Material.RatingBar.Small">
-        <item name="colorControlNormal">#808087</item>
-        <item name="colorControlActivated">#FFEA00</item>
+        <item name="colorControlNormal">#20FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
     </style>
 
     <style name="ServiceContainer">
@@ -166,7 +166,7 @@
     </style>
 
     <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <item name="boxStrokeColor">@color/primary</item>
-        <item name="boxStrokeWidth">@dimen/_1sdp</item>
+        <item name="boxStrokeColor">@color/background_promotional</item>
+        <item name="boxStrokeWidth">1dp</item>
     </style>
 </resources>

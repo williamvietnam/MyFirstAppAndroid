@@ -33,12 +33,13 @@
                 app:tint="@color/primary" />
 
             <TextView
+                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/create_new_account"
                 android:textColor="@color/primary_text"
-                android:textSize="@dimen/_24ssp"
+                android:textSize="@dimen/_22sdp"
                 android:textStyle="bold" />
         </FrameLayout>
 
@@ -190,6 +191,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_32sdp"
             android:text="@string/have_account_logout"
             android:textColor="@color/primary"
             android:textSize="@dimen/_12ssp"

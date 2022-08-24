@@ -29,6 +29,9 @@ import com.williamnb.readlistenapp.databinding.FragmentUpdateAccountInfoBinding;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class UpdateAccountInfoFragment extends BaseFragment<
         FragmentUpdateAccountInfoBinding,
         UpdateAccountInfoViewModel>
