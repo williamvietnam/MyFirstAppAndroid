@@ -13,6 +13,9 @@ import com.williamnb.readlistenapp.databinding.LayoutAccountBinding;
 
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class AccountAdapter extends RecyclerView.Adapter<BaseViewHolder> {
     private final List<AccountItem> itemList;
     private final AccountCallBack callBack;

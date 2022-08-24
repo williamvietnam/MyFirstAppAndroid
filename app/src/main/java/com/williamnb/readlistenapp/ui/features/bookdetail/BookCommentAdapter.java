@@ -15,6 +15,9 @@ import com.williamnb.readlistenapp.databinding.ItemBookCommentBinding;
 
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class BookCommentAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     private final List<Comment.Data> dataList;

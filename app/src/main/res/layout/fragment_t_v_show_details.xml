@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.features.tvshows.tvshow_details.TVShowDetailsFragment">
 
     <data>
 
@@ -368,8 +370,8 @@
             android:background="@drawable/background_fab"
             android:contentDescription="@string/app_name"
             android:padding="@dimen/_8sdp"
-            android:visibility="gone"
             android:src="@drawable/ic_eye"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:tint="@color/colorTextIcons" />

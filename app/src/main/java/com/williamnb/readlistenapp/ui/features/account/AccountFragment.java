@@ -23,6 +23,9 @@ import com.williamnb.readlistenapp.databinding.FragmentAccountBinding;
 import com.williamnb.readlistenapp.ui.features.login.SignInActivity;
 import com.williamnb.readlistenapp.utilities.Constants;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class AccountFragment extends BaseFragment<FragmentAccountBinding, AccountViewModel> implements AccountAdapter.AccountCallBack {
 
     private AccountAdapter adapter;
@@ -127,7 +130,19 @@ public class AccountFragment extends BaseFragment<FragmentAccountBinding, Accoun
                 findNavController().navigate(R.id.actionAccountToAboutUs);
                 break;
             case Constants.ACCOUNT_ITEM_LOG_OUT:
-                viewModel.logout();
+                new AlertDialog.Builder(requireContext())
+                        .setTitle("Đăng xuất")
+                        .setMessage("Bạn có chắc chắn muốn đăng xuất không?")
+                        .setIcon(R.drawable.ic_logout)
+                        .setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                viewModel.logout();
+                            }
+                        })
+                        .setNegativeButton("Hủy", null)
+                        .setCancelable(true)
+                        .show();
                 break;
         }
     }

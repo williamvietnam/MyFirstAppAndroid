@@ -7,6 +7,9 @@ import androidx.annotation.NonNull;
 
 import com.williamnb.readlistenapp.utilities.Constants;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class PreferenceManager {
     private final SharedPreferences sharedPreferences;
 

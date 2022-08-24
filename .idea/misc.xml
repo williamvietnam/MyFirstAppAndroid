@@ -35,27 +35,35 @@
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/background_input.xml" value="0.356" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/background_input_enable.xml" value="0.252" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_account.xml" value="0.252" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_add.xml" value="0.252" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_games.xml" value="0.2005" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_language.xml" value="0.2005" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_location.xml" value="0.2005" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_message.xml" value="0.248" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_select_option.xml" value="0.252" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_slide_1.xml" value="0.3305" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_slide_2.xml" value="0.237" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_slide_3.xml" value="0.237" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_splash.xml" value="0.2485" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_tv_shows.xml" value="0.248" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/activity_sign_in.xml" value="0.1" />
-        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
-        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/activity_splash.xml" value="0.2911500641299701" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/activity_sign_up.xml" value="0.19880290722530997" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/activity_splash.xml" value="0.19880290722530997" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/activity_welcome.xml" value="0.1" />
-        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_about_us.xml" value="0.2902949978623343" />
-        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_account.xml" value="0.15" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_about_us.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_account.xml" value="0.2" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_book_category.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_book_detail.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_book_main.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_book_store.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_chat_main.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_chat_screen.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_sign_in.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_sign_up.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_splash.xml" value="0.1" />
-        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_t_v_show_details.xml" value="0.2911500641299701" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_t_v_show_details.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_tab_1.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_update_account_info.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_update_personal_info.xml" value="0.2902949978623343" />
@@ -71,10 +79,12 @@
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/item_featured_news.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/item_my_book_vertical.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/item_welcome.xml" value="0.1" />
-        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/layout_episodes_bottom_sheet.xml" value="0.2911500641299701" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/layout_account.xml" value="0.19880290722530997" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/layout_episodes_bottom_sheet.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/layout_update_account_info.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/slide_item_container.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/widget_change_password.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/widget_home_menu_action.xml" value="0.264" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/widget_update_display_information.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.2911500641299701" />
       </map>

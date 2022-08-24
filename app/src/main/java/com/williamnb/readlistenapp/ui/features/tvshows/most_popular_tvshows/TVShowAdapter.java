@@ -1,4 +1,4 @@
-package com.williamnb.readlistenapp.ui.features.tvshows.adapter;
+package com.williamnb.readlistenapp.ui.features.tvshows.most_popular_tvshows;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,6 +17,9 @@ import com.williamnb.readlistenapp.utilities.callback.TVShowsCallBack;
 
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class TVShowAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     private final List<TVShow> tvShowList;

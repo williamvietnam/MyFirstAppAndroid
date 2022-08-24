@@ -12,6 +12,9 @@ import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseActivity;
 import com.williamnb.readlistenapp.databinding.ActivityMainBinding;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewModel> {
 
     @Override

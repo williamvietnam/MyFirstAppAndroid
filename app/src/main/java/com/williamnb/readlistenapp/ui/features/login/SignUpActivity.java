@@ -21,6 +21,9 @@ import com.williamnb.readlistenapp.databinding.ActivitySignUpBinding;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class SignUpActivity extends BaseActivity<ActivitySignUpBinding, SignUpViewModel> {
 
     private static final int RESULT_OK = -1;

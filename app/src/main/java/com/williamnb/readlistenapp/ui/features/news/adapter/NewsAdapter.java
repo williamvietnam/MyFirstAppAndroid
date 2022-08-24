@@ -8,6 +8,9 @@ import com.williamnb.readlistenapp.ui.features.news.tab.Tab1Fragment;
 import com.williamnb.readlistenapp.ui.features.news.tab.Tab2Fragment;
 import com.williamnb.readlistenapp.ui.features.news.tab.Tab3Fragment;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class NewsAdapter extends FragmentStateAdapter {
 
     public NewsAdapter(@NonNull Fragment fragment) {

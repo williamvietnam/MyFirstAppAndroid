@@ -12,6 +12,9 @@ import com.williamnb.readlistenapp.utilities.Constants;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class WelcomeViewModel extends BaseViewModel {
 
     private final List<Welcome> welcomeList;

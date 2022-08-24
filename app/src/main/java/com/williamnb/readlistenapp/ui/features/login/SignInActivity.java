@@ -12,6 +12,9 @@ import com.williamnb.readlistenapp.base.BaseActivity;
 import com.williamnb.readlistenapp.databinding.ActivitySignInBinding;
 import com.williamnb.readlistenapp.ui.features.main.MainActivity;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class SignInActivity extends BaseActivity<ActivitySignInBinding, SignInViewModel> {
 
     @Override

@@ -16,6 +16,9 @@ import com.williamnb.readlistenapp.ui.features.book.BookMainFragment;
 
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class BookCategoryAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     private List<BookStore.Data> dataList;

@@ -3,6 +3,7 @@ package com.williamnb.readlistenapp.ui.features.home;
 import android.annotation.SuppressLint;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,12 +26,21 @@ import com.williamnb.readlistenapp.databinding.FragmentHomeBinding;
 import com.williamnb.readlistenapp.ui.features.home.adapter.ItemFeaturedGamesAdapter;
 import com.williamnb.readlistenapp.ui.features.home.adapter.ItemFeaturedNewsAdapter;
 import com.williamnb.readlistenapp.ui.features.home.adapter.SliderAdapter;
+import com.williamnb.readlistenapp.ui.features.main.MainActivity;
 import com.williamnb.readlistenapp.utilities.callback.HomeCallBack;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewModel>
         implements View.OnClickListener, HomeCallBack {
 
     private final Handler sliderHandler = new Handler(Looper.getMainLooper());
+    private final Handler progressHandler = new Handler(Looper.getMainLooper());
+    private final Runnable progressRunnable = () -> {
+        Log.d(MainActivity.class.getSimpleName(), "runnable loading");
+        viewBinding.progressBar.setVisibility(View.GONE);
+    };
 
     @Override
     public FragmentHomeBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
@@ -44,6 +54,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
 
     @Override
     public void initializeView() {
+        viewBinding.progressBar.setVisibility(View.VISIBLE);
         hideBottomNavigationView(false);
     }
 
@@ -64,12 +75,12 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
 
     @Override
     public void initializeData() {
-
+        this.progressHandler.postDelayed(this.progressRunnable, 1200);
     }
 
     @SuppressLint("NonConstantResourceId")
     @Override
-    public void onClick(View view) {
+    public void onClick(@NonNull View view) {
         switch (view.getId()) {
             case R.id.btnGames: {
                 Toast.makeText(getContext(), "Tính năng này đang phát triển", Toast.LENGTH_SHORT).show();
@@ -133,7 +144,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
 
     @Override
     public void onBannerClicked(@NonNull SliderItem item) {
-        Toast.makeText(getContext(),"BannerId: " + item.getId(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(), "BannerId: " + item.getId(), Toast.LENGTH_SHORT).show();
     }
 
     @Override
