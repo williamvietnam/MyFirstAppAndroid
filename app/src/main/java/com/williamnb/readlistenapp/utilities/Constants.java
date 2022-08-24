@@ -34,6 +34,10 @@ public class Constants {
     public static final String BOOK_STORE_DETAIL = "BOOK_STORE_DETAIL";
     public static final String BOOK_STORE_CATEGORY = "BOOK_STORE_CATEGORY";
 
+    //Media screen
+    public static final String SONG_POSITION_IN_SONG_LIST = "SONG_POSITION_IN_SONG_LIST";
+    public static final String SONG_LIST = "SONG_LIST";
+
     //Account screen
     public static final String ACCOUNT_ITEM_PRIVACY = "ACCOUNT_ITEM_PRIVACY";
     public static final String ACCOUNT_ITEM_NOTIFICATION = "ACCOUNT_ITEM_NOTIFICATION";

@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="@dimen/_116sdp"
     android:layout_height="wrap_content"
-    android:layout_marginEnd="@dimen/_4sdp"
-    android:paddingHorizontal="@dimen/_2sdp"
-    android:paddingVertical="@dimen/_6sdp"
+    android:layout_margin="@dimen/_10sdp"
     tools:context=".ui.features.book.adapter.ItemBookSuggestHorizontalAdapter">
 
     <com.makeramen.roundedimageview.RoundedImageView
@@ -14,6 +12,7 @@
         android:layout_width="@dimen/_80sdp"
         android:layout_height="@dimen/_96sdp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_2sdp"
         android:scaleType="centerCrop"
         app:riv_corner_radius="@dimen/_5sdp"
         tools:src="@drawable/ic_book_dev_up" />
@@ -29,6 +28,7 @@
         android:gravity="center"
         android:maxLines="2"
         android:text="@string/book_name"
+        android:textColor="@color/white"
         android:textSize="@dimen/_11ssp" />
 
     <RatingBar
@@ -40,6 +40,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="2dp"
         android:numStars="5"
+        android:progressTint="@color/white"
         tools:rating="3" />
 
     <TextView
@@ -51,6 +52,7 @@
         android:layout_marginTop="2dp"
         android:gravity="center_horizontal"
         android:maxLines="1"
+        android:textColor="@color/white"
         android:textSize="@dimen/_11ssp"
         android:textStyle="bold"
         tools:text="Giá: 500.000 VND" />

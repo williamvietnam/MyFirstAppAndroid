@@ -70,7 +70,7 @@ public class SongAdapter extends RecyclerView.Adapter<BaseViewHolder> {
             Song item = songList.get(position);
             String durationText = simpleDateFormat.format(new Date(item.getDuration()));
             binding.txtSongDuration.setText(durationText);
-            binding.txtSongName.setText(item.getTitle());
+            binding.txtSongName.setText(item.getSongName());
             binding.txtSongArtist.setText(item.getArtist());
             binding.getRoot().setOnClickListener(view -> {
                 callBack.onItemClicked(getAdapterPosition());

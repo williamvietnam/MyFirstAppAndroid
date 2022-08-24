@@ -48,7 +48,6 @@
         <action
             android:id="@+id/actionMediaToSongList"
             app:destination="@id/fragmentSongList" />
-
     </fragment>
 
     <fragment
@@ -165,5 +164,10 @@
         android:id="@+id/fragmentSongList"
         android:name="com.williamnb.readlistenapp.ui.features.media.songlist.SongListFragment"
         android:label="SongListFragment"
-        tools:layout="@layout/fragment_song_list" />
+        tools:layout="@layout/fragment_song_list">
+
+        <action
+            android:id="@+id/actionSongListToMediaMain"
+            app:destination="@id/fragmentMedia" />
+    </fragment>
 </navigation>
