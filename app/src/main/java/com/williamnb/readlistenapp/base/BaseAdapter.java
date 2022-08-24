@@ -1,4 +1,8 @@
 package com.williamnb.readlistenapp.base;
 
-public class BaseAdapter {
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
+@Deprecated
+public abstract class BaseAdapter {
 }

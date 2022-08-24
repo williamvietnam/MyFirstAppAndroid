@@ -16,6 +16,9 @@ import com.williamnb.readlistenapp.ui.features.login.SignInActivity;
 import com.williamnb.readlistenapp.ui.features.main.MainActivity;
 import com.williamnb.readlistenapp.utilities.Constants;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, WelcomeViewModel> {
 
     private int count;

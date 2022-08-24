@@ -15,6 +15,9 @@ import com.williamnb.readlistenapp.utilities.Constants;
 import java.io.ByteArrayOutputStream;
 import java.util.HashMap;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class SignUpViewModel extends BaseViewModel {
 
     private MutableLiveData<Boolean> isLoading;

@@ -4,6 +4,9 @@ import android.view.View;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public abstract class BaseViewHolder extends RecyclerView.ViewHolder {
 
     private int currentPosition;

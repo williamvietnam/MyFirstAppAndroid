@@ -7,6 +7,9 @@ import androidx.annotation.NonNull;
 import com.williamnb.readlistenapp.base.BaseViewModel;
 import com.williamnb.readlistenapp.data.local.models.BookStore;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class BookCategoryViewModel extends BaseViewModel {
 
     private BookStore.BookCategory bookCategory;

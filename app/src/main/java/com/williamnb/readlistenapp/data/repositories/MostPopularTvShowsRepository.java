@@ -16,6 +16,7 @@ import io.reactivex.schedulers.Schedulers;
 /**
  * Author: William Giang Nguyen | 15/08/2022
  * */
+@Deprecated
 public class MostPopularTvShowsRepository {
     private final ApiServices apiServices;
     private final CompositeDisposable compositeDisposable;

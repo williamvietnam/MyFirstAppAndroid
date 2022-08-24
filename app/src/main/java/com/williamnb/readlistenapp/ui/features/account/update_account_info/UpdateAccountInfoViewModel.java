@@ -14,6 +14,9 @@ import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class UpdateAccountInfoViewModel extends BaseViewModel {
 
     private boolean isShowMoreDisplayInfo = true;

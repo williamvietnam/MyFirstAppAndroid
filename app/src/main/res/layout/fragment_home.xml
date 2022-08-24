@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".ui.features.home.HomeFragment">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:layout_gravity="top"
+        android:background="@color/primary"
         android:orientation="horizontal"
         android:paddingTop="2dp"
         android:paddingBottom="2dp">
@@ -20,10 +22,10 @@
             android:layout_width="@dimen/_26sdp"
             android:layout_height="@dimen/_26sdp"
             android:layout_gravity="start|center_vertical"
-            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_12sdp"
             android:contentDescription="@string/menu"
             android:src="@drawable/ic_menu_select"
-            app:tint="@color/primary" />
+            app:tint="@color/white" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,7 +33,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="@string/home_page"
-            android:textColor="@color/primary"
+            android:textColor="@color/white"
             android:textSize="28sp"
             android:textStyle="bold" />
 
@@ -40,19 +42,21 @@
             android:layout_width="@dimen/_26sdp"
             android:layout_height="@dimen/_26sdp"
             android:layout_gravity="end|center_vertical"
-            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
             android:contentDescription="@string/search"
             android:src="@drawable/ic_search"
-            app:tint="@color/primary" />
+            app:tint="@color/white" />
     </FrameLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_12sdp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_12sdp"
             android:orientation="vertical">
 
             <androidx.viewpager2.widget.ViewPager2
@@ -152,4 +156,10 @@
                 tools:listitem="" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-</LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_46sdp"
+        android:layout_height="@dimen/_46sdp"
+        android:layout_gravity="center" />
+</FrameLayout>

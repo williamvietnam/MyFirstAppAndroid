@@ -1,4 +1,4 @@
-package com.williamnb.readlistenapp.ui.features.tvshows.adapter;
+package com.williamnb.readlistenapp.ui.features.tvshows.tvshow_details;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,8 +11,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseViewHolder;
 import com.williamnb.readlistenapp.databinding.ItemContainerSliderImageBinding;
-import com.williamnb.readlistenapp.ui.features.tvshows.tvshow_details.TVShowDetailsFragment;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class ImageSliderAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     private final String[] sliderImages;

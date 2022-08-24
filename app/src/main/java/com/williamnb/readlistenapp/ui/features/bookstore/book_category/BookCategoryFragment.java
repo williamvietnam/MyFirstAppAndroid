@@ -14,6 +14,9 @@ import com.williamnb.readlistenapp.data.local.models.BookStore;
 import com.williamnb.readlistenapp.databinding.FragmentBookCategoryBinding;
 import com.williamnb.readlistenapp.utilities.Constants;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class BookCategoryFragment extends BaseFragment<
         FragmentBookCategoryBinding,
         BookCategoryViewModel>

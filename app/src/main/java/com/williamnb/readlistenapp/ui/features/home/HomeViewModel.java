@@ -12,6 +12,9 @@ import com.williamnb.readlistenapp.data.local.models.SliderItem;
 
 import java.util.ArrayList;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class HomeViewModel extends BaseViewModel {
 
     public HomeViewModel(@NonNull Application application) {

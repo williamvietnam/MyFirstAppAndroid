@@ -32,6 +32,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="start|center_vertical"
                 android:layout_marginStart="@dimen/_20sdp"
+                android:background="?attr/selectableItemBackground"
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
@@ -57,6 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
@@ -83,6 +85,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end|center_vertical"
                 android:layout_marginEnd="@dimen/_20sdp"
+                android:background="?attr/selectableItemBackground"
                 android:gravity="center"
                 tools:ignore="UseCompoundDrawables">
 
@@ -119,6 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start|center_vertical"
                 android:layout_marginStart="@dimen/_20sdp"
+                android:background="?attr/selectableItemBackground"
                 android:gravity="center"
                 tools:ignore="UseCompoundDrawables">
 
@@ -138,7 +142,6 @@
                     android:text="@string/news"
                     android:textColor="#484848"
                     tools:text="@string/news" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -147,6 +150,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
                 android:gravity="center"
                 tools:ignore="UseCompoundDrawables">
 
@@ -174,6 +178,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end|center_vertical"
                 android:layout_marginEnd="@dimen/_20sdp"
+                android:background="?attr/selectableItemBackground"
                 android:gravity="center"
                 tools:ignore="UseCompoundDrawables">
 

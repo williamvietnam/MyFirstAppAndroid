@@ -11,7 +11,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/primary"
         android:paddingVertical="@dimen/_8sdp">
 
         <ImageView
@@ -22,7 +22,7 @@
             android:layout_marginStart="@dimen/_8sdp"
             android:contentDescription="@string/back"
             android:src="@drawable/ic_back"
-            app:tint="@color/primary_text" />
+            app:tint="@color/white" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
             android:layout_marginEnd="@dimen/_3sdp"
             android:gravity="center"
             android:text="@string/account_security"
-            android:textColor="@color/primary_text"
+            android:textColor="@color/white"
             android:textSize="@dimen/_16ssp"
             android:textStyle="bold" />
 
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end|center_vertical"
             android:layout_marginEnd="@dimen/_8sdp"
-            android:backgroundTint="@color/primary"
+            android:backgroundTint="@color/white"
             android:gravity="center"
             app:cardCornerRadius="@dimen/_5sdp">
 
@@ -51,7 +51,8 @@
                 android:layout_margin="@dimen/_6sdp"
                 android:gravity="center"
                 android:text="@string/save"
-                android:textColor="@color/white" />
+                android:textColor="@color/primary"
+                android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
     </FrameLayout>
 
@@ -78,7 +79,7 @@
                 android:id="@+id/flSetting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/primary"
+                android:background="?attr/selectableItemBackground"
                 android:paddingVertical="@dimen/_3sdp">
 
                 <TextView

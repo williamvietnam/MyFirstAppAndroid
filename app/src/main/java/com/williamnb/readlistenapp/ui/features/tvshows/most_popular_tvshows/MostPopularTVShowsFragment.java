@@ -12,12 +12,14 @@ import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
 import com.williamnb.readlistenapp.utilities.callback.TVShowsCallBack;
 import com.williamnb.readlistenapp.databinding.FragmentMostPopularTvShowsBinding;
-import com.williamnb.readlistenapp.ui.features.tvshows.adapter.TVShowAdapter;
 import com.williamnb.readlistenapp.data.remote.models.TVShow;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class MostPopularTVShowsFragment extends BaseFragment<FragmentMostPopularTvShowsBinding, MostPopularTVShowsViewModel>
         implements TVShowsCallBack {
 

@@ -6,6 +6,9 @@ import com.williamnb.readlistenapp.data.remote.models.TVShow;
 
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/08/2022
+ * */
 public class TVShowsResponse {
     @SerializedName("total")
     @Expose

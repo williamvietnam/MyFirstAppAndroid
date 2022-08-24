@@ -14,6 +14,9 @@ import com.williamnb.readlistenapp.utilities.callback.BookStoreCallBack;
 
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class BookStoreAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     private final List<BookStore.BookCategory> bookCategoryList;

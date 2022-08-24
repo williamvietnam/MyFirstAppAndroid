@@ -12,6 +12,9 @@ import com.williamnb.readlistenapp.databinding.LayoutUpdateAccountInfoBinding;
 
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class UpdateAccountInfoAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
     private final List<SettingItem> settingItemList;
