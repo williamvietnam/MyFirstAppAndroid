@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.williamnb.readlistenapp.R;
 import com.williamnb.readlistenapp.base.BaseFragment;
@@ -44,6 +46,8 @@ public class BookStoreFragment extends BaseFragment<FragmentBookStoreBinding, Bo
 
     @Override
     public void initializeComponent() {
+        viewBinding.rcv.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
+        viewBinding.rcv.addItemDecoration(new DividerItemDecoration(requireContext(), LinearLayoutManager.VERTICAL));
         viewBinding.rcv.setAdapter(adapter);
     }
 
@@ -57,7 +61,6 @@ public class BookStoreFragment extends BaseFragment<FragmentBookStoreBinding, Bo
 
     @Override
     public void initializeData() {
-
     }
 
     @Override

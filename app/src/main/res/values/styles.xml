@@ -10,8 +10,8 @@
     - navigationBarColor: chỉnh màu của thanh điều hướng của các máy điện thoại android bên dưới
     -->
     <style name="RatingBar" parent="android:style/Widget.Material.RatingBar.Small">
-        <item name="colorControlNormal">#808087</item>
-        <item name="colorControlActivated">#FFEA00</item>
+        <item name="colorControlNormal">#20FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
     </style>
 
     <style name="ServiceContainer">

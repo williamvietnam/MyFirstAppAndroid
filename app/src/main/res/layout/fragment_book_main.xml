@@ -4,22 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary"
     android:orientation="vertical"
     tools:context=".ui.features.book.BookMainFragment">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#DDDDDD"
+        android:background="@color/primary"
         android:orientation="horizontal">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnMenuSelect"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
             android:layout_gravity="start|center_vertical"
-            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_12sdp"
             android:src="@drawable/ic_menu_select"
+            android:tint="@color/white"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -29,15 +31,17 @@
             android:gravity="center"
             android:padding="3dp"
             android:text="@string/book"
+            android:textColor="@color/white"
             android:textSize="32sp" />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnSearchBook"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
             android:layout_gravity="end|center_vertical"
-            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
             android:src="@drawable/ic_search"
+            android:tint="@color/white"
             tools:ignore="ContentDescription" />
     </FrameLayout>
 
@@ -51,102 +55,84 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <RelativeLayout
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:padding="8dp">
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@color/primary">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/txtSuggest"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:drawableEnd="@drawable/ic_select_option"
+                    android:drawableTint="@color/white"
+                    android:gravity="center"
                     android:text="@string/suggest"
-                    android:textSize="18sp" />
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
 
-                <ImageView
-                    android:id="@+id/btnSelectBookStore"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginTop="1dp"
-                    android:layout_toEndOf="@id/txtSuggest"
-                    android:src="@drawable/ic_select_option"
-                    tools:ignore="ContentDescription" />
-
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/btnBookStore"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:gravity="center"
                     android:text="@string/book_store"
-                    tools:ignore="RelativeOverlap" />
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+            </FrameLayout>
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rcvBookSuggestion"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/txtSuggest"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/bg_list_item_my_book"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/_2sdp"
-                    android:scrollbars="none"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    tools:itemCount="10"
-                    tools:listitem="@layout/item_book_suggest_horizontal" />
-            </RelativeLayout>
-
-            <RelativeLayout
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvBookSuggestion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:padding="8dp">
+                android:layout_marginTop="@dimen/_4sdp"
+                android:orientation="horizontal"
+                android:scrollbars="none"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_book_suggest_horizontal" />
 
-                <TextView
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/txtMyBook"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="6dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:drawableEnd="@drawable/ic_select_option"
+                    android:drawableTint="@color/white"
                     android:text="@string/my_book"
+                    android:textColor="@color/white"
                     android:textSize="18sp" />
 
-                <ImageView
-                    android:id="@+id/btnSelectMyBook"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginTop="1dp"
-                    android:layout_toEndOf="@id/txtMyBook"
-                    android:src="@drawable/ic_select_option"
-                    tools:ignore="ContentDescription" />
-
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/btnSeeMore"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginEnd="6dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="@dimen/_12sdp"
                     android:text="@string/see_more"
-                    tools:ignore="RelativeOverlap" />
+                    android:textColor="@color/white" />
+            </FrameLayout>
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rcvMyBook"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@id/txtMyBook"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/bg_list_item_my_book"
-                    android:orientation="vertical"
-                    android:scrollbars="none"
-                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-                    app:spanCount="2"
-                    tools:listitem="@layout/item_my_book_vertical" />
-            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvMyBook"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:scrollbars="none"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                tools:listitem="@layout/item_my_book_vertical" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>
