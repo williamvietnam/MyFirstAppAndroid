@@ -4,6 +4,9 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import com.williamnb.readlistenapp.data.remote.models.TVShowDetails;
 
+/**
+ * Author: William Giang Nguyen | 15/08/2022
+ * */
 public class TVShowDetailsResponse {
 
     @SerializedName("tvShow")

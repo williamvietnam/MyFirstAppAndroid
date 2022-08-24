@@ -1,5 +1,8 @@
 package com.williamnb.readlistenapp.data.local.models;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class Welcome {
     private int text;
     private int image;

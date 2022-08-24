@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">VinApp</string>
+    <string name="app_name">WinWin</string>
     <string name="suggest">Gợi ý</string>
     <string name="book">Sách</string>
     <string name="book_store"><u>Cửa hàng sách</u></string>
@@ -84,5 +84,5 @@
     <string name="current_password">Mật khẩu hiện tại</string>
     <string name="new_password">Mật khẩu mới</string>
     <string name="privacy_setting">Thiết lập bảo mật</string>
-    <string name="save">SAVE</string>
+    <string name="save">LƯU</string>
 </resources>

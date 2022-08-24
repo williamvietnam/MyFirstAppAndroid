@@ -19,6 +19,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class AccountViewModel extends BaseViewModel {
     private final List<AccountItem> itemList;
     private MutableLiveData<Boolean> logoutLiveData;

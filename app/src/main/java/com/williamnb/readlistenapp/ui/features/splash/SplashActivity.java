@@ -18,6 +18,9 @@ import com.williamnb.readlistenapp.ui.features.main.MainActivity;
 import com.williamnb.readlistenapp.ui.features.welcome.WelcomeActivity;
 import com.williamnb.readlistenapp.utilities.Constants;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 @SuppressLint("CustomSplashScreen")
 public class SplashActivity extends BaseActivity<ActivitySplashBinding, SplashViewModel> {
 
@@ -39,11 +42,11 @@ public class SplashActivity extends BaseActivity<ActivitySplashBinding, SplashVi
 
     @Override
     public void initializeView() {
-        viewBinding.imageSplash.setVisibility(View.VISIBLE);
-        viewBinding.imageSplash.setImageResource(R.drawable.ic_splash);
+        viewBinding.text.setVisibility(View.VISIBLE);
+        viewBinding.text.setText(R.string.app_name);
         viewBinding.tvAuthor.setVisibility(View.VISIBLE);
         viewBinding.tvAuthor.setText(R.string.author);
-        this.handler.postDelayed(this.runnable, 1500);
+        this.handler.postDelayed(this.runnable, 1000);
     }
 
     @Override

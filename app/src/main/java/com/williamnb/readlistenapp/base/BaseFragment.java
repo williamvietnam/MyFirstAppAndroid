@@ -15,6 +15,9 @@ import androidx.viewbinding.ViewBinding;
 
 import com.williamnb.readlistenapp.ui.features.main.MainActivity;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewModel>
         extends Fragment implements BaseView {
 
@@ -50,7 +53,13 @@ public abstract class BaseFragment<VB extends ViewBinding, VM extends BaseViewMo
         super.onDestroyView();
         viewBinding = null;
         initializeDestroyView();
-        Log.d("Destroy", "Destroyed");
+        Log.d(BaseFragment.class.getSimpleName(), "Destroyed View");
+    }
+
+    @Override
+    public void onDestroy() {
+        viewModel.getCompositeDisposable().dispose();
+        super.onDestroy();
     }
 
     @Override

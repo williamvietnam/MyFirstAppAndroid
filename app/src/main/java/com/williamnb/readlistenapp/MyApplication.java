@@ -4,6 +4,9 @@ import androidx.viewbinding.BuildConfig;
 
 import com.williamnb.readlistenapp.base.BaseApplication;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class MyApplication extends BaseApplication {
 
     @Override

@@ -15,6 +15,9 @@ import androidx.fragment.app.Fragment;
 
 import com.williamnb.readlistenapp.databinding.FragmentTab2Binding;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class Tab2Fragment extends Fragment {
     private final static String URL = "https://vnexpress.net/";
     private FragmentTab2Binding binding;

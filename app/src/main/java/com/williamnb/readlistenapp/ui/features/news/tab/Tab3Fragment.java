@@ -15,6 +15,9 @@ import androidx.fragment.app.Fragment;
 
 import com.williamnb.readlistenapp.databinding.FragmentTab3Binding;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public class Tab3Fragment extends Fragment {
     private final static String URL = "https://www.youtube.com/";
     private FragmentTab3Binding binding;

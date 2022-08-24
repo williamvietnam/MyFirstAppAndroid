@@ -13,6 +13,9 @@ import java.util.List;
 import io.reactivex.Completable;
 import io.reactivex.Flowable;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 @Dao
 public interface TVShowDAO {
 

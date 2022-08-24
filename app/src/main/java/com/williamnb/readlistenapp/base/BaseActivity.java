@@ -7,6 +7,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewbinding.ViewBinding;
 
+/**
+ * Author: William Giang Nguyen | 15/04/2022
+ * */
 public abstract class BaseActivity<VB extends ViewBinding, VM extends BaseViewModel>
         extends AppCompatActivity implements BaseActivityView {
 
@@ -32,6 +35,7 @@ public abstract class BaseActivity<VB extends ViewBinding, VM extends BaseViewMo
     @Override
     protected void onDestroy() {
         viewBinding = null;
+        viewModel.getCompositeDisposable().dispose();
         Log.d(getClass().getName(), "onDestroy()...");
         super.onDestroy();
     }

@@ -1,231 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ServiceContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="@dimen/_16sdp"
+    app:cardElevation="4dp">
 
-    <androidx.cardview.widget.CardView
-        style="@style/ServiceContainer"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        app:cardCornerRadius="@dimen/_16sdp"
-        app:cardElevation="4dp">
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/_8sdp"
+        android:visibility="visible">
 
-        <LinearLayout
+        <FrameLayout
+            android:id="@+id/supportActionContainer"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/_2sdp"
-            android:layout_marginEnd="@dimen/_2sdp"
-            android:orientation="vertical"
-            android:paddingTop="@dimen/_16sdp"
-            android:paddingBottom="@dimen/_16sdp"
-            android:visibility="visible">
+            android:layout_height="@dimen/_64sdp"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:baselineAligned="false"
+            android:fillViewport="true"
+            android:gravity="center_horizontal">
 
             <LinearLayout
-                android:id="@+id/supportActionContainer"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_64sdp"
-                android:baselineAligned="false"
-                android:fillViewport="true"
-                android:gravity="center_horizontal"
-                android:orientation="horizontal"
-                android:weightSum="3">
+                android:id="@+id/btnGames"
+                style="@style/ServiceLinearContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:background="?attr/selectableItemBackground"
+                tools:ignore="UseCompoundDrawables">
 
-                <RelativeLayout
-                    android:id="@+id/btnGames"
-                    style="@style/ServiceContainer.Action.Container"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
+                <ImageView
+                    style="@style/SupportImage"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:contentDescription="@string/games"
+                    android:src="@drawable/ic_games"
+                    app:tint="@color/primary" />
 
-                    <LinearLayout
-                        style="@style/ServiceLinearContainer"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="top"
-                        tools:ignore="UseCompoundDrawables">
+                <TextView
+                    style="@style/ServiceTitle"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/games"
+                    android:textColor="@color/primary"
+                    tools:text="@string/games" />
 
-                        <ImageView
-                            style="@style/SupportImage"
-                            android:layout_marginTop="@dimen/_8sdp"
-                            android:contentDescription="@string/games"
-                            android:src="@drawable/ic_games" />
-
-                        <TextView
-                            style="@style/ServiceTitle"
-                            android:layout_width="match_parent"
-                            android:gravity="center"
-                            android:text="@string/games"
-                            android:textColor="#484848"
-                            tools:text="@string/games" />
-
-                    </LinearLayout>
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/btnTvShows"
-                    style="@style/ServiceContainer.Action.Container"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-
-                    <LinearLayout
-                        style="@style/ServiceLinearContainer"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="top"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            style="@style/SupportImage"
-                            android:layout_marginTop="@dimen/_8sdp"
-                            android:contentDescription="@string/cv"
-                            android:src="@drawable/ic_tv" />
-
-                        <TextView
-                            style="@style/ServiceTitle"
-                            android:layout_width="match_parent"
-                            android:gravity="center"
-                            android:text="@string/watch_film"
-                            android:textColor="#484848"
-                            tools:text="@string/watch_film" />
-
-                    </LinearLayout>
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/btnMessage"
-                    style="@style/ServiceContainer.Action.Container"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-
-                    <LinearLayout
-                        style="@style/ServiceLinearContainer"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="top"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            style="@style/SupportImage"
-                            android:layout_marginTop="@dimen/_8sdp"
-                            android:contentDescription="@string/message"
-                            android:src="@drawable/ic_chat" />
-
-                        <TextView
-                            style="@style/ServiceTitle"
-                            android:layout_width="match_parent"
-                            android:gravity="center"
-                            android:text="@string/message"
-                            android:textColor="#484848"
-                            tools:text="@string/message" />
-                    </LinearLayout>
-                </RelativeLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_64sdp"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:baselineAligned="false"
-                android:fillViewport="true"
-                android:gravity="center_horizontal"
-                android:orientation="horizontal"
-                android:weightSum="3">
+                android:id="@+id/btnTvShows"
+                style="@style/ServiceLinearContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                tools:ignore="UseCompoundDrawables">
 
-                <RelativeLayout
-                    android:id="@+id/btnNews"
-                    style="@style/ServiceContainer.Action.Container"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
+                <ImageView
+                    style="@style/SupportImage"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:contentDescription="@string/watch_film"
+                    android:src="@drawable/ic_tv_shows"
+                    app:tint="@color/primary" />
 
-                    <LinearLayout
-                        style="@style/ServiceLinearContainer"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="top"
-                        tools:ignore="UseCompoundDrawables">
+                <TextView
+                    style="@style/ServiceTitle"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/watch_film"
+                    android:textColor="@color/primary"
+                    tools:text="@string/watch_film" />
 
-                        <ImageView
-                            style="@style/SupportImage"
-                            android:layout_marginTop="@dimen/_4sdp"
-                            android:contentDescription="@string/news"
-                            android:src="@drawable/ic_news" />
-
-                        <TextView
-                            style="@style/ServiceTitle"
-                            android:layout_width="match_parent"
-                            android:gravity="center"
-                            android:maxLines="2"
-                            android:singleLine="false"
-                            android:text="@string/news"
-                            android:textColor="#484848"
-                            tools:text="@string/news" />
-
-                    </LinearLayout>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/btnForeignLanguages"
-                    style="@style/ServiceContainer.Action.Container"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-
-                    <LinearLayout
-                        style="@style/ServiceLinearContainer"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="top"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            style="@style/SupportImage"
-                            android:layout_marginTop="@dimen/_4sdp"
-                            android:contentDescription="@string/foreign_language"
-                            android:src="@drawable/ic_foreign_language" />
-
-                        <TextView
-                            style="@style/ServiceTitle"
-                            android:layout_width="match_parent"
-                            android:gravity="center"
-                            android:maxLines="2"
-                            android:singleLine="false"
-                            android:text="@string/foreign_language"
-                            android:textColor="#484848"
-                            tools:text="@string/foreign_language" />
-                    </LinearLayout>
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/btnLocations"
-                    style="@style/ServiceContainer.Action.Container"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-
-                    <LinearLayout
-                        style="@style/ServiceLinearContainer"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="top"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            style="@style/SupportImage"
-                            android:layout_marginTop="@dimen/_4sdp"
-                            android:contentDescription="@string/location"
-                            android:src="@drawable/ic_location" />
-
-                        <TextView
-                            style="@style/ServiceTitle"
-                            android:layout_width="match_parent"
-                            android:gravity="center"
-                            android:maxLines="2"
-                            android:singleLine="false"
-                            android:text="@string/location"
-                            android:textColor="#484848"
-                            tools:text="@string/location" />
-                    </LinearLayout>
-                </RelativeLayout>
             </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-</layout>
+
+            <LinearLayout
+                android:id="@+id/btnMessage"
+                style="@style/ServiceLinearContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    style="@style/SupportImage"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:contentDescription="@string/message"
+                    android:src="@drawable/ic_message"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    style="@style/ServiceTitle"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/message"
+                    android:textColor="@color/primary"
+                    tools:text="@string/message" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_64sdp"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:baselineAligned="false"
+            android:fillViewport="true"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/btnNews"
+                style="@style/ServiceLinearContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    style="@style/SupportImage"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:contentDescription="@string/news"
+                    android:src="@drawable/ic_news"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    style="@style/ServiceTitle"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_4sdp"
+                    android:singleLine="false"
+                    android:text="@string/news"
+                    android:textColor="#484848"
+                    tools:text="@string/news" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnForeignLanguages"
+                style="@style/ServiceLinearContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    style="@style/SupportImage"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:contentDescription="@string/foreign_language"
+                    android:src="@drawable/ic_language"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    style="@style/ServiceTitle"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:text="@string/foreign_language"
+                    android:textColor="@color/primary"
+                    tools:text="@string/foreign_language" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnLocations"
+                style="@style/ServiceLinearContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    style="@style/SupportImage"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:contentDescription="@string/location"
+                    android:src="@drawable/ic_location"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    style="@style/ServiceTitle"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:singleLine="false"
+                    android:text="@string/location"
+                    android:textColor="@color/primary"
+                    tools:text="@string/location" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
