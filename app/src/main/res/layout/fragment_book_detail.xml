@@ -4,36 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary"
     android:orientation="vertical"
     android:scrollbars="none"
     tools:context=".ui.features.bookdetail.BookDetailFragment">
 
-    <FrameLayout
+    <com.williamnb.readlistenapp.ui.custom.toolbar.ToolbarCustom
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#DDDDDD"
-        android:orientation="horizontal"
-        android:paddingTop="6dp"
-        android:paddingBottom="6dp">
-
-        <ImageView
-            android:id="@+id/btnBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start|center_vertical"
-            android:layout_marginStart="@dimen/_8sdp"
-            android:contentDescription="@string/back"
-            android:src="@drawable/ic_back" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:padding="3dp"
-            android:text="@string/book_detail"
-            android:textSize="20sp" />
-    </FrameLayout>
+        android:layout_gravity="top"
+        app:leftIcon="@drawable/ic_back"
+        app:toolbarName="@string/book_detail" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -74,6 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_8sdp"
                 android:text="@string/book_information"
+                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp"
                 android:textStyle="bold" />
 
@@ -85,6 +68,7 @@
                 android:layout_marginTop="@dimen/_3sdp"
                 android:ellipsize="end"
                 android:maxLines="1"
+                android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp"
                 tools:text="Tên sách: Một nghìn triệu tỷ câu hỏi vì sao" />
 
@@ -96,6 +80,7 @@
                 android:layout_marginTop="@dimen/_3sdp"
                 android:ellipsize="end"
                 android:maxLines="1"
+                android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp"
                 tools:text="Giá sách: 500.000vnd" />
 
@@ -107,6 +92,7 @@
                 android:layout_marginTop="@dimen/_3sdp"
                 android:ellipsize="end"
                 android:maxLines="1"
+                android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp"
                 tools:text="Tác giả: Nguyễn Văn Việt Nam" />
 
@@ -118,6 +104,7 @@
                 android:layout_marginTop="@dimen/_3sdp"
                 android:ellipsize="end"
                 android:maxLines="1"
+                android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp"
                 tools:text="Thể loại sách: Trinh thám, phiêu lưu" />
 
@@ -127,6 +114,7 @@
                 android:layout_marginHorizontal="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:text="@string/summary_content"
+                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp"
                 android:textStyle="bold" />
 
@@ -136,6 +124,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp"
                 tools:text="Although the predictive back gesture won’t be visible to users in Android 13, we’re making an early version of the UI available as a developer option for testing starting in Beta 4. We plan to make the UI available to users in a future Android release, and we’d like all apps to be ready. We’re also working with partners to ensure it’s consistent across devices.\nRead on for details on how to try out the new gesture and support it in your apps. Adding support for predictive back gesture is straightforward for most apps, and you can get started today.\nWe also encourage you to submit your feedback." />
 
@@ -151,6 +140,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start|center_vertical"
                     android:text="@string/comment"
+                    android:textColor="@color/white"
                     android:textSize="@dimen/_16ssp"
                     android:textStyle="bold" />
 
@@ -159,9 +149,10 @@
                     android:layout_width="@dimen/_24sdp"
                     android:layout_height="@dimen/_24sdp"
                     android:layout_gravity="end|center_vertical"
-                    android:background="#FFFFFFFF"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/comment"
-                    android:src="@drawable/ic_add_comment" />
+                    android:src="@drawable/ic_add_comment"
+                    app:tint="@color/white" />
 
             </FrameLayout>
 

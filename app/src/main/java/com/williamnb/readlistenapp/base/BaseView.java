@@ -8,7 +8,7 @@ import java.io.IOException;
  * Author: William Giang Nguyen | 15/04/2022
  * */
 public interface BaseView {
-    void initializeView() throws IOException;
+    void initializeView();
 
     void initializeComponent();
 

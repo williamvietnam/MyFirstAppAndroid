@@ -80,11 +80,13 @@ public class BookDetailFragment extends BaseFragment<FragmentBookDetailBinding, 
 
     @Override
     public void initializeComponent() {
+        viewBinding.toolbar.setLeftIconResource(R.drawable.ic_back);
+        viewBinding.toolbar.setToolbarNameResource(R.string.book_detail);
     }
 
     @Override
     public void initializeEvents() {
-        viewBinding.btnBack.setOnClickListener(v -> {
+        viewBinding.toolbar.setToolbarLeftCallBack(() -> {
             findNavController().popBackStack();
             Log.d(BookDetailFragment.class.getName(), "debug: back clicked");
         });

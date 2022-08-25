@@ -16,7 +16,7 @@ import com.williamnb.readlistenapp.utilities.Constants;
 
 /**
  * Author: William Giang Nguyen | 15/04/2022
- * */
+ */
 public class BookCategoryFragment extends BaseFragment<
         FragmentBookCategoryBinding,
         BookCategoryViewModel>
@@ -39,19 +39,21 @@ public class BookCategoryFragment extends BaseFragment<
         if (getArguments() != null) {
             viewModel.setBookCategory((BookStore.BookCategory) getArguments().getSerializable(Constants.BOOK_STORE_CATEGORY));
         }
+        viewBinding.toolbar.setLeftIconResource(R.drawable.ic_back);
+        viewBinding.toolbar.setToolbarNameResource(viewModel.getBookCategory().getBookCategoryName());
+        viewBinding.toolbar.setRightIconResource(R.drawable.ic_search);
         adapter = new BookCategoryAdapter(viewModel.getBookCategory().getBookList(), this);
-        viewBinding.rcvBookFollowCategoryList.setAdapter(adapter);
-        viewBinding.tvTitleBookCategory.setText(viewModel.getBookCategory().getBookCategoryName());
     }
 
     @Override
     public void initializeComponent() {
         viewBinding.rcvBookFollowCategoryList.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
+        viewBinding.rcvBookFollowCategoryList.setAdapter(adapter);
     }
 
     @Override
     public void initializeEvents() {
-        viewBinding.btnBack.setOnClickListener(view -> {
+        viewBinding.toolbar.setToolbarLeftCallBack(() -> {
             findNavController().popBackStack();
             Log.d(BookCategoryFragment.class.getName(), "debug: back clicked");
         });
