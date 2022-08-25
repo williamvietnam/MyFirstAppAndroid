@@ -8,42 +8,13 @@
     android:orientation="vertical"
     tools:context=".ui.features.bookstore.book_category.BookCategoryFragment">
 
-    <FrameLayout
+    <com.williamnb.readlistenapp.ui.custom.toolbar.ToolbarCustom
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/primary"
-        android:paddingVertical="@dimen/_6sdp">
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/btnBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start|center_vertical"
-            android:layout_marginStart="@dimen/_12sdp"
-            android:contentDescription="@string/back"
-            android:src="@drawable/ic_back"
-            android:tint="@color/white" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tvTitleBookCategory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="@string/book_category"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/btnSearchInBookCategory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|end"
-            android:layout_marginEnd="@dimen/_12sdp"
-            android:contentDescription="@string/search"
-            android:src="@drawable/ic_search"
-            android:tint="@color/white" />
-    </FrameLayout>
+        app:leftIcon="@drawable/ic_back"
+        app:rightIcon="@drawable/ic_search"
+        tools:toolbarName="@string/book_category" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcvBookFollowCategoryList"

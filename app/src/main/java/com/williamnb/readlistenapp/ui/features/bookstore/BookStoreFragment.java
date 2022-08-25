@@ -37,6 +37,11 @@ public class BookStoreFragment extends BaseFragment<FragmentBookStoreBinding, Bo
     @Override
     public void initializeView() {
         hideBottomNavigationView(true);
+
+        viewBinding.toolbar.setLeftIconResource(R.drawable.ic_back);
+        viewBinding.toolbar.setToolbarNameResource(R.string.book_store_title);
+        viewBinding.toolbar.setRightIconResource(R.drawable.ic_search);
+
         adapter = new BookStoreAdapter(
                 viewModel.getDataFromAssetsBookStore(),
                 viewModel.getAdapterChildList(this),
@@ -53,7 +58,7 @@ public class BookStoreFragment extends BaseFragment<FragmentBookStoreBinding, Bo
 
     @Override
     public void initializeEvents() {
-        viewBinding.btnBack.setOnClickListener(v -> {
+        viewBinding.toolbar.setToolbarLeftCallBack(() -> {
             findNavController().popBackStack();
             Log.d(BookStoreFragment.class.getName(), "debug: clicked button back");
         });

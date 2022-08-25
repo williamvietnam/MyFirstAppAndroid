@@ -8,45 +8,14 @@
     android:orientation="vertical"
     tools:context=".ui.features.home.HomeFragment">
 
-    <FrameLayout
+    <com.williamnb.readlistenapp.ui.custom.toolbar.ToolbarCustom
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
-        android:background="@color/primary"
-        android:orientation="horizontal"
-        android:paddingTop="2dp"
-        android:paddingBottom="2dp">
-
-        <ImageView
-            android:id="@+id/btnMenuSelect"
-            android:layout_width="@dimen/_26sdp"
-            android:layout_height="@dimen/_26sdp"
-            android:layout_gravity="start|center_vertical"
-            android:layout_marginStart="@dimen/_12sdp"
-            android:contentDescription="@string/menu"
-            android:src="@drawable/ic_menu_select"
-            app:tint="@color/white" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="@string/home_page"
-            android:textColor="@color/white"
-            android:textSize="28sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/btnSearchBook"
-            android:layout_width="@dimen/_26sdp"
-            android:layout_height="@dimen/_26sdp"
-            android:layout_gravity="end|center_vertical"
-            android:layout_marginEnd="@dimen/_12sdp"
-            android:contentDescription="@string/search"
-            android:src="@drawable/ic_search"
-            app:tint="@color/white" />
-    </FrameLayout>
+        app:leftIcon="@drawable/ic_menu_select"
+        app:rightIcon="@drawable/ic_search"
+        app:toolbarName="@string/home_page" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

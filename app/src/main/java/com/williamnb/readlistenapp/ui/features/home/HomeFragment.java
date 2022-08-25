@@ -31,7 +31,7 @@ import com.williamnb.readlistenapp.utilities.callback.HomeCallBack;
 
 /**
  * Author: William Giang Nguyen | 15/04/2022
- * */
+ */
 public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewModel>
         implements View.OnClickListener, HomeCallBack {
 
@@ -43,19 +43,22 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
     };
 
     @Override
-    public FragmentHomeBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
-        return FragmentHomeBinding.inflate(inflater, container, false);
+    public HomeViewModel createViewModel() {
+        return new ViewModelProvider(this).get(HomeViewModel.class);
     }
 
     @Override
-    public HomeViewModel createViewModel() {
-        return new ViewModelProvider(this).get(HomeViewModel.class);
+    public FragmentHomeBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
+        return FragmentHomeBinding.inflate(inflater, container, false);
     }
 
     @Override
     public void initializeView() {
         viewBinding.progressBar.setVisibility(View.VISIBLE);
         hideBottomNavigationView(false);
+        viewBinding.toolbar.setLeftIconResource(R.drawable.ic_menu_select);
+        viewBinding.toolbar.setToolbarNameResource(R.string.home_page);
+        viewBinding.toolbar.setRightIconResource(R.drawable.ic_search);
     }
 
     @Override
@@ -71,6 +74,15 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, HomeViewMode
         viewBinding.menuAction.btnGames.setOnClickListener(this);
         viewBinding.menuAction.btnTvShows.setOnClickListener(this);
         viewBinding.menuAction.btnNews.setOnClickListener(this);
+        viewBinding.toolbar.setToolbarLeftCallBack(() -> {
+            Toast.makeText(requireContext(), "menu is clicked", Toast.LENGTH_SHORT).show();
+            Log.d(HomeFragment.class.getSimpleName(), "menu is clicked");
+        });
+
+        viewBinding.toolbar.setToolbarRightCallBack(() -> {
+            Toast.makeText(requireContext(), "searching in progress", Toast.LENGTH_SHORT).show();
+            Log.d(HomeFragment.class.getSimpleName(), "searching in progress");
+        });
     }
 
     @Override

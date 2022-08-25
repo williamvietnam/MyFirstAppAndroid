@@ -3,7 +3,6 @@ package com.williamnb.readlistenapp.ui.features.book;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
@@ -39,6 +38,10 @@ public class BookMainFragment extends BaseFragment<FragmentBookMainBinding, Book
     @Override
     public void initializeView() {
         hideBottomNavigationView(false);
+
+        viewBinding.toolbar.setLeftIconResource(R.drawable.ic_menu_select);
+        viewBinding.toolbar.setToolbarNameResource(R.string.book);
+        viewBinding.toolbar.setRightIconResource(R.drawable.ic_search);
 
         bookSuggestAdapter = new ItemBookSuggestHorizontalAdapter(viewModel.getDataFromAssetsBookSuggestion(), this);
         viewBinding.rcvBookSuggestion.setAdapter(bookSuggestAdapter);

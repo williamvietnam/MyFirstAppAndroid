@@ -63,7 +63,7 @@
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_book_store.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_chat_main.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_chat_screen.xml" value="0.1" />
-        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_home.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_media_main.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_sign_in.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_sign_up.xml" value="0.1" />
@@ -91,6 +91,7 @@
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/layout_episodes_bottom_sheet.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/layout_update_account_info.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/slide_item_container.xml" value="0.2911500641299701" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/toolbar_custom_view.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/widget_change_password.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/widget_home_menu_action.xml" value="0.264" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/widget_update_display_information.xml" value="0.1" />
