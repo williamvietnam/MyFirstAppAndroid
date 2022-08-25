@@ -8,43 +8,14 @@
     android:orientation="vertical"
     tools:context=".ui.features.bookstore.BookStoreFragment">
 
-    <FrameLayout
+    <com.williamnb.readlistenapp.ui.custom.toolbar.ToolbarCustom
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/primary"
-        android:orientation="horizontal"
-        android:paddingVertical="@dimen/_8sdp">
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/btnBack"
-            android:layout_width="@dimen/_26sdp"
-            android:layout_height="@dimen/_26sdp"
-            android:layout_gravity="start|center_vertical"
-            android:layout_marginStart="@dimen/_12sdp"
-            android:contentDescription="@string/back"
-            android:src="@drawable/ic_back"
-            android:tint="@color/white" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:padding="3dp"
-            android:text="@string/book_store_title"
-            android:textColor="@color/white"
-            android:textSize="32sp" />
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/btnSearchInBookStore"
-            android:layout_width="@dimen/_26sdp"
-            android:layout_height="@dimen/_26sdp"
-            android:layout_gravity="end|center_vertical"
-            android:layout_marginEnd="@dimen/_12sdp"
-            android:contentDescription="@string/search"
-            android:src="@drawable/ic_search"
-            android:tint="@color/white" />
-    </FrameLayout>
+        android:layout_gravity="top"
+        app:leftIcon="@drawable/ic_back"
+        app:rightIcon="@drawable/ic_search"
+        app:toolbarName="@string/book_store_title" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcv"

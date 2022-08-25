@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    android:paddingVertical="@dimen/_8sdp"
+    tools:context=".ui.custom.toolbar.ToolbarCustom">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/leftImageView"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:tint="@color/white"
+        tools:src="@drawable/ic_back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/toolbarName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17ssp"
+        android:textStyle="bold"
+        tools:text="@string/home_page" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/rightImageView"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="@dimen/_11sdp"
+        android:tint="@color/white"
+        tools:src="@drawable/ic_search" />
+</FrameLayout>

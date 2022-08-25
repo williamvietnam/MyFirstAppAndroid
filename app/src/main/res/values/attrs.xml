@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ToolbarCustom">
+        <attr name="leftIcon" format="reference" />
+        <attr name="toolbarName" format="string" />
+        <attr name="rightIcon" format="reference" />
+    </declare-styleable>
+</resources>
