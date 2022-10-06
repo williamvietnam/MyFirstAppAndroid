@@ -146,7 +146,17 @@
         <action
             android:id="@+id/actionMostPopularToTVShowDetails"
             app:destination="@id/fragmentTVShowDetails" />
+
+        <action
+            android:id="@+id/actionMostPopularToSearch"
+            app:destination="@id/fragmentTvShowsSearching" />
     </fragment>
+
+    <fragment
+        android:id="@+id/fragmentTvShowsSearching"
+        android:name="com.williamnb.readlistenapp.ui.features.tvshows.tvshow_search.TvShowsSearchingFragment"
+        android:label="TvShowsSearchingFragment"
+        tools:layout="@layout/fragment_tv_shows_searching" />
 
     <fragment
         android:id="@+id/fragmentTVShowDetails"

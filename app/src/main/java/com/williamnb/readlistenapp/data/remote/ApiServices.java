@@ -9,7 +9,7 @@ import retrofit2.http.Query;
 
 /**
  * Author: William Giang Nguyen | 15/08/2022
- * */
+ */
 public interface ApiServices {
 
     @GET(ApiEndpoint.GET_MOST_POPULAR_TV_SHOWS)
@@ -18,4 +18,6 @@ public interface ApiServices {
     @GET(ApiEndpoint.GET_TV_SHOWS_DETAIL)
     Single<TVShowDetailsResponse> getTVShowDetails(@Query("q") String tvShowId);
 
+    @GET(ApiEndpoint.GET_SEARCH_TV_SHOWS_LIST)
+    Single<TVShowsResponse> getSearchTVShowList(@Query("q") String keyword, @Query("page") int page);
 }
