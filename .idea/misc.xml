@@ -38,6 +38,7 @@
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/bg_list_item_my_book.xml" value="0.239" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_account.xml" value="0.252" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_add.xml" value="0.252" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_close.xml" value="0.2435" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_games.xml" value="0.2005" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_language.xml" value="0.2005" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/drawable/ic_location.xml" value="0.2005" />
@@ -65,12 +66,14 @@
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_chat_screen.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_home.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_media_main.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_most_popular_tv_shows.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_sign_in.xml" value="0.2911500641299701" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_sign_up.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_song_list.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_splash.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_t_v_show_details.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_tab_1.xml" value="0.2911500641299701" />
+        <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_tv_shows_searching.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_update_account_info.xml" value="0.1" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_update_personal_info.xml" value="0.2902949978623343" />
         <entry key="..\:/MyGithub/android-app-entertainment/app/src/main/res/layout/fragment_users.xml" value="0.1" />

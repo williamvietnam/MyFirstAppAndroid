@@ -10,4 +10,6 @@ public class ApiEndpoint {
     public static final String GET_MOST_POPULAR_TV_SHOWS = "most-popular";
 
     public static final String GET_TV_SHOWS_DETAIL = "show-details";
+
+    public static final String GET_SEARCH_TV_SHOWS_LIST = "search";
 }

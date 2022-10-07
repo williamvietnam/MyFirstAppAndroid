@@ -2,6 +2,7 @@ package com.williamnb.readlistenapp.ui.features.tvshows.most_popular_tvshows;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -66,11 +67,16 @@ public class MostPopularTVShowsFragment extends BaseFragment<FragmentMostPopular
     @Override
     public void initializeEvents() {
         viewBinding.btnBack.setOnClickListener(view -> findNavController().popBackStack());
+        viewBinding.imageSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findNavController().navigate(R.id.actionMostPopularToSearch);
+            }
+        });
     }
 
     @Override
     public void initializeData() {
-
     }
 
     @Override

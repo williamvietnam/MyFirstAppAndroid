@@ -23,7 +23,7 @@ import java.io.InputStream;
 
 /**
  * Author: William Giang Nguyen | 15/04/2022
- * */
+ */
 public class SignUpActivity extends BaseActivity<ActivitySignUpBinding, SignUpViewModel> {
 
     private static final int RESULT_OK = -1;
@@ -80,12 +80,16 @@ public class SignUpActivity extends BaseActivity<ActivitySignUpBinding, SignUpVi
 
         viewBinding.btnSignUp.setOnClickListener(view -> {
             if (isValidSignUpDetails()) {
-                viewModel.signUp(
-                        viewBinding.inputName.getText().toString(),
-                        viewBinding.inputAccount.getText().toString(),
-                        viewBinding.inputPassword.getText().toString(),
-                        this.encodeImage
-                );
+                if (viewBinding.inputName.getText() != null
+                        && viewBinding.inputAccount.getText() != null
+                        && viewBinding.inputPassword.getText() != null) {
+                    viewModel.signUp(
+                            viewBinding.inputName.getText().toString(),
+                            viewBinding.inputAccount.getText().toString(),
+                            viewBinding.inputPassword.getText().toString(),
+                            this.encodeImage
+                    );
+                }
             }
         });
 
@@ -130,19 +134,23 @@ public class SignUpActivity extends BaseActivity<ActivitySignUpBinding, SignUpVi
         if (encodeImage == null) {
             viewModel.showToast("Thêm ảnh hồ sơ");
             return false;
-        } else if (viewBinding.inputName.getText().toString().trim().isEmpty()) {
+        } else if ((viewBinding.inputName.getText() != null)
+                && (viewBinding.inputName.getText().toString().trim().isEmpty())) {
             viewModel.showToast("Mời nhập Họ Tên");
             return false;
-        } else if (viewBinding.inputAccount.getText().toString().trim().isEmpty()) {
+        } else if ((viewBinding.inputAccount.getText() != null)
+                && (viewBinding.inputAccount.getText().toString().trim().isEmpty())) {
             viewModel.showToast("Mời nhập Tài khoản");
             return false;
         } else if (!Patterns.EMAIL_ADDRESS.matcher(viewBinding.inputAccount.getText().toString()).matches()) {
             viewModel.showToast("Nhập đúng định dạng Email");
             return false;
-        } else if (viewBinding.inputPassword.getText().toString().trim().isEmpty()) {
+        } else if ((viewBinding.inputPassword.getText() != null)
+                && (viewBinding.inputPassword.getText().toString().trim().isEmpty())) {
             viewModel.showToast("Nhập mật khẩu");
             return false;
-        } else if (viewBinding.inputConfirmPassword.getText().toString().trim().isEmpty()) {
+        } else if ((viewBinding.inputConfirmPassword.getText() != null)
+                && (viewBinding.inputConfirmPassword.getText().toString().trim().isEmpty())) {
             viewModel.showToast("Nhập lại mật khẩu");
             return false;
         } else if (!viewBinding.inputPassword.getText().toString().equals(viewBinding.inputConfirmPassword.getText().toString())) {
